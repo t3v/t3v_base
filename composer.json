@@ -1,0 +1,67 @@
+{
+  "name": "t3v/t3v_base",
+  "type": "typo3-cms-extension",
+  "description": "The base extension of TYPO3Voila.",
+  "authors": [
+    {
+      "name": "Maik Kempe",
+      "email": "mkempe@bitaculous.com",
+      "homepage": "https://bitaculous.com"
+    }
+  ],
+  "keywords": ["Base", "CMS", "Extension", "T3v", "TYPO3", "TYPO3voila", "UH LÁLÁ"],
+  "homepage": "https://t3v.github.io/t3v_base/",
+  "support": {
+    "issues": "https://github.com/t3v/t3v_base/issues"
+  },
+  "license": "MIT",
+  "config": {
+    "bin-dir": ".build/bin",
+    "vendor-dir": ".build/vendor"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "replace": {
+    "t3v_base": "self.version",
+    "typo3-ter/t3v_base": "self.version"
+  },
+  "repositories": [
+    { "type": "composer", "url": "https://composer.typo3.org" }
+  ],
+  "require": {
+    "php": ">= 7.0 < 7.3",
+    "typo3/cms-core": "^8.7 || ^9.4",
+    "t3v/t3v_core": "*",
+    "t3v/t3v_datamapper": "*"
+  },
+  "require-dev": {
+    "mikey179/vfsStream": "^1.6",
+    "namelesscoder/typo3-repository-client": "^2.0",
+    "nimut/testing-framework": "^3.0",
+    "phpunit/phpunit": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "T3v\\T3vBase\\": "Classes"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "T3v\\T3vBase\\Tests\\": "Tests",
+      "TYPO3\\CMS\\Core\\Tests\\": ".build/vendor/typo3/cms/typo3/sysext/core/Tests",
+      "TYPO3\\CMS\\Fluid\\Tests\\": ".build/vendor/typo3/cms/typo3/sysext/fluid/Tests"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".build/web"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "mkdir -p .build/web/typo3conf/ext/",
+      "[ -L .build/web/typo3conf/ext/t3v_base ] || ln -snvf ../../../../. .build/web/typo3conf/ext/t3v_base"
+    ]
+  }
+}
