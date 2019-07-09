@@ -28,7 +28,6 @@ class RenderingTest extends FunctionalTestCase {
    */
   protected $testExtensionsToLoad = [
     'typo3conf/ext/t3v_core',
-    'typo3conf/ext/t3v_datamapper',
     'typo3conf/ext/t3v_base'
   ];
 

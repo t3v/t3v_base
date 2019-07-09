@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Removed T3v DataMapper extension as dependency
 * Support only TYPO3 8.x
 * Updated dependencies
 * Updated Travis CI configuration
