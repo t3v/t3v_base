@@ -30,8 +30,8 @@
   "require": {
     "php": ">= 7.0 < 7.4",
     "typo3/cms-core": "^8.7",
-    "t3v/t3v_core": "*",
-    "t3v/t3v_datamapper": "*"
+    "t3v/t3v_core": "dev-8-x",
+    "t3v/t3v_datamapper": "dev-8-x"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.6",
