@@ -3,8 +3,8 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+1.1.0
+-----
 
 * Removed T3v DataMapper extension as dependency
 * Support only TYPO3 8.x
