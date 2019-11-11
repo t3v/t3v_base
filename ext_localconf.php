@@ -5,6 +5,6 @@ defined('TYPO3_MODE') or die();
 
 $namespace           = 'T3v';
 $extensionKey        = $_EXTKEY;
-$extensionSignature  = \T3v\T3vCore\Utility\ExtensionUtility::extensionSignature($namespace, $extensionKey);
+$extensionSignature  = \T3v\T3vCore\Utility\ExtensionUtility::signature($namespace, $extensionKey);
 $configurationFolder = \T3v\T3vCore\Utility\ExtensionUtility::configurationFolder($extensionKey);
 $resourcesFolder     = \T3v\T3vCore\Utility\ExtensionUtility::resourcesFolder($extensionKey);
