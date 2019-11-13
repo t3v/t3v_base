@@ -30,6 +30,8 @@
   "require": {
     "php": ">= 7.2 < 7.4",
     "typo3/cms-core": "^9.5 || dev-master",
+    "gridelementsteam/gridelements": "dev-9-0 || dev-master",
+    "fluidtypo3/vhs": "^5.2",
     "t3v/t3v_core": "*"
   },
   "require-dev": {
