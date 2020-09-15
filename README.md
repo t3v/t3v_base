@@ -123,6 +123,9 @@ Credits
 * [Browser icon (7)]
 * [Browser icon (8)]
 * [Browser icon (9)]
+* [Browser icon (10)]
+* [Browser icon (11)]
+* [Browser icon (12)]
 * [Copyright icon]
 * [CSS Icon]
 * [Email icon]
@@ -153,6 +156,9 @@ T3v Base is released under the [MIT License (MIT)], see [LICENSE].
 [Browser icon (7)]: https://www.flaticon.com/free-icon/browser_140792 "Browser icon"
 [Browser icon (8)]: https://www.flaticon.com/free-icon/browser_140842 "Browser icon"
 [Browser icon (9)]: https://www.flaticon.com/free-icon/browser_140843 "Browser icon"
+[Browser icon (10)]: https://www.flaticon.com/free-icon/browser_140867 "Browser icon"
+[Browser icon (11)]: https://www.flaticon.com/free-icon/browser_140802 "Browser icon"
+[Browser icon (12)]: https://www.flaticon.com/free-icon/browser_140803 "Browser icon"
 [Composer]: https://getcomposer.org "Dependency Manager for PHP"
 [Copyright icon]: https://www.flaticon.com/free-icon/copyright_594862 "Copyright icon"
 [CSS Icon]: https://www.flaticon.com/free-icon/css_1073663 "CSS Icon"
