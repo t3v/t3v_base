@@ -2,7 +2,6 @@
 namespace T3v\T3vBase\Tests\Unit;
 
 use Nimut\TestingFramework\TestCase\UnitTestCase;
-
 use T3v\T3vBase\Tests\Unit\Fixtures\LoadableClass;
 
 /**
