@@ -9,6 +9,7 @@ Unreleased
 * Removed T3v DataMapper extension as dependency
 * Removed `PageLanguageOverlayForm` data provider (breaking change)
 * Dropped support for TYPO3 8.x (breaking change)
+* PSR-12: Extended Coding Style
 * Updated dependencies
 * Updated Travis CI and AppVeyor configuration
 
