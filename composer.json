@@ -44,8 +44,8 @@
     "gridelementsteam/gridelements": "dev-9-0 || dev-10-0",
     "sitegeist/sms-responsive-images": "^2.0",
     "fluidtypo3/vhs": "^6.0",
-    "t3v/t3v_core": "*",
-    "t3v/t3v_translations": "*"
+    "t3v/t3v_core": "dev-develop",
+    "t3v/t3v_translations": "dev-develop"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.6",
