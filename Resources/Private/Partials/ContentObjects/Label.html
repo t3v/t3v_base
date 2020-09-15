@@ -1,0 +1,48 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:t3v="http://typo3.org/ns/T3v/T3vCore/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+  <v:variable.set name="contentObject" value="t3v-base-label" />
+  <v:variable.set name="uid" value="{v:variable.convert(value: data.uid, type: 'integer', default: 0)}" />
+  <v:variable.set name="type" value="{v:variable.convert(value: settings.type, type: 'string', default: 'default')}" />
+  <v:variable.set name="handle" value="{v:variable.convert(value: settings.handle, type: 'string', default: 'none')}" />
+  <v:variable.set name="layout" value="{v:variable.convert(value: settings.layout, type: 'string', default: 'default')}" />
+  <v:variable.set name="text" value="{v:variable.convert(value: settings.text, type: 'string')}" />
+  <v:variable.set name="title" value="{v:variable.convert(value: settings.title, type: 'string')}" />
+  <v:variable.set name="alt" value="{v:variable.convert(value: settings.alt, type: 'string')}" />
+  <v:variable.set name="icon" value="{v:variable.convert(value: settings.icon, type: 'array')}" />
+
+  <f:if condition="{handle}">
+    <v:variable.set name="handle" value="{t3v:handle(input: handle)}" />
+  </f:if>
+
+  <v:tag id="c{uid}" name="{contentObject}" class="{contentObject} content-object"
+         additionalAttributes="{type: type, handle: handle, layout: layout}" hideIfEmpty="false">
+    <v:tag name="div" class="{contentObject}__main" hideIfEmpty="true">
+      <f:switch expression="{layout}">
+        <f:case value="icon-right">
+          <f:render section="Text" arguments="{contentObject: contentObject, text: text}" />
+
+          <f:render section="Icon" arguments="{contentObject: contentObject, icon: icon, title: title, alt: alt}" />
+        </f:case>
+
+        <f:defaultCase>
+          <f:render section="Icon" arguments="{contentObject: contentObject, icon: icon, title: title, alt: alt}" />
+
+          <f:render section="Text" arguments="{contentObject: contentObject, text: text}" />
+        </f:defaultCase>
+      </f:switch>
+    </v:tag>
+  </v:tag>
+
+  <f:section name="Icon">
+    <f:if condition="{icon}">
+      <f:if condition="{icon.src}">
+        <f:image src="{icon.src}" treatIdAsReference="true" class="{contentObject}__icon" title="{title}" alt="{alt}"
+                 data="{inline: icon.inline, colorize: icon.colorize}" />
+      </f:if>
+    </f:if>
+  </f:section>
+
+  <f:section name="Text">
+    <v:tag name="div" class="{contentObject}__text" hideIfEmpty="true">{text}</v:tag>
+  </f:section>
+</html>

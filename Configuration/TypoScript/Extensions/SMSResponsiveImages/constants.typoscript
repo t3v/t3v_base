@@ -1,0 +1,18 @@
+# -----------------------------------
+# | SMS Responsive Images Constants |
+# -----------------------------------
+
+@import 'EXT:sms_responsive_images/Configuration/TypoScript/Base/constants.ts'
+
+# tx_smsresponsiveimages {
+#   srcset = 400, 600, 800, 1000, 1200
+#
+#   sizes = (min-width: %1$dpx) %1$dpx, 100vw
+#
+#   lazyload = 0
+#
+#   placeholder {
+#     size = 0
+#     inline = 0
+#   }
+# }

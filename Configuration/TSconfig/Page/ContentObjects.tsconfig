@@ -1,0 +1,29 @@
+# ----------------------------
+# | Content Objects TSconfig |
+# ----------------------------
+
+# === New Content Element Wizard Configuration ===
+
+mod {
+  wizards {
+    newContentElement {
+      wizardItems {
+        contentObjects {
+          header = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:mod.wizards.newContentElement.wizardItems.contentObjects.header
+          show = *
+        }
+      }
+    }
+  }
+}
+
+# === Imports ===
+
+# _XXX_CE_CREATOR_XXX_
+
+@import './ContentObjects/Background.tsconfig'
+@import './ContentObjects/Copyright.tsconfig'
+@import './ContentObjects/Icon.tsconfig'
+@import './ContentObjects/Label.tsconfig'
+@import './ContentObjects/Link.tsconfig'
+@import './ContentObjects/Spacer.tsconfig'

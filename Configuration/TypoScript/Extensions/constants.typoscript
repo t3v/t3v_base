@@ -1,0 +1,9 @@
+# ------------------------
+# | Extensions Constants |
+# ------------------------
+
+# === Imports ===
+
+@import './Extbase/constants.typoscript'
+@import './GridElements/constants.typoscript'
+@import './SMSResponsiveImages/constants.typoscript'

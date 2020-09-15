@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+  <meta>
+    <langDisable>1</langDisable>
+    <langChildren>1</langChildren>
+  </meta>
+
+  <ROOT>
+    <type>array</type>
+    <el>
+      <type>
+        <TCEforms type="array">
+          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.label</label>
+          <config type="array">
+            <type>select</type>
+            <renderType>selectSingle</renderType>
+            <items type="array">
+              <numIndex index="0" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.default.label</numIndex>
+                <numIndex index="1">default</numIndex>
+              </numIndex>
+            </items>
+            <default>default</default>
+          </config>
+        </TCEforms>
+      </type>
+
+      <!--
+      <handle>
+        <TCEforms type="array">
+          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.handle.label</label>
+          <config type="array">
+            <type>slug</type>
+            <generatorOptions type="array">
+              <fields type="array">
+                <firstField>header</firstField>
+                <secondField>subheader</secondField>
+              </fields>
+              <fieldSeparator>-</fieldSeparator>
+              <prefixParentPageSlug>0</prefixParentPageSlug>
+            </generatorOptions>
+            <fallbackCharacter>-</fallbackCharacter>
+            <prependSlash>0</prependSlash>
+            <default></default>
+          </config>
+        </TCEforms>
+      </handle>
+      -->
+
+      <languageUid>
+        <TCEforms type="array">
+          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.languageUid.label</label>
+          <config type="array">
+            <type>select</type>
+            <renderType>selectSingle</renderType>
+            <foreign_table>sys_language</foreign_table>
+            <foreign_table_where>ORDER BY sys_language.title</foreign_table_where>
+            <items type="array">
+              <numIndex index="0" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.languageUid.default.label</numIndex>
+                <numIndex index="1">0</numIndex>
+              </numIndex>
+            </items>
+            <default>0</default>
+            <fieldWizard type="array">
+              <selectIcons type="array">
+                <disabled>false</disabled>
+              </selectIcons>
+            </fieldWizard>
+          </config>
+        </TCEforms>
+      </languageUid>
+    </el>
+  </ROOT>
+</T3DataStructure>

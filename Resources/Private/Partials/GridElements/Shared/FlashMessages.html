@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+  <v:tag name="div" class="{gridElement}__flash-messages grid-element__flash-messages" hideIfEmpty="true">
+    <v:tag name="ul" class="flash-messages" hideIfEmpty="true">
+      <f:flashMessages as="flashMessages">
+        <f:for each="{flashMessages}" as="flashMessage">
+          <v:variable.set name="class" value="{v:format.replace(substring: 'alert-', content: flashMessage.class)}" />
+
+          <li class="flash-message--{class} flash-message">
+            <f:if condition="{flashMessage.title}">
+              <span class="flash-message__title">{flashMessage.title}</span>
+            </f:if>
+
+            <span class="flash-message__message">{flashMessage.message}</span>
+          </li>
+        </f:for>
+      </f:flashMessages>
+    </v:tag>
+  </v:tag>
+</html>

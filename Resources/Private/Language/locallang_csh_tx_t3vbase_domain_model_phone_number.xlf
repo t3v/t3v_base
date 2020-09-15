@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file product-name="t3v_base" source-language="en" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <trans-unit id="label.description">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="type.description">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="number.description">
+        <source>Number</source>
+      </trans-unit>
+
+      <trans-unit id="international_number.description">
+        <source>International Number</source>
+      </trans-unit>
+
+      <trans-unit id="note.description">
+        <source>Note</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

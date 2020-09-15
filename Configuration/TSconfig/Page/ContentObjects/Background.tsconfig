@@ -1,0 +1,30 @@
+# -----------------------
+# | Background TSconfig |
+# -----------------------
+
+# === Wizard Configuration ===
+
+mod {
+  wizards {
+    newContentElement {
+      wizardItems {
+        contentObjects {
+          elements {
+            t3vBaseBackground {
+              title = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:contentObjects.background.title
+              description = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:contentObjects.background.description
+              iconIdentifier = t3v_base-background
+
+              tt_content_defValues {
+                CType = list
+                list_type = t3vbase_background
+              }
+            }
+          }
+
+          show := addToList(t3vBaseBackground)
+        }
+      }
+    }
+  }
+}

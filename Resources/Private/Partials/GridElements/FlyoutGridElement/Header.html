@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+  <v:variable.set name="title" value="{data.header}" />
+  <v:variable.set name="subtitle" value="{data.subheader}" />
+  <v:variable.set name="link" value="{data.header_link}" />
+  <v:variable.set name="date" value="{data.date}" />
+  <v:variable.set name="layout" value="{data.header_layout}" />
+  <v:variable.set name="position" value="{f:if(condition: data.header_position, then: '{data.header_position}', else: 'default')}" />
+
+  <v:tag name="div" class="{gridElement}__header grid-element__header" data="{position: position}" hideIfEmpty="true">
+    <f:if condition="{title} || {subtitle} || {date}">
+      <f:if condition="{layout} != 0 && {layout} != 100">
+        <f:render partial="GridElements/Shared/Header/Title" arguments="{
+          gridElement: gridElement,
+          title: title,
+          link: link,
+          layout: layout}" />
+
+        <f:render partial="GridElements/Shared/Header/Subtitle" arguments="{
+          gridElement: gridElement,
+          subtitle: subtitle,
+          layout: layout}" />
+
+        <f:render partial="GridElements/Shared/Header/Date" arguments="{
+          gridElement: gridElement,
+          date: date}" />
+      </f:if>
+    </f:if>
+
+    <f:format.raw>{data.tx_gridelements_view_column_10}</f:format.raw>
+
+    <f:render partial="GridElements/FlyoutGridElement/Control" arguments="{gridElement: gridElement, data: data}" />
+  </v:tag>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file product-name="t3v_base" source-language="en" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <trans-unit id="name.description">
+        <source>The name of the style.</source>
+      </trans-unit>
+
+      <trans-unit id="type.description">
+        <source>The type of the style.</source>
+      </trans-unit>
+
+      <trans-unit id="selector.description">
+        <source>The selector of the style.</source>
+      </trans-unit>
+
+      <trans-unit id="background_color.description">
+        <source>The background color of the style.</source>
+      </trans-unit>
+
+      <trans-unit id="background_images.description">
+        <source>The background images of the style.</source>
+      </trans-unit>
+
+      <trans-unit id="color.description">
+        <source>The color of the style.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

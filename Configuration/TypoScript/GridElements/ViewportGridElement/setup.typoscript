@@ -1,0 +1,27 @@
+# ---------------------------------------
+# | Viewport Grid Element Configuration |
+# ---------------------------------------
+
+tt_content {
+  gridelements_pi1 {
+    20 {
+      10 {
+        setup {
+          t3vBaseViewport < lib.gridelements.defaultGridSetup
+          t3vBaseViewport {
+            cObject = FLUIDTEMPLATE
+            cObject {
+              file = EXT:t3v_base/Resources/Private/Templates/GridElements/ViewportGridElement.html
+
+              layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
+
+              partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+            }
+
+            outerWrap = |
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# -----------------
+# | Page TSconfig |
+# -----------------
+
+# === Imports ===
+
+@import './Page/ContentObjects.tsconfig'
+@import './Page/GridElements.tsconfig'
+@import './Page/ContentElements.tsconfig'

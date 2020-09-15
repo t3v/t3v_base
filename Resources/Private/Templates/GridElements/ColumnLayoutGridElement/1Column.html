@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+  <f:layout name="GridElements/ColumnLayoutGridElement" />
+
+  <f:section name="GridElement">
+    <f:render partial="GridElements/Shared/Header" arguments="{gridElement: gridElement, data: data}" />
+
+    <v:tag name="div" class="{gridElement}__main grid-element__main" hideIfEmpty="true">
+      <f:render section="Main" arguments="{data: data}" />
+    </v:tag>
+
+    <f:render partial="GridElements/Shared/Footer" arguments="{gridElement: gridElement, data: data}" />
+  </f:section>
+
+  <f:section name="Main">
+    <div class="t3v-base-column-layout-grid-element__column grid-element__column">
+      <f:format.raw>{data.tx_gridelements_view_column_20}</f:format.raw>
+    </div>
+  </f:section>
+</html>

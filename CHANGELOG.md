@@ -3,18 +3,19 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-2.0.0
------
+Unreleased
+----------
 
 * Removed T3v DataMapper extension as dependency
 * Updated dependencies
 * Updated Travis CI and AppVeyor configuration
-* Dropped support for TYPO3 8.x
+* Removed `PageLanguageOverlayForm` data provider (breaking change)
+* Dropped support for TYPO3 8.x (breaking change)
 
 1.0.0
 -----
 
-* Added `PageFormDataProvider` and `PageLanguageOverlayFormDataProvider`
+* Added `PageForm` and `PageLanguageOverlayForm` data provider
 * Added common files
 
 [Semantic Versioning]: http://semver.org "Semantic Versioning"

@@ -49,3 +49,8 @@ plugin {
     }
   }
 }
+
+# === Imports ===
+
+@import './Extensions/setup.typoscript'
+@import './GridElements/setup.typoscript'

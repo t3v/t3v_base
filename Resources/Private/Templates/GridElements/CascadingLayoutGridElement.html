@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+  <f:layout name="GridElements/CascadingLayoutGridElement" />
+
+  <f:section name="GridElement">
+    <f:render partial="GridElements/Shared/Header" arguments="{gridElement: gridElement, data: data}" />
+
+    <v:tag name="div" class="{gridElement}__main grid-element__main" hideIfEmpty="true">
+      <f:render section="Main" arguments="{gridElement: gridElement, data: data}" />
+    </v:tag>
+
+    <f:render partial="GridElements/Shared/Footer" arguments="{gridElement: gridElement, data: data}" />
+  </f:section>
+
+  <f:section name="Main">
+    <f:if condition="{data.tx_gridelements_view_children}">
+      <f:for each="{data.tx_gridelements_view_children}" as="viewChild">
+        <v:variable.set name="uid" value="{viewChild.uid}" />
+
+        <v:tag name="div" class="{gridElement}__view-child grid-element__view-child" hideIfEmpty="true">
+          <f:format.raw>{data.tx_gridelements_view_child_{uid}}</f:format.raw>
+        </v:tag>
+      </f:for>
+    </f:if>
+  </f:section>
+</html>

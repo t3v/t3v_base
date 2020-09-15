@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:sms="http://typo3.org/ns/SMS/SmsResponsiveImages/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+  <f:if condition="{backgroundImage}">
+    <f:if condition="{link}">
+      <f:then>
+        <f:link.typolink parameter="{link}" class="{contentObject} content-object" title="{title}"
+                         additionalAttributes="{id: 'c{uid}', data-type: type, data-handle: handle, data-layout: layout}">
+          <sms:image src="{backgroundImage}" treatIdAsReference="true" srcset="1x, 2x" title="{title}" alt="{alt}"
+                     additionalAttributes="{loading: 'lazy'}" />
+        </f:link.typolink>
+      </f:then>
+
+      <f:else>
+        <sms:image id="c{uid}" class="{contentObject} content-object" src="{backgroundImage}" treatIdAsReference="true"
+                   srcset="1x, 2x" title="{title}" alt="{alt}" additionalAttributes="{loading: 'lazy'}" />
+      </f:else>
+    </f:if>
+  </f:if>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file product-name="t3v_base" source-language="en" target-language="de" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <trans-unit id="name.description">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+
+      <trans-unit id="abstract.description">
+        <source>Abstract</source>
+        <target>Zusammenfassung</target>
+      </trans-unit>
+
+      <trans-unit id="regions.description">
+        <source>Regions</source>
+        <target>Regionen</target>
+      </trans-unit>
+
+      <trans-unit id="country_groups.description">
+        <source>Country Groups</source>
+        <target>Ländergruppen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

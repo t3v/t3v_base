@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file product-name="t3v_base" source-language="en" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <!-- _XXX_CE_CREATOR_XXX_ -->
+
+      <!-- === Content Objects === -->
+
+      <!-- Background -->
+
+      <trans-unit id="contentObjects.background.title">
+        <source>Background</source>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.background.label">
+        <source>Background</source>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.background.description">
+        <source>A background.</source>
+      </trans-unit>
+
+      <!-- Copyright -->
+
+      <trans-unit id="contentObjects.copyright.title">
+        <source>Copyright</source>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.copyright.label">
+        <source>Copyright</source>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.copyright.description">
+        <source>A copyright.</source>
+      </trans-unit>
+
+      <!-- Icon -->
+
+      <trans-unit id="contentObjects.icon.title">
+        <source>Icon</source>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.icon.label">
+        <source>Icon</source>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.icon.description">
+        <source>An icon.</source>
+      </trans-unit>
+
+      <!-- Label -->
+
+      <trans-unit id="contentObjects.label.title">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.label.label">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.label.description">
+        <source>A label.</source>
+      </trans-unit>
+
+      <!-- Link -->
+
+      <trans-unit id="contentObjects.link.title">
+        <source>Link</source>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.link.label">
+        <source>Link</source>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.link.description">
+        <source>A link.</source>
+      </trans-unit>
+
+      <!-- Spacer -->
+
+      <trans-unit id="contentObjects.spacer.title">
+        <source>Spacer</source>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.spacer.label">
+        <source>Spacer</source>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.spacer.description">
+        <source>A spacer.</source>
+      </trans-unit>
+
+      <!-- === Grid Elements === -->
+
+      <!-- Header Grid Element -->
+
+      <trans-unit id="gridElements.headerGridElement.title">
+        <source>Header</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.headerGridElement.description">
+        <source>A Header Grid Element.</source>
+      </trans-unit>
+
+      <!-- Section Grid Element -->
+
+      <trans-unit id="gridElements.sectionGridElement.title">
+        <source>Section</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.sectionGridElement.description">
+        <source>A Section Grid Element.</source>
+      </trans-unit>
+
+      <!-- Footer Grid Element -->
+
+      <trans-unit id="gridElements.footerGridElement.title">
+        <source>Footer</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.footerGridElement.description">
+        <source>A Footer Grid Element.</source>
+      </trans-unit>
+
+      <!-- Flexbox Grid Element -->
+
+      <trans-unit id="gridElements.flexboxGridElement.title">
+        <source>Flexbox</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.flexboxGridElement.description">
+        <source>A Flexbox Grid Element.</source>
+      </trans-unit>
+
+      <!-- 1 Column Layout Grid Element -->
+
+      <trans-unit id="gridElements.columnLayoutGridElement.1Column.title">
+        <source>1 Column Layout</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.columnLayoutGridElement.1Column.description">
+        <source>A Column Layout Grid Element with one column.</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.columnLayoutGridElement.1Column.rows.1.columns.1.name">
+        <source>Column</source>
+      </trans-unit>
+
+      <!-- 2 Column Layout Grid Element -->
+
+      <trans-unit id="gridElements.columnLayoutGridElement.2Column.title">
+        <source>2 Column Layout</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.columnLayoutGridElement.2Column.description">
+        <source>A Column Layout Grid Element with two columns.</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.columnLayoutGridElement.2Column.rows.1.columns.1.name">
+        <source>First column</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.columnLayoutGridElement.2Column.rows.1.columns.2.name">
+        <source>Second column</source>
+      </trans-unit>
+
+      <!-- 3 Column Layout Grid Element -->
+
+      <trans-unit id="gridElements.columnLayoutGridElement.3Column.title">
+        <source>3 Column Layout</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.columnLayoutGridElement.3Column.description">
+        <source>A Column Layout Grid Element with three columns.</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.columnLayoutGridElement.3Column.rows.1.columns.1.name">
+        <source>First column</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.columnLayoutGridElement.3Column.rows.1.columns.2.name">
+        <source>Second column</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.columnLayoutGridElement.3Column.rows.1.columns.3.name">
+        <source>Third column</source>
+      </trans-unit>
+
+      <!-- 4 Column Layout Grid Element -->
+
+      <trans-unit id="gridElements.columnLayoutGridElement.4Column.title">
+        <source>4 Column Layout</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.columnLayoutGridElement.4Column.description">
+        <source>A Column Layout Grid Element with four columns.</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.columnLayoutGridElement.4Column.rows.1.columns.1.name">
+        <source>First column</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.columnLayoutGridElement.4Column.rows.1.columns.2.name">
+        <source>Second column</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.columnLayoutGridElement.4Column.rows.1.columns.3.name">
+        <source>Third column</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.columnLayoutGridElement.4Column.rows.1.columns.4.name">
+        <source>Fourth column</source>
+      </trans-unit>
+
+      <!-- Cascading Layout Grid Element -->
+
+      <trans-unit id="gridElements.cascadingLayoutGridElement.title">
+        <source>Cascading Layout</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.cascadingLayoutGridElement.description">
+        <source>A Cascading Layout Grid Element.</source>
+      </trans-unit>
+
+      <!-- Container Grid Element -->
+
+      <trans-unit id="gridElements.containerGridElement.title">
+        <source>Container</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.containerGridElement.description">
+        <source>A Container Grid Element.</source>
+      </trans-unit>
+
+      <!-- Formatting Grid Element -->
+
+      <trans-unit id="gridElements.formattingGridElement.title">
+        <source>Formatting</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.formattingGridElement.description">
+        <source>A Formatting Grid Element.</source>
+      </trans-unit>
+
+      <!-- Bar Grid Element -->
+
+      <trans-unit id="gridElements.barGridElement.title">
+        <source>Bar</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.barGridElement.description">
+        <source>A Bar Grid Element.</source>
+      </trans-unit>
+
+      <!-- Block Grid Element -->
+
+      <trans-unit id="gridElements.blockGridElement.title">
+        <source>Block</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.blockGridElement.description">
+        <source>A Block Grid Element.</source>
+      </trans-unit>
+
+      <!-- Flyout Grid Element -->
+
+      <trans-unit id="gridElements.flyoutGridElement.title">
+        <source>Flyout</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.flyoutGridElement.description">
+        <source>A Flyout Grid Element.</source>
+      </trans-unit>
+
+      <!-- Pop-up Grid Element -->
+
+      <trans-unit id="gridElements.popUpGridElement.title">
+        <source>Pop-up</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.popUpGridElement.description">
+        <source>A Pop-up Grid Element.</source>
+      </trans-unit>
+
+      <!-- Conditionally Grid Element -->
+
+      <trans-unit id="gridElements.conditionallyGridElement.title">
+        <source>Conditionally</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.conditionallyGridElement.description">
+        <source>A Conditionally Grid Element.</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.conditionallyGridElement.rows.1.columns.1.name">
+        <source>If</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.conditionallyGridElement.rows.1.columns.2.name">
+        <source>Else</source>
+      </trans-unit>
+
+      <!-- Viewport Grid Element -->
+
+      <trans-unit id="gridElements.viewportGridElement.title">
+        <source>Viewport</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.viewportGridElement.description">
+        <source>A Viewport Grid Element.</source>
+      </trans-unit>
+
+      <!-- Shared -->
+
+      <trans-unit id="gridElements.shared.columns.header.name">
+        <source>Header</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.shared.columns.main.name">
+        <source>Main</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.shared.columns.footer.name">
+        <source>Footer</source>
+      </trans-unit>
+
+      <!-- === Modules === -->
+
+      <trans-unit id="mod.wizards.newContentElement.wizardItems.contentObjects.header">
+        <source>Content Objects</source>
+      </trans-unit>
+
+      <trans-unit id="mod.wizards.newContentElement.wizardItems.custom.header">
+        <source>Custom Elements</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

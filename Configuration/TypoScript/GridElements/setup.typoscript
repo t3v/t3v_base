@@ -1,0 +1,33 @@
+# -------------------------------
+# | Grid Elements Configuration |
+# -------------------------------
+
+# === Imports ===
+
+# _XXX_CE_CREATOR_XXX_
+
+# --- Body Grid Elements ---
+
+@import './HeaderGridElement/setup.typoscript'
+@import './SectionGridElement/setup.typoscript'
+@import './FooterGridElement/setup.typoscript'
+
+# --- Layout Grid Elements ---
+
+@import './FlexboxGridElement/setup.typoscript'
+@import './ColumnLayoutGridElement/setup.typoscript'
+@import './CascadingLayoutGridElement/setup.typoscript'
+@import './ContainerGridElement/setup.typoscript'
+@import './FormattingGridElement/setup.typoscript'
+
+# --- Composition Grid Elements ---
+
+@import './BarGridElement/setup.typoscript'
+@import './BlockGridElement/setup.typoscript'
+@import './FlyoutGridElement/setup.typoscript'
+@import './PopUpGridElement/setup.typoscript'
+
+# --- Other Grid Elements ---
+
+@import './ConditionallyGridElement/setup.typoscript'
+@import './ViewportGridElement/setup.typoscript'

@@ -1,0 +1,22 @@
+# -----------------------------
+# | Content Elements TSconfig |
+# -----------------------------
+
+# === New Content Element Wizard Configuration ===
+
+mod {
+  wizards {
+    newContentElement {
+      wizardItems {
+        custom {
+          header = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:mod.wizards.newContentElement.wizardItems.custom.header
+          show = *
+        }
+      }
+    }
+  }
+}
+
+# === Imports ===
+
+# _XXX_CE_CREATOR_XXX_

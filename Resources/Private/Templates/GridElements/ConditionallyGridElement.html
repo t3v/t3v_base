@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:t3v="http://typo3.org/ns/T3v/T3vCore/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+  <f:layout name="GridElements/ConditionallyGridElement" />
+
+  <f:section name="GridElement">
+    <v:variable.set name="languageUid" value="{t3v:page.languageUid()}" />
+
+    <f:if condition="{languageUid} > 0">
+      <f:then>
+        <f:if condition="{languageUid} == {data.flexform_languageUid}">
+          <f:format.raw>{data.tx_gridelements_view_column_20}</f:format.raw>
+        </f:if>
+      </f:then>
+
+      <f:else>
+        <f:format.raw>{data.tx_gridelements_view_column_21}</f:format.raw>
+      </f:else>
+    </f:if>
+  </f:section>
+</html>

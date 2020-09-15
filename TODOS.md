@@ -1,4 +1,5 @@
 TODOS
 =====
 
-* [ ] Move `Country`, `CountryGroup`, `Department`, `EmailAddress`,  `PhoneNumber`, `PostalAddress` and `Region` model from T3v Contacts
+* [ ] Relocate View Helpers from `t3v_core` and `t3v_content`
+* [ ] Update `Country`, `CountryGroup`, `Department`, `EmailAddress`,  `PhoneNumber`, `PostalAddress` and `Region`

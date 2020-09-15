@@ -1,0 +1,30 @@
+# ----------------------
+# | Copyright TSconfig |
+# ----------------------
+
+# === Wizard Configuration ===
+
+mod {
+  wizards {
+    newContentElement {
+      wizardItems {
+        contentObjects {
+          elements {
+            t3vBaseCopyright {
+              title = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:contentObjects.copyright.title
+              description = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:contentObjects.copyright.description
+              iconIdentifier = t3v_base-copyright
+
+              tt_content_defValues {
+                CType = list
+                list_type = t3vbase_copyright
+              }
+            }
+          }
+
+          show := addToList(t3vBaseCopyright)
+        }
+      }
+    }
+  }
+}

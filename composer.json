@@ -6,10 +6,18 @@
     {
       "name": "Maik Kempe",
       "email": "mkempe@bitaculous.com",
-      "homepage": "https://bitaculous.com"
+      "role": "Developer"
     }
   ],
-  "keywords": ["Base", "CMS", "Extension", "T3v", "TYPO3", "TYPO3voila", "UH LÁLÁ"],
+  "keywords": [
+    "Base",
+    "CMS",
+    "Extension",
+    "T3v",
+    "TYPO3",
+    "TYPO3voila",
+    "UH LÁLÁ"
+  ],
   "homepage": "https://t3v.github.io/t3v_base/",
   "support": {
     "issues": "https://github.com/t3v/t3v_base/issues"
@@ -25,14 +33,19 @@
     "typo3-ter/t3v_base": "self.version"
   },
   "repositories": [
-    { "type": "composer", "url": "https://composer.typo3.org" }
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org"
+    }
   ],
   "require": {
     "php": ">= 7.2 < 7.4",
     "typo3/cms-core": "^9.5 || dev-master",
-    "gridelementsteam/gridelements": "dev-9-0 || dev-master",
+    "gridelementsteam/gridelements": "^9.3 || dev-9-0",
+    "sitegeist/sms-responsive-images": "^1.3",
     "fluidtypo3/vhs": "^5.2",
-    "t3v/t3v_core": "*"
+    "t3v/t3v_core": "*",
+    "t3v/t3v_translations": "*"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.6",
@@ -47,14 +60,13 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "T3v\\T3vBase\\Tests\\": "Tests",
-      "TYPO3\\CMS\\Core\\Tests\\": ".build/vendor/typo3/cms/typo3/sysext/core/Tests",
-      "TYPO3\\CMS\\Fluid\\Tests\\": ".build/vendor/typo3/cms/typo3/sysext/fluid/Tests"
+      "T3v\\T3vBase\\Tests\\": "Tests"
     }
   },
   "extra": {
     "typo3/cms": {
       "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "extension-key": "t3v_base",
       "web-dir": ".build/web"
     }
   },

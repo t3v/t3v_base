@@ -1,0 +1,6 @@
+# === Includes ===
+
+<INCLUDE_TYPOSCRIPT: source="FILE: ./1Column/setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE: ./2Column/setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE: ./3Column/setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE: ./4Column/setup.typoscript">

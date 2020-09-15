@@ -1,0 +1,27 @@
+# --------------------------------------------
+# | Conditionally Grid Element Configuration |
+# --------------------------------------------
+
+tt_content {
+  gridelements_pi1 {
+    20 {
+      10 {
+        setup {
+          t3vBaseConditionally < lib.gridelements.defaultGridSetup
+          t3vBaseConditionally {
+            cObject = FLUIDTEMPLATE
+            cObject {
+              file = EXT:t3v_base/Resources/Private/Templates/GridElements/ConditionallyGridElement.html
+
+              layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
+
+              partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+            }
+
+            outerWrap = |
+          }
+        }
+      }
+    }
+  }
+}

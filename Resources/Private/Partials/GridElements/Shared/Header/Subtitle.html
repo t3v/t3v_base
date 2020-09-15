@@ -1,0 +1,39 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+  <f:if condition="{subtitle}">
+    <f:switch expression="{layout}">
+      <f:case value="1">
+        <h2 class="{gridElement}__subtitle grid-element__subtitle">
+          <f:format.html parseFuncTSPath="lib.parseFunc">{subtitle}</f:format.html>
+        </h2>
+      </f:case>
+
+      <f:case value="2">
+        <h3 class="{gridElement}__subtitle grid-element__subtitle">
+          <f:format.html parseFuncTSPath="lib.parseFunc">{subtitle}</f:format.html>
+        </h3>
+      </f:case>
+
+      <f:case value="3">
+        <h4 class="{gridElement}__subtitle grid-element__subtitle">
+          <f:format.html parseFuncTSPath="lib.parseFunc">{subtitle}</f:format.html>
+        </h4>
+      </f:case>
+
+      <f:case value="4">
+        <h5 class="{gridElement}__subtitle grid-element__subtitle">
+          <f:format.html parseFuncTSPath="lib.parseFunc">{subtitle}</f:format.html>
+        </h5>
+      </f:case>
+
+      <f:case value="5">
+        <h6 class="{gridElement}__subtitle grid-element__subtitle">
+          <f:format.html parseFuncTSPath="lib.parseFunc">{subtitle}</f:format.html>
+        </h6>
+      </f:case>
+
+      <f:case value="100">
+        <f:comment>Hidden Subtitle</f:comment>
+      </f:case>
+    </f:switch>
+  </f:if>
+</html>

@@ -1,0 +1,33 @@
+# --------------------------
+# | Grid Elements TSconfig |
+# --------------------------
+
+# === Imports ===
+
+# _XXX_CE_CREATOR_XXX_
+
+# --- Body Grid Elements ---
+
+@import './GridElements/HeaderGridElement.tsconfig'
+@import './GridElements/SectionGridElement.tsconfig'
+@import './GridElements/FooterGridElement.tsconfig'
+
+# --- Layout Grid Elements ---
+
+@import './GridElements/FlexboxGridElement.tsconfig'
+@import './GridElements/ColumnLayoutGridElement.tsconfig'
+@import './GridElements/CascadingLayoutGridElement.tsconfig'
+@import './GridElements/ContainerGridElement.tsconfig'
+@import './GridElements/FormattingGridElement.tsconfig'
+
+# --- Composition Grid Elements ---
+
+@import './GridElements/BarGridElement.tsconfig'
+@import './GridElements/BlockGridElement.tsconfig'
+@import './GridElements/FlyoutGridElement.tsconfig'
+@import './GridElements/PopUpGridElement.tsconfig'
+
+# --- Other Grid Elements ---
+
+@import './GridElements/ConditionallyGridElement.tsconfig'
+@import './GridElements/ViewportGridElement.tsconfig'

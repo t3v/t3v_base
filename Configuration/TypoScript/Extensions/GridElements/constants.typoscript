@@ -1,0 +1,5 @@
+# ---------------------------
+# | Grid Elements Constants |
+# ---------------------------
+
+@import 'EXT:gridelements/Configuration/TypoScript/constants.typoscript'

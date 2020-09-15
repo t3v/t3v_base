@@ -1,0 +1,33 @@
+# ---------------------------
+# | Grid Elements Constants |
+# ---------------------------
+
+# === Imports ===
+
+# _XXX_CE_CREATOR_XXX_
+
+# --- Body Grid Elements ---
+
+@import './HeaderGridElement/constants.typoscript'
+@import './SectionGridElement/constants.typoscript'
+@import './FooterGridElement/constants.typoscript'
+
+# --- Layout Grid Elements ---
+
+@import './FlexboxGridElement/constants.typoscript'
+@import './ColumnLayoutGridElement/constants.typoscript'
+@import './CascadingLayoutGridElement/constants.typoscript'
+@import './ContainerGridElement/constants.typoscript'
+@import './FormattingGridElement/constants.typoscript'
+
+# --- Composition Grid Elements ---
+
+@import './BarGridElement/constants.typoscript'
+@import './BlockGridElement/constants.typoscript'
+@import './FlyoutGridElement/constants.typoscript'
+@import './PopUpGridElement/constants.typoscript'
+
+# --- Other Grid Elements ---
+
+@import './ConditionallyGridElement/constants.typoscript'
+@import './ViewportGridElement/constants.typoscript'

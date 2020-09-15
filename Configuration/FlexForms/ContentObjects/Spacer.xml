@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+  <meta>
+    <langDisable>1</langDisable>
+    <langChildren>1</langChildren>
+  </meta>
+
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms type="array">
+          <sheetTitle>LLL:EXT:t3v_translations/Resources/Private/Language/locallang_ff.xlf:sheets.settings.title</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <settings.type>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.label</label>
+              <config type="array">
+                <type>select</type>
+                <renderType>selectSingle</renderType>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.default.label</numIndex>
+                    <numIndex index="1">default</numIndex>
+                  </numIndex>
+
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.small.label</numIndex>
+                    <numIndex index="1">small</numIndex>
+                  </numIndex>
+
+                  <numIndex index="2" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.moderate.label</numIndex>
+                    <numIndex index="1">moderate</numIndex>
+                  </numIndex>
+
+                  <numIndex index="3" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.medium.label</numIndex>
+                    <numIndex index="1">medium</numIndex>
+                  </numIndex>
+
+                  <numIndex index="4" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.large.label</numIndex>
+                    <numIndex index="1">large</numIndex>
+                  </numIndex>
+
+                  <numIndex index="5" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.big.label</numIndex>
+                    <numIndex index="1">big</numIndex>
+                  </numIndex>
+
+                  <numIndex index="6" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.great.label</numIndex>
+                    <numIndex index="1">great</numIndex>
+                  </numIndex>
+
+                  <numIndex index="7" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.custom.label</numIndex>
+                    <numIndex index="1">custom</numIndex>
+                  </numIndex>
+                </items>
+                <default>default</default>
+              </config>
+            </TCEforms>
+          </settings.type>
+
+          <!--
+          <settings.handle>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.handle.label</label>
+              <config type="array">
+                <type>slug</type>
+                <generatorOptions type="array">
+                  <fields type="array">
+                    <firstField>header</firstField>
+                    <secondField>subheader</secondField>
+                  </fields>
+                  <fieldSeparator>-</fieldSeparator>
+                  <prefixParentPageSlug>0</prefixParentPageSlug>
+                </generatorOptions>
+                <fallbackCharacter>-</fallbackCharacter>
+                <prependSlash>0</prependSlash>
+                <default></default>
+              </config>
+            </TCEforms>
+          </settings.handle>
+          -->
+
+          <settings.customHeight>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.customHeight.label</label>
+              <config type="array">
+                <type>input</type>
+                <size>10</size>
+                <max>4</max>
+                <eval>int, trim</eval>
+                <default>0</default>
+              </config>
+            </TCEforms>
+          </settings.customHeight>
+        </el>
+      </ROOT>
+    </sDEF>
+
+    <appearance>
+     <ROOT>
+        <TCEforms type="array">
+          <sheetTitle>LLL:EXT:t3v_translations/Resources/Private/Language/locallang_ff.xlf:sheets.appearance.title</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <settings.layout>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.label</label>
+              <config type="array">
+                <type>select</type>
+                <renderType>selectSingle</renderType>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.default.label</numIndex>
+                    <numIndex index="1">default</numIndex>
+                  </numIndex>
+                </items>
+                <default>default</default>
+              </config>
+            </TCEforms>
+          </settings.layout>
+        </el>
+     </ROOT>
+    </appearance>
+  </sheets>
+</T3DataStructure>

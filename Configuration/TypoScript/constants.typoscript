@@ -36,3 +36,8 @@ plugin {
     }
   }
 }
+
+# === Imports ===
+
+@import './Extensions/constants.typoscript'
+@import './GridElements/constants.typoscript'

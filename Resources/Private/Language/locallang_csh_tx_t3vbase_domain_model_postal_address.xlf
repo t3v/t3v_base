@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file product-name="t3v_base" source-language="en" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <trans-unit id="label.description">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="street.description">
+        <source>Street</source>
+      </trans-unit>
+
+      <trans-unit id="street_number.description">
+        <source>Street Number</source>
+      </trans-unit>
+
+      <trans-unit id="postal_code.description">
+        <source>Postal Code</source>
+      </trans-unit>
+
+      <trans-unit id="locality.description">
+        <source>Locality</source>
+      </trans-unit>
+
+      <trans-unit id="region.description">
+        <source>Region</source>
+      </trans-unit>
+
+      <trans-unit id="country.description">
+        <source>Country</source>
+      </trans-unit>
+
+      <trans-unit id="note.description">
+        <source>Note</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

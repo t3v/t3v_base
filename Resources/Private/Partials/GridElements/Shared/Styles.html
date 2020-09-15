@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+  <f:if condition="{styles}">
+    <v:asset.style name="{gridElement}-{uid}-css" fluid="true" movable="false" standalone="true">
+      <f:for each="{styles}" as="style">
+        <f:if condition="{style.selector} == 'grid-element' || {style.selector} == 'element'">
+          <f:if condition="{style.type} == 'background-color' && {style.backgroundColor}">
+            #c<v:variable.get name="uid" /> { background-color: {style.backgroundColor}; }
+          </f:if>
+
+          <f:if condition="{style.type} == 'color' && {style.color}">
+            #c<v:variable.get name="uid" /> { color: {style.color}; }
+          </f:if>
+        </f:if>
+      </f:for>
+    </v:asset.style>
+  </f:if>
+</html>

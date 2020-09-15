@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file product-name="t3v_base" source-language="en" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <!-- _XXX_CE_CREATOR_XXX_ -->
+
+      <!-- === Settings === -->
+
+      <trans-unit id="settings.alignItems.label">
+        <source>Align items</source>
+      </trans-unit>
+
+      <trans-unit id="settings.alignItems.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="settings.alignItems.start.label">
+        <source>Start</source>
+      </trans-unit>
+
+      <trans-unit id="settings.alignItems.center.label">
+        <source>Center</source>
+      </trans-unit>
+
+      <trans-unit id="settings.alignItems.end.label">
+        <source>End</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundColor.label">
+        <source>Background color</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundImages.label">
+        <source>Background images</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.label">
+        <source>Background position</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.centerBottom.label">
+        <source>Center bottom</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.centerCenter.label">
+        <source>Center center</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.centerTop.label">
+        <source>Center top</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.leftBottom.label">
+        <source>Left bottom</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.leftCenter.label">
+        <source>Left center</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.leftTop.label">
+        <source>Left top</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.rightBottom.label">
+        <source>Right bottom</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.rightCenter.label">
+        <source>Right center</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.rightTop.label">
+        <source>Right top</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundRepeat.label">
+        <source>Background repeat</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundRepeat.noRepeat.label">
+        <source>No repeat</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundRepeat.repeat.label">
+        <source>Repeat</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundRepeat.repeatX.label">
+        <source>Repeat X</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundRepeat.repeatY.label">
+        <source>Repeat Y</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundRepeat.round.label">
+        <source>Round</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundRepeat.space.label">
+        <source>Space</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundSize.label">
+        <source>Background size</source>
+        <target>Hintergrundgröße</target>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundSize.auto.label">
+        <source>Auto</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundSize.contain.label">
+        <source>Contain</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundSize.cover.label">
+        <source>Cover</source>
+      </trans-unit>
+
+      <trans-unit id="settings.breakpoint.label">
+        <source>Breakpoint</source>
+      </trans-unit>
+
+      <trans-unit id="settings.breakpoint.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="settings.breakpoint.small.label">
+        <source>Small</source>
+      </trans-unit>
+
+      <trans-unit id="settings.breakpoint.moderate.label">
+        <source>Moderate</source>
+      </trans-unit>
+
+      <trans-unit id="settings.breakpoint.medium.label">
+        <source>Medium</source>
+      </trans-unit>
+
+      <trans-unit id="settings.breakpoint.large.label">
+        <source>Large</source>
+      </trans-unit>
+
+      <trans-unit id="settings.breakpoint.big.label">
+        <source>Big</source>
+      </trans-unit>
+
+      <trans-unit id="settings.breakpoint.great.label">
+        <source>Great</source>
+      </trans-unit>
+
+      <trans-unit id="settings.breakpoint.custom.label">
+        <source>Custom</source>
+      </trans-unit>
+
+      <trans-unit id="settings.container.label">
+        <source>Container</source>
+      </trans-unit>
+
+      <trans-unit id="settings.container.none.label">
+        <source>None</source>
+      </trans-unit>
+
+      <trans-unit id="settings.container.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="settings.container.small.label">
+        <source>Small</source>
+      </trans-unit>
+
+      <trans-unit id="settings.container.moderate.label">
+        <source>Moderate</source>
+      </trans-unit>
+
+      <trans-unit id="settings.container.medium.label">
+        <source>Medium</source>
+      </trans-unit>
+
+      <trans-unit id="settings.container.large.label">
+        <source>Large</source>
+      </trans-unit>
+
+      <trans-unit id="settings.container.big.label">
+        <source>Big</source>
+      </trans-unit>
+
+      <trans-unit id="settings.container.great.label">
+        <source>Great</source>
+      </trans-unit>
+
+      <trans-unit id="settings.container.custom.label">
+        <source>Custom</source>
+      </trans-unit>
+
+      <trans-unit id="settings.customHeight.label">
+        <source>Custom height in pixel</source>
+      </trans-unit>
+
+      <trans-unit id="settings.format.label">
+        <source>Format</source>
+      </trans-unit>
+
+      <trans-unit id="settings.formats.label">
+        <source>Formats</source>
+      </trans-unit>
+
+      <trans-unit id="settings.handle.label">
+        <source>Handle</source>
+      </trans-unit>
+
+      <trans-unit id="settings.height.label">
+        <source>Height (in pixel)</source>
+      </trans-unit>
+
+      <trans-unit id="settings.icon.src.label">
+        <source>Icon</source>
+      </trans-unit>
+
+      <trans-unit id="settings.icon.inline.label">
+        <source>Inline icon</source>
+      </trans-unit>
+
+      <trans-unit id="settings.icon.colorize.label">
+        <source>Colorize icon</source>
+      </trans-unit>
+
+      <trans-unit id="settings.image.label">
+        <source>Image</source>
+      </trans-unit>
+
+      <trans-unit id="settings.languageUid.label">
+        <source>Language</source>
+      </trans-unit>
+
+      <trans-unit id="settings.languageUid.default.label">
+        <source>Choose a language</source>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.label">
+        <source>Layout</source>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.block.label">
+        <source>Block</source>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.compact.label">
+        <source>Compact</source>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.iconRight.label">
+        <source>Icon right</source>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.noDistanceDownwards.label">
+        <source>No distance downwards</source>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.noGutter.label">
+        <source>No gutter</source>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.plain.label">
+        <source>Plain</source>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.withBottomDivider.label">
+        <source>With bottom divider</source>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.withTopDivider.label">
+        <source>With top divider</source>
+      </trans-unit>
+
+      <trans-unit id="settings.link.label">
+        <source>Link</source>
+      </trans-unit>
+
+      <trans-unit id="settings.page.label">
+        <source>Page</source>
+      </trans-unit>
+
+      <trans-unit id="settings.reference.label">
+        <source>Reference</source>
+      </trans-unit>
+
+      <trans-unit id="settings.state.label">
+        <source>State</source>
+      </trans-unit>
+
+      <trans-unit id="settings.state.collapsed.label">
+        <source>Collapsed</source>
+      </trans-unit>
+
+      <trans-unit id="settings.state.expanded.label">
+        <source>Expanded</source>
+      </trans-unit>
+
+      <trans-unit id="settings.styles.label">
+        <source>Styles</source>
+      </trans-unit>
+
+      <trans-unit id="settings.moreStyles.label">
+        <source>More Styles</source>
+      </trans-unit>
+
+      <trans-unit id="settings.moreStyles.newRecord.link.title">
+        <source>Add style</source>
+      </trans-unit>
+
+      <trans-unit id="settings.textAlign.label">
+        <source>Text align</source>
+      </trans-unit>
+
+      <trans-unit id="settings.textAlign.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="settings.textAlign.center.label">
+        <source>Center</source>
+      </trans-unit>
+
+      <trans-unit id="settings.textAlign.right.label">
+        <source>Right</source>
+      </trans-unit>
+
+      <trans-unit id="settings.theme.label">
+        <source>Theme</source>
+      </trans-unit>
+
+      <trans-unit id="settings.theme.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.label">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.100.label">
+        <source>100%</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.5050.label">
+        <source>50% 50%</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.7525.label">
+        <source>75% 25%</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.2575.label">
+        <source>25% 75%</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.333333.label">
+        <source>33% 33% 33%</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.25252525.label">
+        <source>25% 25% 25% 25%</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.small.label">
+        <source>Small</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.moderate.label">
+        <source>Moderate</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.medium.label">
+        <source>Medium</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.large.label">
+        <source>Large</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.big.label">
+        <source>Big</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.great.label">
+        <source>Great</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.custom.label">
+        <source>Custom</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.block.label">
+        <source>Block</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.compact.label">
+        <source>Compact</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.detached.label">
+        <source>Detached</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.plain.label">
+        <source>Plain</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.teaser.label">
+        <source>Teaser</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.desktopOnly.label">
+        <source>Desktop only</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.mobileOnly.label">
+        <source>Mobile only</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.navbar.label">
+        <source>Navigation Bar</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.sidebar.label">
+        <source>Sidebar</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.toolbar.label">
+        <source>Toolbar</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.button.label">
+        <source>Button</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.download.label">
+        <source>Download</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.home.label">
+        <source>Home</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.more.label">
+        <source>More</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.image.label">
+        <source>Image</source>
+      </trans-unit>
+
+      <trans-unit id="settings.width.label">
+        <source>Width (in pixel)</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

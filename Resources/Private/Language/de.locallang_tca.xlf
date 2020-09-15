@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file product-name="t3v_base" source-language="en" target-language="de" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <!-- _XXX_CE_CREATOR_XXX_ -->
+
+      <!-- === Models === -->
+
+      <!-- Country Model -->
+
+      <trans-unit id="tx_t3vbase_domain_model_country">
+        <source>Country</source>
+        <target>Land</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country.name">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country.abstract">
+        <source>Abstract</source>
+        <target>Zusammenfassung</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country.regions">
+        <source>Regions</source>
+        <target>Regionen</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country.countryGroups">
+        <source>Country Groups</source>
+        <target>Ländergruppen</target>
+      </trans-unit>
+
+      <!-- Country Group Model -->
+
+      <trans-unit id="tx_t3vbase_domain_model_country_group">
+        <source>Country Group</source>
+        <target>Ländergruppe</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country_group.name">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country_group.abstract">
+        <source>Abstract</source>
+        <target>Zusammenfassung</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country_group.countries">
+        <source>Countries</source>
+        <target>Länder</target>
+      </trans-unit>
+
+      <!-- Department Model -->
+
+      <trans-unit id="tx_t3vbase_domain_model_department">
+        <source>Department</source>
+        <target>Abteilung</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_department.name">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_department.abstract">
+        <source>Abstract</source>
+        <target>Zusammenfassung</target>
+      </trans-unit>
+
+      <!-- Email Address Model -->
+
+      <trans-unit id="tx_t3vbase_domain_model_email_address">
+        <source>Email Address</source>
+        <target>E-Mail-Adresse</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_email_address.label">
+        <source>Label</source>
+        <target>Beschriftung</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_email_address.address">
+        <source>Address</source>
+        <target>Adresse</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_email_address.note">
+        <source>Note</source>
+        <target>Notiz</target>
+      </trans-unit>
+
+      <!-- Format Model -->
+
+      <trans-unit id="tx_t3vbase_domain_model_format">
+        <source>Format</source>
+        <target>Format</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_format.name">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_format.type">
+        <source>Type</source>
+        <target>Typ</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_format.type.default">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_format.handle">
+        <source>Handle</source>
+        <target>Kurzname</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_format.abstract">
+        <source>Abstract</source>
+        <target>Zusammenfassung</target>
+      </trans-unit>
+
+      <!-- Phone Number Model -->
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number">
+        <source>Phone Number</source>
+        <target>Telefonnummer</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.label">
+        <source>Label</source>
+        <target>Beschriftung</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.type">
+        <source>Type</source>
+        <target>Typ</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.type.telephone">
+        <source>Telephone</source>
+        <target>Telefon</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.type.fax">
+        <source>Fax</source>
+        <target>Fax</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.type.pager">
+        <source>Pager</source>
+        <target>Pager</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.number">
+        <source>Number</source>
+        <target>Nummer</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.internationalNumber">
+        <source>International Number</source>
+        <target>Internationale Nummer</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.note">
+        <source>Note</source>
+        <target>Notiz</target>
+      </trans-unit>
+
+      <!-- Postal Address Model -->
+
+      <trans-unit id="tx_t3vbase_domain_model_postal_address">
+        <source>Postal Address</source>
+        <target>Anschrift</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_postal_address.label">
+        <source>Label</source>
+        <target>Beschriftung</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_postal_address.street">
+        <source>Street</source>
+        <target>Strasse</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_postal_address.streetNumber">
+        <source>Street Number</source>
+        <target>Hausnummer</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_postal_address.postalCode">
+        <source>Postal Code</source>
+        <target>PLZ</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_postal_address.locality">
+        <source>Locality</source>
+        <target>Ort</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_postal_address.region">
+        <source>Region</source>
+        <target>Region</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_postal_address.country">
+        <source>Country</source>
+        <target>Land</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_postal_address.note">
+        <source>Note</source>
+        <target>Notiz</target>
+      </trans-unit>
+
+      <!-- Region Model -->
+
+      <trans-unit id="tx_t3vbase_domain_model_region">
+        <source>Region</source>
+        <target>Region</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_region.name">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_region.abstract">
+        <source>Abstract</source>
+        <target>Zusammenfassung</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_region.countries">
+        <source>Countries</source>
+        <target>Länder</target>
+      </trans-unit>
+
+      <!-- Style Model -->
+
+      <trans-unit id="tx_t3vbase_domain_model_style">
+        <source>Style</source>
+        <target>Stil</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.name">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.type">
+        <source>Type</source>
+        <target>Typ</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.type.backgroundColor">
+        <source>Background Color</source>
+        <target>Hintergrundfarbe</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.type.backgroundImages">
+        <source>Background Images</source>
+        <target>Hintergrundbilder</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.type.color">
+        <source>Color</source>
+        <target>Farbe</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.selector">
+        <source>Selector</source>
+        <target>Selektor</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.selector.element">
+        <source>Element</source>
+        <target>Element</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.selector.header">
+        <source>Header</source>
+        <target>Kopfbereich</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.selector.main">
+        <source>Main</source>
+        <target>Hauptbereich</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.selector.content">
+        <source>Content</source>
+        <target>Inhaltsbereich</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.selector.footer">
+        <source>Footer</source>
+        <target>Fußbereich</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.backgroundColor">
+        <source>Background Color</source>
+        <target>Hintergrundfarbe</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.backgroundImages">
+        <source>Background Images</source>
+        <target>Hintergrundbilder</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.backgroundImages.createNewRelation.link.title">
+        <source>Add background image</source>
+        <target>Hintergrundbild hinzufügen</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.color">
+        <source>Color</source>
+        <target>Farbe</target>
+      </trans-unit>
+
+      <!-- Theme Model -->
+
+      <trans-unit id="tx_t3vbase_domain_model_theme">
+        <source>Theme</source>
+        <target>Theme</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_theme.name">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_theme.type">
+        <source>Type</source>
+        <target>Typ</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_theme.type.default">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_theme.handle">
+        <source>Handle</source>
+        <target>Kurzname</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_theme.abstract">
+        <source>Abstract</source>
+        <target>Zusammenfassung</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
