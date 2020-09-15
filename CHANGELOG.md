@@ -7,10 +7,10 @@ Unreleased
 ----------
 
 * Removed T3v DataMapper extension as dependency
-* Updated dependencies
-* Updated Travis CI and AppVeyor configuration
 * Removed `PageLanguageOverlayForm` data provider (breaking change)
 * Dropped support for TYPO3 8.x (breaking change)
+* Updated dependencies
+* Updated Travis CI and AppVeyor configuration
 
 1.0.0
 -----
