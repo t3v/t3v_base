@@ -3,7 +3,7 @@
 
 [![Travis CI Status][Travis CI Status]][Travis CI]
 
-**The base extension of TYPO3 voilà.**
+**The base extension of TYPO3voilà.**
 
 Dependencies
 ------------
@@ -175,11 +175,11 @@ T3v Base is released under the [MIT License (MIT)], see [LICENSE].
 [Picture icon]: https://www.flaticon.com/free-icon/picture_714820 "Picture icon"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Smashicons]: https://www.flaticon.com/authors/smashicons "Smashicons at Flaticon"
-[T3v Base]: https://t3v.github.io/t3v_base/ "The base extension of TYPO3 voilà."
+[T3v Base]: https://t3v.github.io/t3v_base/ "The base extension of TYPO3voilà."
 [Tag icon]: https://www.flaticon.com/free-icon/tag_757916 "Tag icon"
 [Travis CI]: https://travis-ci.org/t3v/t3v_base "T3v Base at Travis CI"
 [Travis CI Status]: https://img.shields.io/travis/t3v/t3v_base.svg?style=flat "Travis CI Status"
 [Type icon]: https://www.flaticon.com/free-icon/type_3230756 "Type icon"
-[TYPO3 voilà]: https://github.com/t3v "“UH LÁLÁ, TYPO3!”"
+[TYPO3voilà]: https://github.com/t3v "“UH LÁLÁ, TYPO3!”"
 [Unit Testing TYPO3]: https://wiki.typo3.org/Unit_Testing_TYPO3 "Unit testing TYPO3"
 [Vectors Market]: https://www.flaticon.com/authors/vectors-market "Vectors Market at Flaticon"
