@@ -130,6 +130,7 @@ Credits
 * [Browser icon (14)]
 * [Copyright icon]
 * [CSS Icon]
+* [Designer icon]
 * [Email icon]
 * [Link icon]
 * [Picture icon]
@@ -144,12 +145,16 @@ License
 T3v Base is released under the [MIT License (MIT)], see [LICENSE].
 
 [Acceptance testing TYPO3]: https://wiki.typo3.org/Acceptance_testing "Acceptance testing TYPO3"
-[Agenda icon]: https://www.flaticon.com/free-icon/agenda_432698 "Agenda icon"
 [Agenda icon (2)]: https://www.flaticon.com/free-icon/agenda_599169 "Agenda icon"
+[Agenda icon]: https://www.flaticon.com/free-icon/agenda_432698 "Agenda icon"
 [Alignment icon]: https://www.flaticon.com/free-icon/alignment_140879 "Alignment icon"
 [Automated testing TYPO3]: https://wiki.typo3.org/Automated_testing "Automated testing TYPO3"
 [Background icon]: https://www.flaticon.com/free-icon/background_186236 "Background icon"
-[Browser icon]: https://www.flaticon.com/free-icon/browser_140840 "Browser icon"
+[Browser icon (10)]: https://www.flaticon.com/free-icon/browser_140878 "Browser icon"
+[Browser icon (11)]: https://www.flaticon.com/free-icon/browser_140802 "Browser icon"
+[Browser icon (12)]: https://www.flaticon.com/free-icon/browser_140803 "Browser icon"
+[Browser icon (13)]: https://www.flaticon.com/free-icon/browser_140798 "Browser icon"
+[Browser icon (14)]: https://www.flaticon.com/free-icon/browser_140836 "Browser icon"
 [Browser icon (2)]: https://www.flaticon.com/free-icon/browser_140796 "Browser icon"
 [Browser icon (3)]: https://www.flaticon.com/free-icon/browser_140797 "Browser icon"
 [Browser icon (4)]: https://www.flaticon.com/free-icon/browser_140793 "Browser icon"
@@ -158,14 +163,11 @@ T3v Base is released under the [MIT License (MIT)], see [LICENSE].
 [Browser icon (7)]: https://www.flaticon.com/free-icon/browser_140792 "Browser icon"
 [Browser icon (8)]: https://www.flaticon.com/free-icon/browser_140842 "Browser icon"
 [Browser icon (9)]: https://www.flaticon.com/free-icon/browser_140843 "Browser icon"
-[Browser icon (10)]: https://www.flaticon.com/free-icon/browser_140878 "Browser icon"
-[Browser icon (11)]: https://www.flaticon.com/free-icon/browser_140802 "Browser icon"
-[Browser icon (12)]: https://www.flaticon.com/free-icon/browser_140803 "Browser icon"
-[Browser icon (13)]: https://www.flaticon.com/free-icon/browser_140798 "Browser icon"
-[Browser icon (14)]: https://www.flaticon.com/free-icon/browser_140836 "Browser icon"
+[Browser icon]: https://www.flaticon.com/free-icon/browser_140840 "Browser icon"
 [Composer]: https://getcomposer.org "Dependency Manager for PHP"
 [Copyright icon]: https://www.flaticon.com/free-icon/copyright_594862 "Copyright icon"
 [CSS Icon]: https://www.flaticon.com/free-icon/css_1073663 "CSS Icon"
+[Designer icon]: https://www.flaticon.com/free-icon/designer_2490457 "Designer icon"
 [DinosoftLabs]: https://www.flaticon.com/authors/dinosoftlabs "DinosoftLabs at Flaticon"
 [Email icon]: https://www.flaticon.com/free-icon/email_321817 "Email icon"
 [Flaticon]: https://www.flaticon.com "Flaticon"
