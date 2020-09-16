@@ -19,7 +19,7 @@ return [
                 'type' => 'input',
                 'max' => 255,
                 'eval' => 'trim, required',
-                'default' => 'Theme',
+                'default' => 'Format',
                 'behaviour' => [
                     'allowLanguageSynchronization' => true
                 ]
