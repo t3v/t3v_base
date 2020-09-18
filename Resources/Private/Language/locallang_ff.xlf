@@ -257,6 +257,10 @@
         <source>Compact</source>
       </trans-unit>
 
+      <trans-unit id="settings.layout.constrained.label">
+        <source>Constrained</source>
+      </trans-unit>
+
       <trans-unit id="settings.layout.iconRight.label">
         <source>Icon right</source>
       </trans-unit>

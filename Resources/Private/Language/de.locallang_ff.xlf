@@ -318,6 +318,11 @@
         <target>Kompakt</target>
       </trans-unit>
 
+      <trans-unit id="settings.layout.constrained.label">
+        <source>Constrained</source>
+        <target>Begrenzt</target>
+      </trans-unit>
+
       <trans-unit id="settings.layout.iconRight.label">
         <source>Icon right</source>
         <target>Symbol rechts</target>
