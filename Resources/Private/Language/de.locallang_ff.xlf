@@ -568,6 +568,16 @@
         <target>Mehr</target>
       </trans-unit>
 
+      <trans-unit id="settings.type.phone.label">
+        <source>Phone</source>
+        <target>Telefon</target>
+      </trans-unit>
+
+      <trans-unit id="settings.type.scrollBackToTop.label">
+        <source>Scroll back to top</source>
+        <target>Zum Seitenanfang scrollen</target>
+      </trans-unit>
+
       <trans-unit id="settings.type.image.label">
         <source>Image</source>
         <target>Bild</target>

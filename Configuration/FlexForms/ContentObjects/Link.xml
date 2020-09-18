@@ -44,6 +44,16 @@
                     <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.more.label</numIndex>
                     <numIndex index="1">more</numIndex>
                   </numIndex>
+
+                  <numIndex index="5" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.phone.label</numIndex>
+                    <numIndex index="1">phone</numIndex>
+                  </numIndex>
+
+                  <numIndex index="6" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.scrollBackToTop.label</numIndex>
+                    <numIndex index="1">scroll-back-to-top</numIndex>
+                  </numIndex>
                 </items>
                 <default>default</default>
               </config>

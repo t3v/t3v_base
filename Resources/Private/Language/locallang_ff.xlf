@@ -457,6 +457,14 @@
         <source>More</source>
       </trans-unit>
 
+      <trans-unit id="settings.type.phone.label">
+        <source>Phone</source>
+      </trans-unit>
+
+      <trans-unit id="settings.type.scrollBackToTop.label">
+        <source>Scroll back to top</source>
+      </trans-unit>
+
       <trans-unit id="settings.type.image.label">
         <source>Image</source>
       </trans-unit>
