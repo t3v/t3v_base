@@ -11,7 +11,7 @@ $extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::signature($namespac
 $tsConfigFolder = \T3v\T3vCore\Utility\ExtensionUtility::tsConfigFolder($extensionKey);
 $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey);
 
-/* _XXX_CE_CREATOR_XXX_ */
+/** _XXX_T3V_CREATOR_XXX_ **/
 
 // === TSconfig ===
 

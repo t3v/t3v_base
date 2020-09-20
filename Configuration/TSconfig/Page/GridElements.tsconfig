@@ -4,8 +4,6 @@
 
 # === Imports ===
 
-# _XXX_CE_CREATOR_XXX_
-
 # --- Body Grid Elements ---
 
 @import './GridElements/HeaderGridElement.tsconfig'
@@ -31,3 +29,5 @@
 
 @import './GridElements/ConditionallyGridElement.tsconfig'
 @import './GridElements/ViewportGridElement.tsconfig'
+
+# _XXX_T3V_CREATOR_XXX_

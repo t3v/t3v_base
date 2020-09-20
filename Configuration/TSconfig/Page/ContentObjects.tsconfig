@@ -19,11 +19,11 @@ mod {
 
 # === Imports ===
 
-# _XXX_CE_CREATOR_XXX_
-
 @import './ContentObjects/Background.tsconfig'
 @import './ContentObjects/Copyright.tsconfig'
 @import './ContentObjects/Icon.tsconfig'
 @import './ContentObjects/Label.tsconfig'
 @import './ContentObjects/Link.tsconfig'
 @import './ContentObjects/Spacer.tsconfig'
+
+# _XXX_T3V_CREATOR_XXX_

@@ -4,8 +4,6 @@
 
 # === Imports ===
 
-# _XXX_CE_CREATOR_XXX_
-
 # --- Body Grid Elements ---
 
 @import './HeaderGridElement/setup.typoscript'
@@ -31,3 +29,5 @@
 
 @import './ConditionallyGridElement/setup.typoscript'
 @import './ViewportGridElement/setup.typoscript'
+
+# _XXX_T3V_CREATOR_XXX_

@@ -4,8 +4,6 @@
 
 # === Imports ===
 
-# _XXX_CE_CREATOR_XXX_
-
 # --- Body Grid Elements ---
 
 @import './HeaderGridElement/constants.typoscript'
@@ -31,3 +29,5 @@
 
 @import './ConditionallyGridElement/constants.typoscript'
 @import './ViewportGridElement/constants.typoscript'
+
+# _XXX_T3V_CREATOR_XXX_

@@ -1,3 +1,5 @@
+-- _XXX_T3V_CREATOR_XXX_ --
+
 # Table structure for table `tx_t3vbase_domain_model_country`
 CREATE TABLE tx_t3vbase_domain_model_country (
   name varchar(255) DEFAULT '' NOT NULL,
