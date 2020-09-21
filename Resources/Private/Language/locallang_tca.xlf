@@ -4,8 +4,6 @@
     <header />
 
     <body>
-      <!-- _XXX_T3V_CREATOR_XXX_ -->
-
       <!-- === Models === -->
 
       <!-- Country Model -->
@@ -291,6 +289,8 @@
       <trans-unit id="tx_t3vbase_domain_model_theme.abstract">
         <source>Abstract</source>
       </trans-unit>
+
+      <!-- _XXX_T3V_CREATOR_XXX_ -->
     </body>
   </file>
 </xliff>

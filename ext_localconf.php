@@ -19,7 +19,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
 
 // === Content Objects ===
 
-// --- Background ---
+// --- Background Content Object ---
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     $extensionSignature,
@@ -39,7 +39,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
     ]
 );
 
-// --- Copyright ---
+// --- Copyright Content Object ---
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     $extensionSignature,
@@ -59,7 +59,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
     ]
 );
 
-// --- Label ---
+// --- Label Content Object ---
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     $extensionSignature,
@@ -79,7 +79,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
     ]
 );
 
-// --- Icon ---
+// --- Icon Content Object ---
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     $extensionSignature,
@@ -99,7 +99,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
     ]
 );
 
-// --- Link ---
+// --- Link Content Object ---
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     $extensionSignature,
@@ -119,7 +119,27 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
     ]
 );
 
-// --- Spacer ---
+// --- Logo Content Object ---
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    $extensionSignature,
+
+    // The unique name of the content object in upper camel case
+    'Logo',
+
+    // The array holding the controller-action-combinations that are accessible
+    [
+        // The first controller and its first action will be the default
+        'ContentObjects\Logo' => 'index'
+    ],
+
+    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    [
+        // 'ContentObjects\Logo' => 'index'
+    ]
+);
+
+// --- Spacer Content Object ---
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     $extensionSignature,
@@ -152,6 +172,7 @@ if (TYPO3_MODE === 'BE') {
         'Icon' => "{$iconsFolder}/ContentObjects/Icon.svg",
         'Label' => "{$iconsFolder}/ContentObjects/Label.svg",
         'Link' => "{$iconsFolder}/ContentObjects/Link.svg",
+        'Logo' => "{$iconsFolder}/ContentObjects/Logo.svg",
         'Spacer' => "{$iconsFolder}/ContentObjects/Spacer.svg",
         'Header Grid Element' => "{$iconsFolder}/GridElements/HeaderGridElement.svg",
         'Section Grid Element' => "{$iconsFolder}/GridElements/SectionGridElement.svg",

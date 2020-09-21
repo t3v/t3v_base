@@ -4,11 +4,9 @@
     <header />
 
     <body>
-      <!-- _XXX_T3V_CREATOR_XXX_ -->
-
       <!-- === Content Objects === -->
 
-      <!-- Background -->
+      <!-- Background Content Object -->
 
       <trans-unit id="contentObjects.background.title">
         <source>Background</source>
@@ -25,7 +23,7 @@
         <target>Ein Hintergrund.</target>
       </trans-unit>
 
-      <!-- Copyright -->
+      <!-- Copyright Content Object -->
 
       <trans-unit id="contentObjects.copyright.title">
         <source>Copyright</source>
@@ -42,7 +40,7 @@
         <target>Ein Urheberrecht.</target>
       </trans-unit>
 
-      <!-- Icon -->
+      <!-- Icon Content Object -->
 
       <trans-unit id="contentObjects.icon.title">
         <source>Icon</source>
@@ -59,7 +57,7 @@
         <target>Ein Symbol.</target>
       </trans-unit>
 
-      <!-- Label -->
+      <!-- Label Content Object -->
 
       <trans-unit id="contentObjects.label.title">
         <source>Label</source>
@@ -76,7 +74,7 @@
         <target>Eine Beschriftung.</target>
       </trans-unit>
 
-      <!-- Link -->
+      <!-- Link Content Object -->
 
       <trans-unit id="contentObjects.link.title">
         <source>Link</source>
@@ -93,7 +91,24 @@
         <target>Ein Link.</target>
       </trans-unit>
 
-      <!-- Spacer -->
+      <!-- Logo Content Object -->
+
+      <trans-unit id="contentObjects.logo.title">
+        <source>Logo</source>
+        <target>Logo</target>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.logo.label">
+        <source>Logo</source>
+        <target>Logo</target>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.logo.description">
+        <source>A logo.</source>
+        <target>Ein logo.</target>
+      </trans-unit>
+
+      <!-- Spacer Content Object -->
 
       <trans-unit id="contentObjects.spacer.title">
         <source>Spacer</source>
@@ -404,6 +419,8 @@
         <source>Custom Elements</source>
         <target>Benutzerdefinierte Elemente</target>
       </trans-unit>
+
+      <!-- _XXX_T3V_CREATOR_XXX_ -->
     </body>
   </file>
 </xliff>

@@ -4,8 +4,6 @@
     <header />
 
     <body>
-      <!-- _XXX_T3V_CREATOR_XXX_ -->
-
       <!-- === Settings === -->
 
       <trans-unit id="settings.alignItems.label">
@@ -592,6 +590,8 @@
         <source>Width (in pixel)</source>
         <target>Breite (in Pixel)</target>
       </trans-unit>
+
+      <!-- _XXX_T3V_CREATOR_XXX_ -->
     </body>
   </file>
 </xliff>

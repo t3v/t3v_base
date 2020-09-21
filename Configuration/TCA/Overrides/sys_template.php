@@ -9,3 +9,5 @@ $extensionTitle = 'T3v Base';
 // === TypoScript ===
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extensionKey, 'Configuration/TypoScript', $extensionTitle);
+
+/** _XXX_T3V_CREATOR_XXX_ **/

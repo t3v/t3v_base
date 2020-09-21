@@ -1,0 +1,30 @@
+# --------------------------------
+# | Logo Content Object TSconfig |
+# --------------------------------
+
+# === Wizard Configuration ===
+
+mod {
+  wizards {
+    newContentElement {
+      wizardItems {
+        contentObjects {
+          elements {
+            t3vBaseLogo {
+              title = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:contentObjects.logo.title
+              description = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:contentObjects.logo.description
+              iconIdentifier = t3v_base-logo
+
+              tt_content_defValues {
+                CType = list
+                list_type = t3vbase_logo
+              }
+            }
+          }
+
+          show := addToList(t3vBaseLogo)
+        }
+      }
+    }
+  }
+}

@@ -4,8 +4,6 @@
     <header />
 
     <body>
-      <!-- _XXX_T3V_CREATOR_XXX_ -->
-
       <!-- === Models === -->
 
       <!-- Country Model -->
@@ -357,6 +355,8 @@
         <source>Abstract</source>
         <target>Zusammenfassung</target>
       </trans-unit>
+
+      <!-- _XXX_T3V_CREATOR_XXX_ -->
     </body>
   </file>
 </xliff>

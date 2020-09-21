@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+  <meta>
+    <langDisable>1</langDisable>
+    <langChildren>1</langChildren>
+  </meta>
+
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms type="array">
+          <sheetTitle>LLL:EXT:t3v_translations/Resources/Private/Language/locallang_ff.xlf:sheets.settings.title</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <settings.type>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.label</label>
+              <config type="array">
+                <type>select</type>
+                <renderType>selectSingle</renderType>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.default.label</numIndex>
+                    <numIndex index="1">default</numIndex>
+                  </numIndex>
+                </items>
+                <default>default</default>
+              </config>
+            </TCEforms>
+          </settings.type>
+
+          <!--
+          <settings.handle>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.handle.label</label>
+              <config type="array">
+                <type>slug</type>
+                <generatorOptions type="array">
+                  <fields type="array">
+                    <firstField>header</firstField>
+                    <secondField>subheader</secondField>
+                  </fields>
+                  <fieldSeparator>-</fieldSeparator>
+                  <prefixParentPageSlug>0</prefixParentPageSlug>
+                </generatorOptions>
+                <fallbackCharacter>-</fallbackCharacter>
+                <prependSlash>0</prependSlash>
+                <default></default>
+              </config>
+            </TCEforms>
+          </settings.handle>
+          -->
+
+          <settings.page>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.page.label</label>
+              <config type="array">
+                <type>group</type>
+                <internal_type>db</internal_type>
+                <allowed>pages</allowed>
+                <minitems>0</minitems>
+                <maxitems>1</maxitems>
+                <size>1</size>
+                <suggestOptions type="array">
+                  <default type="array">
+                    <additionalSearchFields>nav_title, alias, url</additionalSearchFields>
+                    <addWhere>AND pages.doktype = 1</addWhere>
+                  </default>
+                </suggestOptions>
+              </config>
+            </TCEforms>
+          </settings.page>
+
+          <settings.link>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.link.label</label>
+              <config type="array">
+                <type>input</type>
+                <renderType>inputLink</renderType>
+                <eval>trim</eval>
+                <fieldControl type="array">
+                  <linkPopup type="array">
+                    <options type="array">
+                      <!-- <allowedExtensions>html, json, txt</allowedExtensions> -->
+                      <!-- <blindLinkFields>class, params, target, title</blindLinkFields> -->
+                      <!-- <blindLinkOptions>file, mail, page, spec, url</blindLinkOptions> -->
+                      <blindLinkFields>params</blindLinkFields>
+                      <blindLinkOptions>spec</blindLinkOptions>
+                    </options>
+                  </linkPopup>
+                </fieldControl>
+                <autocomplete>1</autocomplete>
+              </config>
+            </TCEforms>
+          </settings.link>
+        </el>
+      </ROOT>
+    </sDEF>
+
+    <appearance>
+     <ROOT>
+        <TCEforms type="array">
+          <sheetTitle>LLL:EXT:t3v_translations/Resources/Private/Language/locallang_ff.xlf:sheets.appearance.title</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <settings.layout>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.label</label>
+              <config type="array">
+                <type>select</type>
+                <renderType>selectSingle</renderType>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.default.label</numIndex>
+                    <numIndex index="1">default</numIndex>
+                  </numIndex>
+                </items>
+                <default>default</default>
+              </config>
+            </TCEforms>
+          </settings.layout>
+        </el>
+     </ROOT>
+    </appearance>
+  </sheets>
+</T3DataStructure>

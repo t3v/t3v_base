@@ -32,7 +32,7 @@ Content Objects
 * Label Content Object
 * Link Content Object
 * Logo Content Object
-* Search Bar Content Object
+* Search Bar Content Object (*)
 * Spacer Content Object
 
 Grid Elements
