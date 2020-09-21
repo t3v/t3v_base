@@ -32,14 +32,14 @@
   </f:section>
 
   <f:section name="Typolink">
-    <v:variable.set name="firstCharacter" value="{v:format.substring(content: link, start: 1, length: 1)}" />
+    <v:variable.set name="firstCharacter" value="{v:format.substring(content: link, start: 0, length: 1)}" />
 
     <f:if condition="{firstCharacter} == '#'">
       <f:then>
-        <f:link.external uri="#" class="{contentObject} content-object" title="{title}"
-                         additionalAttributes="{id: 'c{uid}' , data-type: type, data-handle: handle, data-layout: layout}">
+        <v:tag name="a" id="c{uid}" class="{contentObject} content-object" title="{title}" additionalAttributes="{href: '#'}"
+               data="{type: type, handle: handle, layout: layout}" hideIfEmpty="true">
           {name}
-        </f:link.external>
+        </v:tag>
       </f:then>
 
       <f:else>
