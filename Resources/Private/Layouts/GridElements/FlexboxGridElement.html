@@ -5,6 +5,7 @@
   <v:variable.set name="type" value="{v:variable.convert(value: data.flexform_type, type: 'string', default: 'default')}" />
   <v:variable.set name="handle" value="{v:variable.convert(value: data.flexform_handle, type: 'string', default: 'none')}" />
   <v:variable.set name="layout" value="{v:variable.convert(value: data.flexform_layout, type: 'string', default: 'default')}" />
+  <v:variable.set name="layout" value="{v:format.replace(content: layout, substring: ',', replacement: ' ')}" />
   <v:variable.set name="container" value="{v:variable.convert(value: data.flexform_container, type: 'string', default: 'none')}" />
   <v:variable.set name="alignItems" value="{v:variable.convert(value: data.flexform_alignItems, type: 'string', default: 'default')}" />
   <v:variable.set name="textAlign" value="{v:variable.convert(value: data.flexform_textAlign, type: 'string', default: 'default')}" />

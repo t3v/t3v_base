@@ -52,7 +52,7 @@
           <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.label</label>
           <config type="array">
             <type>select</type>
-            <renderType>selectSingle</renderType>
+            <renderType>selectCheckBox</renderType>
             <items type="array">
               <numIndex index="0" type="array">
                 <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.default.label</numIndex>
@@ -73,6 +73,62 @@
           </config>
         </TCEforms>
       </layout>
+
+      <textAlign>
+        <TCEforms type="array">
+          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.label</label>
+          <config type="array">
+            <type>select</type>
+            <renderType>selectSingle</renderType>
+            <items type="array">
+              <numIndex index="0" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.default.label</numIndex>
+                <numIndex index="1">default</numIndex>
+              </numIndex>
+
+              <numIndex index="1" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.center.label</numIndex>
+                <numIndex index="1">center</numIndex>
+              </numIndex>
+
+              <numIndex index="2" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.right.label</numIndex>
+                <numIndex index="1">right</numIndex>
+              </numIndex>
+            </items>
+            <default>default</default>
+          </config>
+        </TCEforms>
+      </textAlign>
+
+      <!--
+      <breakpoint>
+        <TCEforms type="array">
+          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.breakpoint.label</label>
+          <config type="array">
+            <type>select</type>
+            <renderType>selectSingle</renderType>
+            <items type="array">
+              <numIndex index="0" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.breakpoint.default.label</numIndex>
+                <numIndex index="1">default</numIndex>
+              </numIndex>
+
+              <numIndex index="1" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.breakpoint.medium.label</numIndex>
+                <numIndex index="1">medium</numIndex>
+              </numIndex>
+
+              <numIndex index="2" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.breakpoint.large.label</numIndex>
+                <numIndex index="1">large</numIndex>
+              </numIndex>
+            </items>
+            <default>default</default>
+          </config>
+        </TCEforms>
+      </breakpoint>
+      -->
 
       <container>
         <TCEforms type="array">
@@ -130,62 +186,6 @@
           </config>
         </TCEforms>
       </container>
-
-      <textAlign>
-        <TCEforms type="array">
-          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.label</label>
-          <config type="array">
-            <type>select</type>
-            <renderType>selectSingle</renderType>
-            <items type="array">
-              <numIndex index="0" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.default.label</numIndex>
-                <numIndex index="1">default</numIndex>
-              </numIndex>
-
-              <numIndex index="1" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.center.label</numIndex>
-                <numIndex index="1">center</numIndex>
-              </numIndex>
-
-              <numIndex index="2" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.right.label</numIndex>
-                <numIndex index="1">right</numIndex>
-              </numIndex>
-            </items>
-            <default>default</default>
-          </config>
-        </TCEforms>
-      </textAlign>
-
-      <!--
-      <breakpoint>
-        <TCEforms type="array">
-          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.breakpoint.label</label>
-          <config type="array">
-            <type>select</type>
-            <renderType>selectSingle</renderType>
-            <items type="array">
-              <numIndex index="0" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.breakpoint.default.label</numIndex>
-                <numIndex index="1">default</numIndex>
-              </numIndex>
-
-              <numIndex index="1" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.breakpoint.medium.label</numIndex>
-                <numIndex index="1">medium</numIndex>
-              </numIndex>
-
-              <numIndex index="2" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.breakpoint.large.label</numIndex>
-                <numIndex index="1">large</numIndex>
-              </numIndex>
-            </items>
-            <default>default</default>
-          </config>
-        </TCEforms>
-      </breakpoint>
-      -->
 
       <styles>
         <TCEforms type="array">
