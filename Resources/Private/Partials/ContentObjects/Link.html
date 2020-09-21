@@ -16,17 +16,25 @@
 
   <f:if condition="{page}">
     <f:then>
-      <f:link.page pageUid="{page}" id="c{uid}" class="{contentObject} content-object" title="{title}"
-                   data="{type: type, handle: handle, layout: layout}">
-        {name}
-      </f:link.page>
+      <f:render section="PageLink" arguments="{_all}" />
     </f:then>
 
     <f:else if="{link}">
-      <f:link.typolink parameter="{link}" class="{contentObject} content-object" title="{title}"
-                       additionalAttributes="{id: 'c{uid}' , data-type: type, data-handle: handle, data-layout: layout}">
-        {name}
-      </f:link.typolink>
+      <f:render section="Typolink" arguments="{_all}" />
     </f:else>
   </f:if>
+
+  <f:section name="PageLink">
+    <f:link.page pageUid="{page}" id="c{uid}" class="{contentObject} content-object" title="{title}"
+                 data="{type: type, handle: handle, layout: layout}">
+      {name}
+    </f:link.page>
+  </f:section>
+
+  <f:section name="Typolink">
+    <f:link.typolink parameter="{link}" class="{contentObject} content-object" title="{title}"
+                     additionalAttributes="{id: 'c{uid}' , data-type: type, data-handle: handle, data-layout: layout}">
+      {name}
+    </f:link.typolink>
+  </f:section>
 </html>
