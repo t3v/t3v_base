@@ -11,8 +11,6 @@ $extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::signature($namespac
 $tsConfigFolder = \T3v\T3vCore\Utility\ExtensionUtility::tsConfigFolder($extensionKey);
 $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey);
 
-/** _XXX_T3V_CREATOR_XXX_ **/
-
 // === TSconfig ===
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
@@ -185,3 +183,5 @@ if (TYPO3_MODE === 'BE') {
         );
     }
 }
+
+/** _XXX_T3V_CREATOR_XXX_ **/

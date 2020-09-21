@@ -1,5 +1,3 @@
--- _XXX_T3V_CREATOR_XXX_ --
-
 # Table structure for table `tx_t3vbase_domain_model_country`
 CREATE TABLE tx_t3vbase_domain_model_country (
   name varchar(255) DEFAULT '' NOT NULL,
@@ -113,3 +111,5 @@ CREATE TABLE tx_t3vbase_domain_model_theme (
 #   KEY uid_local (uid_local),
 #   KEY uid_foreign (uid_foreign)
 # );
+
+-- _XXX_T3V_CREATOR_XXX_ --
