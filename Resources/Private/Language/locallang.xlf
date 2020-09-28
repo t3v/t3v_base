@@ -5,6 +5,18 @@
 
     <body>
       <!-- _XXX_T3V_CREATOR_XXX_ -->
+
+      <!-- === Grid Elements === -->
+
+      <!-- Flyout Grid Element -->
+
+      <trans-unit id="contentObjects.flyoutGridElement.control.name">
+        <source>Control</source>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.flyoutGridElement.control.title">
+        <source>Control</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>

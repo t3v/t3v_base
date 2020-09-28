@@ -1,6 +1,9 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
-      data-namespace-typo3-fluid="true">
-  <button class="{gridElement}__control grid-element__control hamburger-button" title="Control" data-layout="htx">
-    <span>Control</span>
+<html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+  <v:variable.set name="name" value="{f:translate(key: 'contentObjects.flyoutGridElement.control.name', extensionName: 't3v_base', default: 'Control')}" />
+  <v:variable.set name="title" value="{f:translate(key: 'contentObjects.flyoutGridElement.control.title', extensionName: 't3v_base', default: 'Control')}" />
+
+  <button class="{gridElement}__control grid-element__control hamburger-button" title="{title}" data-layout="htx">
+    <span>{name}</span>
   </button>
 </html>

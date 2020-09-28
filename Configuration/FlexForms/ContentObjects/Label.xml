@@ -51,38 +51,6 @@
             </TCEforms>
           </settings.handle>
           -->
-        </el>
-      </ROOT>
-    </sDEF>
-
-    <appearance>
-     <ROOT>
-        <TCEforms type="array">
-          <sheetTitle>LLL:EXT:t3v_translations/Resources/Private/Language/locallang_ff.xlf:sheets.appearance.title</sheetTitle>
-        </TCEforms>
-        <type>array</type>
-        <el>
-          <settings.layout>
-            <TCEforms type="array">
-              <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.label</label>
-              <config type="array">
-                <type>select</type>
-                <renderType>selectSingle</renderType>
-                <items type="array">
-                  <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.default.label</numIndex>
-                    <numIndex index="1">default</numIndex>
-                  </numIndex>
-
-                  <numIndex index="1" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.iconRight.label</numIndex>
-                    <numIndex index="1">icon-right</numIndex>
-                  </numIndex>
-                </items>
-                <default>default</default>
-              </config>
-            </TCEforms>
-          </settings.layout>
 
           <settings.icon.src>
             <TCEforms type="array">
@@ -157,6 +125,38 @@
               </config>
             </TCEforms>
           </settings.icon.inline>
+        </el>
+      </ROOT>
+    </sDEF>
+
+    <appearance>
+     <ROOT>
+        <TCEforms type="array">
+          <sheetTitle>LLL:EXT:t3v_translations/Resources/Private/Language/locallang_ff.xlf:sheets.appearance.title</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <settings.layout>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.label</label>
+              <config type="array">
+                <type>select</type>
+                <renderType>selectSingle</renderType>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.default.label</numIndex>
+                    <numIndex index="1">default</numIndex>
+                  </numIndex>
+
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.iconRight.label</numIndex>
+                    <numIndex index="1">icon-right</numIndex>
+                  </numIndex>
+                </items>
+                <default>default</default>
+              </config>
+            </TCEforms>
+          </settings.layout>
 
           <settings.icon.colorize>
             <TCEforms type="array">

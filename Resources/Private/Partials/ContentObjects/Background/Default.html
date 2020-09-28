@@ -1,5 +1,5 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
-      data-namespace-typo3-fluid="true">
+<html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
   <f:if condition="{link}">
     <f:then>
       <f:link.typolink parameter="{link}" class="{contentObject} content-object" title="{title}"
@@ -14,47 +14,56 @@
     </f:else>
   </f:if>
 
-  <f:if condition="{backgroundColor} || {backgroundImage} || {backgroundPosition} || {backgroundRepeat} || {backgroundSize} || {height} || {width}">
+  <f:if
+    condition="{backgroundColor} || {backgroundImage} || {backgroundPosition} || {backgroundRepeat} || {backgroundSize} || {height} || {width}">
     <v:asset.style name="{contentObject}-{uid}-css" fluid="true" movable="false" standalone="true">
-      #c<v:variable.get name="uid" /> {
-        <f:if condition="{backgroundColor}">
-          background-color: {backgroundColor};
-        </f:if>
+      #c
+      <v:variable.get name="uid" />
+      {
+      <f:if condition="{backgroundColor}">
+        background-color: {backgroundColor};
+      </f:if>
 
-        <f:if condition="{backgroundImage}">
-          <v:variable.set name="height" value="{v:variable.convert(value: height, type: 'integer', default: 256)}" />
+      <f:if condition="{backgroundImage}">
+        <v:variable.set name="height" value="{v:variable.convert(value: height, type: 'integer', default: 256)}" />
 
-          background-image: url('<v:uri.image src="{backgroundImage}" height="{height}c" treatIdAsReference="1" />');
-        </f:if>
+        background-image: url('
+        <v:uri.image src="{backgroundImage}" height="{height}c" treatIdAsReference="1" />
+        ');
+      </f:if>
 
-        <f:if condition="{backgroundPosition}">
-          background-position: {backgroundPosition};
-        </f:if>
+      <f:if condition="{backgroundPosition}">
+        background-position: {backgroundPosition};
+      </f:if>
 
-        <f:if condition="{backgroundRepeat}">
-          background-repeat: {backgroundRepeat};
-        </f:if>
+      <f:if condition="{backgroundRepeat}">
+        background-repeat: {backgroundRepeat};
+      </f:if>
 
-        <f:if condition="{backgroundSize}">
-          background-size: {backgroundSize};
-        </f:if>
+      <f:if condition="{backgroundSize}">
+        background-size: {backgroundSize};
+      </f:if>
 
-        <f:if condition="{height}">
-          height: {height}px;
-        </f:if>
+      <f:if condition="{height}">
+        height: {height}px;
+      </f:if>
 
-        <f:if condition="{width}">
-          width: {width}px;
-        </f:if>
+      <f:if condition="{width}">
+        width: {width}px;
+      </f:if>
       }
 
       <f:if condition="{backgroundImage}">
         <v:variable.set name="height" value="{v:variable.convert(value: height, type: 'integer', default: 256)}" />
 
         @media only screen and (-webkit-min-device-pixel-ratio: 1.5625), only screen and (min-resolution: 150dpi) {
-          #c<v:variable.get name="uid" /> {
-            background-image: url('<v:uri.image src="{backgroundImage}" height="{height * 2}c" treatIdAsReference="1" />');
-          }
+        #c
+        <v:variable.get name="uid" />
+        {
+        background-image: url('
+        <v:uri.image src="{backgroundImage}" height="{height * 2}c" treatIdAsReference="1" />
+        ');
+        }
         }
       </f:if>
     </v:asset.style>
