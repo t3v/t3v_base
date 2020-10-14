@@ -1,12 +1,16 @@
 <?php
+/**
+ * The local extension configuration.
+ *
+ * @noinspection PhpFullyQualifiedNameUsageInspection
+ */
+
 defined('TYPO3_MODE') or die();
 
 // === Variables ===
 
-/** @var string $_EXTKEY */
-
 $namespace = 'T3v';
-$extensionKey = $_EXTKEY;
+$extensionKey = 't3v_base';
 $extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::signature($namespace, $extensionKey);
 $tsConfigFolder = \T3v\T3vCore\Utility\ExtensionUtility::tsConfigFolder($extensionKey);
 $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey);
@@ -33,7 +37,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentObjects\Background' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentObjects\Background' => 'index'
     ]
@@ -53,7 +57,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentObjects\Copyright' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentObjects\Copyright' => 'index'
     ]
@@ -73,7 +77,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentObjects\Label' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentObjects\Label' => 'index'
     ]
@@ -93,7 +97,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentObjects\Icon' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentObjects\Icon' => 'index'
     ]
@@ -113,7 +117,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentObjects\Link' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentObjects\Link' => 'index'
     ]
@@ -133,7 +137,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentObjects\Logo' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentObjects\Logo' => 'index'
     ]
@@ -153,7 +157,7 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey)
         'ContentObjects\Spacer' => 'index'
     ],
 
-    // The array of non-cachable controller-action-combinations (they must already be enabled)
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
     [
         // 'ContentObjects\Spacer' => 'index'
     ]
