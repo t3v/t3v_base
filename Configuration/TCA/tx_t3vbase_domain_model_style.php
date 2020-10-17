@@ -17,7 +17,7 @@ return [
     // === Columns ===
 
     'columns' => [
-        // --- Custom Columns ---
+        // --- Custom columns ---
 
         'name' => [
             'label' => $lll . 'tx_t3vbase_domain_model_style.name',
