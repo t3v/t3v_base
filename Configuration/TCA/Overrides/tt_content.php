@@ -1,4 +1,10 @@
 <?php
+/**
+ * The `tt_content` TCA override.
+ *
+ * @noinspection PhpFullyQualifiedNameUsageInspection
+ */
+
 defined('TYPO3_MODE') or die();
 
 // === Variables ===

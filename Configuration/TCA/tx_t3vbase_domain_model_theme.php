@@ -1,4 +1,10 @@
 <?php
+/**
+ * The theme TCA configuration.
+ *
+ * @noinspection PhpFullyQualifiedNameUsageInspection
+ */
+
 defined('TYPO3_MODE') or die();
 
 // === Variables ===
@@ -296,7 +302,6 @@ return [
     // === Interface ===
 
     'interface' => [
-        'showRecordFieldList' => 'uid, name, type, handle, abstract, sys_language_uid, l10n_parent, hidden, starttime, endtime',
         'maxDBListItems' => 20,
         'maxSingleDBListItems' => 100
     ],
