@@ -11,10 +11,10 @@ defined('TYPO3_MODE') or die();
 
 $namespace = 'T3v';
 $extensionKey = 't3v_base';
-$extensionIdentifier = \T3v\T3vCore\Utility\ExtensionUtility::identifier($extensionKey);
-$extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::signature($namespace, $extensionKey);
-$flexFormsFolder = \T3v\T3vCore\Utility\ExtensionUtility::flexFormsFolder($extensionKey);
-$lll = \T3v\T3vCore\Utility\ExtensionUtility::lll($extensionKey, 'locallang_ttc.xlf');
+$extensionIdentifier = \T3v\T3vCore\Utility\ExtensionUtility::getIdentifier($extensionKey);
+$extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::getSignature($namespace, $extensionKey);
+$flexFormsFolder = \T3v\T3vCore\Utility\ExtensionUtility::getFlexFormsFolder($extensionKey);
+$lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'locallang_ttc.xlf');
 
 // === Content Objects ===
 
@@ -22,8 +22,8 @@ $lll = \T3v\T3vCore\Utility\ExtensionUtility::lll($extensionKey, 'locallang_ttc.
 
 $contentObjectKey = 'Background';
 $contentObjectLabel = $lll . 'contentObjects.background.label';
-$contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::identifier($contentObjectKey);
-$contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::signature($extensionIdentifier, $contentObjectIdentifier);
+$contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
+$contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
 // Register the Content Object
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);
@@ -42,8 +42,8 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
 
 $contentObjectKey = 'Copyright';
 $contentObjectLabel = $lll . 'contentObjects.copyright.label';
-$contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::identifier($contentObjectKey);
-$contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::signature($extensionIdentifier, $contentObjectIdentifier);
+$contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
+$contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
 // Register the Content Object
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);
@@ -62,8 +62,8 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
 
 $contentObjectKey = 'Icon';
 $contentObjectLabel = $lll . 'contentObjects.icon.label';
-$contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::identifier($contentObjectKey);
-$contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::signature($extensionIdentifier, $contentObjectIdentifier);
+$contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
+$contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
 // Register the Content Object
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);
@@ -82,8 +82,8 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
 
 $contentObjectKey = 'Label';
 $contentObjectLabel = $lll . 'contentObjects.label.label';
-$contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::identifier($contentObjectKey);
-$contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::signature($extensionIdentifier, $contentObjectIdentifier);
+$contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
+$contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
 // Register the Content Object
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);
@@ -102,8 +102,8 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
 
 $contentObjectKey = 'Link';
 $contentObjectLabel = $lll . 'contentObjects.link.label';
-$contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::identifier($contentObjectKey);
-$contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::signature($extensionIdentifier, $contentObjectIdentifier);
+$contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
+$contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
 // Register the Content Object
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);
@@ -122,8 +122,8 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
 
 $contentObjectKey = 'Logo';
 $contentObjectLabel = $lll . 'contentObjects.logo.label';
-$contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::identifier($contentObjectKey);
-$contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::signature($extensionIdentifier, $contentObjectIdentifier);
+$contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
+$contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
 // Register the Content Object
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);
@@ -142,8 +142,8 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
 
 $contentObjectKey = 'Spacer';
 $contentObjectLabel = $lll . 'contentObjects.spacer.label';
-$contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::identifier($contentObjectKey);
-$contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::signature($extensionIdentifier, $contentObjectIdentifier);
+$contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
+$contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
 // Register the Content Object
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);

@@ -27,9 +27,9 @@ class Theme extends AbstractEntity
     /**
      * Returns the theme's name.
      *
-     * @return string The theme's name
+     * @return string|null The theme's name
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -39,7 +39,7 @@ class Theme extends AbstractEntity
      *
      * @param string $name The theme's name
      */
-    public function setName($name): void
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
@@ -47,9 +47,9 @@ class Theme extends AbstractEntity
     /**
      * Returns the theme's abstract.
      *
-     * @return string The theme's abstract
+     * @return string|null The theme's abstract
      */
-    public function getAbstract(): string
+    public function getAbstract(): ?string
     {
         return $this->abstract;
     }
@@ -59,7 +59,7 @@ class Theme extends AbstractEntity
      *
      * @param string $abstract The theme's abstract
      */
-    public function setAbstract($abstract): void
+    public function setAbstract(string $abstract): void
     {
         $this->abstract = $abstract;
     }

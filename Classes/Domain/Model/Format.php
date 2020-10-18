@@ -27,9 +27,9 @@ class Format extends AbstractEntity
     /**
      * Returns the format's name.
      *
-     * @return string The format's name
+     * @return string|null The format's name
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -39,7 +39,7 @@ class Format extends AbstractEntity
      *
      * @param string $name The format's name
      */
-    public function setName($name): void
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
@@ -47,9 +47,9 @@ class Format extends AbstractEntity
     /**
      * Returns the format's abstract.
      *
-     * @return string The format's abstract
+     * @return string|null The format's abstract
      */
-    public function getAbstract(): string
+    public function getAbstract(): ?string
     {
         return $this->abstract;
     }
@@ -59,7 +59,7 @@ class Format extends AbstractEntity
      *
      * @param string $abstract The format's abstract
      */
-    public function setAbstract($abstract): void
+    public function setAbstract(string $abstract): void
     {
         $this->abstract = $abstract;
     }

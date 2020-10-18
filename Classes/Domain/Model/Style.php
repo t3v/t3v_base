@@ -62,9 +62,9 @@ class Style extends AbstractEntity
     /**
      * Returns the style's name.
      *
-     * @return string The style's name
+     * @return string|null The style's name
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -74,7 +74,7 @@ class Style extends AbstractEntity
      *
      * @param string $name The style's name
      */
-    public function setName($name): void
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
@@ -82,9 +82,9 @@ class Style extends AbstractEntity
     /**
      * Returns the style's selector.
      *
-     * @return string The style's selector
+     * @return string|null The style's selector
      */
-    public function getSelector(): string
+    public function getSelector(): ?string
     {
         return $this->selector;
     }
@@ -94,7 +94,7 @@ class Style extends AbstractEntity
      *
      * @param string $selector The style's selector
      */
-    public function setSelector($selector): void
+    public function setSelector(string $selector): void
     {
         $this->selector = $selector;
     }
@@ -102,9 +102,9 @@ class Style extends AbstractEntity
     /**
      * Returns the style's background color.
      *
-     * @return string The style's background color
+     * @return string|null The style's background color
      */
-    public function getBackgroundColor(): string
+    public function getBackgroundColor(): ?string
     {
         return $this->backgroundColor;
     }
@@ -114,7 +114,7 @@ class Style extends AbstractEntity
      *
      * @param string $backgroundColor The style's background color
      */
-    public function setBackgroundColor($backgroundColor): void
+    public function setBackgroundColor(string $backgroundColor): void
     {
         $this->backgroundColor = $backgroundColor;
     }
@@ -147,7 +147,7 @@ class Style extends AbstractEntity
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> $backgroundImages The style's background images
      * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
-    public function setBackgroundImages($backgroundImages): void
+    public function setBackgroundImages(ObjectStorage $backgroundImages): void
     {
         $this->backgroundImages = $backgroundImages;
     }
@@ -187,9 +187,9 @@ class Style extends AbstractEntity
     /**
      * Returns the style's color.
      *
-     * @return string The style's color
+     * @return string|null The style's color
      */
-    public function getColor(): string
+    public function getColor(): ?string
     {
         return $this->color;
     }
@@ -199,7 +199,7 @@ class Style extends AbstractEntity
      *
      * @param string $color The style's color
      */
-    public function setColor($color): void
+    public function setColor(string $color): void
     {
         $this->color = $color;
     }
