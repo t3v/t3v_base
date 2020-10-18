@@ -113,7 +113,7 @@ class Country extends AbstractEntity
      * Gets all country groups belonging to the country.
      *
      * @param bool $reverse Reverse search, defaults to `false`
-     * @return \TYPO3\CMS\Extbase\Persistence\Generic\QueryResult|\TYPO3\CMS\Extbase\Persistence\ObjectStorage The country groups belonging to the country
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage|\TYPO3\CMS\Extbase\Persistence\Generic\QueryResult|null The country groups belonging to the country
      * @throws \TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      * @noinspection PhpUnnecessaryFullyQualifiedNameInspection

@@ -40,7 +40,7 @@
   ],
   "require": {
     "php": ">= 7.2 < 8.0",
-    "typo3/cms-core": "^9.5.21 || ^10.4.8",
+    "typo3/cms-core": "^9.5.22 || ^10.4.9",
     "gridelementsteam/gridelements": "^9.5 || dev-9-0 || ^10.0 || dev-10-0",
     "sitegeist/sms-responsive-images": "^2.0",
     "fluidtypo3/vhs": "^6.0",

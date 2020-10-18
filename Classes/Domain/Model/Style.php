@@ -122,10 +122,10 @@ class Style extends AbstractEntity
     /**
      * Returns all background images belonging to the style.
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> The style's background images
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>|null The style's background images
      * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
-    public function getBackgroundImages(): ObjectStorage
+    public function getBackgroundImages(): ?ObjectStorage
     {
         return $this->backgroundImages;
     }
@@ -138,7 +138,13 @@ class Style extends AbstractEntity
      */
     public function getFirstBackgroundImage(): ?FileReference
     {
-        return $this->getBackgroundImages()->current();
+        $backgroundImages = $this->getBackgroundImages();
+
+        if ($backgroundImages) {
+            return $backgroundImages->current();
+        }
+
+        return null;
     }
 
     /**

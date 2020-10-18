@@ -104,4 +104,4 @@ $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($exte
     "${languageFolder}/locallang_csh_tx_t3vbase_domain_model_theme.xlf"
 );
 
-/** _XXX_T3V_CREATOR_XXX_ **/
+/** _XXX_T3V_CREATOR_XXX_ */
