@@ -10,7 +10,7 @@ defined('TYPO3_MODE') or die();
 // === Variables ===
 
 $extensionKey = 't3v_base';
-$languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::languageFolder($extensionKey);
+$languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($extensionKey);
 
 // === Models ===
 
