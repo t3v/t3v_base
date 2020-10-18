@@ -5,7 +5,6 @@ namespace T3v\T3vBase\Domain\Model;
 
 use T3v\T3vBase\Domain\Repository\CountryGroupRepository;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
-use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
 
 /**
  * The country class.
@@ -54,15 +53,14 @@ class Country extends AbstractEntity
      */
     public function __construct()
     {
-        parent::__construct();
-
         $this->countryGroups = new ObjectStorage();
     }
 
     /**
      * Injects the country group repository.
      *
-     * @param CountryGroupRepository $countryGroupRepository The country group repository
+     * @param \T3v\T3vBase\Domain\Repository\CountryGroupRepository $countryGroupRepository The country group repository
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     public function injectCountryGroupRepository(CountryGroupRepository $countryGroupRepository): void
     {
@@ -72,9 +70,9 @@ class Country extends AbstractEntity
     /**
      * Returns the country's name.
      *
-     * @return string The country's name
+     * @return string|null The country's name
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -93,9 +91,9 @@ class Country extends AbstractEntity
     /**
      * Returns the country's abstract.
      *
-     * @return string The country's abstract
+     * @return string|null The country's abstract
      */
-    public function getAbstract(): string
+    public function getAbstract(): ?string
     {
         return $this->abstract;
     }
@@ -112,10 +110,13 @@ class Country extends AbstractEntity
     }
 
     /**
-     * Returns all country groups belonging to the country.
+     * Gets all country groups belonging to the country.
      *
-     * @param boolean $reverse Reverse search, defaults to `false`
-     * @return ObjectStorage|QueryResultInterface|CountryGroup[]
+     * @param bool $reverse Reverse search, defaults to `false`
+     * @return \TYPO3\CMS\Extbase\Persistence\Generic\QueryResult|\TYPO3\CMS\Extbase\Persistence\ObjectStorage The country groups belonging to the country
+     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException
+     * @noinspection PhpFullyQualifiedNameUsageInspection
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     public function getCountryGroups(bool $reverse = false)
     {
@@ -129,7 +130,8 @@ class Country extends AbstractEntity
     /**
      * Adds a country group to the country.
      *
-     * @param CountryGroup $countryGroup The country group to be added
+     * @param \T3v\T3vBase\Domain\Model\CountryGroup $countryGroup The country group to be added
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     public function addCountryGroup(CountryGroup $countryGroup): void
     {
@@ -139,7 +141,8 @@ class Country extends AbstractEntity
     /**
      * Removes a country group from the country.
      *
-     * @param CountryGroup $countryGroup The country group to be removed
+     * @param \T3v\T3vBase\Domain\Model\CountryGroup $countryGroup The country group to be removed
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     public function removeCountryGroup(CountryGroup $countryGroup): void
     {
@@ -155,7 +158,7 @@ class Country extends AbstractEntity
     }
 
     /**
-     * Returns the country's item property (Microdata).
+     * Returns the country's item property.
      *
      * @return string The country's item property
      */
