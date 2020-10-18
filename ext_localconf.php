@@ -198,8 +198,8 @@ if (TYPO3_MODE === 'BE') {
     ];
 
     foreach ($icons as $name => $source) {
-        $iconIdentifier = \T3v\T3vCore\Utility\IconUtility::identifier($name);
-        $iconSignature = \T3v\T3vCore\Utility\IconUtility::signature($extensionKey, $iconIdentifier);
+        $iconIdentifier = \T3v\T3vCore\Utility\IconUtility::getIdentifier($name);
+        $iconSignature = \T3v\T3vCore\Utility\IconUtility::getSignature($extensionKey, $iconIdentifier);
 
         $iconRegistry->registerIcon(
             $iconSignature,
