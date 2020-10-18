@@ -10,8 +10,8 @@ defined('TYPO3_MODE') or die();
 // === Variables ===
 
 $extensionKey = 't3v_base';
-$lll = \T3v\T3vCore\Utility\ExtensionUtility::lll($extensionKey, 'locallang_tca.xlf');
-$iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::iconsFolder($extensionKey);
+$lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'locallang_tca.xlf');
+$iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::getIconsFolder($extensionKey);
 
 return [
     // === Columns ===
@@ -56,6 +56,26 @@ return [
             'exclude' => true
         ],
 
+        'handle' => [
+            'label' => $lll . 'tx_t3vbase_domain_model_theme.handle',
+            'config' => [
+                'type' => 'slug',
+                'generatorOptions' => [
+                    'fields' => ['name'],
+                    'fieldSeparator' => '-',
+                    'prefixParentPageSlug' => false
+                ],
+                'fallbackCharacter' => '-',
+                'prependSlash' => false,
+                'eval' => 'trim, required',
+                'default' => '',
+                'behaviour' => [
+                    'allowLanguageSynchronization' => true
+                ]
+            ],
+            'exclude' => true
+        ],
+
         'selector' => [
             'label' => $lll . 'tx_t3vbase_domain_model_style.selector',
             'config' => [
@@ -64,7 +84,7 @@ return [
                 'items' => [
                     [$lll . 'tx_t3vbase_domain_model_style.selector.gridElement', 'element'],
                     [$lll . 'tx_t3vbase_domain_model_style.selector.header', 'header'],
-                    [$lll . 'tx_t3vbase_domain_model_style.selector.content', 'main'],
+                    [$lll . 'tx_t3vbase_domain_model_style.selector.main', 'main'],
                     [$lll . 'tx_t3vbase_domain_model_style.selector.content', 'content'],
                     [$lll . 'tx_t3vbase_domain_model_style.selector.footer', 'footer']
                 ],
@@ -370,8 +390,6 @@ return [
         0 => [
             'showitem' => '
                 --palette--;;backgroundColor,
-                --palette--;;backgroundImages,
-                --palette--;;color,
                 --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.language.label,
                 --palette--;;language,
                 --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.access.label,
@@ -421,6 +439,7 @@ return [
             'showitem' => '
                 name, --linebreak--,
                 type, --linebreak--,
+                handle, --linebreak--,
                 selector, --linebreak--,
                 background_color
             ',
@@ -431,6 +450,7 @@ return [
             'showitem' => '
                 name, --linebreak--,
                 type, --linebreak--,
+                handle, --linebreak--,
                 selector, --linebreak--,
                 background_images
             ',
@@ -441,6 +461,7 @@ return [
             'showitem' => '
                 name, --linebreak--,
                 type, --linebreak--,
+                handle, --linebreak--,
                 selector, --linebreak--,
                 color
             ',

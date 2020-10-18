@@ -76,6 +76,7 @@ CREATE TABLE tx_t3vbase_domain_model_region (
 CREATE TABLE tx_t3vbase_domain_model_style (
   name varchar(255) DEFAULT '' NOT NULL,
   type varchar(32) DEFAULT 'background-color' NOT NULL,
+  handle varchar(255) DEFAULT '' NOT NULL,
   selector varchar(255) DEFAULT 'element' NOT NULL,
   background_color varchar(255) DEFAULT '' NOT NULL,
   background_images int(11) unsigned DEFAULT '0' NOT NULL,
