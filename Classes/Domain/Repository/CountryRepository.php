@@ -18,7 +18,7 @@ class CountryRepository extends AbstractRepository
      *
      * @var array
      */
-    protected array $defaultOrderings = [
+    protected $defaultOrderings = [
         'name' => QueryInterface::ORDER_ASCENDING,
         'sorting' => QueryInterface::ORDER_ASCENDING
     ];
