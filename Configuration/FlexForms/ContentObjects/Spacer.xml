@@ -81,6 +81,7 @@
                 </generatorOptions>
                 <fallbackCharacter>-</fallbackCharacter>
                 <prependSlash>0</prependSlash>
+                <eval>trim</eval>
                 <default></default>
               </config>
             </TCEforms>

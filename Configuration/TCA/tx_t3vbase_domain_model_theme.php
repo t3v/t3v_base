@@ -65,7 +65,7 @@ return [
                 ],
                 'fallbackCharacter' => '-',
                 'prependSlash' => false,
-                'eval' => 'trim, required',
+                'eval' => 'trim',
                 'default' => '',
                 'behaviour' => [
                     'allowLanguageSynchronization' => true
