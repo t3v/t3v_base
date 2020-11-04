@@ -81,21 +81,16 @@
             <renderType>selectCheckBox</renderType>
             <items type="array">
               <numIndex index="0" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.default.label</numIndex>
-                <numIndex index="1">default</numIndex>
-              </numIndex>
-
-              <numIndex index="1" type="array">
                 <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.block.label</numIndex>
                 <numIndex index="1">block</numIndex>
               </numIndex>
 
-              <numIndex index="2" type="array">
+              <numIndex index="1" type="array">
                 <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.noGutter.label</numIndex>
                 <numIndex index="1">no-gutter</numIndex>
               </numIndex>
 
-              <numIndex index="3" type="array">
+              <numIndex index="2" type="array">
                 <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.plain.label</numIndex>
                 <numIndex index="1">plain</numIndex>
               </numIndex>

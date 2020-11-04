@@ -5,6 +5,7 @@
   <v:variable.set name="type" value="{v:variable.convert(value: settings.type, type: 'string', default: 'default')}" />
   <v:variable.set name="handle" value="{v:variable.convert(value: settings.handle, type: 'string', default: 'none')}" />
   <v:variable.set name="layout" value="{v:variable.convert(value: settings.layout, type: 'string', default: 'default')}" />
+  <v:variable.set name="layout" value="{v:format.replace(content: layout, substring: ',', replacement: ' ')}" />
 
   <f:if condition="{handle}">
     <v:variable.set name="handle" value="{t3v:handle(input: handle)}" />
@@ -17,8 +18,8 @@
           <v:variable.set name="style" value="height: {settings.customHeight}px;" />
 
           <v:tag name="{contentObject}" id="c{uid}" class="{contentObject} content-object"
-                 additionalAttributes="{type: type, handle: handle, layout: layout}" style="{style}" hideIfEmpty="false"
-                 forceClosingTag="true" />
+                 additionalAttributes="{type: type, handle: handle, layout: layout}" style="{style}"
+                 hideIfEmpty="false" forceClosingTag="true" />
         </f:then>
 
         <f:else>

@@ -111,13 +111,15 @@
               <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.label</label>
               <config type="array">
                 <type>select</type>
-                <renderType>selectSingle</renderType>
+                <renderType>selectCheckBox</renderType>
+                <!--
                 <items type="array">
                   <numIndex index="0" type="array">
                     <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.default.label</numIndex>
                     <numIndex index="1">default</numIndex>
                   </numIndex>
                 </items>
+                -->
                 <default>default</default>
               </config>
             </TCEforms>

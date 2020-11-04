@@ -4,28 +4,28 @@
 
 # === Imports ===
 
-# --- Body Grid Elements ---
+# --- Body ---
 
 @import './GridElements/HeaderGridElement.tsconfig'
 @import './GridElements/SectionGridElement.tsconfig'
 @import './GridElements/FooterGridElement.tsconfig'
 
-# --- Layout Grid Elements ---
+# --- Layout / Formatting ---
 
 @import './GridElements/FlexboxGridElement.tsconfig'
 @import './GridElements/ColumnLayoutGridElement.tsconfig'
 @import './GridElements/CascadingLayoutGridElement.tsconfig'
 @import './GridElements/ContainerGridElement.tsconfig'
+@import './GridElements/BlockGridElement.tsconfig'
 @import './GridElements/FormattingGridElement.tsconfig'
 
-# --- Composition Grid Elements ---
+# --- Composition ---
 
 @import './GridElements/BarGridElement.tsconfig'
-@import './GridElements/BlockGridElement.tsconfig'
 @import './GridElements/FlyoutGridElement.tsconfig'
 @import './GridElements/PopUpGridElement.tsconfig'
 
-# --- Other Grid Elements ---
+# --- Other ---
 
 @import './GridElements/ConditionallyGridElement.tsconfig'
 @import './GridElements/ViewportGridElement.tsconfig'

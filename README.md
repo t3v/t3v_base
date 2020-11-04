@@ -38,28 +38,28 @@ Content Objects
 Grid Elements
 -------------
 
-### Body Grid Elements
+### Body
 
 * Header Grid Element
 * Section Grid Element
 * Footer Grid Element
 
-### Layout Grid Elements
+### Layout / Formatting
 
-* Flexbox Grid Element
 * Column Layout Grid Element
+* Flexbox Grid Element
 * Cascading Layout Grid Element
 * Container Grid Element
+* Block Grid Element
 * Formatting Grid Element
 
-### Composition Grid Elements
+### Composition
 
 * Bar Grid Element
-* Block Grid Element
 * Flyout Grid Element
 * Modal Grid Element
 
-### Other Grid Elements
+### Other
 
 * Conditionally Grid Element
 * Viewport Grid Element

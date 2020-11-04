@@ -5,6 +5,7 @@
   <v:variable.set name="type" value="{v:variable.convert(value: data.flexform_type, type: 'string', default: 'default')}" />
   <v:variable.set name="handle" value="{v:variable.convert(value: data.flexform_handle, type: 'string', default: 'none')}" />
   <v:variable.set name="layout" value="{v:variable.convert(value: data.flexform_layout, type: 'string', default: 'default')}" />
+  <v:variable.set name="layout" value="{v:format.replace(content: layout, substring: ',', replacement: ' ')}" />
   <v:variable.set name="container" value="{v:variable.convert(value: data.flexform_container, type: 'string', default: 'none')}" />
   <v:variable.set name="textAlign" value="{v:variable.convert(value: data.flexform_textAlign, type: 'string', default: 'default')}" />
   <v:variable.set name="styles" value="{v:variable.convert(value: data.styles, type: 'ObjectStorage')}" />
@@ -14,7 +15,7 @@
   </f:if>
 
   <v:tag name="{gridElement}" id="c{uid}" class="{gridElement} grid-element"
-         additionalAttributes="{type: type, handle: handle, layout: layout, text-align: textAlign}">
+         additionalAttributes="{type: type, handle: handle, layout: layout, text-align: textAlign}" forceClosingTag="true">
     <f:if condition="{container} != 'none'">
       <f:then>
         <v:tag name="div" class="{gridElement}__container container" data="{type: container}" hideIfEmpty="true">

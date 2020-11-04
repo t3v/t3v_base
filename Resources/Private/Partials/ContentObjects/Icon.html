@@ -5,6 +5,7 @@
   <v:variable.set name="type" value="{v:variable.convert(value: settings.type, type: 'string', default: 'default')}" />
   <v:variable.set name="handle" value="{v:variable.convert(value: settings.handle, type: 'string', default: 'none')}" />
   <v:variable.set name="layout" value="{v:variable.convert(value: settings.layout, type: 'string', default: 'default')}" />
+  <v:variable.set name="layout" value="{v:format.replace(content: layout, substring: ',', replacement: ' ')}" />
   <v:variable.set name="title" value="{v:variable.convert(value: settings.title, type: 'string')}" />
   <v:variable.set name="alt" value="{v:variable.convert(value: settings.alt, type: 'string')}" />
   <v:variable.set name="icon" value="{v:variable.convert(value: settings.icon, type: 'array')}" />
@@ -14,12 +15,10 @@
   </f:if>
 
   <f:if condition="{icon}">
-    <v:tag id="c{uid}" name="{contentObject}" class="{contentObject} content-object"
-           additionalAttributes="{type: type, handle: handle, layout: layout}" hideIfEmpty="false">
-      <f:if condition="{icon.src}">
-        <f:image src="{icon.src}" treatIdAsReference="true" class="{contentObject}__source" title="{title}" alt="{alt}"
-                 data="{inline: icon.inline, colorize: icon.colorize}" />
-      </f:if>
-    </v:tag>
+    <f:switch expression="{type}">
+      <f:defaultCase>
+        <f:render partial="ContentObjects/Icon/Default" arguments="{_all}" />
+      </f:defaultCase>
+    </f:switch>
   </f:if>
 </html>

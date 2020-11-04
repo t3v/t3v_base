@@ -5,6 +5,7 @@
   <v:variable.set name="type" value="{v:variable.convert(value: settings.type, type: 'string', default: 'default')}" />
   <v:variable.set name="handle" value="{v:variable.convert(value: settings.handle, type: 'string', default: 'none')}" />
   <v:variable.set name="layout" value="{v:variable.convert(value: settings.layout, type: 'string', default: 'default')}" />
+  <v:variable.set name="layout" value="{v:format.replace(content: layout, substring: ',', replacement: ' ')}" />
   <v:variable.set name="name" value="{v:variable.convert(value: settings.name, type: 'string')}" />
   <v:variable.set name="title" value="{v:variable.convert(value: settings.title, type: 'string')}" />
   <v:variable.set name="page" value="{v:variable.convert(value: settings.page, type: 'integer')}" />

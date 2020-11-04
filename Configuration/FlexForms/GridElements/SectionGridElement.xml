@@ -71,29 +71,24 @@
           <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.label</label>
           <config type="array">
             <type>select</type>
-            <renderType>selectSingle</renderType>
+            <renderType>selectCheckBox</renderType>
             <items type="array">
               <numIndex index="0" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.default.label</numIndex>
-                <numIndex index="1">default</numIndex>
-              </numIndex>
-
-              <numIndex index="1" type="array">
                 <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.constrained.label</numIndex>
                 <numIndex index="1">constrained</numIndex>
               </numIndex>
 
-              <numIndex index="2" type="array">
+              <numIndex index="1" type="array">
                 <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.noDistanceDownwards.label</numIndex>
                 <numIndex index="1">no-distance-downwards</numIndex>
               </numIndex>
 
-              <numIndex index="3" type="array">
+              <numIndex index="2" type="array">
                 <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.withBottomDivider.label</numIndex>
                 <numIndex index="1">with-bottom-divider</numIndex>
               </numIndex>
 
-              <numIndex index="4" type="array">
+              <numIndex index="3" type="array">
                 <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.withTopDivider.label</numIndex>
                 <numIndex index="1">with-top-divider</numIndex>
               </numIndex>
