@@ -1,6 +1,6 @@
 <?php
 /**
- * The theme TCA configuration.
+ * The `tx_t3vbase_domain_model_theme` TCA configuration.
  *
  * @noinspection PhpFullyQualifiedNameUsageInspection
  */

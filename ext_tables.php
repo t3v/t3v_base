@@ -17,7 +17,6 @@ $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($exte
 // --- Country Model ---
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vbase_domain_model_country');
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
     'tx_t3vbase_domain_model_country',
     "${languageFolder}/locallang_csh_tx_t3vbase_domain_model_country.xlf"
@@ -26,7 +25,6 @@ $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($exte
 // --- Country Group Model ---
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vbase_domain_model_country_group');
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
     'tx_t3vbase_domain_model_country_group',
     "${languageFolder}/locallang_csh_tx_t3vbase_domain_model_country_group.xlf"
@@ -35,7 +33,6 @@ $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($exte
 // --- Department Model ---
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vbase_domain_model_department');
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
     'tx_t3vbase_domain_model_department',
     "${languageFolder}/locallang_csh_tx_t3vbase_domain_model_department.xlf"
@@ -44,7 +41,6 @@ $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($exte
 // --- Email Address Model ---
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vbase_domain_model_email_address');
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
     'tx_t3vbase_domain_model_email_address',
     "${languageFolder}/locallang_csh_tx_t3vbase_domain_model_email_address.xlf"
@@ -53,7 +49,6 @@ $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($exte
 // --- Format Model ---
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vbase_domain_model_format');
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
     'tx_t3vbase_domain_model_format',
     "${languageFolder}/locallang_csh_tx_t3vbase_domain_model_format.xlf"
@@ -62,7 +57,6 @@ $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($exte
 // --- Phone Number Model ---
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vbase_domain_model_phone_number');
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
     'tx_t3vbase_domain_model_phone_number',
     "${languageFolder}/locallang_csh_tx_t3vbase_domain_model_phone_number.xlf"
@@ -71,7 +65,6 @@ $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($exte
 // --- Postal Address Model ---
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vbase_domain_model_postal_address');
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
     'tx_t3vbase_domain_model_postal_address',
     "${languageFolder}/locallang_csh_tx_t3vbase_domain_model_postal_address.xlf"
@@ -80,7 +73,6 @@ $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($exte
 // --- Region Model ---
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vbase_domain_model_region');
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
     'tx_t3vbase_domain_model_region',
     "${languageFolder}/locallang_csh_tx_t3vbase_domain_model_region.xlf"
@@ -89,7 +81,6 @@ $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($exte
 // --- Style Model ---
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vbase_domain_model_style');
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
     'tx_t3vbase_domain_model_style',
     "${languageFolder}/locallang_csh_tx_t3vbase_domain_model_style.xlf"
@@ -98,7 +89,6 @@ $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($exte
 // --- Theme Model ---
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vbase_domain_model_theme');
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
     'tx_t3vbase_domain_model_theme',
     "${languageFolder}/locallang_csh_tx_t3vbase_domain_model_theme.xlf"

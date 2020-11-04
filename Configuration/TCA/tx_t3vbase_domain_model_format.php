@@ -1,6 +1,6 @@
 <?php
 /**
- * The format TCA configuration.
+ * The `tx_t3vbase_domain_model_format` TCA configuration.
  *
  * @noinspection PhpFullyQualifiedNameUsageInspection
  */
