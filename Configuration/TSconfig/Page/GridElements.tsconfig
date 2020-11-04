@@ -10,13 +10,16 @@
 @import './GridElements/SectionGridElement.tsconfig'
 @import './GridElements/FooterGridElement.tsconfig'
 
-# --- Layout / Formatting ---
+# --- Layout ---
 
-@import './GridElements/FlexboxGridElement.tsconfig'
 @import './GridElements/ColumnLayoutGridElement.tsconfig'
+@import './GridElements/FlexboxGridElement.tsconfig'
 @import './GridElements/CascadingLayoutGridElement.tsconfig'
 @import './GridElements/ContainerGridElement.tsconfig'
 @import './GridElements/BlockGridElement.tsconfig'
+
+# --- Formatting ---
+
 @import './GridElements/FormattingGridElement.tsconfig'
 
 # --- Composition ---

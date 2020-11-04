@@ -44,13 +44,16 @@ Grid Elements
 * Section Grid Element
 * Footer Grid Element
 
-### Layout / Formatting
+### Layout
 
 * Column Layout Grid Element
 * Flexbox Grid Element
 * Cascading Layout Grid Element
 * Container Grid Element
 * Block Grid Element
+
+### Formatting
+
 * Formatting Grid Element
 
 ### Composition
