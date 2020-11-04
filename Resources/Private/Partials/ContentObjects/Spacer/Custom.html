@@ -1,0 +1,17 @@
+<html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+  <f:if condition="{customHeight}">
+    <f:then>
+      <v:variable.set name="style" value="height: {customHeight}px;" />
+
+      <v:tag name="{contentObject}" id="c{uid}" class="{contentObject} content-object"
+             additionalAttributes="{type: type, handle: handle, layout: layout}" style="{style}"
+             hideIfEmpty="false" forceClosingTag="true" />
+    </f:then>
+
+    <f:else>
+      <v:tag name="{contentObject}" id="c{uid}" class="{contentObject} content-object"
+             additionalAttributes="{type: type, handle: handle, layout: layout}" hideIfEmpty="false" forceClosingTag="true" />
+    </f:else>
+  </f:if>
+</html>

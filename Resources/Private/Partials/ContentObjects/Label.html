@@ -15,35 +15,9 @@
     <v:variable.set name="handle" value="{t3v:handle(input: handle)}" />
   </f:if>
 
-  <v:tag id="c{uid}" name="{contentObject}" class="{contentObject} content-object"
-         additionalAttributes="{type: type, handle: handle, layout: layout}" hideIfEmpty="false">
-    <v:tag name="div" class="{contentObject}__main" hideIfEmpty="true">
-      <f:switch expression="{layout}">
-        <f:case value="icon-right">
-          <f:render section="Text" arguments="{contentObject: contentObject, text: text}" />
-
-          <f:render section="Icon" arguments="{contentObject: contentObject, icon: icon, title: title, alt: alt}" />
-        </f:case>
-
-        <f:defaultCase>
-          <f:render section="Icon" arguments="{contentObject: contentObject, icon: icon, title: title, alt: alt}" />
-
-          <f:render section="Text" arguments="{contentObject: contentObject, text: text}" />
-        </f:defaultCase>
-      </f:switch>
-    </v:tag>
-  </v:tag>
-
-  <f:section name="Icon">
-    <f:if condition="{icon}">
-      <f:if condition="{icon.src}">
-        <f:image src="{icon.src}" treatIdAsReference="true" class="{contentObject}__icon" title="{title}" alt="{alt}"
-                 data="{inline: icon.inline, colorize: icon.colorize}" />
-      </f:if>
-    </f:if>
-  </f:section>
-
-  <f:section name="Text">
-    <v:tag name="span" class="{contentObject}__text" hideIfEmpty="true">{text}</v:tag>
-  </f:section>
+  <f:switch expression="{type}">
+    <f:defaultCase>
+      <f:render partial="ContentObjects/Label/Default" arguments="{_all}" />
+    </f:defaultCase>
+  </f:switch>
 </html>

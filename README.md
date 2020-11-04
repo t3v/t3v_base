@@ -5,6 +5,58 @@
 
 **The base extension of TYPO3voilà.**
 
+Overview
+--------
+
+### Content Objects
+
+* Background Content Object
+* Button Content Object
+* Copyright Content Object
+* Icon Content Object
+* Label Content Object
+* Link Content Object
+* Logo Content Object
+* Search Bar Content Object (*)
+* Spacer Content Object
+
+### Grid Elements
+
+#### Body
+
+* Header Grid Element
+* Section Grid Element
+* Footer Grid Element
+
+#### Layout
+
+* Column Layout Grid Element
+* Flexbox Grid Element
+* Cascading Layout Grid Element
+* Container Grid Element
+* Block Grid Element
+
+#### Formatting
+
+* Formatting Grid Element
+
+#### Composition
+
+* Bar Grid Element
+* Flyout Grid Element
+* Modal Grid Element
+
+#### Misc
+
+* Conditionally Grid Element
+* Viewport Grid Element
+
+### Models
+
+* Format Model
+* Style Model
+* Theme Model
+
 Dependencies
 ------------
 
@@ -21,58 +73,6 @@ Installation
 1. Add T3v Base as dependency to the [Composer] configuration
 2. Run `composer install` or `composer update` to install all dependencies with Composer
 3. Include the TypoScript for T3v Base
-
-Content Objects
----------------
-
-* Background Content Object
-* Button Content Object
-* Copyright Content Object
-* Icon Content Object
-* Label Content Object
-* Link Content Object
-* Logo Content Object
-* Search Bar Content Object (*)
-* Spacer Content Object
-
-Grid Elements
--------------
-
-### Body
-
-* Header Grid Element
-* Section Grid Element
-* Footer Grid Element
-
-### Layout
-
-* Column Layout Grid Element
-* Flexbox Grid Element
-* Cascading Layout Grid Element
-* Container Grid Element
-* Block Grid Element
-
-### Formatting
-
-* Formatting Grid Element
-
-### Composition
-
-* Bar Grid Element
-* Flyout Grid Element
-* Modal Grid Element
-
-### Misc
-
-* Conditionally Grid Element
-* Viewport Grid Element
-
-Models
-------
-
-* Format Model
-* Style Model
-* Theme Model
 
 Development
 -----------

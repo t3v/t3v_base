@@ -14,8 +14,11 @@
     <v:variable.set name="handle" value="{t3v:handle(input: handle)}" />
   </f:if>
 
-  <v:tag name="{gridElement}" id="c{uid}" class="{gridElement} grid-element"
-         additionalAttributes="{type: type, handle: handle, layout: layout, text-align: textAlign}" forceClosingTag="true">
+  <v:variable.set name="additionalAttributes" value="{type: type, handle: handle, layout: layout, text-align: textAlign}" />
+
+
+  <v:tag name="{gridElement}" id="c{uid}" class="{gridElement} grid-element" additionalAttributes="{additionalAttributes}"
+         hideIfEmpty="false" forceClosingTag="true">
     <f:if condition="{container} != 'none'">
       <f:then>
         <v:tag name="div" class="{gridElement}__container container" data="{type: container}" hideIfEmpty="true">
