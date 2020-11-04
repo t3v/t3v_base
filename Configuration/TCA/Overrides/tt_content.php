@@ -168,4 +168,4 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
     'after:header_link'
 );
 
-/** _XXX_T3V_CREATOR_XXX_ **/
+/** _XXX_T3V_GENERATOR_XXX_ **/

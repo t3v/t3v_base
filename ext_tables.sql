@@ -123,4 +123,4 @@ CREATE TABLE tx_t3vbase_domain_model_theme (
 #   KEY uid_foreign (uid_foreign)
 # );
 
--- _XXX_T3V_CREATOR_XXX_ --
+-- _XXX_T3V_GENERATOR_XXX_ --

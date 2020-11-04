@@ -181,16 +181,16 @@ if (TYPO3_MODE === 'BE') {
         'Header Grid Element' => "{$iconsFolder}/GridElements/HeaderGridElement.svg",
         'Section Grid Element' => "{$iconsFolder}/GridElements/SectionGridElement.svg",
         'Footer Grid Element' => "{$iconsFolder}/GridElements/FooterGridElement.svg",
-        'Flexbox Grid Element' => "{$iconsFolder}/GridElements/FlexboxGridElement.svg",
         '1 Column Layout Grid Element' => "{$iconsFolder}/GridElements/ColumnLayoutGridElement/1Column.svg",
         '2 Column Layout Grid Element' => "{$iconsFolder}/GridElements/ColumnLayoutGridElement/2Column.svg",
         '3 Column Layout Grid Element' => "{$iconsFolder}/GridElements/ColumnLayoutGridElement/3Column.svg",
         '4 Column Layout Grid Element' => "{$iconsFolder}/GridElements/ColumnLayoutGridElement/4Column.svg",
+        'Flexbox Grid Element' => "{$iconsFolder}/GridElements/FlexboxGridElement.svg",
         'Cascading Layout Grid Element' => "{$iconsFolder}/GridElements/CascadingLayoutGridElement.svg",
         'Container Grid Element' => "{$iconsFolder}/GridElements/ContainerGridElement.svg",
+        'Block Grid Element' => "{$iconsFolder}/GridElements/BlockGridElement.svg",
         'Formatting Grid Element' => "{$iconsFolder}/GridElements/FormattingGridElement.svg",
         'Bar Grid Element' => "{$iconsFolder}/GridElements/BarGridElement.svg",
-        'Block Grid Element' => "{$iconsFolder}/GridElements/BlockGridElement.svg",
         'Flyout Grid Element' => "{$iconsFolder}/GridElements/FlyoutGridElement.svg",
         'Pop Up Grid Element' => "{$iconsFolder}/GridElements/PopUpGridElement.svg",
         'Conditionally Grid Element' => "{$iconsFolder}/GridElements/ConditionallyGridElement.svg",
@@ -209,4 +209,4 @@ if (TYPO3_MODE === 'BE') {
     }
 }
 
-/** _XXX_T3V_CREATOR_XXX_ */
+/** _XXX_T3V_GENERATOR_XXX_ */

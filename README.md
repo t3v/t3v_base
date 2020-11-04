@@ -62,7 +62,7 @@ Grid Elements
 * Flyout Grid Element
 * Modal Grid Element
 
-### Other
+### Misc
 
 * Conditionally Grid Element
 * Viewport Grid Element

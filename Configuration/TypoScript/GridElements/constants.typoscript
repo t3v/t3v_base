@@ -4,30 +4,33 @@
 
 # === Imports ===
 
-# --- Body Grid Elements ---
+# --- Body ---
 
 @import './HeaderGridElement/constants.typoscript'
 @import './SectionGridElement/constants.typoscript'
 @import './FooterGridElement/constants.typoscript'
 
-# --- Layout Grid Elements ---
+# --- Layout ---
 
 @import './FlexboxGridElement/constants.typoscript'
 @import './ColumnLayoutGridElement/constants.typoscript'
 @import './CascadingLayoutGridElement/constants.typoscript'
 @import './ContainerGridElement/constants.typoscript'
+@import './BlockGridElement/constants.typoscript'
+
+# --- Formatting ---
+
 @import './FormattingGridElement/constants.typoscript'
 
-# --- Composition Grid Elements ---
+# --- Composition ---
 
 @import './BarGridElement/constants.typoscript'
-@import './BlockGridElement/constants.typoscript'
 @import './FlyoutGridElement/constants.typoscript'
 @import './PopUpGridElement/constants.typoscript'
 
-# --- Other Grid Elements ---
+# --- Misc ---
 
 @import './ConditionallyGridElement/constants.typoscript'
 @import './ViewportGridElement/constants.typoscript'
 
-# _XXX_T3V_CREATOR_XXX_
+# _XXX_T3V_GENERATOR_XXX_

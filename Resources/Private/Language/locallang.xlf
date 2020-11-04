@@ -4,8 +4,6 @@
     <header />
 
     <body>
-      <!-- _XXX_T3V_CREATOR_XXX_ -->
-
       <!-- === Grid Elements === -->
 
       <!-- Flyout Grid Element -->
@@ -17,6 +15,8 @@
       <trans-unit id="contentObjects.flyoutGridElement.control.title">
         <source>Control</source>
       </trans-unit>
+
+      <!-- _XXX_T3V_GENERATOR_XXX_ -->
     </body>
   </file>
 </xliff>

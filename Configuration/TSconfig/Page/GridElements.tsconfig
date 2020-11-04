@@ -28,9 +28,9 @@
 @import './GridElements/FlyoutGridElement.tsconfig'
 @import './GridElements/PopUpGridElement.tsconfig'
 
-# --- Other ---
+# --- Misc ---
 
 @import './GridElements/ConditionallyGridElement.tsconfig'
 @import './GridElements/ViewportGridElement.tsconfig'
 
-# _XXX_T3V_CREATOR_XXX_
+# _XXX_T3V_GENERATOR_XXX_
