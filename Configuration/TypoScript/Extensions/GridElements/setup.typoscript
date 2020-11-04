@@ -1,5 +1,7 @@
-# -------------------------------
-# | Grid Elements Configuration |
-# -------------------------------
+# -----------------------
+# | Grid Elements Setup |
+# -----------------------
+
+// === Imports ===
 
 @import 'EXT:gridelements/Configuration/TypoScript/setup.typoscript'

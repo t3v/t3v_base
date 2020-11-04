@@ -17,6 +17,21 @@ plugin {
       updateReferenceIndex = 1
     }
 
+    resources {
+      # cat=plugin/tx_t3vbase/resources; type=string; label=The root path where the resources are stored
+      rootPath = EXT:t3v_base/Resources/
+
+      private {
+        # cat=plugin/tx_t3vbase/resources/private; type=string; label=The root path where the private resources are stored
+        rootPath = EXT:t3v_base/Resources/Private/
+      }
+
+      public {
+        # cat=plugin/tx_t3vbase/resources/public; type=string; label=The root path where the public resources are stored
+        rootPath = EXT:t3v_base/Resources/Public/
+      }
+    }
+
     settings {
       extbase {
         # cat=plugin/tx_t3vbase/settings/extbase; type=string; label=The controller extension name
@@ -25,13 +40,13 @@ plugin {
     }
 
     view {
-      # cat=plugin/tx_t3vbase/view; type=string; label=The path where the layouts are stored
+      # cat=plugin/tx_t3vbase/view; type=string; label=The root path where the layouts are stored
       layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
 
-      # cat=plugin/tx_t3vbase/view; type=string; label=The path where the templates are stored
+      # cat=plugin/tx_t3vbase/view; type=string; label=The root path where the templates are stored
       templateRootPath = EXT:t3v_base/Resources/Private/Templates/
 
-      # cat=plugin/tx_t3vbase/view; type=string; label=The path where the partials are stored
+      # cat=plugin/tx_t3vbase/view; type=string; label=The root path where the partials are stored
       partialRootPath = EXT:t3v_base/Resources/Private/Partials/
     }
   }

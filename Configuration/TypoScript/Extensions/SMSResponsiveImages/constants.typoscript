@@ -2,7 +2,11 @@
 # | SMS Responsive Images Constants |
 # -----------------------------------
 
+// === Imports ===
+
 @import 'EXT:sms_responsive_images/Configuration/TypoScript/Base/constants.ts'
+
+// === Overrides ===
 
 # tx_smsresponsiveimages {
 #   srcset = 400, 600, 800, 1000, 1200

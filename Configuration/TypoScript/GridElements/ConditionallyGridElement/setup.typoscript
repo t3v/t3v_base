@@ -1,6 +1,6 @@
-# --------------------------------------------
-# | Conditionally Grid Element Configuration |
-# --------------------------------------------
+# ------------------------------------
+# | Conditionally Grid Element Setup |
+# ------------------------------------
 
 tt_content {
   gridelements_pi1 {

@@ -1,5 +1,7 @@
-# ---------------------------------------
-# | SMS Responsive Images Configuration |
-# ---------------------------------------
+# -------------------------------
+# | SMS Responsive Images Setup |
+# -------------------------------
+
+// === Imports ===
 
 @import 'EXT:sms_responsive_images/Configuration/TypoScript/Base/setup.ts'
