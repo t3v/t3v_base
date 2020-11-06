@@ -200,23 +200,23 @@
       </trans-unit>
 
       <trans-unit id="settings.form.legend.label">
-        <source>The form legend</source>
+        <source>Form legend</source>
       </trans-unit>
 
       <trans-unit id="settings.form.input.label.label">
-        <source>The label for the form input</source>
+        <source>Label of the form input</source>
       </trans-unit>
 
       <trans-unit id="settings.form.input.placeholder.label">
-        <source>The placeholder for the form input</source>
+        <source>Placeholder of the form input</source>
       </trans-unit>
 
       <trans-unit id="settings.form.submit.label.label">
-        <source>The Label of the form submit button</source>
+        <source>Label of the form submit button</source>
       </trans-unit>
 
       <trans-unit id="settings.form.submit.title.label">
-        <source>The title of the form submit button</source>
+        <source>Title of the form submit button</source>
       </trans-unit>
 
       <trans-unit id="settings.formats.label">
