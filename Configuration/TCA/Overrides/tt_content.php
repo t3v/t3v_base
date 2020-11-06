@@ -35,7 +35,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentO
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $contentObjectSignature,
-    "{$flexFormsFolder}/ContentObjects/Background.xml"
+    "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
 );
 
 // --- Copyright Content Object ---
@@ -55,7 +55,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentO
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $contentObjectSignature,
-    "{$flexFormsFolder}/ContentObjects/Copyright.xml"
+    "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
 );
 
 // --- Icon Content Object ---
@@ -75,7 +75,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentO
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $contentObjectSignature,
-    "{$flexFormsFolder}/ContentObjects/Icon.xml"
+    "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
 );
 
 // --- Label Content Object ---
@@ -95,7 +95,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentO
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $contentObjectSignature,
-    "{$flexFormsFolder}/ContentObjects/Label.xml"
+    "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
 );
 
 // --- Link Content Object ---
@@ -115,7 +115,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentO
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $contentObjectSignature,
-    "{$flexFormsFolder}/ContentObjects/Link.xml"
+    "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
 );
 
 // --- Logo Content Object ---
@@ -135,7 +135,27 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentO
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $contentObjectSignature,
-    "{$flexFormsFolder}/ContentObjects/Logo.xml"
+    "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
+);
+
+// --- Search Bar Content Object ---
+
+$contentObjectKey = 'SearchBar';
+$contentObjectLabel = $lll . 'contentObjects.searchBar.label';
+$contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
+$contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
+
+// Register the Content Object
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);
+
+// Disable the display of `layout`, `pages`, `select_key` and `recursive` field
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
+
+// Activate the display of the `flexform` field and set the FlexForm definition
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+    $contentObjectSignature,
+    "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
 );
 
 // --- Spacer Content Object ---
@@ -155,7 +175,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentO
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $contentObjectSignature,
-    "{$flexFormsFolder}/ContentObjects/Spacer.xml"
+    "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
 );
 
 // === Palettes ===

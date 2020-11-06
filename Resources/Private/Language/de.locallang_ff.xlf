@@ -246,6 +246,31 @@
         <target>Benutzerdefinierte Höhe in Pixel</target>
       </trans-unit>
 
+      <trans-unit id="settings.form.legend.label">
+        <source>The form legend</source>
+        <target>Formularlegende</target>
+      </trans-unit>
+
+      <trans-unit id="settings.form.input.label.label">
+        <source>The label for the form input</source>
+        <target>Beschriftung für die Formulareingabe</target>
+      </trans-unit>
+
+      <trans-unit id="settings.form.input.placeholder.label">
+        <source>The placeholder for the form input</source>
+        <target>Platzhalter für die Formulareingabe</target>
+      </trans-unit>
+
+      <trans-unit id="settings.form.submit.label.label">
+        <source>The Label of the form submit button</source>
+        <target>Beschriftung der Schaltfläche zum Abschicken des Formulars</target>
+      </trans-unit>
+
+      <trans-unit id="settings.form.submit.title.label">
+        <source>The title of the form submit button</source>
+        <target>Titel der Schaltfläche zum Abschicken des Formulars</target>
+      </trans-unit>
+
       <trans-unit id="settings.format.label">
         <source>Format</source>
         <target>Formatieren</target>

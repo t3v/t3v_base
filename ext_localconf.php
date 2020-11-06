@@ -143,6 +143,26 @@ $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::getIconsFolder($extensionK
     ]
 );
 
+// --- Search Bar Content Object ---
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    $extensionSignature,
+
+    // The unique name of the content object in upper camel case
+    'SearchBar',
+
+    // The array holding the controller-action-combinations that are accessible
+    [
+        // The first controller and its first action will be the default
+        'ContentObjects\SearchBar' => 'index'
+    ],
+
+    // The array of non-cacheable controller-action-combinations (they must already be enabled)
+    [
+        // 'ContentObjects\SearchBar' => 'index'
+    ]
+);
+
 // --- Spacer Content Object ---
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
@@ -193,6 +213,7 @@ if (TYPO3_MODE === 'BE') {
         'Logo' => "{$iconsFolder}/ContentObjects/Logo.svg",
         'Modal Grid Element' => "{$iconsFolder}/GridElements/ModalGridElement.svg",
         'Section Grid Element' => "{$iconsFolder}/GridElements/SectionGridElement.svg",
+        'Search Bar' => "{$iconsFolder}/ContentObjects/SearchBar.svg",
         'Spacer' => "{$iconsFolder}/ContentObjects/Spacer.svg",
         'Viewport Grid Element' => "{$iconsFolder}/GridElements/ViewportGridElement.svg"
     ];

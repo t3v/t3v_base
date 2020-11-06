@@ -10,15 +10,15 @@ Overview
 
 ### Content Objects
 
-* Background Content Object
-* Button Content Object
-* Copyright Content Object
-* Icon Content Object
-* Label Content Object
-* Link Content Object
-* Logo Content Object
-* Search Bar Content Object (*)
-* Spacer Content Object
+* Background
+* Button
+* Copyright
+* Icon
+* Label
+* Link
+* Logo
+* Search Bar
+* Spacer
 
 ### Grid Elements
 
@@ -131,12 +131,13 @@ Credits
 * [Browser icon (12)]
 * [Browser icon (13)]
 * [Browser icon (14)]
-* [Copyright icon]
 * [CSS Icon]
+* [Copyright icon]
 * [Designer icon]
 * [Email icon]
 * [Link icon]
 * [Picture icon]
+* [Search Engine icon]
 * [Tag icon]
 * [Type icon]
 
@@ -167,28 +168,29 @@ T3v Base is released under the [MIT License (MIT)], see [LICENSE].
 [Browser icon (8)]: https://www.flaticon.com/free-icon/browser_140842 "Browser icon"
 [Browser icon (9)]: https://www.flaticon.com/free-icon/browser_140843 "Browser icon"
 [Browser icon]: https://www.flaticon.com/free-icon/browser_140840 "Browser icon"
+[CSS Icon]: https://www.flaticon.com/free-icon/css_1073663 "CSS Icon"
 [Composer]: https://getcomposer.org "Dependency Manager for PHP"
 [Copyright icon]: https://www.flaticon.com/free-icon/copyright_594862 "Copyright icon"
-[CSS Icon]: https://www.flaticon.com/free-icon/css_1073663 "CSS Icon"
 [Designer icon]: https://www.flaticon.com/free-icon/designer_2490457 "Designer icon"
 [DinosoftLabs]: https://www.flaticon.com/authors/dinosoftlabs "DinosoftLabs at Flaticon"
 [Email icon]: https://www.flaticon.com/free-icon/email_321817 "Email icon"
 [Flaticon]: https://www.flaticon.com "Flaticon"
 [Freepik]: https://www.flaticon.com/authors/freepik "Freepik  at Flaticon"
 [Functional testing TYPO3]: https://wiki.typo3.org/Functional_testing "Functional testing TYPO3"
-[here]: https://github.com/t3v/t3v_base/issues "GitHub Issue Tracker"
 [Kiranshastry]: https://www.flaticon.com/authors/kiranshastry "Kiranshastry at Flaticon"
 [LICENSE]: https://raw.githubusercontent.com/t3v/t3v_base/master/LICENSE "License"
 [Link icon]: https://www.flaticon.com/free-icon/link_321834 "Link icon"
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
 [Picture icon]: https://www.flaticon.com/free-icon/picture_714820 "Picture icon"
+[Search Engine icon]: https://www.flaticon.com/free-icon/search-engine_140789 "Search Engine icon"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Smashicons]: https://www.flaticon.com/authors/smashicons "Smashicons at Flaticon"
 [T3v Base]: https://t3v.github.io/t3v_base/ "The base extension of TYPO3voilà."
+[TYPO3voilà]: https://github.com/t3v "“UH LÁLÁ, TYPO3!”"
 [Tag icon]: https://www.flaticon.com/free-icon/tag_757916 "Tag icon"
 [Travis CI]: https://travis-ci.org/t3v/t3v_base "T3v Base at Travis CI"
 [Travis CI Status]: https://img.shields.io/travis/t3v/t3v_base.svg?style=flat "Travis CI Status"
 [Type icon]: https://www.flaticon.com/free-icon/type_3230756 "Type icon"
-[TYPO3voilà]: https://github.com/t3v "“UH LÁLÁ, TYPO3!”"
 [Unit Testing TYPO3]: https://wiki.typo3.org/Unit_Testing_TYPO3 "Unit testing TYPO3"
 [Vectors Market]: https://www.flaticon.com/authors/vectors-market "Vectors Market at Flaticon"
+[here]: https://github.com/t3v/t3v_base/issues "GitHub Issue Tracker"

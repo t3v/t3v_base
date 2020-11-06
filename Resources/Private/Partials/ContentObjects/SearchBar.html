@@ -1,0 +1,19 @@
+<html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:t3v="http://typo3.org/ns/T3v/T3vCore/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+  <v:variable.set name="contentObject" value="t3v-base-search-bar" />
+  <v:variable.set name="uid" value="{v:variable.convert(value: data.uid, type: 'integer', default: 0)}" />
+  <v:variable.set name="type" value="{v:variable.convert(value: settings.type, type: 'string', default: 'default')}" />
+  <v:variable.set name="handle" value="{v:variable.convert(value: settings.handle, type: 'string', default: 'none')}" />
+  <v:variable.set name="layout" value="{v:variable.convert(value: settings.layout, type: 'string', default: 'default')}" />
+  <v:variable.set name="layout" value="{v:format.replace(content: layout, substring: ',', replacement: ' ')}" />
+
+  <f:if condition="{handle}">
+    <v:variable.set name="handle" value="{t3v:handle(input: handle)}" />
+  </f:if>
+
+  <f:switch expression="{type}">
+    <f:defaultCase>
+      <f:render partial="ContentObjects/SearchBar/Default" arguments="{_all}" />
+    </f:defaultCase>
+  </f:switch>
+</html>

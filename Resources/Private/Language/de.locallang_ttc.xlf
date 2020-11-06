@@ -108,6 +108,23 @@
         <target>Ein logo.</target>
       </trans-unit>
 
+      <!-- Search Bar Content Object -->
+
+      <trans-unit id="contentObjects.searchBar.title">
+        <source>Search Bar</source>
+        <target>Suchleiste</target>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.searchBar.label">
+        <source>Search Bar</source>
+        <target>Suchleiste</target>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.searchBar.description">
+        <source>A search bar.</source>
+        <target>Eine Suchleiste.</target>
+      </trans-unit>
+
       <!-- Spacer Content Object -->
 
       <trans-unit id="contentObjects.spacer.title">

@@ -199,8 +199,24 @@
         <source>Custom height in pixel</source>
       </trans-unit>
 
-      <trans-unit id="settings.format.label">
-        <source>Format</source>
+      <trans-unit id="settings.form.legend.label">
+        <source>The form legend</source>
+      </trans-unit>
+
+      <trans-unit id="settings.form.input.label.label">
+        <source>The label for the form input</source>
+      </trans-unit>
+
+      <trans-unit id="settings.form.input.placeholder.label">
+        <source>The placeholder for the form input</source>
+      </trans-unit>
+
+      <trans-unit id="settings.form.submit.label.label">
+        <source>The Label of the form submit button</source>
+      </trans-unit>
+
+      <trans-unit id="settings.form.submit.title.label">
+        <source>The title of the form submit button</source>
       </trans-unit>
 
       <trans-unit id="settings.formats.label">

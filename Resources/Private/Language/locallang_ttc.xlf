@@ -90,6 +90,20 @@
         <source>A logo.</source>
       </trans-unit>
 
+      <!-- Search Bar Content Object -->
+
+      <trans-unit id="contentObjects.searchBar.title">
+        <source>Search Bar</source>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.searchBar.label">
+        <source>Search Bar</source>
+      </trans-unit>
+
+      <trans-unit id="contentObjects.searchBar.description">
+        <source>A search bar.</source>
+      </trans-unit>
+
       <!-- Spacer Content Object -->
 
       <trans-unit id="contentObjects.spacer.title">
