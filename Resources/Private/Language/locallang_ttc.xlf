@@ -120,46 +120,6 @@
 
       <!-- === Grid Elements === -->
 
-      <!-- Header Grid Element -->
-
-      <trans-unit id="gridElements.headerGridElement.title">
-        <source>Header</source>
-      </trans-unit>
-
-      <trans-unit id="gridElements.headerGridElement.description">
-        <source>A Header Grid Element.</source>
-      </trans-unit>
-
-      <!-- Section Grid Element -->
-
-      <trans-unit id="gridElements.sectionGridElement.title">
-        <source>Section</source>
-      </trans-unit>
-
-      <trans-unit id="gridElements.sectionGridElement.description">
-        <source>A Section Grid Element.</source>
-      </trans-unit>
-
-      <!-- Footer Grid Element -->
-
-      <trans-unit id="gridElements.footerGridElement.title">
-        <source>Footer</source>
-      </trans-unit>
-
-      <trans-unit id="gridElements.footerGridElement.description">
-        <source>A Footer Grid Element.</source>
-      </trans-unit>
-
-      <!-- Flexbox Grid Element -->
-
-      <trans-unit id="gridElements.flexboxGridElement.title">
-        <source>Flexbox</source>
-      </trans-unit>
-
-      <trans-unit id="gridElements.flexboxGridElement.description">
-        <source>A Flexbox Grid Element.</source>
-      </trans-unit>
-
       <!-- 1 Column Layout Grid Element -->
 
       <trans-unit id="gridElements.columnLayoutGridElement.1Column.title">
@@ -240,36 +200,6 @@
         <source>Fourth column</source>
       </trans-unit>
 
-      <!-- Cascading Layout Grid Element -->
-
-      <trans-unit id="gridElements.cascadingLayoutGridElement.title">
-        <source>Cascading Layout</source>
-      </trans-unit>
-
-      <trans-unit id="gridElements.cascadingLayoutGridElement.description">
-        <source>A Cascading Layout Grid Element.</source>
-      </trans-unit>
-
-      <!-- Container Grid Element -->
-
-      <trans-unit id="gridElements.containerGridElement.title">
-        <source>Container</source>
-      </trans-unit>
-
-      <trans-unit id="gridElements.containerGridElement.description">
-        <source>A Container Grid Element.</source>
-      </trans-unit>
-
-      <!-- Formatting Grid Element -->
-
-      <trans-unit id="gridElements.formattingGridElement.title">
-        <source>Formatting</source>
-      </trans-unit>
-
-      <trans-unit id="gridElements.formattingGridElement.description">
-        <source>A Formatting Grid Element.</source>
-      </trans-unit>
-
       <!-- Bar Grid Element -->
 
       <trans-unit id="gridElements.barGridElement.title">
@@ -290,24 +220,14 @@
         <source>A Block Grid Element.</source>
       </trans-unit>
 
-      <!-- Flyout Grid Element -->
+      <!-- Cascading Layout Grid Element -->
 
-      <trans-unit id="gridElements.flyoutGridElement.title">
-        <source>Flyout</source>
+      <trans-unit id="gridElements.cascadingLayoutGridElement.title">
+        <source>Cascading Layout</source>
       </trans-unit>
 
-      <trans-unit id="gridElements.flyoutGridElement.description">
-        <source>A Flyout Grid Element.</source>
-      </trans-unit>
-
-      <!-- Modal Grid Element -->
-
-      <trans-unit id="gridElements.modalGridElement.title">
-        <source>Modal</source>
-      </trans-unit>
-
-      <trans-unit id="gridElements.modalGridElement.description">
-        <source>A Modal Grid Element.</source>
+      <trans-unit id="gridElements.cascadingLayoutGridElement.description">
+        <source>A Cascading Layout Grid Element.</source>
       </trans-unit>
 
       <!-- Conditionally Grid Element -->
@@ -326,6 +246,86 @@
 
       <trans-unit id="gridElements.conditionallyGridElement.rows.1.columns.2.name">
         <source>Else</source>
+      </trans-unit>
+
+      <!-- Container Grid Element -->
+
+      <trans-unit id="gridElements.containerGridElement.title">
+        <source>Container</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.containerGridElement.description">
+        <source>A Container Grid Element.</source>
+      </trans-unit>
+
+      <!-- Flexbox Grid Element -->
+
+      <trans-unit id="gridElements.flexboxGridElement.title">
+        <source>Flexbox</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.flexboxGridElement.description">
+        <source>A Flexbox Grid Element.</source>
+      </trans-unit>
+
+      <!-- Flyout Grid Element -->
+
+      <trans-unit id="gridElements.flyoutGridElement.title">
+        <source>Flyout</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.flyoutGridElement.description">
+        <source>A Flyout Grid Element.</source>
+      </trans-unit>
+
+      <!-- Footer Grid Element -->
+
+      <trans-unit id="gridElements.footerGridElement.title">
+        <source>Footer</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.footerGridElement.description">
+        <source>A Footer Grid Element.</source>
+      </trans-unit>
+
+      <!-- Formatting Grid Element -->
+
+      <trans-unit id="gridElements.formattingGridElement.title">
+        <source>Formatting</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.formattingGridElement.description">
+        <source>A Formatting Grid Element.</source>
+      </trans-unit>
+
+      <!-- Header Grid Element -->
+
+      <trans-unit id="gridElements.headerGridElement.title">
+        <source>Header</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.headerGridElement.description">
+        <source>A Header Grid Element.</source>
+      </trans-unit>
+
+      <!-- Modal Grid Element -->
+
+      <trans-unit id="gridElements.modalGridElement.title">
+        <source>Modal</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.modalGridElement.description">
+        <source>A Modal Grid Element.</source>
+      </trans-unit>
+
+      <!-- Section Grid Element -->
+
+      <trans-unit id="gridElements.sectionGridElement.title">
+        <source>Section</source>
+      </trans-unit>
+
+      <trans-unit id="gridElements.sectionGridElement.description">
+        <source>A Section Grid Element.</source>
       </trans-unit>
 
       <!-- Viewport Grid Element -->

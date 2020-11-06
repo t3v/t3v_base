@@ -144,54 +144,6 @@
 
       <!-- === Grid Elements === -->
 
-      <!-- Header Grid Element -->
-
-      <trans-unit id="gridElements.headerGridElement.title">
-        <source>Header</source>
-        <target>Kopfbereich</target>
-      </trans-unit>
-
-      <trans-unit id="gridElements.headerGridElement.description">
-        <source>A Header Grid Element.</source>
-        <target>Ein Kopfbereich-Raster-Element.</target>
-      </trans-unit>
-
-      <!-- Section Grid Element -->
-
-      <trans-unit id="gridElements.sectionGridElement.title">
-        <source>Section</source>
-        <target>Sektion</target>
-      </trans-unit>
-
-      <trans-unit id="gridElements.sectionGridElement.description">
-        <source>A Section Grid Element.</source>
-        <target>Ein Sektion-Raster-Element.</target>
-      </trans-unit>
-
-      <!-- Footer Grid Element -->
-
-      <trans-unit id="gridElements.footerGridElement.title">
-        <source>Footer</source>
-        <target>Fußbereich</target>
-      </trans-unit>
-
-      <trans-unit id="gridElements.footerGridElement.description">
-        <source>A Footer Grid Element.</source>
-        <target>Ein Fußbereich-Raster-Element.</target>
-      </trans-unit>
-
-      <!-- Flexbox Grid Element -->
-
-      <trans-unit id="gridElements.flexboxGridElement.title">
-        <source>Flexbox</source>
-        <target>Flexbox</target>
-      </trans-unit>
-
-      <trans-unit id="gridElements.flexboxGridElement.description">
-        <source>A Flexbox Grid Element.</source>
-        <target>Ein Flexbox-Raster-Element.</target>
-      </trans-unit>
-
       <!-- 1 Column Layout Grid Element -->
 
       <trans-unit id="gridElements.columnLayoutGridElement.1Column.title">
@@ -290,42 +242,6 @@
         <target>Vierte Spalte</target>
       </trans-unit>
 
-      <!-- Cascading Layout Grid Element -->
-
-      <trans-unit id="gridElements.cascadingLayoutGridElement.title">
-        <source>Cascading Layout</source>
-        <target>Kaskadierendes Layout</target>
-      </trans-unit>
-
-      <trans-unit id="gridElements.cascadingLayoutGridElement.description">
-        <source>A Cascading Layout Grid Element.</source>
-        <target>Ein Kaskadierendes-Layout-Raster-Element.</target>
-      </trans-unit>
-
-      <!-- Container Grid Element -->
-
-      <trans-unit id="gridElements.containerGridElement.title">
-        <source>Container</source>
-        <target>Container</target>
-      </trans-unit>
-
-      <trans-unit id="gridElements.containerGridElement.description">
-        <source>A Container Grid Element.</source>
-        <target>Ein Container-Raster-Element.</target>
-      </trans-unit>
-
-      <!-- Formatting Grid Element -->
-
-      <trans-unit id="gridElements.formattingGridElement.title">
-        <source>Formatting</source>
-        <target>Formatierung</target>
-      </trans-unit>
-
-      <trans-unit id="gridElements.formattingGridElement.description">
-        <source>A Formatting Grid Element.</source>
-        <target>Ein Formatierungs-Raster-Element.</target>
-      </trans-unit>
-
       <!-- Bar Grid Element -->
 
       <trans-unit id="gridElements.barGridElement.title">
@@ -350,28 +266,16 @@
         <target>Ein Block-Raster-Element.</target>
       </trans-unit>
 
-      <!-- Flyout Grid Element -->
+      <!-- Cascading Layout Grid Element -->
 
-      <trans-unit id="gridElements.flyoutGridElement.title">
-        <source>Flyout</source>
-        <target>Flyout</target>
+      <trans-unit id="gridElements.cascadingLayoutGridElement.title">
+        <source>Cascading Layout</source>
+        <target>Kaskadierendes Layout</target>
       </trans-unit>
 
-      <trans-unit id="gridElements.flyoutGridElement.description">
-        <source>A Flyout Grid Element.</source>
-        <target>Ein Flyout-Raster-Element.</target>
-      </trans-unit>
-
-      <!-- Modal Grid Element -->
-
-      <trans-unit id="gridElements.modalGridElement.title">
-        <source>Modal</source>
-        <target>Modal</target>
-      </trans-unit>
-
-      <trans-unit id="gridElements.modalGridElement.description">
-        <source>A Modal Grid Element.</source>
-        <target>Ein Modal-Raster-Element.</target>
+      <trans-unit id="gridElements.cascadingLayoutGridElement.description">
+        <source>A Cascading Layout Grid Element.</source>
+        <target>Ein Kaskadierendes-Layout-Raster-Element.</target>
       </trans-unit>
 
       <!-- Conditionally Grid Element -->
@@ -394,6 +298,102 @@
       <trans-unit id="gridElements.conditionallyGridElement.rows.1.columns.2.name">
         <source>Else</source>
         <target>Ansonsten</target>
+      </trans-unit>
+
+      <!-- Container Grid Element -->
+
+      <trans-unit id="gridElements.containerGridElement.title">
+        <source>Container</source>
+        <target>Container</target>
+      </trans-unit>
+
+      <trans-unit id="gridElements.containerGridElement.description">
+        <source>A Container Grid Element.</source>
+        <target>Ein Container-Raster-Element.</target>
+      </trans-unit>
+
+      <!-- Flexbox Grid Element -->
+
+      <trans-unit id="gridElements.flexboxGridElement.title">
+        <source>Flexbox</source>
+        <target>Flexbox</target>
+      </trans-unit>
+
+      <trans-unit id="gridElements.flexboxGridElement.description">
+        <source>A Flexbox Grid Element.</source>
+        <target>Ein Flexbox-Raster-Element.</target>
+      </trans-unit>
+
+      <!-- Flyout Grid Element -->
+
+      <trans-unit id="gridElements.flyoutGridElement.title">
+        <source>Flyout</source>
+        <target>Flyout</target>
+      </trans-unit>
+
+      <trans-unit id="gridElements.flyoutGridElement.description">
+        <source>A Flyout Grid Element.</source>
+        <target>Ein Flyout-Raster-Element.</target>
+      </trans-unit>
+
+      <!-- Footer Grid Element -->
+
+      <trans-unit id="gridElements.footerGridElement.title">
+        <source>Footer</source>
+        <target>Fußbereich</target>
+      </trans-unit>
+
+      <trans-unit id="gridElements.footerGridElement.description">
+        <source>A Footer Grid Element.</source>
+        <target>Ein Fußbereich-Raster-Element.</target>
+      </trans-unit>
+
+      <!-- Formatting Grid Element -->
+
+      <trans-unit id="gridElements.formattingGridElement.title">
+        <source>Formatting</source>
+        <target>Formatierung</target>
+      </trans-unit>
+
+      <trans-unit id="gridElements.formattingGridElement.description">
+        <source>A Formatting Grid Element.</source>
+        <target>Ein Formatierungs-Raster-Element.</target>
+      </trans-unit>
+
+      <!-- Header Grid Element -->
+
+      <trans-unit id="gridElements.headerGridElement.title">
+        <source>Header</source>
+        <target>Kopfbereich</target>
+      </trans-unit>
+
+      <trans-unit id="gridElements.headerGridElement.description">
+        <source>A Header Grid Element.</source>
+        <target>Ein Kopfbereich-Raster-Element.</target>
+      </trans-unit>
+
+      <!-- Modal Grid Element -->
+
+      <trans-unit id="gridElements.modalGridElement.title">
+        <source>Modal</source>
+        <target>Modal</target>
+      </trans-unit>
+
+      <trans-unit id="gridElements.modalGridElement.description">
+        <source>A Modal Grid Element.</source>
+        <target>Ein Modal-Raster-Element.</target>
+      </trans-unit>
+
+      <!-- Section Grid Element -->
+
+      <trans-unit id="gridElements.sectionGridElement.title">
+        <source>Section</source>
+        <target>Sektion</target>
+      </trans-unit>
+
+      <trans-unit id="gridElements.sectionGridElement.description">
+        <source>A Section Grid Element.</source>
+        <target>Ein Sektion-Raster-Element.</target>
       </trans-unit>
 
       <!-- Viewport Grid Element -->
