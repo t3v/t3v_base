@@ -1,3 +1,23 @@
-# --------------------------------
-# | Block Grid Element Constants |
-# --------------------------------
+# -----------------------------------------
+# | T3v Base Block Grid Element Constants |
+# -----------------------------------------
+
+# === Plugin Constants ===
+
+plugin {
+  tx_t3vbase {
+    settings {
+      gridElements {
+        blockGridElement {
+          cObject {
+            file = EXT:t3v_base/Resources/Private/Templates/GridElements/BlockGridElement.html
+            layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
+            partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+          }
+
+          outerWrap = |
+        }
+      }
+    }
+  }
+}

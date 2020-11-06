@@ -1,3 +1,23 @@
-# ----------------------------------------
-# | Conditionally Grid Element Constants |
-# ----------------------------------------
+# -------------------------------------------------
+# | T3v Base Conditionally Grid Element Constants |
+# -------------------------------------------------
+
+# === Plugin Constants ===
+
+plugin {
+  tx_t3vbase {
+    settings {
+      gridElements {
+        conditionallyGridElement {
+          cObject {
+            file = EXT:t3v_base/Resources/Private/Templates/GridElements/ConditionallyGridElement.html
+            layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
+            partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+          }
+
+          outerWrap = |
+        }
+      }
+    }
+  }
+}

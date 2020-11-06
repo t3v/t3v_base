@@ -1,6 +1,8 @@
-# ---------------------------------------
-# | Cascading Layout Grid Element Setup |
-# ---------------------------------------
+# ------------------------------------------------
+# | T3v Base Cascading Layout Grid Element Setup |
+# ------------------------------------------------
+
+# === Grid Element Configuration ===
 
 tt_content {
   gridelements_pi1 {
@@ -11,11 +13,9 @@ tt_content {
           t3vBaseCascadingLayout {
             cObject = FLUIDTEMPLATE
             cObject {
-              file = EXT:t3v_base/Resources/Private/Templates/GridElements/CascadingLayoutGridElement.html
-
-              layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
-
-              partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+              file = {$plugin.tx_t3vbase.settings.gridElements.cascadingLayoutGridElement.cObject.file}
+              layoutRootPath = {$plugin.tx_t3vbase.settings.gridElements.cascadingLayoutGridElement.cObject.layoutRootPath}
+              partialRootPath = {$plugin.tx_t3vbase.settings.gridElements.cascadingLayoutGridElement.cObject.partialRootPath}
 
               dataProcessing {
                 10 = T3v\T3vBase\DataProcessing\GridElement\StyleProcessor
@@ -27,7 +27,7 @@ tt_content {
               }
             }
 
-            outerWrap = |
+            outerWrap = {$plugin.tx_t3vbase.settings.gridElements.cascadingLayoutGridElement.outerWrap}
           }
         }
       }

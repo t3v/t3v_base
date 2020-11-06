@@ -1,3 +1,23 @@
-# ---------------------------------
-# | Flyout Grid Element Constants |
-# ---------------------------------
+# ------------------------------------------
+# | T3v Base Flyout Grid Element Constants |
+# ------------------------------------------
+
+# === Plugin Constants ===
+
+plugin {
+  tx_t3vbase {
+    settings {
+      gridElements {
+        flyoutGridElement {
+          cObject {
+            file = EXT:t3v_base/Resources/Private/Templates/GridElements/FlyoutGridElement.html
+            layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
+            partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+          }
+
+          outerWrap = |
+        }
+      }
+    }
+  }
+}

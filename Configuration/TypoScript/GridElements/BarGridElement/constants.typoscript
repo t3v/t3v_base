@@ -1,3 +1,25 @@
-# ------------------------------
-# | Bar Grid Element Constants |
-# ------------------------------
+# ---------------------------------------
+# | T3v Base Bar Grid Element Constants |
+# ---------------------------------------
+
+# === Plugin Constants ===
+
+plugin {
+  tx_t3vbase {
+    settings {
+      gridElements {
+        barGridElement {
+          cObject {
+            file = EXT:t3v_base/Resources/Private/Templates/GridElements/BarGridElement.html
+            layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
+            partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+          }
+
+          outerWrap = |
+        }
+      }
+    }
+  }
+}
+
+# _XXX_T3V_GENERATOR_XXX_

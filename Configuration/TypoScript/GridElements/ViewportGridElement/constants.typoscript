@@ -1,3 +1,23 @@
-# -----------------------------------
-# | Viewport Grid Element Constants |
-# -----------------------------------
+# --------------------------------------------
+# | T3v Base Viewport Grid Element Constants |
+# --------------------------------------------
+
+# === Plugin Constants ===
+
+plugin {
+  tx_t3vbase {
+    settings {
+      gridElements {
+        viewportGridElement {
+          cObject {
+            file = EXT:t3v_base/Resources/Private/Templates/GridElements/ViewportGridElement.html
+            layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
+            partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+          }
+
+          outerWrap = |
+        }
+      }
+    }
+  }
+}

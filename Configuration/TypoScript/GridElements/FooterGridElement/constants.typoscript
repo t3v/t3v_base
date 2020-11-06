@@ -1,3 +1,23 @@
-# ---------------------------------
-# | Footer Grid Element Constants |
-# ---------------------------------
+# ------------------------------------------
+# | T3v Base Footer Grid Element Constants |
+# ------------------------------------------
+
+# === Plugin Constants ===
+
+plugin {
+  tx_t3vbase {
+    settings {
+      gridElements {
+        footerGridElement {
+          cObject {
+            file = EXT:t3v_base/Resources/Private/Templates/GridElements/FooterGridElement.html
+            layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
+            partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+          }
+
+          outerWrap = |
+        }
+      }
+    }
+  }
+}

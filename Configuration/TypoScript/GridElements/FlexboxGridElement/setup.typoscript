@@ -1,6 +1,6 @@
-# ------------------------------
-# | Flexbox Grid Element Setup |
-# ------------------------------
+# ---------------------------------------
+# | T3v Base Flexbox Grid Element Setup |
+# ---------------------------------------
 
 tt_content {
   gridelements_pi1 {
@@ -11,11 +11,9 @@ tt_content {
           t3vBaseFlexbox {
             cObject = FLUIDTEMPLATE
             cObject {
-              file = EXT:t3v_base/Resources/Private/Templates/GridElements/FlexboxGridElement.html
-
-              layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
-
-              partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+              file = {$plugin.tx_t3vbase.settings.gridElements.flexboxGridElement.cObject.file}
+              layoutRootPath = {$plugin.tx_t3vbase.settings.gridElements.flexboxGridElement.cObject.layoutRootPath}
+              partialRootPath = {$plugin.tx_t3vbase.settings.gridElements.flexboxGridElement.cObject.partialRootPath}
 
               dataProcessing {
                 10 = T3v\T3vBase\DataProcessing\GridElement\StyleProcessor
@@ -27,7 +25,7 @@ tt_content {
               }
             }
 
-            outerWrap = |
+            outerWrap = {$plugin.tx_t3vbase.settings.gridElements.flexboxGridElement.outerWrap}
           }
         }
       }

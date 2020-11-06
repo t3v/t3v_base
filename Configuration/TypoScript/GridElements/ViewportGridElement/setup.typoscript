@@ -1,6 +1,8 @@
-# -------------------------------
-# | Viewport Grid Element Setup |
-# -------------------------------
+# ----------------------------------------
+# | T3v Base Viewport Grid Element Setup |
+# ----------------------------------------
+
+# === Grid Element Configuration ===
 
 tt_content {
   gridelements_pi1 {
@@ -11,14 +13,12 @@ tt_content {
           t3vBaseViewport {
             cObject = FLUIDTEMPLATE
             cObject {
-              file = EXT:t3v_base/Resources/Private/Templates/GridElements/ViewportGridElement.html
-
-              layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
-
-              partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+              file = {$plugin.tx_t3vbase.settings.gridElements.viewportGridElement.cObject.file}
+              layoutRootPath = {$plugin.tx_t3vbase.settings.gridElements.viewportGridElement.cObject.layoutRootPath}
+              partialRootPath = {$plugin.tx_t3vbase.settings.gridElements.viewportGridElement.cObject.partialRootPath}
             }
 
-            outerWrap = |
+            outerWrap = {$plugin.tx_t3vbase.settings.gridElements.viewportGridElement.outerWrap}
           }
         }
       }

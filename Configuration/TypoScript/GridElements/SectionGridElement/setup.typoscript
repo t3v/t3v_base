@@ -1,6 +1,8 @@
-# ------------------------------
-# | Section Grid Element Setup |
-# ------------------------------
+# ---------------------------------------
+# | T3v Base Section Grid Element Setup |
+# ---------------------------------------
+
+# === Grid Element Configuration ===
 
 tt_content {
   gridelements_pi1 {
@@ -11,11 +13,9 @@ tt_content {
           t3vBaseSection {
             cObject = FLUIDTEMPLATE
             cObject {
-              file = EXT:t3v_base/Resources/Private/Templates/GridElements/SectionGridElement.html
-
-              layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
-
-              partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+              file = {$plugin.tx_t3vbase.settings.gridElements.sectionGridElement.cObject.file}
+              layoutRootPath = {$plugin.tx_t3vbase.settings.gridElements.sectionGridElement.cObject.layoutRootPath}
+              partialRootPath = {$plugin.tx_t3vbase.settings.gridElements.sectionGridElement.cObject.partialRootPath}
 
               dataProcessing {
                 10 = T3v\T3vBase\DataProcessing\GridElement\StyleProcessor
@@ -27,7 +27,7 @@ tt_content {
               }
             }
 
-            outerWrap = |
+            outerWrap = {$plugin.tx_t3vbase.settings.gridElements.sectionGridElement.outerWrap}
           }
         }
       }

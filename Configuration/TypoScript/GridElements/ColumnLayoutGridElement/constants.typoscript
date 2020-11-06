@@ -1,6 +1,10 @@
-# === Includes ===
+# -------------------------------------------------
+# | T3v Base Column Layout Grid Element Constants |
+# -------------------------------------------------
 
-<INCLUDE_TYPOSCRIPT: source="FILE: ./1Column/constants.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE: ./2Column/constants.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE: ./3Column/constants.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE: ./4Column/constants.typoscript">
+# === Imports ===
+
+@import './1Column/constants.typoscript'
+@import './2Column/constants.typoscript'
+@import './3Column/constants.typoscript'
+@import './4Column/constants.typoscript'

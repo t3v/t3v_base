@@ -1,6 +1,6 @@
-# -----------------
-# | Extbase Setup |
-# -----------------
+# --------------------------
+# | T3v Base Extbase Setup |
+# --------------------------
 
 config {
   tx_extbase {
@@ -9,110 +9,60 @@ config {
         T3v\T3vBase\Domain\Model\Country {
           mapping {
             tableName = tx_t3vbase_domain_model_country
-
-            # columns {
-            #   foo.mapOnProperty = foo
-            #   bar.mapOnProperty = bar
-            # }
           }
         }
 
         T3v\T3vBase\Domain\Model\CountryGroup {
           mapping {
             tableName = tx_t3vbase_domain_model_country_group
-
-            # columns {
-            #   foo.mapOnProperty = foo
-            #   bar.mapOnProperty = bar
-            # }
           }
         }
 
         T3v\T3vBase\Domain\Model\Department {
           mapping {
             tableName = tx_t3vbase_domain_model_department
-
-            # columns {
-            #   foo.mapOnProperty = foo
-            #   bar.mapOnProperty = bar
-            # }
           }
         }
 
         T3v\T3vBase\Domain\Model\EmailAddress {
           mapping {
             tableName = tx_t3vbase_domain_model_email_address
-
-            # columns {
-            #   foo.mapOnProperty = foo
-            #   bar.mapOnProperty = bar
-            # }
           }
         }
 
         T3v\T3vBase\Domain\Model\Format {
           mapping {
             tableName = tx_t3vbase_domain_model_format
-
-            # columns {
-            #   foo.mapOnProperty = foo
-            #   bar.mapOnProperty = bar
-            # }
           }
         }
 
         T3v\T3vBase\Domain\Model\PhoneNummber {
           mapping {
             tableName = tx_t3vbase_domain_model_phone_number
-
-            # columns {
-            #   foo.mapOnProperty = foo
-            #   bar.mapOnProperty = bar
-            # }
           }
         }
 
         T3v\T3vBase\Domain\Model\PostalAddress {
           mapping {
             tableName = tx_t3vbase_domain_model_postal_address
-
-            # columns {
-            #   foo.mapOnProperty = foo
-            #   bar.mapOnProperty = bar
-            # }
           }
         }
 
         T3v\T3vBase\Domain\Model\Region {
           mapping {
             tableName = tx_t3vbase_domain_model_region
-
-            # columns {
-            #   foo.mapOnProperty = foo
-            #   bar.mapOnProperty = bar
-            # }
           }
         }
 
         T3v\T3vBase\Domain\Model\Style {
           mapping {
             tableName = tx_t3vbase_domain_model_style
-
-            # columns {
-            #   foo.mapOnProperty = foo
-            #   bar.mapOnProperty = bar
-            # }
           }
         }
 
         T3v\T3vBase\Domain\Model\Theme {
           mapping {
             tableName = tx_t3vbase_domain_model_theme
-
-            # columns {
-            #   foo.mapOnProperty = foo
-            #   bar.mapOnProperty = bar
-            # }
           }
         }
       }

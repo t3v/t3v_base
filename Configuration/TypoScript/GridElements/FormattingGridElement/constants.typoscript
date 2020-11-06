@@ -1,3 +1,23 @@
-# -------------------------------------
-# | Formatting Grid Element Constants |
-# -------------------------------------
+# ----------------------------------------------
+# | T3v Base Formatting Grid Element Constants |
+# ----------------------------------------------
+
+# === Plugin Constants ===
+
+plugin {
+  tx_t3vbase {
+    settings {
+      gridElements {
+        formattingGridElement {
+          cObject {
+            file = EXT:t3v_base/Resources/Private/Templates/GridElements/FormattingGridElement.html
+            layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
+            partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+          }
+
+          outerWrap = |
+        }
+      }
+    }
+  }
+}

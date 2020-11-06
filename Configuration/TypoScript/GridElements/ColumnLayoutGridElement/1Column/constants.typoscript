@@ -1,3 +1,25 @@
-# ------------------------------------------
-# | 1 Column Layout Grid Element Constants |
-# ------------------------------------------
+# ---------------------------------------------------
+# | T3v Base 1 Column Layout Grid Element Constants |
+# ---------------------------------------------------
+
+# === Plugin Constants ===
+
+plugin {
+  tx_t3vbase {
+    settings {
+      gridElements {
+        columnLayoutGridElement {
+          1Column {
+            cObject {
+              file = EXT:t3v_base/Resources/Private/Templates/GridElements/ColumnLayoutGridElement/1Column.html
+              layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
+              partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+            }
+
+            outerWrap = |
+          }
+        }
+      }
+    }
+  }
+}

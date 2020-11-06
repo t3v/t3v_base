@@ -1,6 +1,8 @@
-# ------------------------------------
-# | Conditionally Grid Element Setup |
-# ------------------------------------
+# ---------------------------------------------
+# | T3v Base Conditionally Grid Element Setup |
+# ---------------------------------------------
+
+# === Grid Element Configuration ===
 
 tt_content {
   gridelements_pi1 {
@@ -11,14 +13,12 @@ tt_content {
           t3vBaseConditionally {
             cObject = FLUIDTEMPLATE
             cObject {
-              file = EXT:t3v_base/Resources/Private/Templates/GridElements/ConditionallyGridElement.html
-
-              layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
-
-              partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+              file = {$plugin.tx_t3vbase.settings.gridElements.conditionallyGridElement.cObject.file}
+              layoutRootPath = {$plugin.tx_t3vbase.settings.gridElements.conditionallyGridElement.cObject.layoutRootPath}
+              partialRootPath = {$plugin.tx_t3vbase.settings.gridElements.conditionallyGridElement.cObject.partialRootPath}
             }
 
-            outerWrap = |
+            outerWrap = {$plugin.tx_t3vbase.settings.gridElements.conditionallyGridElement.outerWrap}
           }
         }
       }

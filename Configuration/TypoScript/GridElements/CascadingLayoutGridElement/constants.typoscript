@@ -1,3 +1,23 @@
-# -------------------------------------------
-# | Cascading Layout Grid Element Constants |
-# -------------------------------------------
+# ----------------------------------------------------
+# | T3v Base Cascading Layout Grid Element Constants |
+# ----------------------------------------------------
+
+# === Plugin Constants ===
+
+plugin {
+  tx_t3vbase {
+    settings {
+      gridElements {
+        cascadingLayoutGridElement {
+          cObject {
+            file = EXT:t3v_base/Resources/Private/Templates/GridElements/CascadingLayoutGridElement.html
+            layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
+            partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+          }
+
+          outerWrap = |
+        }
+      }
+    }
+  }
+}

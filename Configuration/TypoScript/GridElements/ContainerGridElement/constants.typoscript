@@ -1,3 +1,23 @@
-# ------------------------------------
-# | Container Grid Element Constants |
-# ------------------------------------
+# ---------------------------------------------
+# | T3v Base Container Grid Element Constants |
+# ---------------------------------------------
+
+# === Plugin Constants ===
+
+plugin {
+  tx_t3vbase {
+    settings {
+      gridElements {
+        containerGridElement {
+          cObject {
+            file = EXT:t3v_base/Resources/Private/Templates/GridElements/ContainerGridElement.html
+            layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
+            partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+          }
+
+          outerWrap = |
+        }
+      }
+    }
+  }
+}

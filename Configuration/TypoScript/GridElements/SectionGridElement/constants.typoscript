@@ -1,3 +1,23 @@
-# ----------------------------------
-# | Section Grid Element Constants |
-# ----------------------------------
+# -------------------------------------------
+# | T3v Base Section Grid Element Constants |
+# -------------------------------------------
+
+# === Plugin Constants ===
+
+plugin {
+  tx_t3vbase {
+    settings {
+      gridElements {
+        sectionGridElement {
+          cObject {
+            file = EXT:t3v_base/Resources/Private/Templates/GridElements/SectionGridElement.html
+            layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
+            partialRootPath = EXT:t3v_base/Resources/Private/Partials/
+          }
+
+          outerWrap = |
+        }
+      }
+    }
+  }
+}

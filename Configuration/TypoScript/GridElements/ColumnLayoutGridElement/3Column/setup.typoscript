@@ -1,6 +1,8 @@
-# --------------------------------------
-# | 3 Column Layout Grid Element Setup |
-# --------------------------------------
+# -----------------------------------------------
+# | T3v Base 3 Column Layout Grid Element Setup |
+# -----------------------------------------------
+
+# === Grid Element Configuration ===
 
 tt_content {
   gridelements_pi1 {
@@ -11,11 +13,10 @@ tt_content {
           t3vBase3ColumnLayout {
             cObject = FLUIDTEMPLATE
             cObject {
-              file = EXT:t3v_base/Resources/Private/Templates/GridElements/ColumnLayoutGridElement/3Column.html
+              file = {$plugin.tx_t3vbase.settings.gridElements.columnLayoutGridElement.3Column.cObject.file}
+              layoutRootPath = {$plugin.tx_t3vbase.settings.gridElements.columnLayoutGridElement.3Column.cObject.layoutRootPath}
+              partialRootPath = {$plugin.tx_t3vbase.settings.gridElements.columnLayoutGridElement.3Column.cObject.partialRootPath}
 
-              layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
-
-              partialRootPath = EXT:t3v_base/Resources/Private/Partials/
 
               dataProcessing {
                 10 = T3v\T3vBase\DataProcessing\GridElement\StyleProcessor
@@ -27,7 +28,7 @@ tt_content {
               }
             }
 
-            outerWrap = |
+            outerWrap = {$plugin.tx_t3vbase.settings.gridElements.columnLayoutGridElement.3Column.outerWrap}
           }
         }
       }
