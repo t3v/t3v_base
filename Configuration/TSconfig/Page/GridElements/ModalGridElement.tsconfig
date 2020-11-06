@@ -1,16 +1,16 @@
-# -----------------------------------------
-# | T3v Base Pop-up Grid Element TSconfig |
-# -----------------------------------------
+# ----------------------------------------
+# | T3v Base Modal Grid Element TSconfig |
+# ----------------------------------------
 
 # === Grid Element Configuration ===
 
 tx_gridelements {
   setup {
-    t3vBasePopUp {
-      title = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:gridElements.popUpGridElement.title
-      description = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:gridElements.popUpGridElement.description
-      flexformDS = FILE:EXT:t3v_base/Configuration/FlexForms/GridElements/PopUpGridElement.xml
-      iconIdentifier = t3v_base-pop_up_grid_element
+    t3vBaseModal {
+      title = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:gridElements.modalGridElement.title
+      description = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:gridElements.modalGridElement.description
+      flexformDS = FILE:EXT:t3v_base/Configuration/FlexForms/GridElements/ModalGridElement.xml
+      iconIdentifier = t3v_base-modal_grid_element
 
       # Use a colored frame as in the record form:
       # `0` = no color

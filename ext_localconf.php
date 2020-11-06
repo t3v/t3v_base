@@ -191,7 +191,7 @@ if (TYPO3_MODE === 'BE') {
         'Label' => "{$iconsFolder}/ContentObjects/Label.svg",
         'Link' => "{$iconsFolder}/ContentObjects/Link.svg",
         'Logo' => "{$iconsFolder}/ContentObjects/Logo.svg",
-        'Pop Up Grid Element' => "{$iconsFolder}/GridElements/PopUpGridElement.svg",
+        'Modal Grid Element' => "{$iconsFolder}/GridElements/ModalGridElement.svg",
         'Section Grid Element' => "{$iconsFolder}/GridElements/SectionGridElement.svg",
         'Spacer' => "{$iconsFolder}/ContentObjects/Spacer.svg",
         'Viewport Grid Element' => "{$iconsFolder}/GridElements/ViewportGridElement.svg"

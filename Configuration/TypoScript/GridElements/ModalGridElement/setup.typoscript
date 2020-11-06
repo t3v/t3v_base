@@ -1,0 +1,36 @@
+# -------------------------------------
+# | T3v Base Modal Grid Element Setup |
+# -------------------------------------
+
+# === Grid Element Configuration ===
+
+tt_content {
+  gridelements_pi1 {
+    20 {
+      10 {
+        setup {
+          t3vBaseModal < lib.gridelements.defaultGridSetup
+          t3vBaseModal {
+            cObject = FLUIDTEMPLATE
+            cObject {
+              file = {$plugin.tx_t3vbase.settings.gridElements.modalGridElement.cObject.file}
+              layoutRootPath = {$plugin.tx_t3vbase.settings.gridElements.modalGridElement.cObject.layoutRootPath}
+              partialRootPath = {$plugin.tx_t3vbase.settings.gridElements.modalGridElement.cObject.partialRootPath}
+
+              dataProcessing {
+                10 = T3v\T3vBase\DataProcessing\GridElement\StyleProcessor
+                10 {
+                  default {
+                    as = styles
+                  }
+                }
+              }
+            }
+
+            outerWrap = {$plugin.tx_t3vbase.settings.gridElements.modalGridElement.outerWrap}
+          }
+        }
+      }
+    }
+  }
+}

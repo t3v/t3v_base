@@ -1,6 +1,6 @@
-# ------------------------------------------
-# | T3v Base Pop Up Grid Element Constants |
-# ------------------------------------------
+# -----------------------------------------
+# | T3v Base Modal Grid Element Constants |
+# -----------------------------------------
 
 # === Plugin Constants ===
 
@@ -8,9 +8,9 @@ plugin {
   tx_t3vbase {
     settings {
       gridElements {
-        popUpGridElement {
+        modalGridElement {
           cObject {
-            file = EXT:t3v_base/Resources/Private/Templates/GridElements/PopUpGridElement.html
+            file = EXT:t3v_base/Resources/Private/Templates/GridElements/ModalGridElement.html
             layoutRootPath = EXT:t3v_base/Resources/Private/Layouts/
             partialRootPath = EXT:t3v_base/Resources/Private/Partials/
           }

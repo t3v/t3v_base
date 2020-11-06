@@ -286,14 +286,14 @@
         <source>A Flyout Grid Element.</source>
       </trans-unit>
 
-      <!-- Pop-up Grid Element -->
+      <!-- Modal Grid Element -->
 
-      <trans-unit id="gridElements.popUpGridElement.title">
-        <source>Pop-up</source>
+      <trans-unit id="gridElements.modalGridElement.title">
+        <source>Modal</source>
       </trans-unit>
 
-      <trans-unit id="gridElements.popUpGridElement.description">
-        <source>A Pop-up Grid Element.</source>
+      <trans-unit id="gridElements.modalGridElement.description">
+        <source>A Modal Grid Element.</source>
       </trans-unit>
 
       <!-- Conditionally Grid Element -->

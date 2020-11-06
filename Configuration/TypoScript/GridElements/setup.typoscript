@@ -26,7 +26,7 @@
 
 @import './BarGridElement/setup.typoscript'
 @import './FlyoutGridElement/setup.typoscript'
-@import './PopUpGridElement/setup.typoscript'
+@import './ModalGridElement/setup.typoscript'
 
 # --- Misc ---
 
