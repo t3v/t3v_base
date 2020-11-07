@@ -14,21 +14,31 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 class BackgroundController extends ContentObjectController
 {
     /**
-     * The index action.
+     * The `index` action.
      */
     public function indexAction(): void
     {
+        $this->view->assign('settings', $this->getSettingsForIndexAction());
+    }
+
+    /**
+     * Gets the settings for the `index` action.
+     *
+     * @return array The settings
+     */
+    private function getSettingsForIndexAction(): array {
         $settings = $this->settings;
+        $data = $this->data;
 
-        $settings['name'] = $this->data['header'];
-        $settings['title'] = $this->data['subheader'] ?: $this->data['header'];
-        $settings['alt'] = $this->data['subheader'] ?: $this->data['header'];
-        $settings['link'] = $this->data['header_link'];
+        $settings['name'] = $data['header'];
+        $settings['title'] = $data['subheader'] ?: $data['header'];
+        $settings['alt'] = $data['subheader'] ?: $data['header'];
+        $settings['link'] = $data['header_link'];
 
-        if ($settings['backgroundImages']) {
+        if (!empty($settings['backgroundImages'])) {
             $settings['backgroundImages'] = GeneralUtility::intExplode(',', $settings['backgroundImages'], true);
         }
 
-        $this->view->assign('settings', $settings);
+        return $settings;
     }
 }

@@ -13,15 +13,25 @@ use T3v\T3vCore\Controller\ContentObjectController;
 class SearchBarController extends ContentObjectController
 {
     /**
-     * The index action.
+     * The `index` action.
      */
     public function indexAction(): void
     {
+        $this->view->assign('settings', $this->getSettingsForIndexAction());
+    }
+
+    /**
+     * Gets the settings for the `index` action.
+     *
+     * @return array The settings
+     */
+    private function getSettingsForIndexAction(): array {
         $settings = $this->settings;
+        $data = $this->data;
 
-        $settings['legend'] = $this->data['header'];
-        $settings['label'] = $this->data['subheader'] ?: $this->data['header'];
+        $settings['legend'] = $data['header'];
+        $settings['label'] = $data['subheader'] ?: $data['header'];
 
-        $this->view->assign('settings', $settings);
+        return $settings;
     }
 }

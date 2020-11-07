@@ -14,21 +14,31 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 class CopyrightController extends ContentObjectController
 {
     /**
-     * The index action.
+     * The `index` action.
      */
     public function indexAction(): void
     {
-        $settings = $this->settings;
+        $this->view->assign('settings', $this->getSettingsForIndexAction());
+    }
 
-        $settings['text'] = $this->data['header'];
-        $settings['title'] = $this->data['subheader'] ?: $this->data['header'];
-        $settings['link'] = $this->data['header_link'];
+    /**
+     * Gets the settings for the `index` action.
+     *
+     * @return array The settings
+     */
+    private function getSettingsForIndexAction(): array {
+        $settings = $this->settings;
+        $data = $this->data;
+
+        $settings['text'] = $data['header'];
+        $settings['title'] = $data['subheader'] ?: $data['header'];
+        $settings['link'] = $data['header_link'];
 
         if ($settings['format']) {
             $settings['text'] = strftime($settings['text']);
             $settings['title'] = strftime($settings['title']);
         }
 
-        $this->view->assign('settings', $settings);
+        return $settings;
     }
 }

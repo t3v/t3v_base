@@ -13,12 +13,10 @@ use T3v\T3vCore\Controller\ContentObjectController;
 class SpacerController extends ContentObjectController
 {
     /**
-     * The index action.
+     * The `index` action.
      */
     public function indexAction(): void
     {
-        $settings = $this->settings;
-
-        $this->view->assign('settings', $settings);
+        $this->view->assign('settings', $this->settings);
     }
 }

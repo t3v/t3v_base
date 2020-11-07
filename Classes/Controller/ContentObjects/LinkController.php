@@ -13,16 +13,26 @@ use T3v\T3vCore\Controller\ContentObjectController;
 class LinkController extends ContentObjectController
 {
     /**
-     * The index action.
+     * The `index` action.
      */
     public function indexAction(): void
     {
+        $this->view->assign('settings', $this->getSettingsForIndexAction());
+    }
+
+    /**
+     * Gets the settings for the `index` action.
+     *
+     * @return array The settings
+     */
+    private function getSettingsForIndexAction(): array {
         $settings = $this->settings;
+        $data = $this->data;
 
-        $settings['name'] = $this->data['header'];
-        $settings['title'] = $this->data['subheader'] ?: $this->data['header'];
-        $settings['link'] = $settings['link'] ?: $this->data['header_link'];
+        $settings['name'] = $data['header'];
+        $settings['title'] = $data['subheader'] ?: $data['header'];
+        $settings['link'] = $settings['link'] ?: $data['header_link'];
 
-        $this->view->assign('settings', $settings);
+        return $settings;
     }
 }
