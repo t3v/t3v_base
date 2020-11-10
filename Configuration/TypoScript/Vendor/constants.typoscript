@@ -7,3 +7,5 @@
 @import './Extbase/constants.typoscript'
 @import './GridElements/constants.typoscript'
 @import './SMSResponsiveImages/constants.typoscript'
+
+# _XXX_T3V_GENERATOR_XXX_

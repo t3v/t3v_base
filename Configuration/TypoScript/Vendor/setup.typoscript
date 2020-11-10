@@ -7,3 +7,5 @@
 @import './Extbase/setup.typoscript'
 @import './GridElements/setup.typoscript'
 @import './SMSResponsiveImages/setup.typoscript'
+
+# _XXX_T3V_GENERATOR_XXX_
