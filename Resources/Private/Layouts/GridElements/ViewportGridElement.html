@@ -4,17 +4,14 @@
   <v:variable.set name="uid" value="{v:variable.convert(value: data.uid, type: 'integer', default: 0)}" />
   <v:variable.set name="type" value="{v:variable.convert(value: data.flexform_type, type: 'string', default: 'default')}" />
   <v:variable.set name="handle" value="{v:variable.convert(value: data.flexform_handle, type: 'string', default: 'none')}" />
+  <v:variable.set name="handle" value="{t3v:handle(input: handle)}" />
   <v:variable.set name="layout" value="{v:variable.convert(value: data.flexform_layout, type: 'string', default: 'default')}" />
   <v:variable.set name="layout" value="{v:format.replace(content: layout, substring: ',', replacement: ' ')}" />
   <v:variable.set name="container" value="{v:variable.convert(value: data.flexform_container, type: 'string', default: 'default')}" />
   <v:variable.set name="textAlign" value="{v:variable.convert(value: data.flexform_textAlign, type: 'string', default: 'default')}" />
+  <v:variable.set name="theme" value="{v:variable.convert(value: data.theme.handle, type: 'string', default: 'default')}" />
   <v:variable.set name="styles" value="{v:variable.convert(value: data.styles, type: 'ObjectStorage')}" />
-
-  <f:if condition="{handle}">
-    <v:variable.set name="handle" value="{t3v:handle(input: handle)}" />
-  </f:if>
-
-  <v:variable.set name="additionalAttributes" value="{type: type, handle: handle, layout: layout, text-align: textAlign}" />
+  <v:variable.set name="additionalAttributes" value="{type: type, handle: handle, layout: layout, text-align: textAlign, theme: theme}" />
 
   <v:tag name="{gridElement}" id="c{uid}" class="{gridElement} grid-element" additionalAttributes="{additionalAttributes}"
          hideIfEmpty="false" forceClosingTag="true">

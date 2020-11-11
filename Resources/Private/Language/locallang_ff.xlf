@@ -30,6 +30,10 @@
         <source>Background color</source>
       </trans-unit>
 
+      <trans-unit id="settings.backgroundHeight.label">
+        <source>Background height</source>
+      </trans-unit>
+
       <trans-unit id="settings.backgroundImages.label">
         <source>Background images</source>
       </trans-unit>
@@ -74,6 +78,10 @@
         <source>Right top</source>
       </trans-unit>
 
+      <trans-unit id="settings.backgroundPosition.standard.label">
+        <source>Standard</source>
+      </trans-unit>
+
       <trans-unit id="settings.backgroundRepeat.label">
         <source>Background repeat</source>
       </trans-unit>
@@ -98,13 +106,16 @@
         <source>Round</source>
       </trans-unit>
 
+      <trans-unit id="settings.backgroundRepeat.standard.label">
+        <source>Standard</source>
+      </trans-unit>
+
       <trans-unit id="settings.backgroundRepeat.space.label">
         <source>Space</source>
       </trans-unit>
 
       <trans-unit id="settings.backgroundSize.label">
         <source>Background size</source>
-        <target>Hintergrundgröße</target>
       </trans-unit>
 
       <trans-unit id="settings.backgroundSize.auto.label">
@@ -117,6 +128,18 @@
 
       <trans-unit id="settings.backgroundSize.cover.label">
         <source>Cover</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundSize.standard.label">
+        <source>Standard</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundSourceSet.label">
+        <source>Background source set</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundWidth.label">
+        <source>Background width</source>
       </trans-unit>
 
       <trans-unit id="settings.breakpoint.label">
@@ -217,6 +240,10 @@
 
       <trans-unit id="settings.form.submit.title.label">
         <source>Title of the form submit button</source>
+      </trans-unit>
+
+      <trans-unit id="settings.format.label">
+        <source>Format</source>
       </trans-unit>
 
       <trans-unit id="settings.formats.label">

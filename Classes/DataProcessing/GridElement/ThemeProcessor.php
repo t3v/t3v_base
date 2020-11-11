@@ -5,7 +5,6 @@ namespace T3v\T3vBase\DataProcessing\GridElement;
 
 use T3v\T3vBase\Domain\Repository\ThemeRepository;
 use T3v\T3vCore\DataProcessing\AbstractProcessor;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 
 /**
@@ -18,11 +17,12 @@ class ThemeProcessor extends AbstractProcessor
     /**
      * The process function.
      *
-     * @param ContentObjectRenderer $contentObject The content object
+     * @param \TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer $contentObject The content object
      * @param array $contentObjectConfiguration The content object configuration
      * @param array $processorConfiguration The processor configuration
      * @param array $processedData The processed data
      * @return array The processed data
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     public function process(
         ContentObjectRenderer $contentObject,
@@ -40,12 +40,17 @@ class ThemeProcessor extends AbstractProcessor
             $uid = (int)$processedData['data']['flexform_theme'];
         }
 
-        if (empty($uid)) {
+        if ($uid === null) {
             return $processedData;
         }
 
         $themeRepository = self::getObjectManager()->get(ThemeRepository::class);
-        $theme = $themeRepository->findByUid((int)$uid);
+        $theme = $themeRepository->findByUid($uid);
+
+        if ($theme === null) {
+            return $processedData;
+        }
+
         $as = 'theme';
 
         if ($processorConfiguration['default.'] && $processorConfiguration['default.']['as']) {

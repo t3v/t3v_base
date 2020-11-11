@@ -25,7 +25,6 @@
         </TCEforms>
       </type>
 
-      <!--
       <handle>
         <TCEforms type="array">
           <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.handle.label</label>
@@ -41,61 +40,10 @@
             </generatorOptions>
             <fallbackCharacter>-</fallbackCharacter>
             <prependSlash>0</prependSlash>
-            <eval>trim</eval>
             <default></default>
           </config>
         </TCEforms>
       </handle>
-      -->
-
-      <layout>
-        <TCEforms type="array">
-          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.label</label>
-          <config type="array">
-            <type>select</type>
-            <renderType>selectCheckBox</renderType>
-            <items type="array">
-              <numIndex index="0" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.block.label</numIndex>
-                <numIndex index="1">block</numIndex>
-              </numIndex>
-
-              <numIndex index="1" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.plain.label</numIndex>
-                <numIndex index="1">plain</numIndex>
-              </numIndex>
-            </items>
-            <default>default</default>
-          </config>
-        </TCEforms>
-      </layout>
-
-      <textAlign>
-        <TCEforms type="array">
-          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.label</label>
-          <config type="array">
-            <type>select</type>
-            <renderType>selectSingle</renderType>
-            <items type="array">
-              <numIndex index="0" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.default.label</numIndex>
-                <numIndex index="1">default</numIndex>
-              </numIndex>
-
-              <numIndex index="1" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.center.label</numIndex>
-                <numIndex index="1">center</numIndex>
-              </numIndex>
-
-              <numIndex index="2" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.right.label</numIndex>
-                <numIndex index="1">right</numIndex>
-              </numIndex>
-            </items>
-            <default>default</default>
-          </config>
-        </TCEforms>
-      </textAlign>
 
       <breakpoint>
         <TCEforms type="array">
@@ -123,6 +71,35 @@
           </config>
         </TCEforms>
       </breakpoint>
+
+      <layout>
+        <TCEforms type="array">
+          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.label</label>
+          <config type="array">
+            <type>select</type>
+            <renderType>selectCheckBox</renderType>
+            <items type="array">
+              <!--
+              <numIndex index="0" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.default.label</numIndex>
+                <numIndex index="1">block</numIndex>
+              </numIndex>
+              -->
+
+              <numIndex index="0" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.block.label</numIndex>
+                <numIndex index="1">block</numIndex>
+              </numIndex>
+
+              <numIndex index="1" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.plain.label</numIndex>
+                <numIndex index="1">plain</numIndex>
+              </numIndex>
+            </items>
+            <default>default</default>
+          </config>
+        </TCEforms>
+      </layout>
 
       <container>
         <TCEforms type="array">
@@ -180,6 +157,56 @@
           </config>
         </TCEforms>
       </container>
+
+      <textAlign>
+        <TCEforms type="array">
+          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.label</label>
+          <config type="array">
+            <type>select</type>
+            <renderType>selectSingle</renderType>
+            <items type="array">
+              <numIndex index="0" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.default.label</numIndex>
+                <numIndex index="1">default</numIndex>
+              </numIndex>
+
+              <numIndex index="1" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.center.label</numIndex>
+                <numIndex index="1">center</numIndex>
+              </numIndex>
+
+              <numIndex index="2" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.textAlign.right.label</numIndex>
+                <numIndex index="1">right</numIndex>
+              </numIndex>
+            </items>
+            <default>default</default>
+          </config>
+        </TCEforms>
+      </textAlign>
+
+      <theme>
+        <TCEforms type="array">
+          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.theme.label</label>
+          <config type="array">
+            <type>select</type>
+            <renderType>selectSingle</renderType>
+            <foreign_table>tx_t3vbase_domain_model_theme</foreign_table>
+            <foreign_table_where>AND tx_t3vbase_domain_model_theme.sys_language_uid IN (-1,0) AND tx_t3vbase_domain_model_theme.hidden = 0 AND tx_t3vbase_domain_model_theme.deleted = 0</foreign_table_where>
+            <items type="array">
+              <numIndex index="0" type="array">
+                <numIndex index="0">LLL:EXT:t3v_content/Resources/Private/Language/locallang_ff.xlf:settings.theme.default.label</numIndex>
+                <numIndex index="1"></numIndex>
+              </numIndex>
+            </items>
+            <fieldWizard type="array">
+              <selectIcons type="array">
+                <disabled>false</disabled>
+              </selectIcons>
+            </fieldWizard>
+          </config>
+        </TCEforms>
+      </theme>
 
       <styles>
         <TCEforms type="array">

@@ -30,7 +30,6 @@
             </TCEforms>
           </settings.type>
 
-          <!--
           <settings.handle>
             <TCEforms type="array">
               <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.handle.label</label>
@@ -46,12 +45,10 @@
                 </generatorOptions>
                 <fallbackCharacter>-</fallbackCharacter>
                 <prependSlash>0</prependSlash>
-                <eval>trim</eval>
                 <default></default>
               </config>
             </TCEforms>
           </settings.handle>
-          -->
 
           <settings.page>
             <TCEforms type="array">
@@ -113,18 +110,41 @@
               <config type="array">
                 <type>select</type>
                 <renderType>selectCheckBox</renderType>
-                <!--
                 <items type="array">
+                  <!--
                   <numIndex index="0" type="array">
                     <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.default.label</numIndex>
                     <numIndex index="1">default</numIndex>
                   </numIndex>
+                  -->
                 </items>
-                -->
                 <default>default</default>
               </config>
             </TCEforms>
           </settings.layout>
+
+          <settings.theme>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.theme.label</label>
+              <config type="array">
+                <type>select</type>
+                <renderType>selectSingle</renderType>
+                <foreign_table>tx_t3vbase_domain_model_theme</foreign_table>
+                <foreign_table_where>AND tx_t3vbase_domain_model_theme.sys_language_uid IN (-1,0) AND tx_t3vbase_domain_model_theme.hidden = 0 AND tx_t3vbase_domain_model_theme.deleted = 0</foreign_table_where>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_content/Resources/Private/Language/locallang_ff.xlf:settings.theme.default.label</numIndex>
+                    <numIndex index="1"></numIndex>
+                  </numIndex>
+                </items>
+                <fieldWizard type="array">
+                  <selectIcons type="array">
+                    <disabled>false</disabled>
+                  </selectIcons>
+                </fieldWizard>
+              </config>
+            </TCEforms>
+          </settings.theme>
         </el>
      </ROOT>
     </appearance>

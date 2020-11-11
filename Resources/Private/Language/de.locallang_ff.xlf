@@ -36,6 +36,11 @@
         <target>Hintergrundfarbe</target>
       </trans-unit>
 
+      <trans-unit id="settings.backgroundHeight.label">
+        <source>Background height</source>
+        <target>Höhe des Hintergrunds</target>
+      </trans-unit>
+
       <trans-unit id="settings.backgroundImages.label">
         <source>Background images</source>
         <target>Hintergrundbilder</target>
@@ -91,6 +96,11 @@
         <target>Rechts oben</target>
       </trans-unit>
 
+      <trans-unit id="settings.backgroundPosition.standard.label">
+        <source>Standard</source>
+        <target>Standard</target>
+      </trans-unit>
+
       <trans-unit id="settings.backgroundRepeat.label">
         <source>Background repeat</source>
         <target>Hintergrundwiederholung</target>
@@ -121,6 +131,11 @@
         <target>Rund</target>
       </trans-unit>
 
+      <trans-unit id="settings.backgroundRepeat.standard.label">
+        <source>Standard</source>
+        <target>Standard</target>
+      </trans-unit>
+
       <trans-unit id="settings.backgroundRepeat.space.label">
         <source>Space</source>
         <target>Fläche</target>
@@ -144,6 +159,21 @@
       <trans-unit id="settings.backgroundSize.cover.label">
         <source>Cover</source>
         <target>Cover</target>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundSize.standard.label">
+        <source>Standard</source>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundSourceSet.label">
+        <source>Background source set</source>
+        <target>Hintergrund-Quellenset</target>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundWidth.label">
+        <source>Background width</source>
+        <target>Breite des Hintergrunds</target>
       </trans-unit>
 
       <trans-unit id="settings.breakpoint.label">

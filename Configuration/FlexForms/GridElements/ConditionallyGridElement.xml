@@ -8,46 +8,6 @@
   <ROOT>
     <type>array</type>
     <el>
-      <type>
-        <TCEforms type="array">
-          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.label</label>
-          <config type="array">
-            <type>select</type>
-            <renderType>selectSingle</renderType>
-            <items type="array">
-              <numIndex index="0" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.default.label</numIndex>
-                <numIndex index="1">default</numIndex>
-              </numIndex>
-            </items>
-            <default>default</default>
-          </config>
-        </TCEforms>
-      </type>
-
-      <!--
-      <handle>
-        <TCEforms type="array">
-          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.handle.label</label>
-          <config type="array">
-            <type>slug</type>
-            <generatorOptions type="array">
-              <fields type="array">
-                <firstField>header</firstField>
-                <secondField>subheader</secondField>
-              </fields>
-              <fieldSeparator>-</fieldSeparator>
-              <prefixParentPageSlug>0</prefixParentPageSlug>
-            </generatorOptions>
-            <fallbackCharacter>-</fallbackCharacter>
-            <prependSlash>0</prependSlash>
-            <eval>trim</eval>
-            <default></default>
-          </config>
-        </TCEforms>
-      </handle>
-      -->
-
       <languageUid>
         <TCEforms type="array">
           <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.languageUid.label</label>

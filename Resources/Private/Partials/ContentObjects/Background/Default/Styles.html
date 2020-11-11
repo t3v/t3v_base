@@ -1,0 +1,48 @@
+<html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+  <f:if condition="{backgroundColor} || {backgroundImage} || {backgroundPosition} || {backgroundRepeat} || {backgroundSize} || {backgroundHeight} || {backgroundWidth}">
+    <v:asset.style name="{contentObject}-{uid}-css" fluid="true" movable="false" standalone="true">
+      #c<v:variable.get name="uid" /> {
+        <f:if condition="{backgroundColor}">
+          background-color: {backgroundColor};
+        </f:if>
+
+        <f:if condition="{backgroundImage}">
+          <v:variable.set name="height" value="{v:variable.convert(value: backgroundHeight, type: 'integer', default: 256)}" />
+
+          background-image: url('<v:uri.image src="{backgroundImage}" height="{height}c" treatIdAsReference="1" />');
+        </f:if>
+
+        <f:if condition="{backgroundPosition}">
+          background-position: {backgroundPosition};
+        </f:if>
+
+        <f:if condition="{backgroundRepeat}">
+          background-repeat: {backgroundRepeat};
+        </f:if>
+
+        <f:if condition="{backgroundSize}">
+          background-size: {backgroundSize};
+        </f:if>
+
+        <f:if condition="{backgroundHeight}">
+          height: {backgroundHeight}px;
+        </f:if>
+
+        <f:if condition="{backgroundWidth}">
+          width: {backgroundWidth}px;
+        </f:if>
+      }
+
+      <f:if condition="{backgroundImage}">
+        <v:variable.set name="height" value="{v:variable.convert(value: backgroundHeight, type: 'integer', default: 256)}" />
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5625), only screen and (min-resolution: 150dpi) {
+          #c<v:variable.get name="uid" /> {
+            background-image: url('<v:uri.image src="{backgroundImage}" height="{height * 2}c" treatIdAsReference="1" />');
+          }
+        }
+      </f:if>
+    </v:asset.style>
+  </f:if>
+</html>

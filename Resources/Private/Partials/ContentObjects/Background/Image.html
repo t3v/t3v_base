@@ -1,19 +1,24 @@
 <html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-      xmlns:sms="http://typo3.org/ns/SMS/SmsResponsiveImages/ViewHelpers">
+      xmlns:sms="http://typo3.org/ns/SMS/SmsResponsiveImages/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
   <f:if condition="{backgroundImage}">
     <f:if condition="{link}">
       <f:then>
         <f:link.typolink parameter="{link}" class="{contentObject} content-object" title="{title}"
                          additionalAttributes="{id: 'c{uid}', data-type: type, data-handle: handle, data-layout: layout}">
-          <sms:image src="{backgroundImage}" treatIdAsReference="true" srcset="1x, 2x" title="{title}" alt="{alt}"
-                     additionalAttributes="{loading: 'lazy'}" />
+          <f:render section="Image" arguments="{_all}" />
         </f:link.typolink>
       </f:then>
 
       <f:else>
-        <sms:image id="c{uid}" class="{contentObject} content-object" src="{backgroundImage}" treatIdAsReference="true"
-                   srcset="1x, 2x" title="{title}" alt="{alt}" additionalAttributes="{loading: 'lazy'}" />
+        <f:render section="Image" arguments="{_all}" />
       </f:else>
     </f:if>
   </f:if>
+
+  <f:section name="Image">
+    <v:variable.set name="maxWidth" value="1280" />
+
+    <sms:image src="{backgroundImage}" treatIdAsReference="true" srcset="{backgroundSourceSet}" width="{backgroundWidth}"
+               maxWidth="maxWidth" title="{title}" alt="{alt}" additionalAttributes="{loading: 'lazy'}" />
+  </f:section>
 </html>
