@@ -25,18 +25,18 @@ $contentObjectLabel = $lll . 'contentObjects.background.label';
 $contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
 $contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
-// Register the Content Object
+// Register the Content Object:
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);
 
-// Disable the display of `layout`, `pages`, `select_key` and `recursive` field
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
-
-// Activate the display of the `flexform` field and set the FlexForm definition
+// Activate the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $contentObjectSignature,
     "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
 );
+
+// Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
 
 // --- Copyright Content Object ---
 
@@ -45,18 +45,18 @@ $contentObjectLabel = $lll . 'contentObjects.copyright.label';
 $contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
 $contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
-// Register the Content Object
+// Register the Content Object:
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);
 
-// Disable the display of `layout`, `pages`, `select_key` and `recursive` field
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
-
-// Activate the display of the `flexform` field and set the FlexForm definition
+// Activate the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $contentObjectSignature,
     "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
 );
+
+// Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
 
 // --- Icon Content Object ---
 
@@ -65,18 +65,18 @@ $contentObjectLabel = $lll . 'contentObjects.icon.label';
 $contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
 $contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
-// Register the Content Object
+// Register the Content Object:
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);
 
-// Disable the display of `layout`, `pages`, `select_key` and `recursive` field
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
-
-// Activate the display of the `flexform` field and set the FlexForm definition
+// Activate the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $contentObjectSignature,
     "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
 );
+
+// Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
 
 // --- Label Content Object ---
 
@@ -85,18 +85,18 @@ $contentObjectLabel = $lll . 'contentObjects.label.label';
 $contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
 $contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
-// Register the Content Object
+// Register the Content Object:
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);
 
-// Disable the display of `layout`, `pages`, `select_key` and `recursive` field
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
-
-// Activate the display of the `flexform` field and set the FlexForm definition
+// Activate the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $contentObjectSignature,
     "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
 );
+
+// Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
 
 // --- Link Content Object ---
 
@@ -105,18 +105,18 @@ $contentObjectLabel = $lll . 'contentObjects.link.label';
 $contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
 $contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
-// Register the Content Object
+// Register the Content Object:
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);
 
-// Disable the display of `layout`, `pages`, `select_key` and `recursive` field
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
-
-// Activate the display of the `flexform` field and set the FlexForm definition
+// Activate the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $contentObjectSignature,
     "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
 );
+
+// Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
 
 // --- Logo Content Object ---
 
@@ -125,18 +125,18 @@ $contentObjectLabel = $lll . 'contentObjects.logo.label';
 $contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
 $contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
-// Register the Content Object
+// Register the Content Object:
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);
 
-// Disable the display of `layout`, `pages`, `select_key` and `recursive` field
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
-
-// Activate the display of the `flexform` field and set the FlexForm definition
+// Activate the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $contentObjectSignature,
     "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
 );
+
+// Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
 
 // --- Search Bar Content Object ---
 
@@ -145,18 +145,18 @@ $contentObjectLabel = $lll . 'contentObjects.searchBar.label';
 $contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
 $contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
-// Register the Content Object
+// Register the Content Object:
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);
 
-// Disable the display of `layout`, `pages`, `select_key` and `recursive` field
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
-
-// Activate the display of the `flexform` field and set the FlexForm definition
+// Activate the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $contentObjectSignature,
     "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
 );
+
+// Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
 
 // --- Spacer Content Object ---
 
@@ -165,22 +165,22 @@ $contentObjectLabel = $lll . 'contentObjects.spacer.label';
 $contentObjectIdentifier = \T3v\T3vCore\Utility\ContentObjectUtility::getIdentifier($contentObjectKey);
 $contentObjectSignature = \T3v\T3vCore\Utility\ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
-// Register the Content Object
+// Register the Content Object:
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionSignature, $contentObjectIdentifier, $contentObjectLabel);
 
-// Disable the display of `layout`, `pages`, `select_key` and `recursive` field
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
-
-// Activate the display of the `flexform` field and set the FlexForm definition
+// Activate the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     $contentObjectSignature,
     "{$flexFormsFolder}/ContentObjects/{$contentObjectKey}.xml"
 );
 
+// Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
+
 // === Palettes ===
 
-// Add `subheader` field after `header_link` field in the `header` palette
+// Add `subheader` field after `header_link` field in the `header` palette:
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
     'tt_content',
     'header',
