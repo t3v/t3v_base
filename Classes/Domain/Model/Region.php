@@ -30,7 +30,7 @@ class Region extends AbstractEntity
      * The region's countries.
      *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\T3v\T3vBase\Domain\Model\Country>
-     * @lazy
+     * @TYPO3\CMS\Extbase\Annotation\ORM\Lazy
      */
     protected $countries;
 
