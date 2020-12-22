@@ -1,16 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace T3v\T3vBase\Backend\UserFunctions;
+namespace T3v\T3vBase\Backend;
 
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 
 /**
- * The record list class.
+ * The user functions class.
  *
- * @package T3v\T3vBase\Backend\UserFunctions
+ * This class provides user functions for the usage in TCA definition.
+ *
+ * @package T3v\T3vBase\Backend
+ * @internal
  */
-class RecordList
+class UserFunctions
 {
     /**
      * Processes the label.

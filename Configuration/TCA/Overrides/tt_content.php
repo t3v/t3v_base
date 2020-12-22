@@ -49,8 +49,7 @@ unset($additionalTCAcolumns);
 );
 
 $GLOBALS['TCA']['tt_content']['ctrl']['label'] = 'header';
-$GLOBALS['TCA']['tt_content']['ctrl']['label_userFunc'] =
-    \T3v\T3vBase\Backend\UserFunctions\RecordList::class . '->processLabel';
+$GLOBALS['TCA']['tt_content']['ctrl']['label_userFunc'] = \T3v\T3vBase\Backend\UserFunctions::class . '->processLabel';
 
 // === Content Objects ===
 
