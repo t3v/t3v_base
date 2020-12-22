@@ -4,6 +4,13 @@
     <header />
 
     <body>
+      <!-- === Additional TCA columns === -->
+
+      <trans-unit id="tt_content.label">
+        <source>Label</source>
+        <target>Beschriftung</target>
+      </trans-unit>
+
       <!-- === Models === -->
 
       <!-- Country Model -->

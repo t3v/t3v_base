@@ -14,9 +14,47 @@ $extensionKey = 't3v_base';
 $extensionIdentifier = \T3v\T3vCore\Utility\ExtensionUtility::getIdentifier($extensionKey);
 $extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::getSignature($namespace, $extensionKey);
 $flexFormsFolder = \T3v\T3vCore\Utility\ExtensionUtility::getFlexFormsFolder($extensionKey);
-$lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'locallang_ttc.xlf');
+
+// === Additional TCA columns ===
+
+$lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'locallang_tca.xlf');
+
+$additionalTCAcolumns = [];
+$additionalTCAcolumns['label'] = [
+    'label' => $lll . 'tt_content.label',
+    'config' => [
+        'type' => 'input',
+        'eval' => 'trim',
+        'size' => 50,
+        'max' => 255,
+        'behaviour' => [
+            'allowLanguageSynchronization' => true
+        ]
+    ],
+    'exclude' => true
+];
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
+    'tt_content',
+    $additionalTCAcolumns
+);
+
+unset($additionalTCAcolumns);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'tt_content',
+    'general',
+    'label, --linebreak--',
+    'before:CType'
+);
+
+$GLOBALS['TCA']['tt_content']['ctrl']['label'] = 'header';
+$GLOBALS['TCA']['tt_content']['ctrl']['label_userFunc'] =
+    \T3v\T3vBase\Backend\UserFunctions\RecordList::class . '->processLabel';
 
 // === Content Objects ===
+
+$lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'locallang_ttc.xlf');
 
 // --- Background Content Object ---
 
