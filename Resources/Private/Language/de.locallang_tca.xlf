@@ -11,6 +11,26 @@
         <target>Beschriftung</target>
       </trans-unit>
 
+      <trans-unit id="tt_content.headerType">
+        <source>Type</source>
+        <target>Typ</target>
+      </trans-unit>
+
+      <trans-unit id="tt_content.headerType.default">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="tt_content.headerType.div">
+        <source>Div</source>
+        <target>Div</target>
+      </trans-unit>
+
+      <trans-unit id="tt_content.headerType.span">
+        <source>Span</source>
+        <target>Span</target>
+      </trans-unit>
+
       <!-- === Models === -->
 
       <!-- Country Model -->

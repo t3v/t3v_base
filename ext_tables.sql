@@ -1,6 +1,7 @@
 -- Table structure for table `tt_content`
 CREATE TABLE tt_content (
-  label varchar(255) DEFAULT '' NOT NULL
+	label varchar(255) DEFAULT '' NOT NULL,
+	header_type varchar(255) DEFAULT '' NOT NULL
 );
 
 -- Table structure for table `tx_t3vbase_domain_model_country`

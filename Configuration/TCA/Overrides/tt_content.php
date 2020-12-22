@@ -20,26 +20,46 @@ $flexFormsFolder = \T3v\T3vCore\Utility\ExtensionUtility::getFlexFormsFolder($ex
 $lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'locallang_tca.xlf');
 
 $additionalTCAcolumns = [];
+
 $additionalTCAcolumns['label'] = [
     'label' => $lll . 'tt_content.label',
     'config' => [
         'type' => 'input',
         'eval' => 'trim',
         'size' => 50,
-        'max' => 255,
-        'behaviour' => [
-            'allowLanguageSynchronization' => true
-        ]
+        'max' => 255
+    ],
+    'l10n_mode' => 'prefixLangTitle',
+    'exclude' => true
+];
+
+$additionalTCAcolumns['header_type'] = [
+    'label' => $lll . 'tt_content.headerType',
+    'config' => [
+        'type' => 'select',
+        'renderType' => 'selectSingle',
+        'items' => [
+            [
+                $lll . 'tt_content.headerType.default',
+                ''
+            ],
+
+            [
+                $lll . 'tt_content.headerType.div',
+                'div'
+            ],
+
+            [
+                $lll . 'tt_content.headerType.span',
+                'span'
+            ]
+        ],
+        'default' => ''
     ],
     'exclude' => true
 ];
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
-    'tt_content',
-    $additionalTCAcolumns
-);
-
-unset($additionalTCAcolumns);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $additionalTCAcolumns);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
     'tt_content',
@@ -50,6 +70,15 @@ unset($additionalTCAcolumns);
 
 $GLOBALS['TCA']['tt_content']['ctrl']['label'] = 'header';
 $GLOBALS['TCA']['tt_content']['ctrl']['label_userFunc'] = \T3v\T3vBase\Backend\UserFunctions::class . '->processLabel';
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'tt_content',
+    'general',
+    'header_type',
+    'before:header_position'
+);
+
+unset($additionalTCAcolumns);
 
 // === Content Objects ===
 

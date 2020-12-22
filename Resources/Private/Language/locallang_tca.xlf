@@ -10,6 +10,22 @@
         <source>Label</source>
       </trans-unit>
 
+      <trans-unit id="tt_content.headerType">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="tt_content.headerType.default">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tt_content.headerType.div">
+        <source>Div</source>
+      </trans-unit>
+
+      <trans-unit id="tt_content.headerType.span">
+        <source>Span</source>
+      </trans-unit>
+
       <!-- === Models === -->
 
       <!-- Country Model -->
