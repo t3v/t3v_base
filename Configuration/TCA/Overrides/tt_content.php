@@ -64,6 +64,13 @@ $additionalTCAcolumns = [
     $additionalTCAcolumns
 );
 
+$GLOBALS['TCA']['tt_content']['ctrl']['label'] = 'header';
+$GLOBALS['TCA']['tt_content']['ctrl']['label_userFunc'] = \T3v\T3vBase\Backend\UserFunctions::class . '->processLabel';
+
+unset($additionalTCAcolumns);
+
+// === Palettes ===
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
     'tt_content',
     'general',
@@ -73,15 +80,18 @@ $additionalTCAcolumns = [
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
     'tt_content',
-    'general',
+    'header',
     'header_type',
-    'after:header_position'
+    'before:header_position'
 );
 
-$GLOBALS['TCA']['tt_content']['ctrl']['label'] = 'header';
-$GLOBALS['TCA']['tt_content']['ctrl']['label_userFunc'] = \T3v\T3vBase\Backend\UserFunctions::class . '->processLabel';
-
-unset($additionalTCAcolumns);
+// Add `subheader` field after `header_link` field in the `header` palette:
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'tt_content',
+    'header',
+    '--linebreak--,subheader;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel',
+    'after:header_link'
+);
 
 // === Content Objects ===
 
@@ -247,14 +257,4 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
 // Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
 
-// === Palettes ===
-
-// Add `subheader` field after `header_link` field in the `header` palette:
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
-    'tt_content',
-    'header',
-    '--linebreak--,subheader;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel',
-    'after:header_link'
-);
-
-/** _XXX_T3V_GENERATOR_XXX_ **/
+// === T3v Generator ===
