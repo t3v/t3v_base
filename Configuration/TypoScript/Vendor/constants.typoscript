@@ -8,4 +8,4 @@
 @import './GridElements/constants.typoscript'
 @import './SMSResponsiveImages/constants.typoscript'
 
-# _XXX_T3V_GENERATOR_XXX_
+# === T3v Generator ===

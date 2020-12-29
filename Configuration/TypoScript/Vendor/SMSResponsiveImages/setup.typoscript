@@ -2,6 +2,6 @@
 # | T3v Base SMS Responsive Images Setup |
 # ----------------------------------------
 
-// === Imports ===
+# === Imports ===
 
 @import 'EXT:sms_responsive_images/Configuration/TypoScript/Base/setup.ts'
