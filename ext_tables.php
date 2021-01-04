@@ -13,7 +13,7 @@ defined('TYPO3_MODE') or die();
     $extensionKey = 't3v_base';
     $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($extensionKey);
 
-    // === Models ===
+    // === TCA ===
 
     $tables = [
         'tx_t3vbase_domain_model_country',
@@ -29,11 +29,12 @@ defined('TYPO3_MODE') or die();
     ];
 
     foreach ($tables as $table) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages($table);
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
             $table,
             "{$languageFolder}/locallang_csh_{$table}.xlf"
         );
+
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages($table);
     }
 
     /** _XXX_T3V_GENERATOR_XXX_ */
