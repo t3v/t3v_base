@@ -2,7 +2,7 @@
 # | T3v Base Copyright Content Object TSconfig |
 # ----------------------------------------------
 
-# === Wizard Configuration ===
+# === New Content Element Wizard Configuration ===
 
 mod {
   wizards {

@@ -4,6 +4,12 @@
     <header />
 
     <body>
+      <!-- === TCE Form === -->
+
+      <trans-unit id="tceform.ttContent.header.layout.label">
+        <source>Layout</source>
+      </trans-unit>
+
       <!-- === Content Objects === -->
 
       <!-- Background Content Object -->
@@ -362,7 +368,7 @@
         <source>Custom Elements</source>
       </trans-unit>
 
-      <!-- _XXX_T3V_GENERATOR_XXX_ -->
+      <!-- === T3v Generator === -->
     </body>
   </file>
 </xliff>

@@ -4,6 +4,8 @@
     <header />
 
     <body>
+      <!-- === Properties === -->
+
       <trans-unit id="name.description">
         <source>Name</source>
         <target>Name</target>
@@ -13,6 +15,8 @@
         <source>Abstract</source>
         <target>Zusammenfassung</target>
       </trans-unit>
+
+      <!-- === T3v Generator === -->
     </body>
   </file>
 </xliff>

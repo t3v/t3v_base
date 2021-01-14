@@ -64,13 +64,14 @@ $additionalTCAcolumns = [
     $additionalTCAcolumns
 );
 
+unset($additionalTCAcolumns);
+
 $GLOBALS['TCA']['tt_content']['ctrl']['label'] = 'header';
 $GLOBALS['TCA']['tt_content']['ctrl']['label_userFunc'] = \T3v\T3vBase\Backend\UserFunctions::class . '->processLabel';
 
-unset($additionalTCAcolumns);
-
 // === Palettes ===
 
+// Adds the `label` field before the `CType` field in the `general` palette:
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
     'tt_content',
     'general',
@@ -78,19 +79,23 @@ unset($additionalTCAcolumns);
     'before:CType'
 );
 
+// Adds the `header_type` field after the `header_layout` field in the `headers` palette:
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
     'tt_content',
-    'header',
+    'headers',
     'header_type',
-    'before:header_position'
+    'after:header_layout'
 );
 
-// Add `subheader` field after `header_link` field in the `header` palette:
+// Removes the `subheader` field temporally:
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tt_content', '--palette--;;empty', '', 'replace:subheader');
+
+// Adds the `subheader` field back before the `header_link` field in the `headers` palette:
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
     'tt_content',
-    'header',
-    '--linebreak--,subheader;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel',
-    'after:header_link'
+    'headers',
+    '--linebreak--,subheader,--linebreak--',
+    'before:header_link'
 );
 
 // === Content Objects ===

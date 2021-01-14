@@ -4,6 +4,8 @@
     <header />
 
     <body>
+      <!-- === Properties === -->
+
       <trans-unit id="name.description">
         <source>Name</source>
         <target>Name</target>
@@ -18,6 +20,8 @@
         <source>Countries</source>
         <target>Länder</target>
       </trans-unit>
+
+      <!-- === T3v Generator === -->
     </body>
   </file>
 </xliff>

@@ -2,7 +2,7 @@
 # | T3v Base Link Content Object TSconfig |
 # -----------------------------------------
 
-# === Wizard Configuration ===
+# === New Content Element Wizard Configuration ===
 
 mod {
   wizards {

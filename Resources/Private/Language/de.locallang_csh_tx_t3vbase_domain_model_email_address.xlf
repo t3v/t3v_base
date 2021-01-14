@@ -4,6 +4,8 @@
     <header />
 
     <body>
+      <!-- === Properties === -->
+
       <trans-unit id="label.description">
         <source>Label</source>
         <target>Beschriftung</target>
@@ -18,6 +20,8 @@
         <source>Note</source>
         <target>Notiz</target>
       </trans-unit>
+
+      <!-- === T3v Generator === -->
     </body>
   </file>
 </xliff>
