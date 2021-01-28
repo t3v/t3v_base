@@ -194,7 +194,7 @@
             <foreign_table>tx_t3vbase_domain_model_theme</foreign_table>
             <items type="array">
               <numIndex index="0" type="array">
-                <numIndex index="0">LLL:EXT:t3v_content/Resources/Private/Language/locallang_ff.xlf:settings.theme.default.label</numIndex>
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.theme.default.label</numIndex>
                 <numIndex index="1"></numIndex>
               </numIndex>
             </items>

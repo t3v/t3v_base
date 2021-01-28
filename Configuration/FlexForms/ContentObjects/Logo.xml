@@ -133,7 +133,7 @@
                 <foreign_table_where>AND tx_t3vbase_domain_model_theme.sys_language_uid IN (-1,0) AND tx_t3vbase_domain_model_theme.hidden = 0 AND tx_t3vbase_domain_model_theme.deleted = 0</foreign_table_where>
                 <items type="array">
                   <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_content/Resources/Private/Language/locallang_ff.xlf:settings.theme.default.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.theme.default.label</numIndex>
                     <numIndex index="1"></numIndex>
                   </numIndex>
                 </items>
