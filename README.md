@@ -1,8 +1,6 @@
 [T3v Base]
 ==========
 
-[![Travis CI Status][Travis CI Status]][Travis CI]
-
 **The base extension of TYPO3voilà.**
 
 Overview
@@ -79,20 +77,19 @@ Development
 
 ### Setup
 
-```
-$ ./Scripts/Setup.sh
+```sh
+git clone https://github.com/t3v/t3v_base.git && cd t3v_base
+
+./Scripts/Setup.sh
 ```
 
-### Run Unit Tests
+### Testing
 
-```
-$ ./Scripts/Tests/Unit.sh
-```
-
-### Run Functional Tests
-
-```
-$ ./Scripts/Tests/Functional.sh
+```sh
+./Scripts/Tests.sh
+./Scripts/Tests/Unit.sh
+./Scripts/Tests/Functional.sh
+./Scripts/Tests/Maintenance.sh
 ```
 
 Bug Reports
@@ -188,8 +185,6 @@ T3v Base is released under the [MIT License (MIT)], see [LICENSE].
 [T3v Base]: https://t3v.github.io/t3v_base/ "The base extension of TYPO3voilà."
 [TYPO3voilà]: https://github.com/t3v "“UH LÁLÁ, TYPO3!”"
 [Tag icon]: https://www.flaticon.com/free-icon/tag_757916 "Tag icon"
-[Travis CI]: https://travis-ci.org/t3v/t3v_base "T3v Base at Travis CI"
-[Travis CI Status]: https://img.shields.io/travis/t3v/t3v_base.svg?style=flat "Travis CI Status"
 [Type icon]: https://www.flaticon.com/free-icon/type_3230756 "Type icon"
 [Unit Testing TYPO3]: https://wiki.typo3.org/Unit_Testing_TYPO3 "Unit testing TYPO3"
 [Vectors Market]: https://www.flaticon.com/authors/vectors-market "Vectors Market at Flaticon"
