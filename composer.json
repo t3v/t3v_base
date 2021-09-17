@@ -39,19 +39,17 @@
     }
   ],
   "require": {
-    "php": ">= 7.2 < 8.0",
-    "typo3/cms-core": "^9.5.24 || ^10.4.12",
-    "gridelementsteam/gridelements": "^9.5 || dev-9-0 || ^10.0 || dev-10-0",
-    "sitegeist/sms-responsive-images": "^2.0",
+    "php": ">= 7.2",
+    "typo3/cms-core": "^9.5 || ^10.4 || ^11.5",
+    "gridelementsteam/gridelements": "^9.5 || dev-9-0 || ^10.0 || dev-10-0 || dev-master",
+    "sitegeist/sms-responsive-images": "^2.1",
     "fluidtypo3/vhs": "^6.0",
     "t3v/t3v_core": "dev-develop",
     "t3v/t3v_translations": "dev-develop"
   },
   "require-dev": {
-    "mikey179/vfsstream": "^1.6",
-    "namelesscoder/typo3-repository-client": "^2.0",
-    "nimut/testing-framework": "^5.1",
-    "phpunit/phpunit": "^6.0"
+    "ext-dom": "*",
+    "t3v/t3v_testing": "^1.1"
   },
   "autoload": {
     "psr-4": {
@@ -60,6 +58,7 @@
   },
   "autoload-dev": {
     "psr-4": {
+      "T3v\\T3vTesting\\Tests\\": ".build/web/typo3conf/ext/t3v_testing/Tests/",
       "T3v\\T3vBase\\Tests\\": "Tests"
     }
   },
