@@ -190,7 +190,6 @@ defined('TYPO3_MODE') or die();
         // --- Icons ---
 
         $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
-
         $icons = [
             '1 Column Layout Grid Element' => "{$iconsFolder}/GridElements/ColumnLayoutGridElement/1Column.svg",
             '2 Column Layout Grid Element' => "{$iconsFolder}/GridElements/ColumnLayoutGridElement/2Column.svg",

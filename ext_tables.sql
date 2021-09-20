@@ -1,10 +1,10 @@
--- Table structure for table `tt_content`
+-- Table structure for table `tt_content`:
 CREATE TABLE tt_content (
   label varchar(255) DEFAULT '' NOT NULL,
   header_type varchar(255) DEFAULT '' NOT NULL
 );
 
--- Table structure for table `tx_t3vbase_domain_model_country`
+-- Table structure for table `tx_t3vbase_domain_model_country`:
 CREATE TABLE tx_t3vbase_domain_model_country (
   name varchar(255) DEFAULT '' NOT NULL,
   label varchar(255) DEFAULT '' NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE tx_t3vbase_domain_model_country (
   sorting int(11) DEFAULT '0' NOT NULL
 );
 
--- Table structure for table `tx_t3vbase_domain_model_country_group`
+-- Table structure for table `tx_t3vbase_domain_model_country_group`:
 CREATE TABLE tx_t3vbase_domain_model_country_group (
   name varchar(255) DEFAULT '' NOT NULL,
   abstract text NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE tx_t3vbase_domain_model_country_group (
   sorting int(11) DEFAULT '0' NOT NULL
 );
 
--- Table structure for table `tx_t3vbase_domain_model_department`
+-- Table structure for table `tx_t3vbase_domain_model_department`:
 CREATE TABLE tx_t3vbase_domain_model_department (
   name varchar(255) DEFAULT '' NOT NULL,
   abstract text NOT NULL,
@@ -37,7 +37,7 @@ CREATE TABLE tx_t3vbase_domain_model_department (
   sorting int(11) DEFAULT '0' NOT NULL
 );
 
--- Table structure for table `tx_t3vbase_domain_model_email_address`
+-- Table structure for table `tx_t3vbase_domain_model_email_address`:
 CREATE TABLE tx_t3vbase_domain_model_email_address (
   type varchar(255) DEFAULT 'default' NOT NULL,
   address varchar(255) DEFAULT '' NOT NULL,
@@ -45,7 +45,7 @@ CREATE TABLE tx_t3vbase_domain_model_email_address (
   sorting int(11) DEFAULT '0' NOT NULL
 );
 
--- Table structure for table `tx_t3vbase_domain_model_format`
+-- Table structure for table `tx_t3vbase_domain_model_format`:
 CREATE TABLE tx_t3vbase_domain_model_format (
   name varchar(255) DEFAULT '' NOT NULL,
   type varchar(255) DEFAULT 'default' NOT NULL,
@@ -54,7 +54,7 @@ CREATE TABLE tx_t3vbase_domain_model_format (
   sorting int(11) DEFAULT '0' NOT NULL
 );
 
--- Table structure for table `tx_t3vbase_domain_model_phone_number`
+-- Table structure for table `tx_t3vbase_domain_model_phone_number`:
 CREATE TABLE tx_t3vbase_domain_model_phone_number (
   type varchar(255) DEFAULT 'default' NOT NULL,
   number varchar(255) DEFAULT '' NOT NULL,
@@ -63,7 +63,7 @@ CREATE TABLE tx_t3vbase_domain_model_phone_number (
   sorting int(11) DEFAULT '0' NOT NULL
 );
 
--- Table structure for table `tx_t3vbase_domain_model_postal_address`
+-- Table structure for table `tx_t3vbase_domain_model_postal_address`:
 CREATE TABLE tx_t3vbase_domain_model_postal_address (
   type varchar(255) DEFAULT 'default' NOT NULL,
   street varchar(255) DEFAULT '' NOT NULL,
@@ -76,7 +76,7 @@ CREATE TABLE tx_t3vbase_domain_model_postal_address (
   sorting int(11) DEFAULT '0' NOT NULL
 );
 
--- Table structure for table `tx_t3vbase_domain_model_region`
+-- Table structure for table `tx_t3vbase_domain_model_region`:
 CREATE TABLE tx_t3vbase_domain_model_region (
   name varchar(255) DEFAULT '' NOT NULL,
   label varchar(255) DEFAULT '' NOT NULL,
@@ -86,7 +86,7 @@ CREATE TABLE tx_t3vbase_domain_model_region (
   sorting int(11) DEFAULT '0' NOT NULL
 );
 
--- Table structure for table `tx_t3vbase_domain_model_style`
+-- Table structure for table `tx_t3vbase_domain_model_style`:
 CREATE TABLE tx_t3vbase_domain_model_style (
   name varchar(255) DEFAULT '' NOT NULL,
   type varchar(255) DEFAULT 'background-color' NOT NULL,
@@ -98,7 +98,7 @@ CREATE TABLE tx_t3vbase_domain_model_style (
   sorting int(11) DEFAULT '0' NOT NULL
 );
 
--- Table structure for table `tx_t3vbase_domain_model_theme`
+-- Table structure for table `tx_t3vbase_domain_model_theme`:
 CREATE TABLE tx_t3vbase_domain_model_theme (
   name varchar(255) DEFAULT '' NOT NULL,
   type varchar(255) DEFAULT 'default' NOT NULL,
@@ -107,7 +107,7 @@ CREATE TABLE tx_t3vbase_domain_model_theme (
   sorting int(11) DEFAULT '0' NOT NULL
 );
 
-# Table structure for table `tx_t3vbase_country_country_group_mm`
+# Table structure for table `tx_t3vbase_country_country_group_mm`:
 # CREATE TABLE tx_t3vbase_country_country_group_mm (
 #   uid_local int(11) unsigned DEFAULT '0' NOT NULL,
 #   uid_foreign int(11) unsigned DEFAULT '0' NOT NULL,
@@ -118,7 +118,7 @@ CREATE TABLE tx_t3vbase_domain_model_theme (
 #   KEY uid_foreign (uid_foreign)
 # );
 
-# Table structure for table `tx_t3vbase_country_region_mm`
+# Table structure for table `tx_t3vbase_country_region_mm`:
 # CREATE TABLE tx_t3vbase_country_region_mm (
 #   uid_local int(11) unsigned DEFAULT '0' NOT NULL,
 #   uid_foreign int(11) unsigned DEFAULT '0' NOT NULL,
