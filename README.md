@@ -89,7 +89,7 @@ git clone https://github.com/t3v/t3v_base.git && cd t3v_base
 ./Scripts/Tests.sh
 ./Scripts/Tests/Unit.sh
 ./Scripts/Tests/Functional.sh
-./Scripts/Tests/Maintenance.sh
+./Scripts/Tests/Migrate.sh
 ```
 
 Bug Reports
