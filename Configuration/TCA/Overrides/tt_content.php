@@ -42,12 +42,10 @@ $additionalTCAcolumns = [
                     $lll . 'tt_content.headerType.default',
                     ''
                 ],
-
                 [
                     $lll . 'tt_content.headerType.div',
                     'div'
                 ],
-
                 [
                     $lll . 'tt_content.headerType.span',
                     'span'
