@@ -428,12 +428,12 @@
       <!-- === Modules === -->
 
       <trans-unit id="mod.wizards.newContentElement.wizardItems.contentObjects.header">
-        <source>Content Objects</source>
+        <source>Content objects</source>
         <target>Content-Objekte</target>
       </trans-unit>
 
       <trans-unit id="mod.wizards.newContentElement.wizardItems.custom.header">
-        <source>Custom Elements</source>
+        <source>Custom elements</source>
         <target>Benutzerdefinierte Elemente</target>
       </trans-unit>
 
