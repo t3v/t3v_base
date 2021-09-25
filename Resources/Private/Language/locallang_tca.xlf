@@ -6,16 +6,12 @@
     <body>
       <!-- === Additional TCA columns === -->
 
-      <trans-unit id="tt_content.label">
-        <source>Label</source>
-      </trans-unit>
-
       <trans-unit id="tt_content.headerType">
         <source>Type</source>
       </trans-unit>
 
-      <trans-unit id="tt_content.headerType.default">
-        <source>Default</source>
+      <trans-unit id="tt_content.headerType.standard">
+        <source>Standard</source>
       </trans-unit>
 
       <trans-unit id="tt_content.headerType.div">

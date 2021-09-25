@@ -14,67 +14,37 @@ $extensionKey = 't3v_base';
 $extensionIdentifier = \T3v\T3vCore\Utility\ExtensionUtility::getIdentifier($extensionKey);
 $extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::getSignature($namespace, $extensionKey);
 $flexFormsFolder = \T3v\T3vCore\Utility\ExtensionUtility::getFlexFormsFolder($extensionKey);
-
-// === Additional TCA columns ===
-
 $lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'locallang_tca.xlf');
 
-$additionalTCAcolumns = [
-    'label' => [
-        'label' => $lll . 'tt_content.label',
-        'config' => [
-            'type' => 'input',
-            'eval' => 'trim',
-            'size' => 50,
-            'max' => 255
-        ],
-        'l10n_mode' => 'prefixLangTitle',
-        'exclude' => true
-    ],
-
-    'header_type' => [
-        'label' => $lll . 'tt_content.headerType',
-        'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-                [
-                    $lll . 'tt_content.headerType.default',
-                    ''
-                ],
-                [
-                    $lll . 'tt_content.headerType.div',
-                    'div'
-                ],
-                [
-                    $lll . 'tt_content.headerType.span',
-                    'span'
-                ]
-            ],
-            'default' => ''
-        ],
-        'exclude' => true
-    ]
-];
+// === TCA ===
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
     'tt_content',
-    $additionalTCAcolumns
-);
-
-unset($additionalTCAcolumns);
-
-$GLOBALS['TCA']['tt_content']['ctrl']['label'] = 'header';
-$GLOBALS['TCA']['tt_content']['ctrl']['label_userFunc'] = \T3v\T3vBase\Backend\UserFunctions::class . '->processLabel';
-
-// === Palettes ===
-
-// Adds the `label` field before the `CType` field in the `general` palette:
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
-    'tt_content',
-    'general',
-    'label, --linebreak--',
-    'before:CType'
+    [
+        'header_type' => [
+            'label' => $lll . 'tt_content.headerType',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    [
+                        $lll . 'tt_content.headerType.standard',
+                        ''
+                    ],
+                    [
+                        $lll . 'tt_content.headerType.div',
+                        'div'
+                    ],
+                    [
+                        $lll . 'tt_content.headerType.span',
+                        'span'
+                    ]
+                ],
+                'default' => ''
+            ],
+            'exclude' => true
+        ]
+    ]
 );
 
 // Adds the `header_type` field after the `header_layout` field in the `headers` palette:
