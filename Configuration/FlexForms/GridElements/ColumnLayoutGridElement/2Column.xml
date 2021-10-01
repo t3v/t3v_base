@@ -16,16 +16,21 @@
             <renderType>selectSingle</renderType>
             <items type="array">
               <numIndex index="0" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.standard.label</numIndex>
+                <numIndex index="1">standard</numIndex>
+              </numIndex>
+
+              <numIndex index="1" type="array">
                 <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.5050.label</numIndex>
                 <numIndex index="1">50-50</numIndex>
               </numIndex>
 
-              <numIndex index="1" type="array">
+              <numIndex index="2" type="array">
                 <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.7525.label</numIndex>
                 <numIndex index="1">75-25</numIndex>
               </numIndex>
 
-              <numIndex index="2" type="array">
+              <numIndex index="3" type="array">
                 <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.2575.label</numIndex>
                 <numIndex index="1">25-75</numIndex>
               </numIndex>
@@ -55,6 +60,35 @@
         </TCEforms>
       </handle>
 
+      <layout>
+        <TCEforms type="array">
+          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.label</label>
+          <config type="array">
+            <type>select</type>
+            <renderType>selectCheckBox</renderType>
+            <items type="array">
+              <!--
+              <numIndex index="0" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.standard.label</numIndex>
+                <numIndex index="1">standard</numIndex>
+              </numIndex>
+              -->
+
+              <numIndex index="1" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.block.label</numIndex>
+                <numIndex index="1">block</numIndex>
+              </numIndex>
+
+              <numIndex index="2" type="array">
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.plain.label</numIndex>
+                <numIndex index="1">plain</numIndex>
+              </numIndex>
+            </items>
+            <default>standard</default>
+          </config>
+        </TCEforms>
+      </layout>
+
       <breakpoint>
         <TCEforms type="array">
           <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.breakpoint.label</label>
@@ -81,35 +115,6 @@
           </config>
         </TCEforms>
       </breakpoint>
-
-      <layout>
-        <TCEforms type="array">
-          <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.label</label>
-          <config type="array">
-            <type>select</type>
-            <renderType>selectCheckBox</renderType>
-            <items type="array">
-              <!--
-              <numIndex index="0" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.default.label</numIndex>
-                <numIndex index="1">block</numIndex>
-              </numIndex>
-              -->
-
-              <numIndex index="1" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.block.label</numIndex>
-                <numIndex index="1">block</numIndex>
-              </numIndex>
-
-              <numIndex index="2" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.plain.label</numIndex>
-                <numIndex index="1">plain</numIndex>
-              </numIndex>
-            </items>
-            <default>default</default>
-          </config>
-        </TCEforms>
-      </layout>
 
       <container>
         <TCEforms type="array">

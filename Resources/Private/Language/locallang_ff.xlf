@@ -286,10 +286,6 @@
         <source>Layout</source>
       </trans-unit>
 
-      <trans-unit id="settings.layout.default.label">
-        <source>Default</source>
-      </trans-unit>
-
       <trans-unit id="settings.layout.block.label">
         <source>Block</source>
       </trans-unit>
@@ -300,6 +296,10 @@
 
       <trans-unit id="settings.layout.constrained.label">
         <source>Constrained</source>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.default.label">
+        <source>Default</source>
       </trans-unit>
 
       <trans-unit id="settings.layout.iconRight.label">
@@ -316,6 +316,10 @@
 
       <trans-unit id="settings.layout.plain.label">
         <source>Plain</source>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.standard.label">
+        <source>Standard</source>
       </trans-unit>
 
       <trans-unit id="settings.layout.withBottomDivider.label">

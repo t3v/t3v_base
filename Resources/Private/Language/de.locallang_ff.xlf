@@ -356,11 +356,6 @@
         <target>Layout</target>
       </trans-unit>
 
-      <trans-unit id="settings.layout.default.label">
-        <source>Default</source>
-        <target>Standard</target>
-      </trans-unit>
-
       <trans-unit id="settings.layout.block.label">
         <source>Block</source>
         <target>Block</target>
@@ -374,6 +369,11 @@
       <trans-unit id="settings.layout.constrained.label">
         <source>Constrained</source>
         <target>Begrenzt</target>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.default.label">
+        <source>Default</source>
+        <target>Standard</target>
       </trans-unit>
 
       <trans-unit id="settings.layout.iconRight.label">
@@ -394,6 +394,11 @@
       <trans-unit id="settings.layout.plain.label">
         <source>Plain</source>
         <target>Schlicht</target>
+      </trans-unit>
+
+      <trans-unit id="settings.layout.standard.label">
+        <source>Standard</source>
+        <target>Standard</target>
       </trans-unit>
 
       <trans-unit id="settings.layout.withBottomDivider.label">
