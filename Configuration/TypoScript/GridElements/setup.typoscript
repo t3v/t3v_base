@@ -1,16 +1,24 @@
-# --------------------------------
-# | T3v Base Grid Elements Setup |
-# --------------------------------
+/*
+  --------------------------------
+  | T3v Base Grid Elements Setup |
+  --------------------------------
+*/
 
-# === Imports ===
+/*
+  === Imports ===
+*/
 
-# --- Body ---
+/*
+  --- Body ---
+*/
 
 @import './HeaderGridElement/setup.typoscript'
 @import './SectionGridElement/setup.typoscript'
 @import './FooterGridElement/setup.typoscript'
 
-# --- Layout ---
+/*
+  --- Layout ---
+*/
 
 @import './ColumnLayoutGridElement/setup.typoscript'
 @import './FlexboxGridElement/setup.typoscript'
@@ -18,19 +26,27 @@
 @import './ContainerGridElement/setup.typoscript'
 @import './BlockGridElement/setup.typoscript'
 
-# --- Formatting ---
+/*
+  --- Formatting ---
+*/
 
 @import './FormattingGridElement/setup.typoscript'
 
-# --- Composition ---
+/*
+  --- Composition ---
+*/
 
 @import './BarGridElement/setup.typoscript'
 @import './FlyoutGridElement/setup.typoscript'
 @import './ModalGridElement/setup.typoscript'
 
-# --- Misc ---
+/*
+  --- Misc ---
+*/
 
 @import './ConditionallyGridElement/setup.typoscript'
 @import './ViewportGridElement/setup.typoscript'
 
-# === T3v Generator ===
+/*
+  === T3v Generator ===
+*/

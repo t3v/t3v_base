@@ -1,33 +1,41 @@
-# --------------------------------------------
-# | T3v Base SMS Responsive Images Constants |
-# --------------------------------------------
+/*
+  --------------------------------------------
+  | T3v Base SMS Responsive Images Constants |
+  --------------------------------------------
+*/
+
+/*
+  === Imports ===
+*/
 
 # === Imports ===
 
 @import 'EXT:sms_responsive_images/Configuration/TypoScript/Base/constants.ts'
 
-# === Overrides ===
+/*
+  === Overrides ===
+*/
 
 # tx_smsresponsiveimages {
-#   # File extensions for which no responsive images should be generated
+#   # The file extensions for which no responsive images should be generated:
 #   ignoreFileExtensions = gif, svg
 #
-#   # Sizes query for responsive images: Sizes query which tells the browser which of the image sizes should be used in the current
-#   # environment (`%1$d` can be used as a placeholder for the calculated image width)
+#   # The sizes query for responsive images which tells the browser which of the image sizes should be used in the current environment
+#   # (`%1$d` can be used as a placeholder for the calculated image width):
 #   sizes = (min-width: %1$dpx) %1$dpx, 100vw
 #
-#   # Additional image sizes for responsive images: Additional image sizes that should be generated for each content image (comma-separated
-#   # list of either image widths specified in pixels or pixel density descriptors, e. g. `2x`)
+#   # The additional image sizes for responsive images that should be generated for each content image (comma-separated list of either image
+#   # widths specified in pixels or pixel density descriptors, e. g. `2x`):
 #   srcset = 400, 600, 800, 1000, 1200
 #
-#   # Generates image markup that supports lazy loading
+#   # Generates image markup that supports lazy loading:
 #   lazyload = 0
 #
 #   placeholder {
-#     # Size of the placeholder image for lazy loading (`0` = disabled)
+#     # The size of the placeholder image for lazy loading (`0` = disabled):
 #     size = 0
 #
-#     # Embed placeholder image for lazy loading inline as Base64
+#     # Embeds placeholder image for lazy loading inline as Base64:
 #     inline = 0
 #   }
 # }

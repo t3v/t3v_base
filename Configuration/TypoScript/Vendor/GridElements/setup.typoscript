@@ -1,7 +1,11 @@
-# --------------------------------
-# | T3v Base Grid Elements Setup |
-# --------------------------------
+/*
+  --------------------------------
+  | T3v Base Grid Elements Setup |
+  --------------------------------
+*/
 
-# === Imports ===
+/*
+  === Imports ===
+*/
 
 @import 'EXT:gridelements/Configuration/TypoScript/setup.typoscript'

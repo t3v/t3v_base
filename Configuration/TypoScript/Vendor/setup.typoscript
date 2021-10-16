@@ -1,11 +1,17 @@
-# -------------------------
-# | T3v Base Vendor Setup |
-# -------------------------
+/*
+  -------------------------
+  | T3v Base Vendor Setup |
+  -------------------------
+*/
 
-# === Imports ===
+/*
+  === Imports ===
+*/
 
 @import './Extbase/setup.typoscript'
 @import './GridElements/setup.typoscript'
 @import './SMSResponsiveImages/setup.typoscript'
 
-# === T3v Generator ===
+/*
+  === T3v Generator ===
+*/

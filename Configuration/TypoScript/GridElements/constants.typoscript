@@ -1,16 +1,24 @@
-# ------------------------------------
-# | T3v Base Grid Elements Constants |
-# ------------------------------------
+/*
+  ------------------------------------
+  | T3v Base Grid Elements Constants |
+  ------------------------------------
+*/
 
-# === Imports ===
+/*
+  === Imports ===
+*/
 
-# --- Body ---
+/*
+  --- Body ---
+*/
 
 @import './HeaderGridElement/constants.typoscript'
 @import './SectionGridElement/constants.typoscript'
 @import './FooterGridElement/constants.typoscript'
 
-# --- Layout ---
+/*
+  --- Layout ---
+*/
 
 @import './FlexboxGridElement/constants.typoscript'
 @import './ColumnLayoutGridElement/constants.typoscript'
@@ -18,19 +26,27 @@
 @import './ContainerGridElement/constants.typoscript'
 @import './BlockGridElement/constants.typoscript'
 
-# --- Formatting ---
+/*
+  --- Formatting ---
+*/
 
 @import './FormattingGridElement/constants.typoscript'
 
-# --- Composition ---
+/*
+  --- Composition ---
+*/
 
 @import './BarGridElement/constants.typoscript'
 @import './FlyoutGridElement/constants.typoscript'
 @import './ModalGridElement/constants.typoscript'
 
-# --- Misc ---
+/*
+  --- Misc ---
+*/
 
 @import './ConditionallyGridElement/constants.typoscript'
 @import './ViewportGridElement/constants.typoscript'
 
-# === T3v Generator ===
+/*
+  === T3v Generator ===
+*/
