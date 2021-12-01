@@ -42,52 +42,52 @@
         <source>Background position</source>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundPosition.centerBottom.label">
-        <source>Center bottom</source>
-      </trans-unit>
-
-      <trans-unit id="settings.backgroundPosition.centerCenter.label">
-        <source>Center center</source>
-      </trans-unit>
-
-      <trans-unit id="settings.backgroundPosition.centerTop.label">
-        <source>Center top</source>
-      </trans-unit>
-
-      <trans-unit id="settings.backgroundPosition.leftBottom.label">
-        <source>Left bottom</source>
-      </trans-unit>
-
-      <trans-unit id="settings.backgroundPosition.leftCenter.label">
-        <source>Left center</source>
+      <trans-unit id="settings.backgroundPosition.default.label">
+        <source>Default</source>
       </trans-unit>
 
       <trans-unit id="settings.backgroundPosition.leftTop.label">
         <source>Left top</source>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundPosition.rightBottom.label">
-        <source>Right bottom</source>
+      <trans-unit id="settings.backgroundPosition.leftCenter.label">
+        <source>Left center</source>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundPosition.rightCenter.label">
-        <source>Right center</source>
+      <trans-unit id="settings.backgroundPosition.leftBottom.label">
+        <source>Left bottom</source>
       </trans-unit>
 
       <trans-unit id="settings.backgroundPosition.rightTop.label">
         <source>Right top</source>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundPosition.standard.label">
-        <source>Standard</source>
+      <trans-unit id="settings.backgroundPosition.rightCenter.label">
+        <source>Right center</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.rightBottom.label">
+        <source>Right bottom</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.centerTop.label">
+        <source>Center top</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.centerCenter.label">
+        <source>Center center</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.centerBottom.label">
+        <source>Center bottom</source>
       </trans-unit>
 
       <trans-unit id="settings.backgroundRepeat.label">
         <source>Background repeat</source>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundRepeat.noRepeat.label">
-        <source>No repeat</source>
+      <trans-unit id="settings.backgroundRepeat.default.label">
+        <source>Default</source>
       </trans-unit>
 
       <trans-unit id="settings.backgroundRepeat.repeat.label">
@@ -102,36 +102,36 @@
         <source>Repeat Y</source>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundRepeat.round.label">
-        <source>Round</source>
-      </trans-unit>
-
-      <trans-unit id="settings.backgroundRepeat.standard.label">
-        <source>Standard</source>
+      <trans-unit id="settings.backgroundRepeat.noRepeat.label">
+        <source>No repeat</source>
       </trans-unit>
 
       <trans-unit id="settings.backgroundRepeat.space.label">
         <source>Space</source>
       </trans-unit>
 
+      <trans-unit id="settings.backgroundRepeat.round.label">
+        <source>Round</source>
+      </trans-unit>
+
       <trans-unit id="settings.backgroundSize.label">
         <source>Background size</source>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundSize.default.label">
+        <source>Default</source>
       </trans-unit>
 
       <trans-unit id="settings.backgroundSize.auto.label">
         <source>Auto</source>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundSize.contain.label">
-        <source>Contain</source>
-      </trans-unit>
-
       <trans-unit id="settings.backgroundSize.cover.label">
         <source>Cover</source>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundSize.standard.label">
-        <source>Standard</source>
+      <trans-unit id="settings.backgroundSize.contain.label">
+        <source>Contain</source>
       </trans-unit>
 
       <trans-unit id="settings.backgroundSourceSet.label">
@@ -316,10 +316,6 @@
 
       <trans-unit id="settings.layout.plain.label">
         <source>Plain</source>
-      </trans-unit>
-
-      <trans-unit id="settings.layout.standard.label">
-        <source>Standard</source>
       </trans-unit>
 
       <trans-unit id="settings.layout.withBottomDivider.label">

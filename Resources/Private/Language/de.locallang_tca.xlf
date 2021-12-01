@@ -11,8 +11,8 @@
         <target>Typ</target>
       </trans-unit>
 
-      <trans-unit id="tt_content.headerType.standard">
-        <source>Standard</source>
+      <trans-unit id="tt_content.headerType.default">
+        <source>Default</source>
         <target>Standard</target>
       </trans-unit>
 

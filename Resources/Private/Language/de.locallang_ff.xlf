@@ -51,29 +51,9 @@
         <target>Hintergrundpositionierung</target>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundPosition.centerBottom.label">
-        <source>Center bottom</source>
-        <target>Mittig unten</target>
-      </trans-unit>
-
-      <trans-unit id="settings.backgroundPosition.centerCenter.label">
-        <source>Center center</source>
-        <target>Mittig zentriert</target>
-      </trans-unit>
-
-      <trans-unit id="settings.backgroundPosition.centerTop.label">
-        <source>Center top</source>
-        <target>Mittig oben</target>
-      </trans-unit>
-
-      <trans-unit id="settings.backgroundPosition.leftBottom.label">
-        <source>Left bottom</source>
-        <target>Links unten</target>
-      </trans-unit>
-
-      <trans-unit id="settings.backgroundPosition.leftCenter.label">
-        <source>Left center</source>
-        <target>Links zentriert</target>
+      <trans-unit id="settings.backgroundPosition.default.label">
+        <source>Default</source>
+        <target>Standard</target>
       </trans-unit>
 
       <trans-unit id="settings.backgroundPosition.leftTop.label">
@@ -81,14 +61,14 @@
         <target>Links oben</target>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundPosition.rightBottom.label">
-        <source>Right bottom</source>
-        <target>Rechts unten</target>
+      <trans-unit id="settings.backgroundPosition.leftCenter.label">
+        <source>Left center</source>
+        <target>Links zentriert</target>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundPosition.rightCenter.label">
-        <source>Right center</source>
-        <target>Rechts zentriert</target>
+      <trans-unit id="settings.backgroundPosition.leftBottom.label">
+        <source>Left bottom</source>
+        <target>Links unten</target>
       </trans-unit>
 
       <trans-unit id="settings.backgroundPosition.rightTop.label">
@@ -96,9 +76,29 @@
         <target>Rechts oben</target>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundPosition.standard.label">
-        <source>Standard</source>
-        <target>Standard</target>
+      <trans-unit id="settings.backgroundPosition.rightCenter.label">
+        <source>Right center</source>
+        <target>Rechts zentriert</target>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.rightBottom.label">
+        <source>Right bottom</source>
+        <target>Rechts unten</target>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.centerTop.label">
+        <source>Center top</source>
+        <target>Mittig oben</target>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.centerCenter.label">
+        <source>Center center</source>
+        <target>Mittig zentriert</target>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundPosition.centerBottom.label">
+        <source>Center bottom</source>
+        <target>Mittig unten</target>
       </trans-unit>
 
       <trans-unit id="settings.backgroundRepeat.label">
@@ -106,9 +106,9 @@
         <target>Hintergrundwiederholung</target>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundRepeat.noRepeat.label">
-        <source>No repeat</source>
-        <target>Keine Wiederholung</target>
+      <trans-unit id="settings.backgroundRepeat.default.label">
+        <source>Default</source>
+        <target>Standard</target>
       </trans-unit>
 
       <trans-unit id="settings.backgroundRepeat.repeat.label">
@@ -126,14 +126,9 @@
         <target>Wiederholung Y</target>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundRepeat.round.label">
-        <source>Round</source>
-        <target>Rund</target>
-      </trans-unit>
-
-      <trans-unit id="settings.backgroundRepeat.standard.label">
-        <source>Standard</source>
-        <target>Standard</target>
+      <trans-unit id="settings.backgroundRepeat.noRepeat.label">
+        <source>No repeat</source>
+        <target>Keine Wiederholung</target>
       </trans-unit>
 
       <trans-unit id="settings.backgroundRepeat.space.label">
@@ -141,9 +136,19 @@
         <target>Fläche</target>
       </trans-unit>
 
+      <trans-unit id="settings.backgroundRepeat.round.label">
+        <source>Round</source>
+        <target>Rund</target>
+      </trans-unit>
+
       <trans-unit id="settings.backgroundSize.label">
         <source>Background size</source>
         <target>Hintergrundgröße</target>
+      </trans-unit>
+
+      <trans-unit id="settings.backgroundSize.default.label">
+        <source>Default</source>
+        <target>Standard</target>
       </trans-unit>
 
       <trans-unit id="settings.backgroundSize.auto.label">
@@ -151,19 +156,14 @@
         <target>Auto</target>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundSize.contain.label">
-        <source>Contain</source>
-        <target>Contain</target>
-      </trans-unit>
-
       <trans-unit id="settings.backgroundSize.cover.label">
         <source>Cover</source>
         <target>Cover</target>
       </trans-unit>
 
-      <trans-unit id="settings.backgroundSize.standard.label">
-        <source>Standard</source>
-        <target>Standard</target>
+      <trans-unit id="settings.backgroundSize.contain.label">
+        <source>Contain</source>
+        <target>Contain</target>
       </trans-unit>
 
       <trans-unit id="settings.backgroundSourceSet.label">
@@ -394,11 +394,6 @@
       <trans-unit id="settings.layout.plain.label">
         <source>Plain</source>
         <target>Schlicht</target>
-      </trans-unit>
-
-      <trans-unit id="settings.layout.standard.label">
-        <source>Standard</source>
-        <target>Standard</target>
       </trans-unit>
 
       <trans-unit id="settings.layout.withBottomDivider.label">

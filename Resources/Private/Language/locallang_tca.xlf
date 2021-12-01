@@ -10,8 +10,8 @@
         <source>Type</source>
       </trans-unit>
 
-      <trans-unit id="tt_content.headerType.standard">
-        <source>Standard</source>
+      <trans-unit id="tt_content.headerType.default">
+        <source>Default</source>
       </trans-unit>
 
       <trans-unit id="tt_content.headerType.div">

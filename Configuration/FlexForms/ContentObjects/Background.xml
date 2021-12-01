@@ -162,7 +162,7 @@
                 <renderType>selectSingle</renderType>
                 <items type="array">
                   <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.standard.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.default.label</numIndex>
                     <numIndex index="1"></numIndex>
                   </numIndex>
 
@@ -224,7 +224,7 @@
                 <renderType>selectSingle</renderType>
                 <items type="array">
                   <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.standard.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.default.label</numIndex>
                     <numIndex index="1"></numIndex>
                   </numIndex>
 
@@ -257,11 +257,6 @@
                     <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.round.label</numIndex>
                     <numIndex index="1">round</numIndex>
                   </numIndex>
-
-                  <numIndex index="7" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.repeatY.label</numIndex>
-                    <numIndex index="1">repeat-y</numIndex>
-                  </numIndex>
                 </items>
                 <default></default>
               </config>
@@ -276,7 +271,7 @@
                 <renderType>selectSingle</renderType>
                 <items type="array">
                   <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundSize.standard.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundSize.default.label</numIndex>
                     <numIndex index="1"></numIndex>
                   </numIndex>
 

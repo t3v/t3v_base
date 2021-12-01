@@ -28,7 +28,7 @@ $lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'local
                 'renderType' => 'selectSingle',
                 'items' => [
                     [
-                        $lll . 'tt_content.headerType.standard',
+                        $lll . 'tt_content.headerType.default',
                         ''
                     ],
                     [
