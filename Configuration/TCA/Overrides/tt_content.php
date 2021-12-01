@@ -88,7 +88,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
 );
 
 // Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
 
 // --- Copyright Content Object ---
 
@@ -108,7 +108,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
 );
 
 // Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
 
 // --- Icon Content Object ---
 
@@ -128,7 +128,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
 );
 
 // Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
 
 // --- Label Content Object ---
 
@@ -148,7 +148,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
 );
 
 // Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
 
 // --- Link Content Object ---
 
@@ -168,7 +168,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
 );
 
 // Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
 
 // --- Logo Content Object ---
 
@@ -188,7 +188,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
 );
 
 // Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
 
 // --- Search Bar Content Object ---
 
@@ -208,7 +208,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
 );
 
 // Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
 
 // --- Spacer Content Object ---
 
@@ -228,6 +228,6 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjec
 );
 
 // Disable the display of `layout`, `pages`, `select_key` and `recursive` field:
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout,pages,select_key,recursive';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
 
 // === T3v Generator ===
