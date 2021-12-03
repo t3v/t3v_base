@@ -358,16 +358,6 @@
         <source>Footer</source>
       </trans-unit>
 
-      <!-- === Modules === -->
-
-      <trans-unit id="mod.wizards.newContentElement.wizardItems.contentObjects.header">
-        <source>Content objects</source>
-      </trans-unit>
-
-      <trans-unit id="mod.wizards.newContentElement.wizardItems.custom.header">
-        <source>Custom elements</source>
-      </trans-unit>
-
       <!-- === T3v Generator === -->
     </body>
   </file>

@@ -1,16 +1,40 @@
-# -----------------------------------
-# | T3v Base Grid Elements TSconfig |
-# -----------------------------------
+/*
+  -----------------------------------
+  | T3v Base Grid Elements TSconfig |
+  -----------------------------------
+*/
 
-# === Imports ===
+/*
+  === New Content Element Wizard Configuration ===
+*/
 
-# --- Body ---
+mod {
+  wizards {
+    newContentElement {
+      wizardItems {
+        gridElements {
+          header = LLL:EXT:t3v_translations/Resources/Private/Language/locallang_ttc.xlf:mod.wizards.newContentElement.wizardItems.gridElements.header
+        }
+      }
+    }
+  }
+}
+
+/*
+  === Imports ===
+*/
+
+/*
+  --- Body ---
+*/
 
 @import './GridElements/HeaderGridElement.tsconfig'
 @import './GridElements/SectionGridElement.tsconfig'
 @import './GridElements/FooterGridElement.tsconfig'
 
-# --- Layout ---
+/*
+  --- Layout ---
+*/
 
 @import './GridElements/ColumnLayoutGridElement.tsconfig'
 @import './GridElements/FlexboxGridElement.tsconfig'
@@ -18,19 +42,27 @@
 @import './GridElements/ContainerGridElement.tsconfig'
 @import './GridElements/BlockGridElement.tsconfig'
 
-# --- Formatting ---
+/*
+  --- Formatting ---
+*/
 
 @import './GridElements/FormattingGridElement.tsconfig'
 
-# --- Composition ---
+/*
+  --- Composition ---
+*/
 
 @import './GridElements/BarGridElement.tsconfig'
 @import './GridElements/FlyoutGridElement.tsconfig'
 @import './GridElements/ModalGridElement.tsconfig'
 
-# --- Misc ---
+/*
+  --- Misc ---
+*/
 
 @import './GridElements/ConditionallyGridElement.tsconfig'
 @import './GridElements/ViewportGridElement.tsconfig'
 
-# === T3v Generator ===
+/*
+  === T3v Generator ===
+*/

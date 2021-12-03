@@ -1,15 +1,19 @@
-# --------------------------------------
-# | T3v Base Content Elements TSconfig |
-# --------------------------------------
+/*
+  --------------------------------------
+  | T3v Base Content Elements TSconfig |
+  --------------------------------------
+*/
 
-# === New Content Element Wizard Configuration ===
+/*
+  === New Content Element Wizard Configuration ===
+*/
 
 mod {
   wizards {
     newContentElement {
       wizardItems {
         custom {
-          header = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:mod.wizards.newContentElement.wizardItems.custom.header
+          header = LLL:EXT:t3v_translations/Resources/Private/Language/locallang_ttc.xlf:mod.wizards.newContentElement.wizardItems.custom.header
           show = *
         }
       }
@@ -17,4 +21,6 @@ mod {
   }
 }
 
-# === T3v Generator ===
+/*
+  === T3v Generator ===
+*/
