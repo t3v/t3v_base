@@ -8,17 +8,19 @@
   === New Content Element Wizard Configuration ===
 */
 
+/*
 mod {
   wizards {
     newContentElement {
       wizardItems {
-        gridElements {
+        gridelements {
           header = LLL:EXT:t3v_translations/Resources/Private/Language/locallang_ttc.xlf:mod.wizards.newContentElement.wizardItems.gridElements.header
         }
       }
     }
   }
 }
+*/
 
 /*
   === Imports ===
