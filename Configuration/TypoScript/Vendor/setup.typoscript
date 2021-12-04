@@ -9,7 +9,7 @@
 */
 
 @import './Extbase/setup.typoscript'
-@import './GridElements/setup.typoscript'
+@import './Gridelements/setup.typoscript'
 @import './SMSResponsiveImages/setup.typoscript'
 
 /*

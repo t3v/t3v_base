@@ -1,0 +1,11 @@
+/*
+  -----------------------------------
+  | T3v Base Gridelements Constants |
+  -----------------------------------
+*/
+
+/*
+  === Imports ===
+*/
+
+@import 'EXT:gridelements/Configuration/TypoScript/constants.typoscript'
