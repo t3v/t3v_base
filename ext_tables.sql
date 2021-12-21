@@ -38,6 +38,7 @@ CREATE TABLE tx_t3vbase_domain_model_department (
 
 -- Table structure for table `tx_t3vbase_domain_model_email_address`:
 CREATE TABLE tx_t3vbase_domain_model_email_address (
+  label varchar(255) DEFAULT '' NOT NULL,
   type varchar(255) DEFAULT 'default' NOT NULL,
   address varchar(255) DEFAULT '' NOT NULL,
   note text DEFAULT '' NOT NULL,
@@ -55,6 +56,7 @@ CREATE TABLE tx_t3vbase_domain_model_format (
 
 -- Table structure for table `tx_t3vbase_domain_model_phone_number`:
 CREATE TABLE tx_t3vbase_domain_model_phone_number (
+  label varchar(255) DEFAULT '' NOT NULL,
   type varchar(255) DEFAULT 'default' NOT NULL,
   number varchar(255) DEFAULT '' NOT NULL,
   international_number varchar(255) DEFAULT '' NOT NULL,
