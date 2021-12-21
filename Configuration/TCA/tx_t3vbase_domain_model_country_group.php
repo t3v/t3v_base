@@ -16,9 +16,9 @@ return [
             'config' => [
                 'type' => 'input',
                 'max' => 255,
-                'eval' => 'trim, required'
+                'eval' => 'trim, required',
+                ['behaviour' => ['allowLanguageSynchronization' => true]]
             ],
-            'l10n_mode' => 'mergeIfNotBlank',
             'exclude' => true
         ],
 
@@ -26,10 +26,11 @@ return [
             'label' => $lll . 'tx_t3vbase_domain_model_country_group.abstract',
             'config' => [
                 'type' => 'text',
-                'eval' => 'trim'
+                'eval' => 'trim',
+                'enableRichtext' => true,
+                'richtextConfiguration' => 'default',
+                ['behaviour' => ['allowLanguageSynchronization' => true]]
             ],
-            'defaultExtras' => 'richtext[]',
-            'l10n_mode' => 'mergeIfNotBlank',
             'exclude' => true
         ],
 
@@ -89,39 +90,39 @@ return [
         ],
 
         'starttime' => [
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.starttime',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
             'config' => [
                 'type' => 'input',
                 'size' => 13,
-                'max' => 20,
                 'eval' => 'datetime',
                 'default' => 0,
                 'range' => [
                     'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
-                ]
+                ],
+                'renderType' => 'inputDateTime',
+                ['behaviour' => ['allowLanguageSynchronization' => true]]
             ],
-            'l10n_mode' => 'mergeIfNotBlank',
             'exclude' => true
         ],
 
         'endtime' => [
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.endtime',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
             'config' => [
                 'type' => 'input',
                 'size' => 13,
-                'max' => 20,
                 'eval' => 'datetime',
                 'default' => 0,
                 'range' => [
                     'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
-                ]
+                ],
+                'renderType' => 'inputDateTime',
+                ['behaviour' => ['allowLanguageSynchronization' => true]]
             ],
-            'l10n_mode' => 'mergeIfNotBlank',
             'exclude' => true
         ],
 
         'hidden' => [
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
             'config' => [
                 'type' => 'check'
             ],
@@ -129,14 +130,14 @@ return [
         ],
 
         'sys_language_uid' => [
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'special' => 'languages',
                 'items' => [
                     [
-                        'LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages',
+                        'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
                         -1,
                         'flags-multiple'
                     ],
@@ -147,7 +148,7 @@ return [
         ],
 
         'l10n_parent' => [
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.l18n_parent',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -210,13 +211,7 @@ return [
 
     'types' => [
         0 => [
-            'showitem' => '
-        --palette--;;generalPalette,
-        --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.language,
-        --palette--;;languagePalette,
-        --div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
-        --palette--;;accessPalette
-      '
+            'showitem' => '--palette--;;generalPalette,--div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.language,--palette--;;languagePalette,--div--;LLL:EXT:t3v_core/Resources/Private/Language/locallang_ttc.xlf:tabs.access,--palette--;;accessPalette'
         ]
     ],
 

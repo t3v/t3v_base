@@ -43,7 +43,7 @@ return [
                 ],
                 'default' => 'default',
                 'behaviour' => [
-                    'allowLanguageSynchronization' => false
+                    'allowLanguageSynchronization' => true
                 ],
                 'fieldWizard' => [
                     'selectIcons' => [
@@ -310,16 +310,7 @@ return [
 
     'types' => [
         0 => [
-            'showitem' => '
-                --palette--;;general,
-                --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.appearance.label,
-                --palette--;;appearance,
-                --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.language.label,
-                --palette--;;language,
-                --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.access.label,
-                --palette--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:palettes.visibility.label;visibility,
-                --palette--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:palettes.access.label;access
-            '
+            'showitem' => '--palette--;;general,--div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.appearance.label,--palette--;;appearance,--div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.language.label,--palette--;;language,--div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.access.label,--palette--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:palettes.visibility.label;visibility,--palette--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:palettes.access.label;access'
         ]
     ],
 
