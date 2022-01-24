@@ -1,8 +1,12 @@
-# --------------------------------------------------
-# | T3v Base 1 Column Layout Grid Element TSconfig |
-# --------------------------------------------------
+/*
+  ----------------------------------------------------
+  | T3v Base One Column Layout Grid Element TSconfig |
+  ----------------------------------------------------
+*/
 
-# === Grid Element Configuration ===
+/*
+  === Grid Element Configuration ===
+*/
 
 tx_gridelements {
   setup {
@@ -49,3 +53,7 @@ tx_gridelements {
     }
   }
 }
+
+/*
+  === T3v Generator ===
+*/

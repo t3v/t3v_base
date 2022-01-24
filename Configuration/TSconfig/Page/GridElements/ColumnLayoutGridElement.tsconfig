@@ -1,10 +1,18 @@
-# ------------------------------------------------
-# | T3v Base Column Layout Grid Element TSconfig |
-# ------------------------------------------------
+/*
+  ------------------------------------------------
+  | T3v Base Column Layout Grid Element TSconfig |
+  ------------------------------------------------
+*/
 
-# === Imports ===
+/*
+  === Imports ===
+*/
 
 @import './ColumnLayoutGridElement/1Column.tsconfig'
 @import './ColumnLayoutGridElement/2Column.tsconfig'
 @import './ColumnLayoutGridElement/3Column.tsconfig'
 @import './ColumnLayoutGridElement/4Column.tsconfig'
+
+/*
+  === T3v Generator ===
+*/
