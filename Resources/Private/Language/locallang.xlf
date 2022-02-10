@@ -6,7 +6,7 @@
     <body>
       <!-- === Grid Elements === -->
 
-      <!-- Flyout Grid Element -->
+      <!-- ‐‐‐ Flyout Grid Element ‐‐‐ -->
 
       <trans-unit id="contentObjects.flyoutGridElement.control.name">
         <source>Control</source>

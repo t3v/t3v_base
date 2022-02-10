@@ -1,8 +1,12 @@
-# -------------------------------------------------
-# | T3v Base Column Layout Grid Element Constants |
-# -------------------------------------------------
+/*
+  -------------------------------------------------
+  | T3v Base Column Layout Grid Element Constants |
+  -------------------------------------------------
+*/
 
-# === Imports ===
+/*
+  === Imports ===
+*/
 
 @import './1Column/constants.typoscript'
 @import './2Column/constants.typoscript'

@@ -1,8 +1,12 @@
-# ---------------------------------------------
-# | T3v Base Column Layout Grid Element Setup |
-# ---------------------------------------------
+/*
+  --------------------------------------------
+  | T3v Base Column Layout Grid Element Setup |
+  ---------------------------------------------
+*/
 
-# === Imports ===
+/*
+  === Imports ===
+*/
 
 @import './1Column/setup.typoscript'
 @import './2Column/setup.typoscript'

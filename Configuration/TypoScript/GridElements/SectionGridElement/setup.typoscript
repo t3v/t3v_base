@@ -1,8 +1,8 @@
-# ---------------------------------------
-# | T3v Base Section Grid Element Setup |
-# ---------------------------------------
-
-# === Grid Element Configuration ===
+/*
+  ---------------------------------------
+  | T3v Base Section Grid Element Setup |
+  ---------------------------------------
+*/
 
 tt_content {
   gridelements_pi1 {

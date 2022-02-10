@@ -1,8 +1,8 @@
-# ------------------------------------------
-# | 3 Column Layout Grid Element Constants |
-# ------------------------------------------
-
-# === Plugin Constants ===
+/*
+  -------------------------------------------------------
+  | T3v Base Three Column Layout Grid Element Constants |
+  -------------------------------------------------------
+*/
 
 plugin {
   tx_t3vbase {
