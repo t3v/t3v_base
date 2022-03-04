@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace T3v\T3vBase\Tests\Functional\Frontend;
 
+use Doctrine\DBAL\DBALException;
 use T3v\T3vTesting\Tests\Functional\Frontend\Traits\SetupTrait;
+use TYPO3\TestingFramework\Core\Exception;
 use TYPO3\TestingFramework\Core\Functional\Framework\Frontend\InternalRequest;
 use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 
@@ -35,13 +37,13 @@ class RenderingTest extends FunctionalTestCase
      * @var array
      */
     protected $testExtensionsToLoad = [
-        'typo3conf/ext/t3v_base',
         'typo3conf/ext/gridelements',
         'typo3conf/ext/sms_responsive_images',
         'typo3conf/ext/vhs',
         'typo3conf/ext/t3v_core',
         'typo3conf/ext/t3v_translations',
-        'typo3conf/ext/t3v_testing'
+        'typo3conf/ext/t3v_testing',
+        'typo3conf/ext/t3v_base'
     ];
 
     /**
@@ -49,8 +51,7 @@ class RenderingTest extends FunctionalTestCase
      *
      * @var array
      */
-    protected $pathsToLinkInTestInstance = [
-    ];
+    protected $pathsToLinkInTestInstance = [];
 
     /**
      * Tests if the template is rendered.
@@ -71,17 +72,15 @@ class RenderingTest extends FunctionalTestCase
             $titleTag = $xpath->query('/html/head/title')->item(0);
             $generatorMetaTag = $xpath->query('/html/head/meta[@name="generator"]')->item(0);
 
-            self::assertEquals('Home | T3v Base', $titleTag->nodeValue);
+            self::assertStringContainsString('Home', $titleTag->nodeValue);
             self::assertEquals('TYPO3 CMS', $generatorMetaTag->getAttribute('content'));
         }
     }
 
     /**
      * Setup before running tests.
-     *
-     * @throws \Doctrine\DBAL\DBALException
-     * @throws \TYPO3\TestingFramework\Core\Exception
-     * @noinspection PhpFullyQualifiedNameUsageInspection
+     * @throws DBALException
+     * @throws Exception
      */
     protected function setUp(): void
     {
