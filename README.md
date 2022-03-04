@@ -1,7 +1,7 @@
 [T3v Base]
 ==========
 
-**The base extension of TYPO3voilà.**
+**The base extension of [TYPO3voilà].**
 
 Overview
 --------
