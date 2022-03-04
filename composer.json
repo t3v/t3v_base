@@ -44,10 +44,10 @@
   ],
   "require": {
     "php": ">= 7.2",
-    "typo3/cms-core": "^9.5.31 || ^10.4.23 || ^11.5.5",
+    "typo3/cms-core": "^9.5.31 || ^10.4.25 || ^11.5.7",
     "gridelementsteam/gridelements": "^9.5 || dev-9-0 || ^10.0 || dev-10-0 || dev-master",
-    "sitegeist/sms-responsive-images": "^2.1",
-    "fluidtypo3/vhs": "^6.0",
+    "sitegeist/sms-responsive-images": "^2.1.3",
+    "fluidtypo3/vhs": "^6.0.5",
     "t3v/t3v_core": "dev-develop",
     "t3v/t3v_translations": "dev-develop"
   },
