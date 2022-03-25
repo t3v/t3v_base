@@ -270,7 +270,7 @@ return [
         'type' => 'type',
         // 'typeicon_column' => 'type',
         // 'typeicon_classes' => [
-        //   'default' => 'mimetypes-x-content-text'
+        //     'default' => 'mimetypes-x-content-text'
         // ],
         // 'thumbnail' => 'thumbnail',
         'iconfile' => "${iconsFolder}/TCA/Theme.svg",
@@ -310,7 +310,16 @@ return [
 
     'types' => [
         0 => [
-            'showitem' => '--palette--;;general,--div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.appearance.label,--palette--;;appearance,--div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.language.label,--palette--;;language,--div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.access.label,--palette--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:palettes.visibility.label;visibility,--palette--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:palettes.access.label;access'
+            'showitem' => '
+                --palette--;;general,
+                --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.appearance.label,
+                --palette--;;appearance,
+                --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.language.label,
+                --palette--;;language,
+                --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.access.label,
+                --palette--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:palettes.visibility.label;visibility,
+                --palette--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:palettes.access.label;access
+            '
         ]
     ],
 
