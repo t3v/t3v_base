@@ -27,6 +27,8 @@
       <trans-unit id="color.description">
         <source>The color of the style.</source>
       </trans-unit>
+
+      <!-- === T3v Generator === -->
     </body>
   </file>
 </xliff>

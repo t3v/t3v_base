@@ -24,7 +24,7 @@ return [
             'config' => [
                 'type' => 'input',
                 'max' => 255,
-                'eval' => 'trim, required',
+                'eval' => 'required, trim',
                 'default' => 'Style',
                 'behaviour' => [
                     'allowLanguageSynchronization' => true
@@ -43,6 +43,7 @@ return [
                     [$lll . 'tx_t3vbase_domain_model_style.type.backgroundImages', 'background-images'],
                     [$lll . 'tx_t3vbase_domain_model_style.type.color', 'color']
                 ],
+                'eval' => 'required, trim',
                 'default' => 'background-color',
                 'behaviour' => [
                     'allowLanguageSynchronization' => true

@@ -120,7 +120,7 @@
 
       <trans-unit id="tx_t3vbase_domain_model_format">
         <source>Format</source>
-        <target>Format</target>
+        <target>Formatierung</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vbase_domain_model_format.name">
@@ -143,9 +143,9 @@
         <target>Kurzname</target>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_format.abstract">
-        <source>Abstract</source>
-        <target>Zusammenfassung</target>
+      <trans-unit id="tx_t3vbase_domain_model_format.description">
+        <source>Description</source>
+        <target>Beschreibung</target>
       </trans-unit>
 
       <!-- Phone Number Model -->
@@ -373,9 +373,9 @@
         <target>Kurzname</target>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_theme.abstract">
-        <source>Abstract</source>
-        <target>Zusammenfassung</target>
+      <trans-unit id="tx_t3vbase_domain_model_theme.description">
+        <source>Description</source>
+        <target>Beschreibung</target>
       </trans-unit>
 
       <!-- === T3v Generator === -->

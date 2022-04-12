@@ -24,7 +24,7 @@ return [
             'config' => [
                 'type' => 'input',
                 'max' => 255,
-                'eval' => 'trim, required',
+                'eval' => 'required, trim',
                 'default' => 'Theme',
                 'behaviour' => [
                     'allowLanguageSynchronization' => true
@@ -41,6 +41,7 @@ return [
                 'items' => [
                     [$lll . 'tx_t3vbase_domain_model_theme.type.default', 'default']
                 ],
+                'eval' => 'required, trim',
                 'default' => 'default',
                 'behaviour' => [
                     'allowLanguageSynchronization' => true
@@ -74,8 +75,8 @@ return [
             'exclude' => true
         ],
 
-        'abstract' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_theme.abstract',
+        'description' => [
+            'label' => $lll . 'tx_t3vbase_domain_model_theme.description',
             'config' => [
                 'type' => 'text',
                 'enableRichtext' => true,
@@ -266,7 +267,7 @@ return [
         'label' => 'name',
         // 'label_alt' => 'label',
         // 'label_alt_force' => 1,
-        // 'descriptionColumn' => 'abstract',
+        // 'descriptionColumn' => 'description',
         'type' => 'type',
         // 'typeicon_column' => 'type',
         // 'typeicon_classes' => [
@@ -331,7 +332,7 @@ return [
                 name, --linebreak--,
                 type, --linebreak--,
                 handle, --linebreak--,
-                abstract
+                description
             ',
             'canNotCollapse' => true
         ],

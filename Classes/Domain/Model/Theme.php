@@ -18,11 +18,11 @@ class Theme extends AbstractEntity
     protected $name;
 
     /**
-     * The theme's abstract.
+     * The theme's description.
      *
      * @var string
      */
-    protected $abstract;
+    protected $description;
 
     /**
      * Returns the theme's name.
@@ -45,22 +45,22 @@ class Theme extends AbstractEntity
     }
 
     /**
-     * Returns the theme's abstract.
+     * Returns the theme's description.
      *
-     * @return string|null The theme's abstract
+     * @return string|null The theme's description
      */
-    public function getAbstract(): ?string
+    public function getDescription(): ?string
     {
-        return $this->abstract;
+        return $this->description;
     }
 
     /**
-     * Sets the theme's abstract.
+     * Sets the theme's description.
      *
-     * @param string $abstract The theme's abstract
+     * @param string $description The theme's description
      */
-    public function setAbstract(string $abstract): void
+    public function setDescription(string $description): void
     {
-        $this->abstract = $abstract;
+        $this->description = $description;
     }
 }

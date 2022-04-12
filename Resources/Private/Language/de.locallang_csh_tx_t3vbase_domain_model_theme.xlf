@@ -4,26 +4,24 @@
     <header />
 
     <body>
-      <!-- === Properties === -->
-
       <trans-unit id="name.description">
-        <source>Name</source>
-        <target>Name</target>
+        <source>The name of the style.</source>
+        <target>Der Name des Stils.</target>
       </trans-unit>
 
       <trans-unit id="type.description">
-        <source>Type</source>
-        <target>Typ</target>
+        <source>The type of the style.</source>
+        <target>Der Typ des Stils.</target>
       </trans-unit>
 
       <trans-unit id="handle.description">
-        <source>Handle</source>
-        <target>Kurzname</target>
+        <source>The handle of the style.</source>
+        <target>Der Kurzname des Stils.</target>
       </trans-unit>
 
-      <trans-unit id="abstract.description">
-        <source>Abstract</source>
-        <target>Zusammenfassung</target>
+      <trans-unit id="description.description">
+        <source>The description of the style.</source>
+        <target>Die Beschreibung des Stils.</target>
       </trans-unit>
 
       <!-- === T3v Generator === -->

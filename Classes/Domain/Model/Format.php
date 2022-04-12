@@ -18,11 +18,11 @@ class Format extends AbstractEntity
     protected $name;
 
     /**
-     * The format's abstract.
+     * The format's description.
      *
      * @var string
      */
-    protected $abstract;
+    protected $description;
 
     /**
      * Returns the format's name.
@@ -45,22 +45,22 @@ class Format extends AbstractEntity
     }
 
     /**
-     * Returns the format's abstract.
+     * Returns the format's description.
      *
-     * @return string|null The format's abstract
+     * @return string|null The format's description
      */
-    public function getAbstract(): ?string
+    public function getDescription(): ?string
     {
-        return $this->abstract;
+        return $this->description;
     }
 
     /**
-     * Sets the format's abstract.
+     * Sets the format's description.
      *
-     * @param string $abstract The format's abstract
+     * @param string $description The format's description
      */
-    public function setAbstract(string $abstract): void
+    public function setDescription(string $description): void
     {
-        $this->abstract = $abstract;
+        $this->description = $description;
     }
 }

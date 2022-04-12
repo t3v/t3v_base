@@ -50,7 +50,7 @@ CREATE TABLE tx_t3vbase_domain_model_format (
   name varchar(255) DEFAULT '' NOT NULL,
   type varchar(255) DEFAULT 'default' NOT NULL,
   handle varchar(255) DEFAULT '' NOT NULL,
-  abstract text DEFAULT '' NOT NULL,
+  description text DEFAULT '' NOT NULL,
   sorting int(11) DEFAULT '0' NOT NULL
 );
 
@@ -104,7 +104,7 @@ CREATE TABLE tx_t3vbase_domain_model_theme (
   name varchar(255) DEFAULT '' NOT NULL,
   type varchar(255) DEFAULT 'default' NOT NULL,
   handle varchar(255) DEFAULT '' NOT NULL,
-  abstract text DEFAULT '' NOT NULL,
+  description text DEFAULT '' NOT NULL,
   sorting int(11) DEFAULT '0' NOT NULL
 );
 

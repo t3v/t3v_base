@@ -122,8 +122,7 @@ class Style extends AbstractEntity
     /**
      * Returns all background images belonging to the style.
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>|null The style's background images
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @return ObjectStorage<FileReference>|null The style's background images
      */
     public function getBackgroundImages(): ?ObjectStorage
     {
@@ -133,8 +132,7 @@ class Style extends AbstractEntity
     /**
      * Gets the first background image from the style.
      *
-     * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference|object|null The first background image or null if no background image was found
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @return FileReference|object|null The first background image or null if no background image was found
      */
     public function getFirstBackgroundImage(): ?FileReference
     {
@@ -150,8 +148,7 @@ class Style extends AbstractEntity
     /**
      * Sets the style's background images.
      *
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> $backgroundImages The style's background images
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @param ObjectStorage<FileReference> $backgroundImages The style's background images
      */
     public function setBackgroundImages(ObjectStorage $backgroundImages): void
     {
@@ -161,8 +158,7 @@ class Style extends AbstractEntity
     /**
      * Adds a background image to the style.
      *
-     * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $backgroundImage The background image to be added
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @param FileReference $backgroundImage The background image to be added
      */
     public function addBackgroundImage(FileReference $backgroundImage): void
     {
@@ -172,8 +168,7 @@ class Style extends AbstractEntity
     /**
      * Removes a background image from the style.
      *
-     * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $backgroundImage The background image to be removed
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @param FileReference $backgroundImage The background image to be removed
      */
     public function removeBackgroundImage(FileReference $backgroundImage): void
     {

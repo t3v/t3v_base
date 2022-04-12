@@ -118,8 +118,8 @@
         <source>Handle</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_format.abstract">
-        <source>Abstract</source>
+      <trans-unit id="tx_t3vbase_domain_model_format.description">
+        <source>Description</source>
       </trans-unit>
 
       <!-- Phone Number Model -->
@@ -304,8 +304,8 @@
         <source>Handle</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_theme.abstract">
-        <source>Abstract</source>
+      <trans-unit id="tx_t3vbase_domain_model_theme.description">
+        <source>Description</source>
       </trans-unit>
 
       <!-- === T3v Generator === -->

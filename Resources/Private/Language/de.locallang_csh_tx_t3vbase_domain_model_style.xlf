@@ -4,8 +4,6 @@
     <header />
 
     <body>
-      <!-- === Properties === -->
-
       <trans-unit id="name.description">
         <source>The name of the style.</source>
         <target>Der Name des Stils.</target>

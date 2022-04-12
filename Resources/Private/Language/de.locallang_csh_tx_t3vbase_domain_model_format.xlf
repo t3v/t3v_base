@@ -4,26 +4,24 @@
     <header />
 
     <body>
-      <!-- === Properties === -->
-
       <trans-unit id="name.description">
-        <source>Name</source>
-        <target>Name</target>
+        <source>The name of the format.</source>
+        <target>Der Name der Formatierung.</target>
       </trans-unit>
 
       <trans-unit id="type.description">
-        <source>Type</source>
-        <target>Typ</target>
+        <source>The type of the format.</source>
+        <target>Der Typ der Formatierung.</target>
       </trans-unit>
 
       <trans-unit id="handle.description">
-        <source>Handle</source>
-        <target>Kurzname</target>
+        <source>The handle of the format.</source>
+        <target>Der Kurzname der Formatierung.</target>
       </trans-unit>
 
-      <trans-unit id="abstract.description">
-        <source>Abstract</source>
-        <target>Zusammenfassung</target>
+      <trans-unit id="description.description">
+        <source>The description of the format.</source>
+        <target>Die Beschreibung der Formatierung.</target>
       </trans-unit>
 
       <!-- === T3v Generator === -->

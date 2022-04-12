@@ -5,20 +5,22 @@
 
     <body>
       <trans-unit id="name.description">
-        <source>Name</source>
+        <source>The name of the style.</source>
       </trans-unit>
 
       <trans-unit id="type.description">
-        <source>Type</source>
+        <source>The type of the style.</source>
       </trans-unit>
 
       <trans-unit id="handle.description">
-        <source>Handle</source>
+        <source>The handle of the style.</source>
       </trans-unit>
 
-      <trans-unit id="abstract.description">
-        <source>Abstract</source>
+      <trans-unit id="description.description">
+        <source>The description of the style.</source>
       </trans-unit>
+
+      <!-- === T3v Generator === -->
     </body>
   </file>
 </xliff>
