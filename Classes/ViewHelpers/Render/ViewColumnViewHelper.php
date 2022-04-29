@@ -24,7 +24,7 @@ class ViewColumnViewHelper extends AbstractViewHelper
     use SettingsTrait;
 
     /**
-     * @return void
+     * Initializes the arguments.
      */
     public function initializeArguments(): void
     {
