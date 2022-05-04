@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace T3v\T3vBase\ViewHelpers\Variable;
+namespace T3v\T3vBase\ViewHelpers\Variable\String;
 
 use T3v\T3vCore\ViewHelpers\AbstractViewHelper;
 use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
@@ -9,7 +9,7 @@ use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 /**
  * The default view helper class.
  *
- * @package T3v\T3vBase\ViewHelpers\Variable
+ * @package T3v\T3vBase\ViewHelpers\Variable\String
  */
 class DefaultViewHelper extends AbstractViewHelper
 {

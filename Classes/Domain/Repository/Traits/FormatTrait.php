@@ -15,16 +15,14 @@ trait FormatTrait
     /**
      * The format repository.
      *
-     * @var \T3v\T3vBase\Domain\Repository\FormatRepository
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @var FormatRepository
      */
     protected $formatRepository;
 
     /**
      * Injects the format repository.
      *
-     * @param \T3v\T3vBase\Domain\Repository\FormatRepository $formatRepository The format repository
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @param FormatRepository $formatRepository The format repository
      */
     public function injectFormatRepository(FormatRepository $formatRepository): void
     {

@@ -15,16 +15,14 @@ trait ThemeTrait
     /**
      * The theme repository.
      *
-     * @var \T3v\T3vBase\Domain\Repository\ThemeRepository
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @var ThemeRepository
      */
     protected $themeRepository;
 
     /**
      * Injects the theme repository.
      *
-     * @param \T3v\T3vBase\Domain\Repository\ThemeRepository $themeRepository The theme repository
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @param ThemeRepository $themeRepository The theme repository
      */
     public function injectThemeRepository(ThemeRepository $themeRepository): void
     {

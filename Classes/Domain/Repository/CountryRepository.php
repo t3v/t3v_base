@@ -1,18 +1,28 @@
 <?php
+declare(strict_types=1);
+
 namespace T3v\T3vBase\Domain\Repository;
 
 use T3v\T3vBase\Domain\Model\CountryGroup;
 use T3v\T3vBase\Domain\Model\Region;
+use T3v\T3vBase\Domain\Repository\Traits\LocalizationTrait;
 use T3v\T3vCore\Domain\Repository\AbstractRepository;
+use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
+use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
 
 /**
- * Country Repository Class
+ * The country repository class.
  *
  * @package T3v\T3vBase\Domain\Repository
  */
 class CountryRepository extends AbstractRepository
 {
+    /**
+     * Use the localization trait.
+     */
+    use LocalizationTrait;
+
     /**
      * The default orderings.
      *
@@ -24,42 +34,30 @@ class CountryRepository extends AbstractRepository
     ];
 
     /**
-     * Finds countries by country group
+     * Finds countries by a country group.
      *
-     * @param \T3v\T3vBase\Domain\Model\CountryGroup $countryGroup The country group
-     * @param bool $respectSysLanguage Respect the system language, defaults to `false`
-     * @return \TYPO3\CMS\Extbase\Persistence\Generic\QueryResult|\TYPO3\CMS\Extbase\Persistence\QueryResultInterface|array The found countries
-     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException
-     * @noinspection PhpFullyQualifiedNameUsageInspection
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @param CountryGroup $countryGroup The country group
+     * @return QueryResultInterface|array The found countries
+     * @throws InvalidQueryException
      */
-    public function findByCountryGroup(CountryGroup $countryGroup, $respectSysLanguage = false)
+    public function findByCountryGroup(CountryGroup $countryGroup)
     {
         $query = $this->createQuery();
-        $settings = $query->getQuerySettings();
-        $settings->setRespectSysLanguage($respectSysLanguage);
-
         $query->matching($query->contains('countryGroups', $countryGroup));
 
         return $query->execute();
     }
 
     /**
-     * Finds countries by region
+     * Finds countries by a region.
      *
-     * @param \T3v\T3vBase\Domain\Model\Region $region The region
-     * @param bool $respectSysLanguage Respect the system language, defaults to `false`
-     * @return \TYPO3\CMS\Extbase\Persistence\Generic\QueryResult|\TYPO3\CMS\Extbase\Persistence\QueryResultInterface|array The found countries
-     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException
-     * @noinspection PhpFullyQualifiedNameUsageInspection
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @param Region $region The region
+     * @return QueryResultInterface|array The found countries
+     * @throws InvalidQueryException
      */
-    public function findByRegion(Region $region, $respectSysLanguage = false)
+    public function findByRegion(Region $region)
     {
         $query = $this->createQuery();
-        $settings = $query->getQuerySettings();
-        $settings->setRespectSysLanguage($respectSysLanguage);
-
         $query->matching($query->contains('regions', $region));
 
         return $query->execute();

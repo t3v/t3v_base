@@ -6,9 +6,9 @@ namespace T3v\T3vBase\ViewHelpers;
 use T3v\T3vCore\Service\LocalizationService;
 use T3v\T3vCore\Service\PageService;
 use T3v\T3vCore\ViewHelpers\AbstractViewHelper;
-use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
+use TYPO3\CMS\Core\Context\Exception\AspectNotFoundException;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Object\Exception;
+use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 
 /**
  * The page view helper class.
@@ -35,7 +35,7 @@ class PageViewHelper extends AbstractViewHelper
      * @param \Closure $renderChildrenClosure The render children closure
      * @param RenderingContextInterface $renderingContext The rendering context
      * @return array The page object
-     * @throws Exception
+     * @throws AspectNotFoundException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      */
     public static function renderStatic(
