@@ -8,11 +8,11 @@ use T3v\T3vCore\Domain\Repository\AbstractRepository;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 
 /**
- * The postal address repository class.
+ * The address repository class.
  *
  * @package T3v\T3vBase\Domain\Repository
  */
-class PostalAddressRepository extends AbstractRepository
+class AddressRepository extends AbstractRepository
 {
     /**
      * Use the localization trait.
@@ -25,8 +25,7 @@ class PostalAddressRepository extends AbstractRepository
      * @var array
      */
     protected $defaultOrderings = [
-        'streetAddress' => QueryInterface::ORDER_DESCENDING,
-        'addressLocality' => QueryInterface::ORDER_DESCENDING,
+        'locality' => QueryInterface::ORDER_DESCENDING,
         'sorting' => QueryInterface::ORDER_ASCENDING
     ];
 }

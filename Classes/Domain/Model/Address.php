@@ -8,7 +8,7 @@ namespace T3v\T3vBase\Domain\Model;
  *
  * @package T3v\T3vBase\Domain\Model
  */
-class PostalAddress extends AbstractEntity
+class Address extends BaseModel
 {
     /**
      * The postal address's label.

@@ -6,7 +6,7 @@ namespace T3v\T3vBase\Domain\Model;
  *
  * @package T3v\T3vBase\Domain\Model
  */
-class Property extends AbstractEntity
+class Property extends BaseModel
 {
     /**
      * The properties name.

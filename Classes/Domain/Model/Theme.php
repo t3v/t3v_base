@@ -8,7 +8,7 @@ namespace T3v\T3vBase\Domain\Model;
  *
  * @package T3v\T3vBase\Domain\Model
  */
-class Theme extends AbstractEntity
+class Theme extends BaseModel
 {
     /**
      * The theme's name.

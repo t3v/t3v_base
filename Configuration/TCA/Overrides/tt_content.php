@@ -18,25 +18,26 @@ $lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'local
 
 // === TCA ===
 
+// Adds the `header_type` to the TCA columns:
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
     'tt_content',
     [
         'header_type' => [
-            'label' => $lll . 'tt_content.headerType',
+            'label' => $lll . 'tt_content.columns.headerType.label',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
                     [
-                        $lll . 'tt_content.headerType.default',
+                        $lll . 'tt_content.columns.headerType.config.items.default.label',
                         ''
                     ],
                     [
-                        $lll . 'tt_content.headerType.div',
+                        $lll . 'tt_content.columns.headerType.config.items.div.label',
                         'div'
                     ],
                     [
-                        $lll . 'tt_content.headerType.span',
+                        $lll . 'tt_content.columns.headerType.config.items.span.label',
                         'span'
                     ]
                 ],

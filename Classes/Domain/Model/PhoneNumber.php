@@ -8,7 +8,7 @@ namespace T3v\T3vBase\Domain\Model;
  *
  * @package T3v\T3vBase\Domain\Model
  */
-class PhoneNumber extends AbstractEntity
+class PhoneNumber extends BaseModel
 {
     const FAX_TYPE = 'FAX';
     const PAGER_TYPE = 'PAGER';

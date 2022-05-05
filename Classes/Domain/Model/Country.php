@@ -4,6 +4,10 @@ declare(strict_types=1);
 namespace T3v\T3vBase\Domain\Model;
 
 use T3v\T3vBase\Domain\Repository\CountryGroupRepository;
+use T3v\T3vBase\Domain\Repository\RegionRepository;
+use TYPO3\CMS\Extbase\Annotation as Extbase;
+use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
+use TYPO3\CMS\Extbase\Persistence\Generic\QueryResult;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 /**
@@ -11,7 +15,7 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
  *
  * @package T3v\T3vBase\Domain\Model
  */
-class Country extends AbstractEntity
+class Country extends BaseModel
 {
     /**
      * The country's item property.
@@ -26,20 +30,43 @@ class Country extends AbstractEntity
     protected $name;
 
     /**
-     * The country's abstract.
+     * The country's label.
      *
      * @var string
      */
-    protected $abstract;
+    protected $label;
+
+    /**
+     * The country's regions.
+     *
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\T3v\T3vBase\Domain\Model\Region>
+     * @Extbase\ORM\Lazy
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     */
+    protected $regions;
 
     /**
      * The country's country groups.
      *
-     * @var ObjectStorage<CountryGroup>
-     * @TYPO3\CMS\Extbase\Annotation\ORM\Lazy
-     * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\T3v\T3vBase\Domain\Model\CountryGroup>
+     * @Extbase\ORM\Lazy
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     protected $countryGroups;
+
+    /**
+     * The country's description.
+     *
+     * @var string
+     */
+    protected $description;
+
+    /**
+     * The region repository.
+     *
+     * @var RegionRepository
+     */
+    protected $regionRepository;
 
     /**
      * The country group repository.
@@ -53,18 +80,8 @@ class Country extends AbstractEntity
      */
     public function __construct()
     {
+        $this->regions = new ObjectStorage();
         $this->countryGroups = new ObjectStorage();
-    }
-
-    /**
-     * Injects the country group repository.
-     *
-     * @param \T3v\T3vBase\Domain\Repository\CountryGroupRepository $countryGroupRepository The country group repository
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
-     */
-    public function injectCountryGroupRepository(CountryGroupRepository $countryGroupRepository): void
-    {
-        $this->countryGroupRepository = $countryGroupRepository;
     }
 
     /**
@@ -89,34 +106,86 @@ class Country extends AbstractEntity
     }
 
     /**
-     * Returns the country's abstract.
+     * Returns the country's label.
      *
-     * @return string|null The country's abstract
+     * @return string|null The country's label
      */
-    public function getAbstract(): ?string
+    public function getLabel(): ?string
     {
-        return $this->abstract;
+        return $this->label;
     }
 
     /**
-     * Sets the country's abstract.
+     * Sets the country's label.
      *
-     * @param string $abstract The country's abstract
+     * @param string $label The country's label
      * @return void
      */
-    public function setAbstract(string $abstract): void
+    public function setLabel(string $label): void
     {
-        $this->abstract = $abstract;
+        $this->label = $label;
     }
 
     /**
-     * Gets all country groups belonging to the country.
+     * Gets the regions belonging to the country.
      *
      * @param bool $reverse Reverse search, defaults to `false`
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage|\TYPO3\CMS\Extbase\Persistence\Generic\QueryResult|null The country groups belonging to the country
-     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException
-     * @noinspection PhpFullyQualifiedNameUsageInspection
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @return ObjectStorage|QueryResult|null The regions belonging to the country
+     * @throws InvalidQueryException
+     */
+    public function getRegions(bool $reverse = false)
+    {
+        if ($reverse) {
+            return $this->regionRepository->findByCountry($this);
+        }
+
+        return $this->regions;
+    }
+
+    /**
+     * Sets the regions belonging to the country.
+     *
+     * @param ObjectStorage<Region> $regions The regions belonging to the country
+     */
+    public function setRegions(ObjectStorage $regions): void
+    {
+        $this->regions = $regions;
+    }
+
+    /**
+     * Adds a region to the country.
+     *
+     * @param Region $region The region to be added
+     */
+    public function addRegion(Region $region): void
+    {
+        $this->regions->attach($region);
+    }
+
+    /**
+     * Removes a region from the country.
+     *
+     * @param Region $region The region to be removed
+     */
+    public function removeRegion(Region $region): void
+    {
+        $this->regions->detach($region);
+    }
+
+    /**
+     * Removes all regions from the country.
+     */
+    public function removeAllRegions(): void
+    {
+        $this->regions = new ObjectStorage();
+    }
+
+    /**
+     * Gets the country groups belonging to the country.
+     *
+     * @param bool $reverse Reverse search, defaults to `false`
+     * @return ObjectStorage|QueryResult|null The country groups belonging to the country
+     * @throws InvalidQueryException
      */
     public function getCountryGroups(bool $reverse = false)
     {
@@ -128,10 +197,19 @@ class Country extends AbstractEntity
     }
 
     /**
+     * Sets the country groups belonging to the country.
+     *
+     * @param ObjectStorage<CountryGroup> $countryGroups The country groups belonging to the country
+     */
+    public function setCountryGroups(ObjectStorage $countryGroups): void
+    {
+        $this->countryGroups = $countryGroups;
+    }
+
+    /**
      * Adds a country group to the country.
      *
-     * @param \T3v\T3vBase\Domain\Model\CountryGroup $countryGroup The country group to be added
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @param CountryGroup $countryGroup The country group to be added
      */
     public function addCountryGroup(CountryGroup $countryGroup): void
     {
@@ -141,8 +219,7 @@ class Country extends AbstractEntity
     /**
      * Removes a country group from the country.
      *
-     * @param \T3v\T3vBase\Domain\Model\CountryGroup $countryGroup The country group to be removed
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @param CountryGroup $countryGroup The country group to be removed
      */
     public function removeCountryGroup(CountryGroup $countryGroup): void
     {
@@ -158,6 +235,27 @@ class Country extends AbstractEntity
     }
 
     /**
+     * Returns the country's description.
+     *
+     * @return string|null The country's description
+     */
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    /**
+     * Sets the country's description.
+     *
+     * @param string $description The country's description
+     * @return void
+     */
+    public function setDescription(string $description): void
+    {
+        $this->description = $description;
+    }
+
+    /**
      * Returns the country's item property.
      *
      * @return string The country's item property
@@ -165,5 +263,25 @@ class Country extends AbstractEntity
     public function getItemProperty(): string
     {
         return self::ITEM_PROPERTY;
+    }
+
+    /**
+     * Injects the region repository.
+     *
+     * @param RegionRepository $regionRepository The region repository
+     */
+    public function injectRegionRepository(RegionRepository $regionRepository): void
+    {
+        $this->countryGroupRepository = $regionRepository;
+    }
+
+    /**
+     * Injects the country group repository.
+     *
+     * @param CountryGroupRepository $countryGroupRepository The country group repository
+     */
+    public function injectCountryGroupRepository(CountryGroupRepository $countryGroupRepository): void
+    {
+        $this->countryGroupRepository = $countryGroupRepository;
     }
 }

@@ -8,7 +8,7 @@ namespace T3v\T3vBase\Domain\Model;
  *
  * @package T3v\T3vBase\Domain\Model
  */
-class Department extends AbstractEntity
+class Department extends BaseModel
 {
     /**
      * The department's item property.

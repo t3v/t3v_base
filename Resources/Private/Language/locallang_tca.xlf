@@ -4,308 +4,456 @@
     <header />
 
     <body>
-      <!-- === Additional TCA columns === -->
+      <!-- === Tables === -->
 
-      <trans-unit id="tt_content.headerType">
+      <!-- ‐‐‐ Table `tt_content` ‐‐‐ -->
+
+      <trans-unit id="tt_content.columns.headerType.label">
         <source>Type</source>
       </trans-unit>
 
-      <trans-unit id="tt_content.headerType.default">
+      <trans-unit id="tt_content.columns.headerType.config.items.default.label">
         <source>Default</source>
       </trans-unit>
 
-      <trans-unit id="tt_content.headerType.div">
+      <trans-unit id="tt_content.columns.headerType.config.items.div.label">
         <source>Div</source>
       </trans-unit>
 
-      <trans-unit id="tt_content.headerType.span">
+      <trans-unit id="tt_content.columns.headerType.config.items.span.label">
         <source>Span</source>
       </trans-unit>
 
-      <!-- === Models === -->
+      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_address` ‐‐‐ -->
 
-      <!-- Country Model -->
-
-      <trans-unit id="tx_t3vbase_domain_model_country">
-        <source>Country</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_country.name">
-        <source>Name</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_country.abstract">
-        <source>Abstract</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_country.regions">
-        <source>Regions</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_country.countryGroups">
-        <source>Country Groups</source>
-      </trans-unit>
-
-      <!-- Country Group Model -->
-
-      <trans-unit id="tx_t3vbase_domain_model_country_group">
-        <source>Country Group</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_country_group.name">
-        <source>Name</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_country_group.abstract">
-        <source>Abstract</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_country_group.countries">
-        <source>Countries</source>
-      </trans-unit>
-
-      <!-- Department Model -->
-
-      <trans-unit id="tx_t3vbase_domain_model_department">
-        <source>Department</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.name">
-        <source>Name</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.abstract">
-        <source>Abstract</source>
-      </trans-unit>
-
-      <!-- Email Address Model -->
-
-      <trans-unit id="tx_t3vbase_domain_model_email_address">
-        <source>Email Address</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_email_address.label">
+      <trans-unit id="tx_t3vbase_domain_model_address.columns.label.label">
         <source>Label</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_email_address.address">
-        <source>Address</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_email_address.note">
-        <source>Note</source>
-      </trans-unit>
-
-      <!-- Format Model -->
-
-      <trans-unit id="tx_t3vbase_domain_model_format">
-        <source>Format</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_format.name">
-        <source>Name</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_format.type">
+      <trans-unit id="tx_t3vbase_domain_model_address.columns.type.label">
         <source>Type</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_format.type.default">
+      <trans-unit id="tx_t3vbase_domain_model_address.columns.type.config.items.default.label">
         <source>Default</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_format.handle">
+      <trans-unit id="tx_t3vbase_domain_model_address.columns.handle.label">
         <source>Handle</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_format.description">
-        <source>Description</source>
-      </trans-unit>
-
-      <!-- Phone Number Model -->
-
-      <trans-unit id="tx_t3vbase_domain_model_phone_number">
-        <source>Phone Number</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_phone_number.label">
-        <source>Label</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_phone_number.type">
-        <source>Type</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_phone_number.type.telephone">
-        <source>Telephone</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_phone_number.type.fax">
-        <source>Fax</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_phone_number.type.pager">
-        <source>Pager</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_phone_number.number">
-        <source>Number</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_phone_number.internationalNumber">
-        <source>International Number</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_phone_number.note">
-        <source>Note</source>
-      </trans-unit>
-
-      <!-- Postal Address Model -->
-
-      <trans-unit id="tx_t3vbase_domain_model_postal_address">
-        <source>Postal Address</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_postal_address.label">
-        <source>Label</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_postal_address.street">
+      <trans-unit id="tx_t3vbase_domain_model_address.columns.street.label">
         <source>Street</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_postal_address.streetNumber">
-        <source>Street Number</source>
+      <trans-unit id="tx_t3vbase_domain_model_address.columns.streetNumber.label">
+        <source>Street number</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_postal_address.postalCode">
-        <source>Postal Code</source>
+      <trans-unit id="tx_t3vbase_domain_model_address.columns.postalCode.label">
+        <source>Postal code</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_postal_address.locality">
+      <trans-unit id="tx_t3vbase_domain_model_address.columns.locality.label">
         <source>Locality</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_postal_address.region">
+      <trans-unit id="tx_t3vbase_domain_model_address.columns.region.label">
         <source>Region</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_postal_address.country">
+      <trans-unit id="tx_t3vbase_domain_model_address.columns.country.label">
         <source>Country</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_postal_address.note">
-        <source>Note</source>
+      <trans-unit id="tx_t3vbase_domain_model_address.columns.description.label">
+        <source>Description</source>
       </trans-unit>
 
-      <!-- Region Model -->
-
-      <trans-unit id="tx_t3vbase_domain_model_region">
-        <source>Region</source>
+      <trans-unit id="tx_t3vbase_domain_model_address.ctrl.title">
+        <source>Address</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_region.name">
+      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_country` ‐‐‐ -->
+
+      <trans-unit id="tx_t3vbase_domain_model_country.columns.name.label">
         <source>Name</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_region.abstract">
-        <source>Abstract</source>
+      <trans-unit id="tx_t3vbase_domain_model_country.columns.name.config.default">
+        <source>Country</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_region.countries">
-        <source>Countries</source>
+      <trans-unit id="tx_t3vbase_domain_model_country.columns.label.label">
+        <source>Label</source>
       </trans-unit>
 
-      <!-- Style Model -->
-
-      <trans-unit id="tx_t3vbase_domain_model_style">
-        <source>Style</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.name">
-        <source>Name</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.type">
+      <trans-unit id="tx_t3vbase_domain_model_country.columns.type.label">
         <source>Type</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_style.type.backgroundColor">
-        <source>Background Color</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.type.backgroundImages">
-        <source>Background Images</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.type.color">
-        <source>Color</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.selector">
-        <source>Selector</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.selector.element">
-        <source>Element</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.selector.header">
-        <source>Header</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.selector.main">
-        <source>Main</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.selector.content">
-        <source>Content</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.selector.footer">
-        <source>Footer</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.backgroundColor">
-        <source>Background Color</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.backgroundImages">
-        <source>Background Images</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.backgroundImages.createNewRelation.link.title">
-        <source>Add background image</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.color">
-        <source>Color</source>
-      </trans-unit>
-
-      <!-- Theme Model -->
-
-      <trans-unit id="tx_t3vbase_domain_model_theme">
-        <source>Theme</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_theme.name">
-        <source>Name</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_theme.type">
-        <source>Type</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_theme.type.default">
+      <trans-unit id="tx_t3vbase_domain_model_country.columns.type.config.items.default.label">
         <source>Default</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_theme.handle">
+      <trans-unit id="tx_t3vbase_domain_model_country.columns.handle.label">
         <source>Handle</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_theme.description">
+      <trans-unit id="tx_t3vbase_domain_model_country.columns.regions.label">
+        <source>Regions</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country.columns.countryGroups.label">
+        <source>Country Groups</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country.columns.description.label">
         <source>Description</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country.ctrl.title">
+        <source>Country</source>
+      </trans-unit>
+
+      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_country_group` ‐‐‐ -->
+
+      <trans-unit id="tx_t3vbase_domain_model_country_group.columns.name.label">
+        <source>Name</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country_group.columns.name.config.default">
+        <source>Country group</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country_group.columns.label.label">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country_group.columns.type.label">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country_group.columns.type.config.items.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country_group.columns.handle.label">
+        <source>Handle</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country_group.columns.countries.label">
+        <source>Countries</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country_group.columns.description.label">
+        <source>Description</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_country_group.ctrl.title">
+        <source>Country group</source>
+      </trans-unit>
+
+      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_department` ‐‐‐ -->
+
+      <trans-unit id="tx_t3vbase_domain_model_department.columns.name.label">
+        <source>Name</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_department.columns.name.config.default">
+        <source>Department</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_department.columns.label.label">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_department.columns.type.label">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_department.columns.type.config.items.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_department.columns.handle.label">
+        <source>Handle</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_department.columns.description.label">
+        <source>Description</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_department.ctrl.title">
+        <source>Department</source>
+      </trans-unit>
+
+      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_email_address` ‐‐‐ -->
+
+      <trans-unit id="tx_t3vbase_domain_model_email_address.columns.label.label">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_email_address.columns.type.label">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_email_address.columns.type.config.items.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_email_address.columns.handle.label">
+        <source>Handle</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_email_address.columns.address.label">
+        <source>Address</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_email_address.columns.description.label">
+        <source>Description</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_email_address.ctrl.title">
+        <source>Email address</source>
+      </trans-unit>
+
+      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_format` ‐‐‐ -->
+
+      <trans-unit id="tx_t3vbase_domain_model_format.columns.name.label">
+        <source>Name</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_format.columns.name.config.default">
+        <source>Format</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_format.columns.label.label">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_format.columns.type.label">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_format.columns.type.config.items.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_format.columns.handle.label">
+        <source>Handle</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_format.columns.description.label">
+        <source>Description</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_format.ctrl.title">
+        <source>Format</source>
+      </trans-unit>
+
+      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_email_address` ‐‐‐ -->
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.columns.label.label">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.columns.type.label">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.columns.type.config.items.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.columns.type.config.items.telephone.label">
+        <source>Telephone</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.columns.type.config.items.fax.label">
+        <source>Fax</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.columns.type.config.items.pager.label">
+        <source>Pager</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.columns.handle.label">
+        <source>Handle</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.columns.number.label">
+        <source>Number</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.columns.internationalNumber.label">
+        <source>International number</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.columns.description.label">
+        <source>Description</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_phone_number.ctrl.title">
+        <source>Phone number</source>
+      </trans-unit>
+
+      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_region` ‐‐‐ -->
+
+      <trans-unit id="tx_t3vbase_domain_model_region.columns.name.label">
+        <source>Name</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_region.columns.name.config.default">
+        <source>Region</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_region.columns.label.label">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_region.columns.type.label">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_region.columns.type.config.items.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_region.columns.handle.label">
+        <source>Handle</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_region.columns.countries.label">
+        <source>Countries</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_region.columns.description.label">
+        <source>Description</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_region.ctrl.title">
+        <source>Region</source>
+      </trans-unit>
+
+      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_style` ‐‐‐ -->
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.name.label">
+        <source>Name</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.name.config.default">
+        <source>Style</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.label.label">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.type.label">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.type.config.items.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.type.config.items.backgroundColor.label">
+        <source>Background Color</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.type.config.items.backgroundImages.label">
+        <source>Background Images</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.type.config.items.color.label">
+        <source>Color</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.handle.label">
+        <source>Handle</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.selector.label">
+        <source>Selector</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.selector.config.items.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.selector.config.items.element.label">
+        <source>Element</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.selector.config.items.header.label">
+        <source>Header</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.selector.config.items.main.label">
+        <source>Main</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.selector.config.items.content.label">
+        <source>Content</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.selector.config.items.footer.label">
+        <source>Footer</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.backgroundColor.label">
+        <source>Background Color</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.backgroundImages.label">
+        <source>Background Images</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.backgroundImages.config.appearance.createNewRelationLinkTitle">
+        <source>Add background image</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.color.label">
+        <source>Color</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_style.ctrl.title">
+        <source>Style</source>
+      </trans-unit>
+
+      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_theme` ‐‐‐ -->
+
+      <trans-unit id="tx_t3vbase_domain_model_theme.columns.name.label">
+        <source>Name</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_theme.columns.name.config.default">
+        <source>Theme</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_theme.columns.label.label">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_theme.columns.type.label">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_theme.columns.type.config.items.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_theme.columns.handle.label">
+        <source>Handle</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_theme.columns.description.label">
+        <source>Description</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_theme.ctrl.title">
+        <source>Theme</source>
       </trans-unit>
 
       <!-- === T3v Generator === -->

@@ -8,7 +8,7 @@ namespace T3v\T3vBase\Domain\Model;
  *
  * @package T3v\T3vBase\Domain\Model
  */
-class Format extends AbstractEntity
+class Format extends BaseModel
 {
     /**
      * The format's name.

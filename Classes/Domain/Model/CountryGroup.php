@@ -4,6 +4,9 @@ declare(strict_types=1);
 namespace T3v\T3vBase\Domain\Model;
 
 use T3v\T3vBase\Domain\Repository\CountryRepository;
+use TYPO3\CMS\Extbase\Annotation as Extbase;
+use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
+use TYPO3\CMS\Extbase\Persistence\Generic\QueryResult;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 /**
@@ -11,7 +14,7 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
  *
  * @package T3v\T3vBase\Domain\Model
  */
-class CountryGroup extends AbstractEntity
+class CountryGroup extends BaseModel
 {
     /**
      * The country group's item property.
@@ -26,20 +29,27 @@ class CountryGroup extends AbstractEntity
     protected $name;
 
     /**
-     * The country group's abstract.
+     * The country group's label.
      *
      * @var string
      */
-    protected $abstract;
+    protected $label;
 
     /**
      * The country group's countries.
      *
-     * @var ObjectStorage<Country>
-     * @TYPO3\CMS\Extbase\Annotation\ORM\Lazy
-     * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\T3v\T3vBase\Domain\Model\Country>
+     * @Extbase\ORM\Lazy
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     protected $countries;
+
+    /**
+     * The country group's description.
+     *
+     * @var string
+     */
+    protected $description;
 
     /**
      * The country repository.
@@ -54,17 +64,6 @@ class CountryGroup extends AbstractEntity
     public function __construct()
     {
         $this->countries = new ObjectStorage();
-    }
-
-    /**
-     * Injects the country repository.
-     *
-     * @param \T3v\T3vBase\Domain\Repository\CountryRepository $countryRepository The country repository
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
-     */
-    public function injectCountryRepository(CountryRepository $countryRepository): void
-    {
-        $this->countryRepository = $countryRepository;
     }
 
     /**
@@ -88,33 +87,31 @@ class CountryGroup extends AbstractEntity
     }
 
     /**
-     * Returns the country group's abstract.
+     * Returns the country group's label.
      *
-     * @return string|null The country group's abstract
+     * @return string|null The country group's label
      */
-    public function getAbstract(): ?string
+    public function getLabel(): ?string
     {
-        return $this->abstract;
+        return $this->label;
     }
 
     /**
-     * Sets the country group's abstract.
+     * Sets the country group's label.
      *
-     * @param string $abstract The country group's abstract
+     * @param string $label The country group's label
      */
-    public function setAbstract(string $abstract): void
+    public function setLabel(string $label): void
     {
-        $this->abstract = $abstract;
+        $this->label = $label;
     }
 
     /**
-     * Gets all countries belonging to the country group.
+     * Gets the countries belonging to the country group.
      *
      * @param bool $reverse Reverse search, defaults to `false`
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage|\TYPO3\CMS\Extbase\Persistence\Generic\QueryResult|null The countries belonging to the country group
-     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException
-     * @noinspection PhpFullyQualifiedNameUsageInspection
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @return ObjectStorage|QueryResult|null The countries belonging to the country group
+     * @throws InvalidQueryException
      */
     public function getCountries(bool $reverse = false)
     {
@@ -126,10 +123,19 @@ class CountryGroup extends AbstractEntity
     }
 
     /**
+     * Sets the countries belonging to the country group.
+     *
+     * @param ObjectStorage<Country> $countries The countries belonging to the country group
+     */
+    public function setProducts(ObjectStorage $countries): void
+    {
+        $this->countries = $countries;
+    }
+
+    /**
      * Adds a country to the country group.
      *
-     * @param \T3v\T3vBase\Domain\Model\Country $country The country to be added
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @param Country $country The country to be added
      */
     public function addCountry(Country $country): void
     {
@@ -139,8 +145,7 @@ class CountryGroup extends AbstractEntity
     /**
      * Removes a country from the country group.
      *
-     * @param \T3v\T3vBase\Domain\Model\Country $country The country to be removed
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @param Country $country The country to be removed
      */
     public function removeCountry(Country $country): void
     {
@@ -156,6 +161,26 @@ class CountryGroup extends AbstractEntity
     }
 
     /**
+     * Returns the country group's description.
+     *
+     * @return string|null The country group's description
+     */
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    /**
+     * Sets the country group's description.
+     *
+     * @param string $description The country group's description
+     */
+    public function setDescription(string $description): void
+    {
+        $this->description = $description;
+    }
+
+    /**
      * Returns the country group's item property.
      *
      * @return string The country group's item property
@@ -163,5 +188,15 @@ class CountryGroup extends AbstractEntity
     public function getItemProperty(): string
     {
         return self::ITEM_PROPERTY;
+    }
+
+    /**
+     * Injects the country repository.
+     *
+     * @param CountryRepository $countryRepository The country repository
+     */
+    public function injectCountryRepository(CountryRepository $countryRepository): void
+    {
+        $this->countryRepository = $countryRepository;
     }
 }

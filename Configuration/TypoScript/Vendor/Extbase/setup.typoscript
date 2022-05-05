@@ -8,6 +8,12 @@ config {
   tx_extbase {
     persistence {
       classes {
+        T3v\T3vBase\Domain\Model\Address {
+          mapping {
+            tableName = tx_t3vbase_domain_model__address
+          }
+        }
+
         T3v\T3vBase\Domain\Model\Country {
           mapping {
             tableName = tx_t3vbase_domain_model_country
@@ -41,12 +47,6 @@ config {
         T3v\T3vBase\Domain\Model\PhoneNummber {
           mapping {
             tableName = tx_t3vbase_domain_model_phone_number
-          }
-        }
-
-        T3v\T3vBase\Domain\Model\PostalAddress {
-          mapping {
-            tableName = tx_t3vbase_domain_model_postal_address
           }
         }
 

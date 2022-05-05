@@ -10,7 +10,7 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
  *
  * @package T3v\T3vBase\Domain\Model
  */
-class Region extends AbstractEntity
+class Region extends BaseModel
 {
     /**
      * The region's name.

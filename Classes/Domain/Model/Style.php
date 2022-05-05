@@ -11,7 +11,7 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
  *
  * @package T3v\T3vBase\Domain\Model
  */
-class Style extends AbstractEntity
+class Style extends BaseModel
 {
     /**
      * The style's name.

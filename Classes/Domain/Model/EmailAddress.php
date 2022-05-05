@@ -8,7 +8,7 @@ namespace T3v\T3vBase\Domain\Model;
  *
  * @package T3v\T3vBase\Domain\Model
  */
-class EmailAddress extends AbstractEntity
+class EmailAddress extends BaseModel
 {
     /**
      * The email address's item property.

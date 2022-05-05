@@ -20,12 +20,26 @@ return [
         // --- Custom columns ---
 
         'name' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_theme.name',
+            'label' => $lll . 'tx_t3vbase_domain_model_theme.columns.name.label',
             'config' => [
                 'type' => 'input',
                 'max' => 255,
                 'eval' => 'required, trim',
-                'default' => 'Theme',
+                'default' => '',
+                'behaviour' => [
+                    'allowLanguageSynchronization' => true
+                ]
+            ],
+            'exclude' => true
+        ],
+
+        'label' => [
+            'label' => $lll . 'tx_t3vbase_domain_model_theme.columns.label.label',
+            'config' => [
+                'type' => 'input',
+                'max' => 255,
+                'eval' => 'trim',
+                'default' => '',
                 'behaviour' => [
                     'allowLanguageSynchronization' => true
                 ]
@@ -34,12 +48,12 @@ return [
         ],
 
         'type' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_theme.type',
+            'label' => $lll . 'tx_t3vbase_domain_model_theme.columns.type.label',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    [$lll . 'tx_t3vbase_domain_model_theme.type.default', 'default']
+                    [$lll . 'tx_t3vbase_domain_model_theme.columns.type.config.items.default.label', 'default']
                 ],
                 'eval' => 'required, trim',
                 'default' => 'default',
@@ -56,7 +70,7 @@ return [
         ],
 
         'handle' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_theme.handle',
+            'label' => $lll . 'tx_t3vbase_domain_model_theme.columns.handle.label',
             'config' => [
                 'type' => 'slug',
                 'generatorOptions' => [
@@ -76,7 +90,7 @@ return [
         ],
 
         'description' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_theme.description',
+            'label' => $lll . 'tx_t3vbase_domain_model_theme.columns.description.label',
             'config' => [
                 'type' => 'text',
                 'enableRichtext' => true,
@@ -133,14 +147,13 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'foreign_table' => 'tx_t3vbase_domain_model_theme',
-                'foreign_table_where' => 'AND {#tx_t3vbase_domain_model_theme}.{#pid}=###CURRENT_PID### AND {#tx_t3vbase_domain_model_theme}.{#sys_language_uid} IN (-1,0)',
+                'foreign_table_where' => 'AND tx_t3vbase_domain_model_theme.pid=###CURRENT_PID### AND tx_t3vbase_domain_model_theme.sys_language_uid IN (-1,0)',
                 'items' => [
                     ['', 0],
                 ],
                 'default' => 0
             ],
-            'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'exclude' => true
+            'displayCond' => 'FIELD:sys_language_uid:>:0'
         ],
 
         'l10n_diffsource' => [
@@ -185,11 +198,11 @@ return [
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
-                'eval' => 'datetime, int',
-                'default' => 0,
                 'range' => [
                     'upper' => mktime(0, 0, 0, 1, 1, 2038)
                 ],
+                'eval' => 'datetime, int',
+                'default' => 0,
                 'behaviour' => [
                     'allowLanguageSynchronization' => true
                 ]
@@ -263,11 +276,11 @@ return [
     // === Ctrl ===
 
     'ctrl' => [
-        'title' => $lll . 'tx_t3vbase_domain_model_theme',
+        'title' => $lll . 'tx_t3vbase_domain_model_theme.ctrl.title',
         'label' => 'name',
-        // 'label_alt' => 'label',
+        'label_alt' => 'label',
         // 'label_alt_force' => 1,
-        // 'descriptionColumn' => 'description',
+        'descriptionColumn' => 'description',
         'type' => 'type',
         // 'typeicon_column' => 'type',
         // 'typeicon_classes' => [
@@ -292,7 +305,7 @@ return [
             'endtime' => 'endtime',
             'fe_group' => 'fe_group'
         ],
-        'searchFields' => 'name',
+        'searchFields' => 'name, label, type, handle, description',
         // 'hideAtCopy' => true,
         // 'prependAtCopy' => 'LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:ctrl.prependAtCopy.label',
         'useColumnsForDefaultValues' => 'type, sys_language_uid',

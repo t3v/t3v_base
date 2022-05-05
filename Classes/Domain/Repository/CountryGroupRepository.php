@@ -33,7 +33,7 @@ class CountryGroupRepository extends AbstractRepository
     ];
 
     /**
-     * Finds country groups by a country.
+     * Gets country groups by a country.
      *
      * @param Country $country The country
      * @return QueryResultInterface|array The found country groups

@@ -1,6 +1,6 @@
 <?php
 /**
- * The `tx_t3vbase_domain_model_format` TCA configuration.
+ * The `tx_t3vbase_domain_model_address` TCA configuration.
  *
  * @noinspection PhpFullyQualifiedNameUsageInspection
  */
@@ -19,22 +19,8 @@ return [
     'columns' => [
         // --- Custom columns ---
 
-        'name' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_format.columns.name.label',
-            'config' => [
-                'type' => 'input',
-                'max' => 255,
-                'eval' => 'required, trim',
-                'default' => '',
-                'behaviour' => [
-                    'allowLanguageSynchronization' => true
-                ]
-            ],
-            'exclude' => true
-        ],
-
         'label' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_format.columns.label.label',
+            'label' => $lll . 'tx_t3vbase_domain_model_address.columns.label.label',
             'config' => [
                 'type' => 'input',
                 'max' => 255,
@@ -48,12 +34,12 @@ return [
         ],
 
         'type' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_format.columns.type.label',
+            'label' => $lll . 'tx_t3vbase_domain_model_address.columns.type.label',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    [$lll . 'tx_t3vbase_domain_model_format.columns.type.config.items.default', 'default']
+                    [$lll . 'tx_t3vbase_domain_model_address.columns.type.config.items.default.label', 'default']
                 ],
                 'eval' => 'required, trim',
                 'default' => 'default',
@@ -68,7 +54,7 @@ return [
         ],
 
         'handle' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_format.columns.handle.label',
+            'label' => $lll . 'tx_t3vbase_domain_model_address.columns.handle.label',
             'config' => [
                 'type' => 'slug',
                 'generatorOptions' => [
@@ -87,8 +73,108 @@ return [
             'exclude' => true
         ],
 
+        'street' => [
+            'label' => $lll . 'tx_t3vbase_domain_model_address.columns.street.label',
+            'config' => [
+                'type' => 'input',
+                'max' => 255,
+                'eval' => 'trim',
+                'default' => '',
+                'behaviour' => [
+                    'allowLanguageSynchronization' => true
+                ]
+            ],
+            'exclude' => true
+        ],
+
+        'street_number' => [
+            'label' => $lll . 'tx_t3vbase_domain_model_address.columns.streetNumber.label',
+            'config' => [
+                'type' => 'input',
+                'max' => 10,
+                'eval' => 'trim',
+                'default' => '',
+                'behaviour' => [
+                    'allowLanguageSynchronization' => true
+                ],
+                'size' => 10
+            ],
+            'exclude' => true
+        ],
+
+        'postal_code' => [
+            'label' => $lll . 'tx_t3vbase_domain_model_address.columns.postalCode.label',
+            'config' => [
+                'type' => 'input',
+                'max' => 10,
+                'eval' => 'trim',
+                'default' => '',
+                'behaviour' => [
+                    'allowLanguageSynchronization' => true
+                ],
+                'size' => 10
+            ],
+            'exclude' => true
+        ],
+
+        'locality' => [
+            'label' => $lll . 'tx_t3vbase_domain_model_address.columns.locality.label',
+            'config' => [
+                'type' => 'input',
+                'max' => 255,
+                'eval' => 'trim',
+                'default' => '',
+                'behaviour' => [
+                    'allowLanguageSynchronization' => true
+                ]
+            ],
+            'exclude' => true
+        ],
+
+        'region' => [
+            'label' => $lll . 'tx_t3vbase_domain_model_address.columns.region.label',
+            'config' => [
+                'type' => 'group',
+                'internal_type' => 'db',
+                'allowed' => 'tx_t3vbase_domain_model_region',
+                'minitems' => 0,
+                'maxitems' => 1,
+                'size' => 1,
+                'default' => 0,
+                'suggestOptions' => [
+                    'default' => [
+                        'additionalSearchFields' => 'label, handle, description',
+                        'addWhere' => ''
+                    ]
+                ]
+            ],
+            'l10n_mode' => 'exclude',
+            'exclude' => true
+        ],
+
+        'country' => [
+            'label' => $lll . 'tx_t3vbase_domain_model_address.columns.country.label',
+            'config' => [
+                'type' => 'group',
+                'internal_type' => 'db',
+                'allowed' => 'tx_t3vbase_domain_model_country',
+                'minitems' => 0,
+                'maxitems' => 1,
+                'size' => 1,
+                'default' => 0,
+                'suggestOptions' => [
+                    'default' => [
+                        'additionalSearchFields' => 'label, handle, description',
+                        'addWhere' => ''
+                    ]
+                ]
+            ],
+            'l10n_mode' => 'exclude',
+            'exclude' => true
+        ],
+
         'description' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_format.columns.description.label',
+            'label' => $lll . 'tx_t3vbase_domain_model_address.columns.description.label',
             'config' => [
                 'type' => 'text',
                 'enableRichtext' => true,
@@ -146,8 +232,8 @@ return [
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_t3vbase_domain_model_format',
-                'foreign_table_where' => 'AND tx_t3vbase_domain_model_format.pid=###CURRENT_PID### AND tx_t3vbase_domain_model_format.sys_language_uid IN (-1,0)',
+                'foreign_table' => 'tx_t3vbase_domain_model_address',
+                'foreign_table_where' => 'AND tx_t3vbase_domain_model_address.pid=###CURRENT_PID### AND tx_t3vbase_domain_model_address.sys_language_uid IN (-1,0)',
                 'items' => [
                     ['', 0],
                 ],
@@ -276,10 +362,10 @@ return [
     // === Ctrl ===
 
     'ctrl' => [
-        'title' => $lll . 'tx_t3vbase_domain_model_format.ctrl.title',
-        'label' => 'name',
-        'label_alt' => 'label',
-        // 'label_alt_force' => 1,
+        'title' => $lll . 'tx_t3vbase_domain_model_address.ctrl.title',
+        'label' => 'locality',
+        'label_alt' => 'street',
+        'label_alt_force' => 1,
         'descriptionColumn' => 'description',
         'type' => 'type',
         // 'typeicon_column' => 'type',
@@ -287,7 +373,7 @@ return [
         //     'default' => 'mimetypes-x-content-text'
         // ],
         // 'thumbnail' => 'thumbnail',
-        'iconfile' => "${iconsFolder}/TCA/Format.svg",
+        'iconfile' => "$iconsFolder/TCA/PostalAddress.svg",
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
         'transOrigDiffSourceField' => 'l10n_diffsource',
@@ -296,7 +382,7 @@ return [
         'cruser_id' => 'cruser_id',
         'tstamp' => 'tstamp',
         // 'sortby' => 'sorting',
-        'default_sortby' => 'ORDER BY name ASC',
+        'default_sortby' => 'ORDER BY locality ASC',
         'delete' => 'deleted',
         'origUid' => 't3_origuid',
         'enablecolumns' => [
@@ -305,7 +391,7 @@ return [
             'endtime' => 'endtime',
             'fe_group' => 'fe_group'
         ],
-        'searchFields' => 'name, label, type, handle, description',
+        'searchFields' => 'label, type, handle, street, street_number, postal_code, locality, description',
         // 'hideAtCopy' => true,
         // 'prependAtCopy' => 'LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:ctrl.prependAtCopy.label',
         'useColumnsForDefaultValues' => 'type, sys_language_uid',
@@ -342,10 +428,13 @@ return [
     'palettes' => [
         'general' => [
             'showitem' => '
-                name, --linebreak--,
                 label, --linebreak--,
                 type, --linebreak--,
                 handle, --linebreak--,
+                street, street_number, --linebreak--,
+                postal_code, locality, --linebreak--,
+                region, --linebreak--,
+                country, --linebreak--,
                 description
             ',
             'canNotCollapse' => true

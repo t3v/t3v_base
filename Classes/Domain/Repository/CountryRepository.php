@@ -34,22 +34,7 @@ class CountryRepository extends AbstractRepository
     ];
 
     /**
-     * Finds countries by a country group.
-     *
-     * @param CountryGroup $countryGroup The country group
-     * @return QueryResultInterface|array The found countries
-     * @throws InvalidQueryException
-     */
-    public function findByCountryGroup(CountryGroup $countryGroup)
-    {
-        $query = $this->createQuery();
-        $query->matching($query->contains('countryGroups', $countryGroup));
-
-        return $query->execute();
-    }
-
-    /**
-     * Finds countries by a region.
+     * Gets countries by a region.
      *
      * @param Region $region The region
      * @return QueryResultInterface|array The found countries
@@ -59,6 +44,21 @@ class CountryRepository extends AbstractRepository
     {
         $query = $this->createQuery();
         $query->matching($query->contains('regions', $region));
+
+        return $query->execute();
+    }
+
+    /**
+     * Gets countries by a country group.
+     *
+     * @param CountryGroup $countryGroup The country group
+     * @return QueryResultInterface|array The found countries
+     * @throws InvalidQueryException
+     */
+    public function findByCountryGroup(CountryGroup $countryGroup)
+    {
+        $query = $this->createQuery();
+        $query->matching($query->contains('countryGroups', $countryGroup));
 
         return $query->execute();
     }

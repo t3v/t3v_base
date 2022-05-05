@@ -33,10 +33,10 @@ class RegionRepository extends AbstractRepository
     ];
 
     /**
-     * Finds country groups by a country.
+     * Gets regions by a country.
      *
      * @param Country $country The country
-     * @return QueryResultInterface|array The found country groups
+     * @return QueryResultInterface|array The found regions
      * @throws InvalidQueryException
      */
     public function findByCountry(Country $country)

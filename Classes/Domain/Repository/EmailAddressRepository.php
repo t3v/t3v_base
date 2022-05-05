@@ -8,7 +8,7 @@ use T3v\T3vCore\Domain\Repository\AbstractRepository;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 
 /**
- * Email Address Repository Class
+ * The email address repository class.
  *
  * @package T3v\T3vBase\Domain\Repository
  */

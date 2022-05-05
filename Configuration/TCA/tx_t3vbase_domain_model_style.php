@@ -20,12 +20,26 @@ return [
         // --- Custom columns ---
 
         'name' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_style.name',
+            'label' => $lll . 'tx_t3vbase_domain_model_style.columns.name.label',
             'config' => [
                 'type' => 'input',
                 'max' => 255,
                 'eval' => 'required, trim',
-                'default' => 'Style',
+                'default' => '',
+                'behaviour' => [
+                    'allowLanguageSynchronization' => true
+                ]
+            ],
+            'exclude' => true
+        ],
+
+        'label' => [
+            'label' => $lll . 'tx_t3vbase_domain_model_style.columns.label.label',
+            'config' => [
+                'type' => 'input',
+                'max' => 255,
+                'eval' => 'trim',
+                'default' => '',
                 'behaviour' => [
                     'allowLanguageSynchronization' => true
                 ]
@@ -34,31 +48,29 @@ return [
         ],
 
         'type' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_style.type',
+            'label' => $lll . 'tx_t3vbase_domain_model_style.columns.type.label',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    [$lll . 'tx_t3vbase_domain_model_style.type.backgroundColor', 'background-color'],
-                    [$lll . 'tx_t3vbase_domain_model_style.type.backgroundImages', 'background-images'],
-                    [$lll . 'tx_t3vbase_domain_model_style.type.color', 'color']
+                    [$lll . 'tx_t3vbase_domain_model_style.columns.type.config.items.backgroundColor.label', 'background-color'],
+                    [$lll . 'tx_t3vbase_domain_model_style.columns.type.config.items.backgroundImages.label', 'background-images'],
+                    [$lll . 'tx_t3vbase_domain_model_style.columns.type.config.items.color.label', 'color']
                 ],
                 'eval' => 'required, trim',
                 'default' => 'background-color',
-                'behaviour' => [
-                    'allowLanguageSynchronization' => true
-                ],
                 'fieldWizard' => [
                     'selectIcons' => [
                         'disabled' => false
                     ]
                 ]
             ],
+            'l10n_mode' => 'exclude',
             'exclude' => true
         ],
 
         'handle' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_theme.handle',
+            'label' => $lll . 'tx_t3vbase_domain_model_theme.columns.handle.label',
             'config' => [
                 'type' => 'slug',
                 'generatorOptions' => [
@@ -78,44 +90,47 @@ return [
         ],
 
         'selector' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_style.selector',
+            'label' => $lll . 'tx_t3vbase_domain_model_style.columns.selector.label',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    [$lll . 'tx_t3vbase_domain_model_style.selector.gridElement', 'element'],
-                    [$lll . 'tx_t3vbase_domain_model_style.selector.header', 'header'],
-                    [$lll . 'tx_t3vbase_domain_model_style.selector.main', 'main'],
-                    [$lll . 'tx_t3vbase_domain_model_style.selector.content', 'content'],
-                    [$lll . 'tx_t3vbase_domain_model_style.selector.footer', 'footer']
+                    [$lll . 'tx_t3vbase_domain_model_style.columns.selector.config.items.gridElement.label', 'element'],
+                    [$lll . 'tx_t3vbase_domain_model_style.columns.selector.config.items.header.label', 'header'],
+                    [$lll . 'tx_t3vbase_domain_model_style.columns.selector.config.items.main.label', 'main'],
+                    [$lll . 'tx_t3vbase_domain_model_style.columns.selector.config.items.content.label', 'content'],
+                    [$lll . 'tx_t3vbase_domain_model_style.columns.selector.config.items.footer.label', 'footer']
                 ],
+                'eval' => 'required, trim',
                 'default' => 'element',
-                'behaviour' => [
-                    'allowLanguageSynchronization' => true
-                ],
                 'fieldWizard' => [
                     'selectIcons' => [
                         'disabled' => false
                     ]
                 ]
             ],
+            'l10n_mode' => 'exclude',
             'exclude' => true
         ],
 
         'background_color' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_style.backgroundColor',
+            'label' => $lll . 'tx_t3vbase_domain_model_style.columns.backgroundColor.label',
             'config' => [
                 'type' => 'input',
                 'renderType' => 'colorpicker',
                 'size' => 10,
                 'max' => 255,
-                'eval' => 'trim'
+                'eval' => 'trim',
+                'default' => '',
+                'behaviour' => [
+                    'allowLanguageSynchronization' => true
+                ]
             ],
             'exclude' => true
         ],
 
         'background_images' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_style.backgroundImages',
+            'label' => $lll . 'tx_t3vbase_domain_model_style.columns.backgroundImages.label',
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
                 'background_images',
                 [
@@ -129,7 +144,7 @@ return [
                     'appearance' => [
                         'collapseAll' => true,
                         'expandSingle' => false,
-                        'createNewRelationLinkTitle' => $lll . 'tx_t3vbase_domain_model_style.backgroundImages.createNewRelation.link.title',
+                        'createNewRelationLinkTitle' => $lll . 'tx_t3vbase_domain_model_style.columns.backgroundImages.config.appearance.createNewRelationLinkTitle',
                         'showAllLocalizationLink' => true,
                         'showPossibleLocalizationRecords' => true,
                         'showRemovedLocalizationRecords' => true,
@@ -155,11 +170,25 @@ return [
         ],
 
         'color' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_style.color',
+            'label' => $lll . 'tx_t3vbase_domain_model_style.columns.color.label',
             'config' => [
                 'type' => 'input',
                 'renderType' => 'colorpicker',
                 'max' => 255,
+                'eval' => 'trim',
+                'default' => '',
+                'behaviour' => [
+                    'allowLanguageSynchronization' => true
+                ]
+            ],
+            'exclude' => true
+        ],
+
+        'description' => [
+            'label' => $lll . 'tx_t3vbase_domain_model_style.description',
+            'config' => [
+                'type' => 'text',
+                'enableRichtext' => true,
                 'eval' => 'trim',
                 'behaviour' => [
                     'allowLanguageSynchronization' => true
@@ -213,14 +242,13 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'foreign_table' => 'tx_t3vbase_domain_model_style',
-                'foreign_table_where' => 'AND {#tx_t3vbase_domain_model_style}.{#pid}=###CURRENT_PID### AND {#tx_t3vbase_domain_model_style}.{#sys_language_uid} IN (-1,0)',
+                'foreign_table_where' => 'AND tx_t3vbase_domain_model_style.pid=###CURRENT_PID### AND tx_t3vbase_domain_model_style.sys_language_uid IN (-1,0)',
                 'items' => [
                     ['', 0],
                 ],
                 'default' => 0
             ],
-            'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'exclude' => true
+            'displayCond' => 'FIELD:sys_language_uid:>:0'
         ],
 
         'l10n_diffsource' => [
@@ -265,11 +293,11 @@ return [
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
-                'eval' => 'datetime, int',
-                'default' => 0,
                 'range' => [
                     'upper' => mktime(0, 0, 0, 1, 1, 2038)
                 ],
+                'eval' => 'datetime, int',
+                'default' => 0,
                 'behaviour' => [
                     'allowLanguageSynchronization' => true
                 ]
@@ -343,11 +371,11 @@ return [
     // === Ctrl ===
 
     'ctrl' => [
-        'title' => $lll . 'tx_t3vbase_domain_model_style',
+        'title' => $lll . 'tx_t3vbase_domain_model_style.ctrl.title',
         'label' => 'name',
-        // 'label_alt' => 'label',
+        'label_alt' => 'label',
         // 'label_alt_force' => 1,
-        // 'descriptionColumn' => 'description',
+        'descriptionColumn' => 'description',
         'type' => 'type',
         // 'typeicon_column' => 'type',
         // 'typeicon_classes' => [
@@ -372,7 +400,7 @@ return [
             'endtime' => 'endtime',
             'fe_group' => 'fe_group'
         ],
-        'searchFields' => 'name',
+        'searchFields' => 'name, label, type, handle, selector, background_color, background_images, color, description',
         // 'hideAtCopy' => true,
         // 'prependAtCopy' => 'LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:ctrl.prependAtCopy.label',
         'useColumnsForDefaultValues' => 'type, sys_language_uid',
@@ -441,10 +469,12 @@ return [
         'backgroundColor' => [
             'showitem' => '
                 name, --linebreak--,
+                label, --linebreak--,
                 type, --linebreak--,
                 handle, --linebreak--,
                 selector, --linebreak--,
-                background_color
+                background_color, --linebreak--,
+                description
             ',
             'canNotCollapse' => true
         ],
@@ -452,10 +482,12 @@ return [
         'backgroundImages' => [
             'showitem' => '
                 name, --linebreak--,
+                label, --linebreak--,
                 type, --linebreak--,
                 handle, --linebreak--,
                 selector, --linebreak--,
-                background_images
+                background_images, --linebreak--,
+                description
             ',
             'canNotCollapse' => true
         ],
@@ -463,10 +495,12 @@ return [
         'color' => [
             'showitem' => '
                 name, --linebreak--,
+                label, --linebreak--,
                 type, --linebreak--,
                 handle, --linebreak--,
                 selector, --linebreak--,
-                color
+                color, --linebreak--,
+                description
             ',
             'canNotCollapse' => true
         ],
