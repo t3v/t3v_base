@@ -7,43 +7,53 @@
       <!-- === Properties === -->
 
       <trans-unit id="label.description">
-        <source>Label</source>
-        <target>Beschriftung</target>
+        <source>The label of the address.</source>
+        <target>Die Beschriftung der Adresse.</target>
+      </trans-unit>
+
+      <trans-unit id="type.description">
+        <source>The type of the address.</source>
+        <target>Die Typ der Adresse.</target>
+      </trans-unit>
+
+      <trans-unit id="handle.description">
+        <source>The handle of the address.</source>
+        <target>Der Kurzname der Adresse.</target>
       </trans-unit>
 
       <trans-unit id="street.description">
-        <source>Street</source>
-        <target>Strasse</target>
+        <source>The street of the address.</source>
+        <target>Die Straße der Adresse.</target>
       </trans-unit>
 
       <trans-unit id="street_number.description">
-        <source>Street Number</source>
-        <target>Hausnummer</target>
+        <source>The street Number of the address.</source>
+        <target>Die Straßennummer der Adresse.</target>
       </trans-unit>
 
       <trans-unit id="postal_code.description">
-        <source>Postal Code</source>
-        <target>PLZ</target>
+        <source>The postal Code of the address.</source>
+        <target>Die Postleitzahl der Adresse.</target>
       </trans-unit>
 
       <trans-unit id="locality.description">
-        <source>Locality</source>
-        <target>Ort</target>
+        <source>The locality of the address.</source>
+        <target>Der Ort, an dem sich die Adresse befindet.</target>
       </trans-unit>
 
       <trans-unit id="region.description">
-        <source>Region</source>
-        <target>Region</target>
+        <source>The region of the address.</source>
+        <target>Die Region der Adresse.</target>
       </trans-unit>
 
       <trans-unit id="country.description">
-        <source>Country</source>
-        <target>Land</target>
+        <source>The country of the address.</source>
+        <target>Das Land der Adresse.</target>
       </trans-unit>
 
-      <trans-unit id="note.description">
-        <source>Note</source>
-        <target>Notiz</target>
+      <trans-unit id="description.description">
+        <source>The description of the address.</source>
+        <target>Die Beschreibung der Adresse.</target>
       </trans-unit>
 
       <!-- === T3v Generator === -->

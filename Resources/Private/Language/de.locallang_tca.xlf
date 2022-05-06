@@ -62,7 +62,7 @@
 
       <trans-unit id="tx_t3vbase_domain_model_address.columns.postalCode.label">
         <source>Postal code</source>
-        <target>PLZ</target>
+        <target>Postleitzahl</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vbase_domain_model_address.columns.locality.label">
