@@ -5,8 +5,6 @@ namespace T3v\T3vBase\Domain\Repository;
 
 use T3v\T3vBase\Domain\Model\CountryGroup;
 use T3v\T3vBase\Domain\Model\Region;
-use T3v\T3vBase\Domain\Repository\Traits\LocalizationTrait;
-use T3v\T3vCore\Domain\Repository\AbstractRepository;
 use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
@@ -16,13 +14,8 @@ use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
  *
  * @package T3v\T3vBase\Domain\Repository
  */
-class CountryRepository extends AbstractRepository
+class CountryRepository extends BaseRepository
 {
-    /**
-     * Use the localization trait.
-     */
-    use LocalizationTrait;
-
     /**
      * The default orderings.
      *
@@ -34,22 +27,7 @@ class CountryRepository extends AbstractRepository
     ];
 
     /**
-     * Gets countries by a region.
-     *
-     * @param Region $region The region
-     * @return QueryResultInterface|array The found countries
-     * @throws InvalidQueryException
-     */
-    public function findByRegion(Region $region)
-    {
-        $query = $this->createQuery();
-        $query->matching($query->contains('regions', $region));
-
-        return $query->execute();
-    }
-
-    /**
-     * Gets countries by a country group.
+     * Finds countries by a country group.
      *
      * @param CountryGroup $countryGroup The country group
      * @return QueryResultInterface|array The found countries
@@ -59,6 +37,21 @@ class CountryRepository extends AbstractRepository
     {
         $query = $this->createQuery();
         $query->matching($query->contains('countryGroups', $countryGroup));
+
+        return $query->execute();
+    }
+
+    /**
+     * Finds countries by a region.
+     *
+     * @param Region $region The region
+     * @return QueryResultInterface|array The found countries
+     * @throws InvalidQueryException
+     */
+    public function findByRegion(Region $region)
+    {
+        $query = $this->createQuery();
+        $query->matching($query->contains('regions', $region));
 
         return $query->execute();
     }

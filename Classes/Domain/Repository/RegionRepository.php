@@ -4,8 +4,6 @@ declare(strict_types=1);
 namespace T3v\T3vBase\Domain\Repository;
 
 use T3v\T3vBase\Domain\Model\Country;
-use T3v\T3vBase\Domain\Repository\Traits\LocalizationTrait;
-use T3v\T3vCore\Domain\Repository\AbstractRepository;
 use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
@@ -15,13 +13,8 @@ use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
  *
  * @package T3v\T3vBase\Domain\Repository
  */
-class RegionRepository extends AbstractRepository
+class RegionRepository extends BaseRepository
 {
-    /**
-     * Use the localization trait.
-     */
-    use LocalizationTrait;
-
     /**
      * The default orderings.
      *
@@ -33,7 +26,7 @@ class RegionRepository extends AbstractRepository
     ];
 
     /**
-     * Gets regions by a country.
+     * Finds regions by a country.
      *
      * @param Country $country The country
      * @return QueryResultInterface|array The found regions

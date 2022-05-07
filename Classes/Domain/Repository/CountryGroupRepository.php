@@ -15,13 +15,8 @@ use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
  *
  * @package T3v\T3vBase\Domain\Repository
  */
-class CountryGroupRepository extends AbstractRepository
+class CountryGroupRepository extends BaseRepository
 {
-    /**
-     * Use the localization trait.
-     */
-    use LocalizationTrait;
-
     /**
      * The default orderings.
      *
@@ -33,7 +28,7 @@ class CountryGroupRepository extends AbstractRepository
     ];
 
     /**
-     * Gets country groups by a country.
+     * Finds country groups by a country.
      *
      * @param Country $country The country
      * @return QueryResultInterface|array The found country groups
