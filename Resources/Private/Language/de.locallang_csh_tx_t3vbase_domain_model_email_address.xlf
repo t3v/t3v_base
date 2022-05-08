@@ -4,21 +4,31 @@
     <header />
 
     <body>
-      <!-- === Properties === -->
+      <!-- === Columns === -->
 
       <trans-unit id="label.description">
-        <source>Label</source>
-        <target>Beschriftung</target>
+        <source>The label of the email address.</source>
+        <target>Die Beschriftung der E-Mail-Adresse.</target>
+      </trans-unit>
+
+      <trans-unit id="type.description">
+        <source>The type of the email address.</source>
+        <target>Der Typ der E-Mail-Adresse.</target>
+      </trans-unit>
+
+      <trans-unit id="handle.description">
+        <source>The handle of the email address.</source>
+        <target>Der Kurzname der E-Mail-Adresse.</target>
       </trans-unit>
 
       <trans-unit id="address.description">
-        <source>Address</source>
-        <target>Adresse</target>
+        <source>The address of the email address.</source>
+        <target>Die Adresse der E-Mail-Adresse.</target>
       </trans-unit>
 
-      <trans-unit id="note.description">
-        <source>Note</source>
-        <target>Notiz</target>
+      <trans-unit id="description.description">
+        <source>The description of the email address.</source>
+        <target>Die Beschreibung der E-Mail-Adresse.</target>
       </trans-unit>
 
       <!-- === T3v Generator === -->

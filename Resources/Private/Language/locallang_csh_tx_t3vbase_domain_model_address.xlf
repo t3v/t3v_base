@@ -4,7 +4,7 @@
     <header />
 
     <body>
-      <!-- === Properties === -->
+      <!-- === Columns === -->
 
       <trans-unit id="label.description">
         <source>The label of the address.</source>

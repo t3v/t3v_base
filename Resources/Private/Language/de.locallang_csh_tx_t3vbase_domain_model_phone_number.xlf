@@ -4,31 +4,36 @@
     <header />
 
     <body>
-      <!-- === Properties === -->
+      <!-- === Columns === -->
 
       <trans-unit id="label.description">
-        <source>Label</source>
-        <target>Beschriftung</target>
+        <source>The label of the phone number.</source>
+        <target>Die Beschriftung der Telefonnummer.</target>
       </trans-unit>
 
       <trans-unit id="type.description">
-        <source>Type</source>
-        <target>Typ</target>
+        <source>The type of the phone number.</source>
+        <target>Der Typ der Telefonnummer.</target>
+      </trans-unit>
+
+      <trans-unit id="handle.description">
+        <source>The handle of the phone number.</source>
+        <target>Der Kurzname der Telefonnummer.</target>
       </trans-unit>
 
       <trans-unit id="number.description">
-        <source>Number</source>
-        <target>Nummer</target>
+        <source>The number of the phone number.</source>
+        <target>Die Nummer der Telefonnummer.</target>
       </trans-unit>
 
       <trans-unit id="international_number.description">
-        <source>International Number</source>
-        <target>Internationale Nummer</target>
+        <source>The international number of the phone number.</source>
+        <target>Die internationale Nummer der Telefonnummer.</target>
       </trans-unit>
 
-      <trans-unit id="note.description">
-        <source>Note</source>
-        <target>Notiz</target>
+      <trans-unit id="description.description">
+        <source>The description of the phone number.</source>
+        <target>Die Beschreibung der Telefonnummer.</target>
       </trans-unit>
 
       <!-- === T3v Generator === -->

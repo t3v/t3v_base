@@ -4,8 +4,14 @@
     <header />
 
     <body>
+      <!-- === Columns === -->
+
       <trans-unit id="name.description">
         <source>The name of the format.</source>
+      </trans-unit>
+
+      <trans-unit id="label.description">
+        <source>The label of the format.</source>
       </trans-unit>
 
       <trans-unit id="type.description">

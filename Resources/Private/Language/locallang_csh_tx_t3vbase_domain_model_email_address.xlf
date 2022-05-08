@@ -4,17 +4,29 @@
     <header />
 
     <body>
+      <!-- === Columns === -->
+
       <trans-unit id="label.description">
-        <source>Label</source>
+        <source>The label of the email address.</source>
+      </trans-unit>
+
+      <trans-unit id="type.description">
+        <source>The type of the email address.</source>
+      </trans-unit>
+
+      <trans-unit id="handle.description">
+        <source>The handle of the email address.</source>
       </trans-unit>
 
       <trans-unit id="address.description">
-        <source>Address</source>
+        <source>The address of the email address.</source>
       </trans-unit>
 
-      <trans-unit id="note.description">
-        <source>Note</source>
+      <trans-unit id="description.description">
+        <source>The description of the email address.</source>
       </trans-unit>
+
+      <!-- === T3v Generator === -->
     </body>
   </file>
 </xliff>

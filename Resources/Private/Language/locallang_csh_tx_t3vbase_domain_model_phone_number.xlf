@@ -4,25 +4,33 @@
     <header />
 
     <body>
+      <!-- === Columns === -->
+
       <trans-unit id="label.description">
-        <source>Label</source>
+        <source>The label of the phone number.</source>
       </trans-unit>
 
       <trans-unit id="type.description">
-        <source>Type</source>
+        <source>The type of the phone number.</source>
+      </trans-unit>
+
+      <trans-unit id="handle.description">
+        <source>The handle of the phone number.</source>
       </trans-unit>
 
       <trans-unit id="number.description">
-        <source>Number</source>
+        <source>The number of the phone number.</source>
       </trans-unit>
 
       <trans-unit id="international_number.description">
-        <source>International Number</source>
+        <source>The international number of the phone number.</source>
       </trans-unit>
 
-      <trans-unit id="note.description">
-        <source>Note</source>
+      <trans-unit id="description.description">
+        <source>The description of the phone number.</source>
       </trans-unit>
+
+      <!-- === T3v Generator === -->
     </body>
   </file>
 </xliff>

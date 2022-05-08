@@ -4,9 +4,16 @@
     <header />
 
     <body>
+      <!-- === Columns === -->
+
       <trans-unit id="name.description">
         <source>The name of the style.</source>
         <target>Der Name des Stils.</target>
+      </trans-unit>
+
+      <trans-unit id="label.description">
+        <source>The label of the style.</source>
+        <target>Der Kurzname des Stils.</target>
       </trans-unit>
 
       <trans-unit id="type.description">

@@ -4,21 +4,36 @@
     <header />
 
     <body>
-      <!-- === Properties === -->
+      <!-- === Columns === -->
 
       <trans-unit id="name.description">
-        <source>Name</source>
-        <target>Name</target>
+        <source>The name of the country group.</source>
+        <target>Der Name der Ländergruppe.</target>
       </trans-unit>
 
-      <trans-unit id="abstract.description">
-        <source>Abstract</source>
-        <target>Zusammenfassung</target>
+      <trans-unit id="label.description">
+        <source>The label of the country group.</source>
+        <target>Die Beschriftung der Ländergruppe.</target>
+      </trans-unit>
+
+      <trans-unit id="type.description">
+        <source>The type of the country group.</source>
+        <target>Der Typ der Ländergruppe.</target>
+      </trans-unit>
+
+      <trans-unit id="handle.description">
+        <source>The handle of the country group.</source>
+        <target>Der Kurzname der Ländergruppe.</target>
       </trans-unit>
 
       <trans-unit id="countries.description">
-        <source>Countries</source>
-        <target>Länder</target>
+        <source>The countries of the country group.</source>
+        <target>Die Länder der Ländergruppe.</target>
+      </trans-unit>
+
+      <trans-unit id="description.description">
+        <source>The description of the country group.</source>
+        <target>Die Beschreibung der Ländergruppe.</target>
       </trans-unit>
 
       <!-- === T3v Generator === -->
