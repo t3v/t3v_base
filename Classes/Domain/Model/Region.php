@@ -1,12 +1,16 @@
 <?php
+declare(strict_types=1);
 
 namespace T3v\T3vBase\Domain\Model;
 
+use T3v\T3vBase\Domain\Repository\CountryRepository;
+use TYPO3\CMS\Extbase\Annotation as Extbase;
+use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
+use TYPO3\CMS\Extbase\Persistence\Generic\QueryResult;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
-
 /**
- * Region Class
+ * The region class.
  *
  * @package T3v\T3vBase\Domain\Model
  */
@@ -20,25 +24,32 @@ class Region extends BaseModel
     protected $name;
 
     /**
-     * The region's abstract.
+     * The region's label.
      *
      * @var string
      */
-    protected $abstract;
+    protected $label;
 
     /**
      * The region's countries.
      *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\T3v\T3vBase\Domain\Model\Country>
-     * @TYPO3\CMS\Extbase\Annotation\ORM\Lazy
+     * @Extbase\ORM\Lazy
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     protected $countries;
 
     /**
+     * The region's description.
+     *
+     * @var string
+     */
+    protected $description;
+
+    /**
      * The country repository.
      *
-     * @var \T3v\T3vBase\Domain\Repository\CountryRepository
-     * @TYPO3\CMS\Extbase\Annotation\Inject
+     * @var CountryRepository
      */
     public $countryRepository;
 
@@ -47,17 +58,15 @@ class Region extends BaseModel
      */
     public function __construct()
     {
-        parent::__construct();
-
         $this->countries = new ObjectStorage();
     }
 
     /**
-     * Returns the region's name.
+     * Gets the region's name.
      *
-     * @return string The region's name
+     * @return string|null The region's name
      */
-    public function getName()
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -66,56 +75,64 @@ class Region extends BaseModel
      * Sets the region's name.
      *
      * @param string $name The region's name
-     * @return void
      */
-    public function setName($name)
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
 
     /**
-     * Returns the region's abstract.
+     * Gets the region's label.
      *
-     * @return string The region's abstract
+     * @return string|null The region's label
      */
-    public function getAbstract()
+    public function getLabel(): ?string
     {
-        return $this->abstract;
+        return $this->label ?? $this->name;
     }
 
     /**
-     * Sets the region's abstract.
+     * Sets the region's label.
      *
-     * @param string $abstract The region's abstract
-     * @return void
+     * @param string $label The region's label
      */
-    public function setAbstract($abstract)
+    public function setLabel(string $label): void
     {
-        $this->abstract = $abstract;
+        $this->label = $label;
     }
 
     /**
-     * Returns all countries belonging to the region.
+     * Gets the countries belonging to the region.
      *
-     * @param boolean $reverse Reverse search, defaults to `false`
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\T3v\T3vBase\Domain\Model\Country> The region's countries
+     * @param bool $reverse Reverse search, defaults to `false`
+     * @return QueryResult|ObjectStorage|null The countries belonging to the region
+     * @throws InvalidQueryException
      */
-    public function getCountries($reverse = false)
+    public function getCountries(bool $reverse = false)
     {
         if ($reverse) {
             return $this->countryRepository->findByRegion($this);
-        } else {
-            return $this->countries;
         }
+
+        return $this->countries;
+    }
+
+    /**
+     * Sets the countries belonging to the region.
+     *
+     * @param ObjectStorage<Country> $countries The countries belonging to the region
+     */
+    public function setCountries(ObjectStorage $countries): void
+    {
+        $this->countries = $countries;
     }
 
     /**
      * Adds a country to the region.
      *
-     * @param \T3v\T3vBase\Domain\Model\Country $country The country to be added
-     * @return void
+     * @param Country $country The country to be added
      */
-    public function addCountry(\T3v\T3vBase\Domain\Model\Country $country)
+    public function addCountry(Country $country): void
     {
         $this->countries->attach($country);
     }
@@ -123,21 +140,48 @@ class Region extends BaseModel
     /**
      * Removes a country from the region.
      *
-     * @param \T3v\T3vBase\Domain\Model\Country $country The country to be removed
-     * @return void
+     * @param Country $country The country to be removed
      */
-    public function removeCountry(\T3v\T3vBase\Domain\Model\Country $country)
+    public function removeCountry(Country $country): void
     {
         $this->countries->detach($country);
     }
 
     /**
      * Removes all countries from the region.
-     *
-     * @return void
      */
-    public function removeAllCountries()
+    public function removeAllCountries(): void
     {
         $this->countries = new ObjectStorage();
+    }
+
+    /**
+     * Gets the region's description.
+     *
+     * @return string|null The region's description
+     */
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    /**
+     * Sets the region's description.
+     *
+     * @param string $description The region's description
+     */
+    public function setDescription(string $description): void
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * Injects the country repository.
+     *
+     * @var CountryRepository The country repository
+     */
+    public function injectCountryRepository(CountryRepository $countryRepository): void
+    {
+        $this->countryRepository = $countryRepository;
     }
 }

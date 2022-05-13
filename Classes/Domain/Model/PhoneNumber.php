@@ -10,9 +10,12 @@ namespace T3v\T3vBase\Domain\Model;
  */
 class PhoneNumber extends BaseModel
 {
-    const FAX_TYPE = 'FAX';
-    const PAGER_TYPE = 'PAGER';
-    const TELEPHONE_TYPE = 'TELEPHONE';
+    /**
+     * The phone number's types.
+     */
+    public const FAX_TYPE = 'FAX';
+    public const PAGER_TYPE = 'PAGER';
+    public const TELEPHONE_TYPE = 'TELEPHONE';
 
     /**
      * The phone number's label.
@@ -36,18 +39,18 @@ class PhoneNumber extends BaseModel
     protected $internationalNumber;
 
     /**
-     * The phone number's note.
+     * The phone number's description.
      *
      * @var string
      */
-    protected $note;
+    protected $description;
 
     /**
-     * Returns the phone number's label.
+     * Gets the phone number's label.
      *
-     * @return string The phone number's label
+     * @return string|null The phone number's label
      */
-    public function getLabel()
+    public function getLabel(): ?string
     {
         return $this->label;
     }
@@ -56,19 +59,18 @@ class PhoneNumber extends BaseModel
      * Sets the phone number's label.
      *
      * @param string $label The phone number's label
-     * @return void
      */
-    public function setLabel($label)
+    public function setLabel(string $label): void
     {
         $this->label = $label;
     }
 
     /**
-     * Returns the phone number's number.
+     * Gets the phone number's number.
      *
-     * @return string The phone number's number
+     * @return string|null The phone number's number
      */
-    public function getNumber()
+    public function getNumber(): ?string
     {
         return $this->number;
     }
@@ -77,19 +79,18 @@ class PhoneNumber extends BaseModel
      * Sets the phone number's number.
      *
      * @param string $number The phone number's number
-     * @return void
      */
-    public function setNumber($number)
+    public function setNumber(string $number): void
     {
         $this->number = $number;
     }
 
     /**
-     * Returns the phone number's international number.
+     * Gets the phone number's international number.
      *
-     * @return string The phone number's international number
+     * @return string|null The phone number's international number
      */
-    public function getInternationalNumber()
+    public function getInternationalNumber(): ?string
     {
         return $this->internationalNumber;
     }
@@ -98,55 +99,47 @@ class PhoneNumber extends BaseModel
      * Sets the phone number's international number.
      *
      * @param string $internationalNumber The phone number's international number
-     * @return void
      */
-    public function setInternationalNumber($internationalNumber)
+    public function setInternationalNumber(string $internationalNumber): void
     {
         $this->internationalNumber = $internationalNumber;
     }
 
     /**
-     * Returns the phone number's note.
+     * Gets the phone number's description.
      *
-     * @return string The phone number's note
+     * @return string|null The phone number's description
      */
-    public function getNote()
+    public function getDescription(): ?string
     {
-        return $this->note;
+        return $this->description;
     }
 
     /**
-     * Sets the phone number's note.
+     * Sets the phone number's description.
      *
-     * @param string $note The phone number's note
-     * @return void
+     * @param string $description The phone number's description
      */
-    public function setNote($note)
+    public function setDescription(string $description): void
     {
-        $this->note = $note;
+        $this->description = $description;
     }
 
     /**
-     * Returns the phone number's item property (Microdata).
+     * Gets the phone number's item property.
      *
      * @return string The phone number's item property
      */
-    public function getItemProperty()
+    public function getItemProperty(): string
     {
         $itemProperty = 'telephone';
 
-        $type = $this->getType();
-
-        switch ($type) {
+        switch ($this->getType()) {
             case self::FAX_TYPE:
-                $itemProperty = 'faxNumber';
-
-                break;
+                return 'faxNumber';
 
             case self::PAGER_TYPE:
-                $itemProperty = 'pagerNumber';
-
-                break;
+                return 'pagerNumber';
         }
 
         return $itemProperty;

@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace T3v\T3vBase\Domain\Model;
 
+use TYPO3\CMS\Extbase\Annotation as Extbase;
 use TYPO3\CMS\Extbase\Domain\Model\FileReference;
+use TYPO3\CMS\Extbase\DomainObject\DomainObjectInterface;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 /**
@@ -19,6 +21,13 @@ class Style extends BaseModel
      * @var string
      */
     protected $name;
+
+    /**
+     * The style's label.
+     *
+     * @var string
+     */
+    protected $label;
 
     /**
      * The style's selector.
@@ -38,8 +47,8 @@ class Style extends BaseModel
      * The style's background images.
      *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
-     * @TYPO3\CMS\Extbase\Annotation\ORM\Lazy
-     * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
+     * @Extbase\Annotation\ORM\Lazy
+     * @Extbase\Annotation\ORM\Cascade("remove")
      * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     protected $backgroundImages;
@@ -50,6 +59,13 @@ class Style extends BaseModel
      * @var string
      */
     protected $color;
+
+    /**
+     * The style's description.
+     *
+     * @var string
+     */
+    protected $description;
 
     /**
      * Constructs a new style.
@@ -77,6 +93,26 @@ class Style extends BaseModel
     public function setName(string $name): void
     {
         $this->name = $name;
+    }
+
+    /**
+     * Returns the style's label.
+     *
+     * @return string|null The style's label
+     */
+    public function getLabel(): ?string
+    {
+        return $this->label ?? $this->name;
+    }
+
+    /**
+     * Sets the style's label.
+     *
+     * @param string $label The style's label
+     */
+    public function setLabel(string $label): void
+    {
+        $this->label = $label;
     }
 
     /**
@@ -132,9 +168,9 @@ class Style extends BaseModel
     /**
      * Gets the first background image from the style.
      *
-     * @return FileReference|object|null The first background image or null if no background image was found
+     * @return DomainObjectInterface|null The first background image or null if no background image was found
      */
-    public function getFirstBackgroundImage(): ?FileReference
+    public function getFirstBackgroundImage(): ?DomainObjectInterface
     {
         $backgroundImages = $this->getBackgroundImages();
 
@@ -203,5 +239,25 @@ class Style extends BaseModel
     public function setColor(string $color): void
     {
         $this->color = $color;
+    }
+
+    /**
+     * Returns the style's description.
+     *
+     * @return string|null The style's description
+     */
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    /**
+     * Sets the style's description.
+     *
+     * @param string $description The style's description
+     */
+    public function setDescription(string $description): void
+    {
+        $this->description = $description;
     }
 }

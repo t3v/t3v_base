@@ -16,6 +16,13 @@ class EmailAddress extends BaseModel
     public const ITEM_PROPERTY = 'email';
 
     /**
+     * The email address's label.
+     *
+     * @var string
+     */
+    protected $label;
+
+    /**
      * The email address's address.
      *
      * @var string
@@ -23,18 +30,38 @@ class EmailAddress extends BaseModel
     protected $address;
 
     /**
-     * The email address's note.
+     * The email address's description.
      *
      * @var string
      */
-    protected $note;
+    protected $description;
 
     /**
-     * Returns the email address's address.
+     * Gets the email address's label.
      *
-     * @return string The email address's address
+     * @return string|null The email address's label
      */
-    public function getAddress(): string
+    public function getLabel(): ?string
+    {
+        return $this->label;
+    }
+
+    /**
+     * Sets the email address's label.
+     *
+     * @param string $label The email address's label
+     */
+    public function setLabel(string $label): void
+    {
+        $this->label = $label;
+    }
+
+    /**
+     * Gets the email address's address.
+     *
+     * @return string|null The email address's address
+     */
+    public function getAddress(): ?string
     {
         return $this->address;
     }
@@ -44,33 +71,33 @@ class EmailAddress extends BaseModel
      *
      * @param string $address The email address's address
      */
-    public function setAddress($address): void
+    public function setAddress(string $address): void
     {
         $this->address = $address;
     }
 
     /**
-     * Returns the email address's note.
+     * Gets the email address's description.
      *
-     * @return string The email address's note
+     * @return string|null The email address's description
      */
-    public function getNote(): string
+    public function getDescription(): ?string
     {
-        return $this->note;
+        return $this->description;
     }
 
     /**
-     * Sets the email address's note.
+     * Sets the email address's description.
      *
-     * @param string $note The email address's note
+     * @param string $description The email address's description
      */
-    public function setNote($note): void
+    public function setDescription(string $description): void
     {
-        $this->note = $note;
+        $this->description = $description;
     }
 
     /**
-     * Returns the email address's item property (Microdata).
+     * Gets the email address's item property.
      *
      * @return string The email address's item property
      */

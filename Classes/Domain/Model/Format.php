@@ -18,6 +18,13 @@ class Format extends BaseModel
     protected $name;
 
     /**
+     * The format's label.
+     *
+     * @var string
+     */
+    protected $label;
+
+    /**
      * The format's description.
      *
      * @var string
@@ -25,7 +32,7 @@ class Format extends BaseModel
     protected $description;
 
     /**
-     * Returns the format's name.
+     * Gets the format's name.
      *
      * @return string|null The format's name
      */
@@ -45,7 +52,27 @@ class Format extends BaseModel
     }
 
     /**
-     * Returns the format's description.
+     * Gets the format's label.
+     *
+     * @return string|null The format's label
+     */
+    public function getLabel(): ?string
+    {
+        return $this->label ?? $this->name;
+    }
+
+    /**
+     * Sets the format's label.
+     *
+     * @param string $label The format's label
+     */
+    public function setLabel(string $label): void
+    {
+        $this->label = $label;
+    }
+
+    /**
+     * Gets the format's description.
      *
      * @return string|null The format's description
      */

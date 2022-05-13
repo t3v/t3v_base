@@ -1,285 +1,296 @@
 <?php
+declare(strict_types=1);
 
 namespace T3v\T3vBase\Domain\Model;
 
-
 /**
- * Postal Address Class
+ * The address class.
  *
  * @package T3v\T3vBase\Domain\Model
  */
 class Address extends BaseModel
 {
     /**
-     * The postal address's label.
+     * The address's item property.
+     */
+    public const ITEM_PROPERTY = 'address';
+
+    /**
+     * The address's label.
      *
      * @var string
      */
     protected $label;
 
     /**
-     * The postal address's street.
+     * The address's street.
      *
      * @var string
      */
     protected $street;
 
     /**
-     * The postal address's street number.
+     * The address's street number.
      *
      * @var string
      */
     protected $streetNumber;
 
     /**
-     * The postal address's postal code.
+     * The address's postal code.
      *
      * @var string
      */
     protected $postalCode;
 
     /**
-     * The postal address's locality.
+     * The address's locality.
      *
      * @var string
      */
     protected $locality;
 
     /**
-     * The postal address's region.
+     * The address's region.
      *
      * @var \T3v\T3vBase\Domain\Model\Region
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     protected $region;
 
     /**
-     * The postal address's country.
+     * The address's country.
      *
      * @var \T3v\T3vBase\Domain\Model\Country
+     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     protected $country;
 
     /**
-     * The postal address's note.
+     * The address's description.
      *
      * @var string
      */
-    protected $note;
+    protected $description;
 
     /**
-     * Returns the postal address's label.
+     * Gets the address's label.
      *
-     * @return string The postal address's label
+     * @return string|null The address's label
      */
-    public function getLabel()
+    public function getLabel(): ?string
     {
         return $this->label;
     }
 
     /**
-     * Sets the postal address's label.
+     * Sets the address's label.
      *
-     * @param string $label The postal address's label
-     * @return void
+     * @param string $label The address's label
      */
-    public function setLabel($label)
+    public function setLabel(string $label): void
     {
         $this->label = $label;
     }
 
     /**
-     * Returns the postal address's street.
+     * Gets the address's street.
      *
-     * @return string The postal address's street
+     * @return string|null The address's street
      */
-    public function getStreet()
+    public function getStreet(): ?string
     {
         return $this->street;
     }
 
     /**
-     * Sets the postal address's street.
+     * Sets the address's street.
      *
-     * @param string $street The postal address's street
-     * @return void
+     * @param string $street The address's street
      */
-    public function setStreet($street)
+    public function setStreet(string $street): void
     {
         $this->street = $street;
     }
 
     /**
-     * Returns the postal address's street number.
+     * Gets the address's street number.
      *
-     * @return string The postal address's street number
+     * @return string|null The address's street number
      */
-    public function getStreetNumber()
+    public function getStreetNumber(): ?string
     {
         return $this->streetNumber;
     }
 
     /**
-     * Sets the postal address's street number.
+     * Sets the address's street number.
      *
-     * @param string $street The postal address's street number
-     * @return void
+     * @param string $streetNumber The address's street number
      */
-    public function setStreetNumber($streetNumber)
+    public function setStreetNumber(string $streetNumber): void
     {
         $this->streetNumber = $streetNumber;
     }
 
     /**
-     * Returns the postal address's street and street number.
+     * Gets the address's street and street number.
      *
-     * @return string The address's street and street number
+     * @return string|null The address's street and street number
      */
-    public function getStreetAndStreetNumber()
+    public function getStreetAndStreetNumber(): ?string
     {
         $street = $this->getStreet();
         $streetNumber = $this->getStreetNumber();
-
-        $streetAddress = $street;
+        $streetAndStreetNumber = $street;
 
         if ($streetNumber) {
-            $streetAddress = "{$street} {$streetNumber}";
+            $streetAndStreetNumber = "$street $streetNumber";
         }
 
-        return $streetAddress;
+        return $streetAndStreetNumber;
     }
 
     /**
-     * Returns the postal address's street address (street and street number).
+     * Gets the address's street address respectively the street and street number.
      *
-     * Alias for `getStreetAndStreetNumber` function.
+     * Alias for the `getStreetAndStreetNumber` function.
      *
-     * @return string The postal address's street address
+     * @return string|null The address's street address
      */
-    public function getStreetAddress()
+    public function getStreetAddress(): ?string
     {
         return $this->getStreetAndStreetNumber();
     }
 
     /**
-     * Returns the postal address's postal code.
+     * Gets the address's postal code.
      *
-     * @return string The postal address's postal code
+     * @return string|null The address's postal code
      */
-    public function getPostalCode()
+    public function getPostalCode(): ?string
     {
         return $this->postalCode;
     }
 
     /**
-     * Returns the postal address's post code.
+     * Gets the address's post code.
      *
-     * Alias for `getPostalCode` function.
+     * Alias for the `getPostalCode` function.
      *
-     * @return string The postal address's post code
+     * @return string|null The address's post code
      */
-    public function getPostCode()
+    public function getPostCode(): ?string
     {
         return $this->getPostalCode();
     }
 
     /**
-     * Sets the postal address's postal code.
+     * Sets the address's postal code.
      *
-     * @param string $postalCode The postal address's postal code
-     * @return void
+     * @param string $postalCode The address's postal code
      */
-    public function setPostalCode($postalCode)
+    public function setPostalCode(string $postalCode): void
     {
         $this->postalCode = $postalCode;
     }
 
     /**
-     * Sets the postal address's post code.
+     * Sets the address's post code.
      *
-     * Alias for `setPostalCode` function.
+     * Alias for the `setPostalCode` function.
      *
-     * @param string $postCode The postal address's post code
-     * @return void
+     * @param string $postCode The address's post code
      */
-    public function setPostCode($postCode)
+    public function setPostCode(string $postCode): void
     {
         $this->setPostalCode($postCode);
     }
 
     /**
-     * Returns the postal address's locality.
+     * Gets the address's locality.
      *
-     * @return string The postal address's locality
+     * @return string|null The address's locality
      */
-    public function getLocality()
+    public function getLocality(): ?string
     {
         return $this->locality;
     }
 
     /**
-     * Returns the postal address's city.
+     * Gets the address's city.
      *
-     * Alias for `getLocality` function.
+     * Alias for the `getLocality` function.
      *
-     * @return string The postal address's city
+     * @return string|null The address's city
      */
-    public function getCity()
+    public function getCity(): ?string
     {
         return $this->getLocality();
     }
 
     /**
-     * Returns the postal address's address locality.
+     * Gets the address's address locality.
      *
-     * Alias for `getLocality` function.
+     * Alias for the `getLocality` function.
      *
-     * @return string The postal address's address locality
+     * @return string|null The address's address locality
      */
-    public function getAddressLocality()
+    public function getAddressLocality(): ?string
     {
         return $this->getLocality();
     }
 
     /**
-     * Sets the postal address's locality.
+     * Sets the address's locality.
      *
-     * @param string $locality The postal address's locality
-     * @return void
+     * @param string $locality The address's locality
      */
-    public function setLocality($locality)
+    public function setLocality(string $locality): void
     {
         $this->locality = $locality;
     }
 
     /**
-     * Sets the postal address's city.
+     * Sets the address's city.
      *
-     * Alias for `setLocality` function.
+     * Alias for the `setLocality` function.
      *
-     * @param string $city The postal address's city
-     * @return void
+     * @param string $city The address's city
      */
-    public function setCity($city)
+    public function setCity(string $city): void
     {
         $this->setLocality($city);
     }
 
     /**
-     * Returns the postal address's region.
+     * Sets the address's address locality.
      *
-     * @return \T3v\T3vBase\Domain\Model\Region The postal address's region
+     * Alias for the `setLocality` function.
+     *
+     * @param string $addressLocality The address's address locality
      */
-    public function getRegion()
+    public function setAddressLocality(string $addressLocality): void
+    {
+        $this->setLocality($addressLocality);
+    }
+
+    /**
+     * Gets the address's region.
+     *
+     * @return Region|null The address's region
+     */
+    public function getRegion(): ?Region
     {
         return $this->region;
     }
 
     /**
-     * Returns the postal address's address region.
+     * Gets the address's address region.
      *
-     * @return string The postal address's address region
+     * @return string|null The address's address region
      */
-    public function getAddressRegion()
+    public function getAddressRegion(): ?string
     {
         $region = $this->getRegion();
 
@@ -291,32 +302,31 @@ class Address extends BaseModel
     }
 
     /**
-     * Sets the postal address's region.
+     * Sets the address's region.
      *
-     * @param \T3v\T3vBase\Domain\Model\Region $region The postal address's region
-     * @return void
+     * @param Region $region The address's region
      */
-    public function setRegion($region)
+    public function setRegion(Region $region): void
     {
         $this->region = $region;
     }
 
     /**
-     * Returns the postal address's country.
+     * Gets the address's country.
      *
-     * @return \T3v\T3vBase\Domain\Model\Country The postal address's country
+     * @return Country|null The address's country
      */
-    public function getCountry()
+    public function getCountry(): ?Country
     {
         return $this->country;
     }
 
     /**
-     * Returns the postal address's address country.
+     * Gets the address's address country.
      *
-     * @return string The postal address's address country
+     * @return string|null The address's address country
      */
-    public function getAddressCountry()
+    public function getAddressCountry(): ?string
     {
         $country = $this->getCountry();
 
@@ -328,34 +338,42 @@ class Address extends BaseModel
     }
 
     /**
-     * Sets the postal address's country.
+     * Sets the address's country.
      *
-     * @param \T3v\T3vBase\Domain\Model\Country $country The postal address's country
-     * @return void
+     * @param Country $country The address's country
      */
-    public function setCountry($country)
+    public function setCountry(Country $country): void
     {
         $this->country = $country;
     }
 
     /**
-     * Returns the postal address's note.
+     * Gets the address's description.
      *
-     * @return string The postal address's note
+     * @return string|null The address's description
      */
-    public function getNote()
+    public function getDescription(): ?string
     {
-        return $this->note;
+        return $this->description;
     }
 
     /**
-     * Sets the postal address's note.
+     * Sets the address's description.
      *
-     * @param string $note The postal address's note
-     * @return void
+     * @param string $description The address's description
      */
-    public function setNote($note)
+    public function setDescription(string $description): void
     {
-        $this->note = $note;
+        $this->description = $description;
+    }
+
+    /**
+     * Gets the address's item property.
+     *
+     * @return string The address's item property
+     */
+    public function getItemProperty(): string
+    {
+        return self::ITEM_PROPERTY;
     }
 }

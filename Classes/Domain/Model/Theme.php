@@ -18,6 +18,13 @@ class Theme extends BaseModel
     protected $name;
 
     /**
+     * The theme's label.
+     *
+     * @var string
+     */
+    protected $label;
+
+    /**
      * The theme's description.
      *
      * @var string
@@ -42,6 +49,26 @@ class Theme extends BaseModel
     public function setName(string $name): void
     {
         $this->name = $name;
+    }
+
+    /**
+     * Returns the theme's label.
+     *
+     * @return string|null The theme's label
+     */
+    public function getLabel(): ?string
+    {
+        return $this->label ?? $this->name;
+    }
+
+    /**
+     * Sets the theme's label.
+     *
+     * @param string $label The theme's label
+     */
+    public function setLabel(string $label): void
+    {
+        $this->label = $label;
     }
 
     /**

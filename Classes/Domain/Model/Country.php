@@ -85,7 +85,7 @@ class Country extends BaseModel
     }
 
     /**
-     * Returns the country's name.
+     * Gets the country's name.
      *
      * @return string|null The country's name
      */
@@ -106,13 +106,13 @@ class Country extends BaseModel
     }
 
     /**
-     * Returns the country's label.
+     * Gets the country's label.
      *
      * @return string|null The country's label
      */
     public function getLabel(): ?string
     {
-        return $this->label;
+        return $this->label ?? $this->name;
     }
 
     /**
@@ -235,7 +235,7 @@ class Country extends BaseModel
     }
 
     /**
-     * Returns the country's description.
+     * Gets the country's description.
      *
      * @return string|null The country's description
      */
@@ -256,7 +256,7 @@ class Country extends BaseModel
     }
 
     /**
-     * Returns the country's item property.
+     * Gets the country's item property.
      *
      * @return string The country's item property
      */
