@@ -45,8 +45,6 @@
       <trans-unit id="description.description">
         <source>The description of the address.</source>
       </trans-unit>
-
-      <!-- === T3v Generator === -->
     </body>
   </file>
 </xliff>

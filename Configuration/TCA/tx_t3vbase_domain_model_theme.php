@@ -375,5 +375,3 @@ return [
         ]
     ]
 ];
-
-// === T3v Generator ===

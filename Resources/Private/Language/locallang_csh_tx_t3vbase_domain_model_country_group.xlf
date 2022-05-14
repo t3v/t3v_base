@@ -29,8 +29,6 @@
       <trans-unit id="description.description">
         <source>The description of the country group.</source>
       </trans-unit>
-
-      <!-- === T3v Generator === -->
     </body>
   </file>
 </xliff>
