@@ -18,6 +18,7 @@ mod {
               title = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:contentObjects.searchBar.title
               description = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:contentObjects.searchBar.description
               iconIdentifier = t3v_base-search_bar
+
               tt_content_defValues {
                 CType = list
                 list_type = t3vbase_searchbar

@@ -6,7 +6,7 @@
     <body>
       <!-- === Content Objects === -->
 
-      <!-- Background Content Object -->
+      <!-- ‐‐‐ Background Content Object ‐‐‐ -->
 
       <trans-unit id="contentObjects.background.title">
         <source>Background</source>
@@ -19,11 +19,11 @@
       </trans-unit>
 
       <trans-unit id="contentObjects.background.description">
-        <source>A background.</source>
-        <target>Ein Hintergrund.</target>
+        <source>Displays a background.</source>
+        <target>Zeigt einen Hintergrund an.</target>
       </trans-unit>
 
-      <!-- Copyright Content Object -->
+      <!-- ‐‐‐ Copyright Content Object ‐‐‐ -->
 
       <trans-unit id="contentObjects.copyright.title">
         <source>Copyright</source>
@@ -36,11 +36,11 @@
       </trans-unit>
 
       <trans-unit id="contentObjects.copyright.description">
-        <source>A copyright.</source>
-        <target>Ein Urheberrecht.</target>
+        <source>Displays a copyright.</source>
+        <target>Zeigt ein Urheberrecht an.</target>
       </trans-unit>
 
-      <!-- Icon Content Object -->
+      <!-- ‐‐‐ Icon Content Object ‐‐‐ -->
 
       <trans-unit id="contentObjects.icon.title">
         <source>Icon</source>
@@ -53,11 +53,11 @@
       </trans-unit>
 
       <trans-unit id="contentObjects.icon.description">
-        <source>An icon.</source>
-        <target>Ein Symbol.</target>
+        <source>Displays an icon.</source>
+        <target>Zeigt ein Symbol an.</target>
       </trans-unit>
 
-      <!-- Label Content Object -->
+      <!-- ‐‐‐ Label Content Object ‐‐‐ -->
 
       <trans-unit id="contentObjects.label.title">
         <source>Label</source>
@@ -70,11 +70,11 @@
       </trans-unit>
 
       <trans-unit id="contentObjects.label.description">
-        <source>A label.</source>
-        <target>Eine Beschriftung.</target>
+        <source>Displays a label.</source>
+        <target>Zeigt eine Beschriftung an.</target>
       </trans-unit>
 
-      <!-- Link Content Object -->
+      <!-- ‐‐‐ Link Content Object ‐‐‐ -->
 
       <trans-unit id="contentObjects.link.title">
         <source>Link</source>
@@ -87,11 +87,11 @@
       </trans-unit>
 
       <trans-unit id="contentObjects.link.description">
-        <source>A link.</source>
-        <target>Ein Link.</target>
+        <source>Displays a link.</source>
+        <target>Zeigt einen Link an.</target>
       </trans-unit>
 
-      <!-- Logo Content Object -->
+      <!-- ‐‐‐ Logo Content Object ‐‐‐ -->
 
       <trans-unit id="contentObjects.logo.title">
         <source>Logo</source>
@@ -104,28 +104,28 @@
       </trans-unit>
 
       <trans-unit id="contentObjects.logo.description">
-        <source>A logo.</source>
-        <target>Ein logo.</target>
+        <source>Displays a logo.</source>
+        <target>Zeigt ein Logo an.</target>
       </trans-unit>
 
-      <!-- Search Bar Content Object -->
+      <!-- ‐‐‐ Search Bar Content Object ‐‐‐ -->
 
       <trans-unit id="contentObjects.searchBar.title">
-        <source>Search Bar</source>
+        <source>Search bar</source>
         <target>Suchleiste</target>
       </trans-unit>
 
       <trans-unit id="contentObjects.searchBar.label">
-        <source>Search Bar</source>
+        <source>Search bar</source>
         <target>Suchleiste</target>
       </trans-unit>
 
       <trans-unit id="contentObjects.searchBar.description">
-        <source>A search bar.</source>
-        <target>Eine Suchleiste.</target>
+        <source>Displays a search bar.</source>
+        <target>Zeigt eine Suchleiste an.</target>
       </trans-unit>
 
-      <!-- Spacer Content Object -->
+      <!-- ‐‐‐ Spacer Content Object ‐‐‐ -->
 
       <trans-unit id="contentObjects.spacer.title">
         <source>Spacer</source>
@@ -138,22 +138,58 @@
       </trans-unit>
 
       <trans-unit id="contentObjects.spacer.description">
-        <source>A spacer.</source>
-        <target>Ein Abstandshalter.</target>
+        <source>Displays a spacer.</source>
+        <target>Zeigt einen Abstandhalter an.</target>
       </trans-unit>
 
       <!-- === Grid Elements === -->
 
-      <!-- 1 Column Layout Grid Element -->
+      <!-- ‐‐‐ Bar Grid Element ‐‐‐ -->
+
+      <trans-unit id="gridElements.barGridElement.title">
+        <source>Bar</source>
+        <target>Leiste</target>
+      </trans-unit>
+
+      <trans-unit id="gridElements.barGridElement.description">
+        <source>Displays a bar.</source>
+        <target>Zeigt eine Leiste an.</target>
+      </trans-unit>
+
+      <!-- ‐‐‐ Block Grid Element ‐‐‐ -->
+
+      <trans-unit id="gridElements.blockGridElement.title">
+        <source>Block</source>
+        <target>Block</target>
+      </trans-unit>
+
+      <trans-unit id="gridElements.blockGridElement.description">
+        <source>Displays a block.</source>
+        <target>Zeigt einen Block an.</target>
+      </trans-unit>
+
+      <!-- ‐‐‐ Cascading Layout Grid Element ‐‐‐ -->
+
+      <trans-unit id="gridElements.cascadingLayoutGridElement.title">
+        <source>Cascading layout</source>
+        <target>Kaskadierendes Layout</target>
+      </trans-unit>
+
+      <trans-unit id="gridElements.cascadingLayoutGridElement.description">
+        <source>Displays a cascading layout.</source>
+        <target>Zeigt ein kaskadierendes Layout an.</target>
+      </trans-unit>
+
+      <!-- ‐‐‐ 1 Column Layout Grid Element ‐‐‐ -->
 
       <trans-unit id="gridElements.columnLayoutGridElement.1Column.title">
-        <source>1 Column Layout</source>
-        <target>1-Spaltenlayout</target>
+        <source>One column layout</source>
+        <target>Einspaltiges Layout</target>
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.1Column.description">
-        <source>A Column Layout Grid Element with one column.</source>
-        <target>Ein Spaltenlayout-Raster-Element mit einer Spalte.</target>
+        <source>Displays a column layout with one column.</source>
+        <target>Zeigt ein Spaltenlayout mit einer Spalte an.</target>
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.1Column.rows.1.columns.1.name">
@@ -161,16 +197,16 @@
         <target>Spalte</target>
       </trans-unit>
 
-      <!-- 2 Column Layout Grid Element -->
+      <!-- ‐‐‐ 2 Column Layout Grid Element ‐‐‐ -->
 
       <trans-unit id="gridElements.columnLayoutGridElement.2Column.title">
-        <source>2 Column Layout</source>
-        <target>2-Spaltenlayout</target>
+        <source>Two column layout</source>
+        <target>Zweispaltiges Layout</target>
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.2Column.description">
-        <source>A Column Layout Grid Element with two columns.</source>
-        <target>Ein Spaltenlayout-Raster-Element mit zwei Spalten.</target>
+        <source>Displays a column layout with two columns.</source>
+        <target>Zeigt ein Spaltenlayout mit zwei Spalten an.</target>
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.2Column.rows.1.columns.1.name">
@@ -183,16 +219,16 @@
         <target>Zweite Spalte</target>
       </trans-unit>
 
-      <!-- 3 Column Layout Grid Element -->
+      <!-- ‐‐‐ 3 Column Layout Grid Element ‐‐‐ -->
 
       <trans-unit id="gridElements.columnLayoutGridElement.3Column.title">
-        <source>3 Column Layout</source>
-        <target>3-Spaltenlayout</target>
+        <source>Three column layout</source>
+        <target>Dreispaltiges Layout</target>
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.3Column.description">
-        <source>A Column Layout Grid Element with three columns.</source>
-        <target>Ein Spaltenlayout-Raster-Element mit drei Spalten.</target>
+        <source>Displays a column layout with three columns.</source>
+        <target>Zeigt ein Spaltenlayout mit drei Spalten an.</target>
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.3Column.rows.1.columns.1.name">
@@ -210,16 +246,16 @@
         <target>Dritte Spalte</target>
       </trans-unit>
 
-      <!-- 4 Column Layout Grid Element -->
+      <!-- ‐‐‐ 4 Column Layout Grid Element ‐‐‐ -->
 
       <trans-unit id="gridElements.columnLayoutGridElement.4Column.title">
-        <source>4 Column Layout</source>
-        <target>4-Spaltenlayout</target>
+        <source>Four column layout</source>
+        <target>Vierspaltiges Layout</target>
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.4Column.description">
-        <source>A Column Layout Grid Element with four columns.</source>
-        <target>Ein Spaltenlayout-Raster-Element mit vier Spalten.</target>
+        <source>Displays a column layout with four columns.</source>
+        <target>Zeigt ein Spaltenlayout mit vier Spalten an.</target>
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.4Column.rows.1.columns.1.name">
@@ -242,43 +278,7 @@
         <target>Vierte Spalte</target>
       </trans-unit>
 
-      <!-- Bar Grid Element -->
-
-      <trans-unit id="gridElements.barGridElement.title">
-        <source>Bar</source>
-        <target>Bar</target>
-      </trans-unit>
-
-      <trans-unit id="gridElements.barGridElement.description">
-        <source>A Bar Grid Element.</source>
-        <target>Ein Bar-Raster-Element.</target>
-      </trans-unit>
-
-      <!-- Block Grid Element -->
-
-      <trans-unit id="gridElements.blockGridElement.title">
-        <source>Block</source>
-        <target>Block</target>
-      </trans-unit>
-
-      <trans-unit id="gridElements.blockGridElement.description">
-        <source>A Block Grid Element.</source>
-        <target>Ein Block-Raster-Element.</target>
-      </trans-unit>
-
-      <!-- Cascading Layout Grid Element -->
-
-      <trans-unit id="gridElements.cascadingLayoutGridElement.title">
-        <source>Cascading Layout</source>
-        <target>Kaskadierendes Layout</target>
-      </trans-unit>
-
-      <trans-unit id="gridElements.cascadingLayoutGridElement.description">
-        <source>A Cascading Layout Grid Element.</source>
-        <target>Ein Kaskadierendes-Layout-Raster-Element.</target>
-      </trans-unit>
-
-      <!-- Conditionally Grid Element -->
+      <!-- ‐‐‐ Conditionally Grid Element ‐‐‐ -->
 
       <trans-unit id="gridElements.conditionallyGridElement.title">
         <source>Conditionally</source>
@@ -286,8 +286,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.conditionallyGridElement.description">
-        <source>A Conditionally Grid Element.</source>
-        <target>Ein Konditional-Raster-Element.</target>
+        <source>Displays child elements conditionally.</source>
+        <target>Zeigt untergeordnete Elemente unter bestimmten Bedingungen an.</target>
       </trans-unit>
 
       <trans-unit id="gridElements.conditionallyGridElement.rows.1.columns.1.name">
@@ -300,7 +300,7 @@
         <target>Ansonsten</target>
       </trans-unit>
 
-      <!-- Container Grid Element -->
+      <!-- ‐‐‐ Container Grid Element ‐‐‐ -->
 
       <trans-unit id="gridElements.containerGridElement.title">
         <source>Container</source>
@@ -308,8 +308,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.containerGridElement.description">
-        <source>A Container Grid Element.</source>
-        <target>Ein Container-Raster-Element.</target>
+        <source>Wraps child elements in a container.</source>
+        <target>Umschließt untergeordnete Elemente in einem Container.</target>
       </trans-unit>
 
       <!-- Flexbox Grid Element -->
@@ -320,11 +320,11 @@
       </trans-unit>
 
       <trans-unit id="gridElements.flexboxGridElement.description">
-        <source>A Flexbox Grid Element.</source>
-        <target>Ein Flexbox-Raster-Element.</target>
+        <source>Displays child elements in a flexible manner.</source>
+        <target>Zeigt untergeordnete Elemente auf flexible Art und Weise an.</target>
       </trans-unit>
 
-      <!-- Flyout Grid Element -->
+      <!-- ‐‐‐ Flyout Grid Element ‐‐‐ -->
 
       <trans-unit id="gridElements.flyoutGridElement.title">
         <source>Flyout</source>
@@ -332,23 +332,23 @@
       </trans-unit>
 
       <trans-unit id="gridElements.flyoutGridElement.description">
-        <source>A Flyout Grid Element.</source>
-        <target>Ein Flyout-Raster-Element.</target>
+        <source>Displays child elements in a flyout.</source>
+        <target>Zeigt untergeordnete Elemente in einem Flyout an.</target>
       </trans-unit>
 
-      <!-- Footer Grid Element -->
+      <!-- ‐‐‐ Footer Grid Element ‐‐‐ -->
 
       <trans-unit id="gridElements.footerGridElement.title">
         <source>Footer</source>
-        <target>Fußbereich</target>
+        <target>Fußzeile</target>
       </trans-unit>
 
       <trans-unit id="gridElements.footerGridElement.description">
-        <source>A Footer Grid Element.</source>
-        <target>Ein Fußbereich-Raster-Element.</target>
+        <source>Displays child elements in a footer.</source>
+        <target>Zeigt untergeordnete Elemente in einer Fußzeile an.</target>
       </trans-unit>
 
-      <!-- Formatting Grid Element -->
+      <!-- ‐‐‐ Formatting Grid Element ‐‐‐ -->
 
       <trans-unit id="gridElements.formattingGridElement.title">
         <source>Formatting</source>
@@ -356,11 +356,11 @@
       </trans-unit>
 
       <trans-unit id="gridElements.formattingGridElement.description">
-        <source>A Formatting Grid Element.</source>
-        <target>Ein Formatierungs-Raster-Element.</target>
+        <source>Formats child elements.</source>
+        <target>Formatiert untergeordnete Elemente.</target>
       </trans-unit>
 
-      <!-- Header Grid Element -->
+      <!-- ‐‐‐ Header Grid Element ‐‐‐ -->
 
       <trans-unit id="gridElements.headerGridElement.title">
         <source>Header</source>
@@ -368,11 +368,11 @@
       </trans-unit>
 
       <trans-unit id="gridElements.headerGridElement.description">
-        <source>A Header Grid Element.</source>
-        <target>Ein Kopfbereich-Raster-Element.</target>
+        <source>Displays child elements in a header.</source>
+        <target>Zeigt untergeordnete Elemente in einer Kopfzeile an.</target>
       </trans-unit>
 
-      <!-- Modal Grid Element -->
+      <!-- ‐‐‐ Modal Grid Element ‐‐‐ -->
 
       <trans-unit id="gridElements.modalGridElement.title">
         <source>Modal</source>
@@ -380,11 +380,11 @@
       </trans-unit>
 
       <trans-unit id="gridElements.modalGridElement.description">
-        <source>A Modal Grid Element.</source>
-        <target>Ein Modal-Raster-Element.</target>
+        <source>Displays child elements in a modal.</source>
+        <target>Zeigt untergeordnete Elemente in einem Modal an.</target>
       </trans-unit>
 
-      <!-- Section Grid Element -->
+      <!--  ‐‐‐Section Grid Element ‐‐‐ -->
 
       <trans-unit id="gridElements.sectionGridElement.title">
         <source>Section</source>
@@ -392,23 +392,23 @@
       </trans-unit>
 
       <trans-unit id="gridElements.sectionGridElement.description">
-        <source>A Section Grid Element.</source>
-        <target>Ein Sektion-Raster-Element.</target>
+        <source>Displays child elements in a section.</source>
+        <target>Zeigt untergeordnete Elemente in einer Sektion an.</target>
       </trans-unit>
 
-      <!-- Viewport Grid Element -->
+      <!--  ‐‐‐Viewport Grid Element ‐‐‐ -->
 
       <trans-unit id="gridElements.viewportGridElement.title">
         <source>Viewport</source>
-        <target>Viewport</target>
+        <target>Darstellungsbereich</target>
       </trans-unit>
 
       <trans-unit id="gridElements.viewportGridElement.description">
-        <source>A Viewport Grid Element.</source>
-        <target>Ein Viewport-Raster-Element.</target>
+        <source>Displays child elements in a viewport.</source>
+        <target>Zeigt untergeordnete Elemente in einem Darstellungsbereich an.</target>
       </trans-unit>
 
-      <!-- Shared -->
+      <!-- ‐‐‐ Shared ‐‐‐ -->
 
       <trans-unit id="gridElements.shared.columns.header.name">
         <source>Header</source>

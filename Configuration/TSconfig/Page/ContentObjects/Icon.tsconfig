@@ -18,6 +18,7 @@ mod {
               title = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:contentObjects.icon.title
               description = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:contentObjects.icon.description
               iconIdentifier = t3v_base-icon
+
               tt_content_defValues {
                 CType = list
                 list_type = t3vbase_icon
