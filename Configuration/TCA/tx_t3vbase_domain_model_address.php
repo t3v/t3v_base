@@ -366,8 +366,8 @@ return [
         'label' => 'locality',
         'label_alt' => 'street',
         'label_alt_force' => 1,
-        'descriptionColumn' => 'description',
         'type' => 'type',
+        // 'descriptionColumn' => 'description',
         // 'typeicon_column' => 'type',
         // 'typeicon_classes' => [
         //     'default' => 'mimetypes-x-content-text'
