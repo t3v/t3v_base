@@ -120,9 +120,9 @@ class Region extends BaseModel
     /**
      * Sets the countries belonging to the region.
      *
-     * @param ObjectStorage<Country> $countries The countries belonging to the region
+     * @param ObjectStorage<Country>|null $countries The countries belonging to the region
      */
-    public function setCountries(ObjectStorage $countries): void
+    public function setCountries(?ObjectStorage $countries): void
     {
         $this->countries = $countries;
     }

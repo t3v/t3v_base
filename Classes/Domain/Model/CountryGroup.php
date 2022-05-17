@@ -125,9 +125,9 @@ class CountryGroup extends BaseModel
     /**
      * Sets the countries belonging to the country group.
      *
-     * @param ObjectStorage<Country> $countries The countries belonging to the country group
+     * @param ObjectStorage<Country>|null $countries The countries belonging to the country group
      */
-    public function setProducts(ObjectStorage $countries): void
+    public function setProducts(?ObjectStorage $countries): void
     {
         $this->countries = $countries;
     }

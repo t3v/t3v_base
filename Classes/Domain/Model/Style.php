@@ -184,9 +184,9 @@ class Style extends BaseModel
     /**
      * Sets the style's background images.
      *
-     * @param ObjectStorage<FileReference> $backgroundImages The style's background images
+     * @param ObjectStorage<FileReference>|null $backgroundImages The style's background images
      */
-    public function setBackgroundImages(ObjectStorage $backgroundImages): void
+    public function setBackgroundImages(?ObjectStorage $backgroundImages): void
     {
         $this->backgroundImages = $backgroundImages;
     }

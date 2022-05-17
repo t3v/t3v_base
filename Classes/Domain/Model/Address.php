@@ -304,9 +304,9 @@ class Address extends BaseModel
     /**
      * Sets the address's region.
      *
-     * @param Region $region The address's region
+     * @param Region|null $region The address's region
      */
-    public function setRegion(Region $region): void
+    public function setRegion(?Region $region): void
     {
         $this->region = $region;
     }
@@ -340,9 +340,9 @@ class Address extends BaseModel
     /**
      * Sets the address's country.
      *
-     * @param Country $country The address's country
+     * @param Country|null $country The address's country
      */
-    public function setCountry(Country $country): void
+    public function setCountry(?Country $country): void
     {
         $this->country = $country;
     }
