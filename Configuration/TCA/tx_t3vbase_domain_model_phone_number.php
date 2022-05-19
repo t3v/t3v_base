@@ -45,12 +45,7 @@ return [
                     [$lll . 'tx_t3vbase_domain_model_phone_number.columns.type.config.items.pager.label', 'pager']
                 ],
                 'eval' => 'required, trim',
-                'default' => 'default',
-                'fieldWizard' => [
-                    'selectIcons' => [
-                        'disabled' => false
-                    ]
-                ]
+                'default' => 'default'
             ],
             'l10n_mode' => 'exclude',
             'exclude' => true

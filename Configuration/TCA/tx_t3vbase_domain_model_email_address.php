@@ -42,12 +42,7 @@ return [
                     [$lll . 'tx_t3vbase_domain_model_email_address.columns.type.config.items.default', 'default']
                 ],
                 'eval' => 'required, trim',
-                'default' => 'default',
-                'fieldWizard' => [
-                    'selectIcons' => [
-                        'disabled' => false
-                    ]
-                ]
+                'default' => 'default'
             ],
             'l10n_mode' => 'exclude',
             'exclude' => true

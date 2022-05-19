@@ -56,16 +56,9 @@ return [
                     [$lll . 'tx_t3vbase_domain_model_theme.columns.type.config.items.default.label', 'default']
                 ],
                 'eval' => 'required, trim',
-                'default' => 'default',
-                'behaviour' => [
-                    'allowLanguageSynchronization' => true
-                ],
-                'fieldWizard' => [
-                    'selectIcons' => [
-                        'disabled' => false
-                    ]
-                ]
+                'default' => 'default'
             ],
+            'l10n_mode' => 'exclude',
             'exclude' => true
         ],
 

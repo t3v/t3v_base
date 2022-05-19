@@ -58,12 +58,7 @@ return [
                     [$lll . 'tx_t3vbase_domain_model_style.columns.type.config.items.color.label', 'color']
                 ],
                 'eval' => 'required, trim',
-                'default' => 'background-color',
-                'fieldWizard' => [
-                    'selectIcons' => [
-                        'disabled' => false
-                    ]
-                ]
+                'default' => 'background-color'
             ],
             'l10n_mode' => 'exclude',
             'exclude' => true
