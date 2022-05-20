@@ -289,9 +289,9 @@ return [
 
     'ctrl' => [
         'title' => $lll . 'tx_t3vbase_domain_model_phone_number.ctrl.title',
-        'label' => 'label',
-        'label_alt' => 'number',
-        'label_alt_force' => 1,
+        'label' => 'number',
+        'label_alt' => 'label',
+        // 'label_alt_force' => 1,
         'type' => 'type',
         // 'descriptionColumn' => 'description',
         // 'typeicon_column' => 'type',
@@ -317,7 +317,7 @@ return [
             'endtime' => 'endtime',
             'fe_group' => 'fe_group'
         ],
-        'searchFields' => 'label, type, handle, number, international_number, description',
+        'searchFields' => 'uid, label, type, handle, number, international_number, description',
         // 'hideAtCopy' => true,
         // 'prependAtCopy' => 'LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:ctrl.prependAtCopy.label',
         'useColumnsForDefaultValues' => 'type, sys_language_uid',

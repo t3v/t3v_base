@@ -300,7 +300,7 @@ return [
             'endtime' => 'endtime',
             'fe_group' => 'fe_group'
         ],
-        'searchFields' => 'name, label, type, handle, description',
+        'searchFields' => 'uid, name, label, type, handle, description',
         // 'hideAtCopy' => true,
         // 'prependAtCopy' => 'LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:ctrl.prependAtCopy.label',
         'useColumnsForDefaultValues' => 'type, sys_language_uid',

@@ -386,7 +386,7 @@ return [
             'endtime' => 'endtime',
             'fe_group' => 'fe_group'
         ],
-        'searchFields' => 'label, type, handle, street, street_number, postal_code, locality, description',
+        'searchFields' => 'uid, label, type, handle, street, street_number, postal_code, locality, description',
         // 'hideAtCopy' => true,
         // 'prependAtCopy' => 'LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:ctrl.prependAtCopy.label',
         'useColumnsForDefaultValues' => 'type, sys_language_uid',

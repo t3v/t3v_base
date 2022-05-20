@@ -282,9 +282,9 @@ return [
 
     'ctrl' => [
         'title' => $lll . 'tx_t3vbase_domain_model_email_address.ctrl.title',
-        'label' => 'label',
-        'label_alt' => 'address',
-        'label_alt_force' => 1,
+        'label' => 'address',
+        'label_alt' => 'label',
+        // 'label_alt_force' => 1,
         'type' => 'type',
         // 'descriptionColumn' => 'description',
         // 'typeicon_column' => 'type',
@@ -310,7 +310,7 @@ return [
             'endtime' => 'endtime',
             'fe_group' => 'fe_group'
         ],
-        'searchFields' => 'label, type, handle, address, description',
+        'searchFields' => 'uid, label, type, handle, address, description',
         // 'hideAtCopy' => true,
         // 'prependAtCopy' => 'LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:ctrl.prependAtCopy.label',
         'useColumnsForDefaultValues' => 'type, sys_language_uid',
