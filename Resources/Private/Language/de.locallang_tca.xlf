@@ -97,11 +97,6 @@
         <target>Name</target>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_country.columns.name.config.default">
-        <source>Country</source>
-        <target>Land</target>
-      </trans-unit>
-
       <trans-unit id="tx_t3vbase_domain_model_country.columns.label.label">
         <source>Label</source>
         <target>Beschriftung</target>
@@ -149,11 +144,6 @@
         <target>Name</target>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_country_group.columns.name.config.default">
-        <source>Country group</source>
-        <target>Ländergruppe</target>
-      </trans-unit>
-
       <trans-unit id="tx_t3vbase_domain_model_country_group.columns.label.label">
         <source>Label</source>
         <target>Beschriftung</target>
@@ -194,11 +184,6 @@
       <trans-unit id="tx_t3vbase_domain_model_department.columns.name.label">
         <source>Name</source>
         <target>Name</target>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.columns.name.config.default">
-        <source>Department</source>
-        <target>Abteilung</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vbase_domain_model_department.columns.label.label">
@@ -275,11 +260,6 @@
         <target>Name</target>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_format.columns.name.config.default">
-        <source>Format</source>
-        <target>Formatierung</target>
-      </trans-unit>
-
       <trans-unit id="tx_t3vbase_domain_model_format.columns.label.label">
         <source>Label</source>
         <target>Beschriftung</target>
@@ -310,7 +290,7 @@
         <target>Formatierung</target>
       </trans-unit>
 
-      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_email_address` ‐‐‐ -->
+      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_phone_number` ‐‐‐ -->
 
       <trans-unit id="tx_t3vbase_domain_model_phone_number.columns.label.label">
         <source>Label</source>
@@ -367,16 +347,68 @@
         <target>Telefonnummer</target>
       </trans-unit>
 
+      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_property` ‐‐‐ -->
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.name.label">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.label.label">
+        <source>Label</source>
+        <target>Beschriftung</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.type.label">
+        <source>Type</source>
+        <target>Typ</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.type.config.items.default.label">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.type.config.items.text.label">
+        <source>Text</source>
+        <target>Text</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.type.config.items.richText.label">
+        <source>Rich text</source>
+        <target>Reichhaltiger Text</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.handle.label">
+        <source>Handle</source>
+        <target>Kurzname</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.text.label">
+        <source>Text</source>
+        <target>Text</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.richText.label">
+        <source>Rich text</source>
+        <target>Reichhaltiger Text</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.description.label">
+        <source>Description</source>
+        <target>Beschreibung</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.ctrl.title">
+        <source>Property</source>
+        <target>Eigenschaft</target>
+      </trans-unit>
+
       <!-- ‐‐‐ Table `tx_t3vbase_domain_model_region` ‐‐‐ -->
 
       <trans-unit id="tx_t3vbase_domain_model_region.columns.name.label">
         <source>Name</source>
         <target>Name</target>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_region.columns.name.config.default">
-        <source>Region</source>
-        <target>Region</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vbase_domain_model_region.columns.label.label">
@@ -419,11 +451,6 @@
       <trans-unit id="tx_t3vbase_domain_model_style.columns.name.label">
         <source>Name</source>
         <target>Name</target>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.columns.name.config.default">
-        <source>Style</source>
-        <target>Stil</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vbase_domain_model_style.columns.label.label">
@@ -526,11 +553,6 @@
       <trans-unit id="tx_t3vbase_domain_model_theme.columns.name.label">
         <source>Name</source>
         <target>Name</target>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_theme.columns.name.config.default">
-        <source>Theme</source>
-        <target>Theme</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vbase_domain_model_theme.columns.label.label">

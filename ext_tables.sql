@@ -82,6 +82,18 @@ CREATE TABLE tx_t3vbase_domain_model_phone_number (
   sorting int(11) DEFAULT '0' NOT NULL
 );
 
+-- Table structure for table `tx_t3vbase_domain_model_property`:
+CREATE TABLE tx_t3vbase_domain_model_property (
+  name varchar(255) DEFAULT '' NOT NULL,
+  label varchar(255) DEFAULT '' NOT NULL,
+  type varchar(255) DEFAULT 'default' NOT NULL,
+  handle varchar(255) DEFAULT '' NOT NULL,
+  text text NOT NULL,
+  rich_text text NOT NULL,
+  description text NOT NULL,
+  sorting int(11) DEFAULT '0' NOT NULL
+);
+
 -- Table structure for table `tx_t3vbase_domain_model_region`:
 CREATE TABLE tx_t3vbase_domain_model_region (
   name varchar(255) DEFAULT '' NOT NULL,

@@ -80,10 +80,6 @@
         <source>Name</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_country.columns.name.config.default">
-        <source>Country</source>
-      </trans-unit>
-
       <trans-unit id="tx_t3vbase_domain_model_country.columns.label.label">
         <source>Label</source>
       </trans-unit>
@@ -122,10 +118,6 @@
         <source>Name</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_country_group.columns.name.config.default">
-        <source>Country group</source>
-      </trans-unit>
-
       <trans-unit id="tx_t3vbase_domain_model_country_group.columns.label.label">
         <source>Label</source>
       </trans-unit>
@@ -158,10 +150,6 @@
 
       <trans-unit id="tx_t3vbase_domain_model_department.columns.name.label">
         <source>Name</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.columns.name.config.default">
-        <source>Department</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vbase_domain_model_department.columns.label.label">
@@ -224,10 +212,6 @@
         <source>Name</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_format.columns.name.config.default">
-        <source>Format</source>
-      </trans-unit>
-
       <trans-unit id="tx_t3vbase_domain_model_format.columns.label.label">
         <source>Label</source>
       </trans-unit>
@@ -252,7 +236,7 @@
         <source>Format</source>
       </trans-unit>
 
-      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_email_address` ‐‐‐ -->
+      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_phone_number` ‐‐‐ -->
 
       <trans-unit id="tx_t3vbase_domain_model_phone_number.columns.label.label">
         <source>Label</source>
@@ -298,14 +282,56 @@
         <source>Phone number</source>
       </trans-unit>
 
+      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_property` ‐‐‐ -->
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.name.label">
+        <source>Name</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.label.label">
+        <source>Label</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.type.label">
+        <source>Type</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.type.config.items.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.type.config.items.text.label">
+        <source>Text</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.type.config.items.richText.label">
+        <source>Rich text</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.handle.label">
+        <source>Handle</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.text.label">
+        <source>Text</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.richText.label">
+        <source>Rich text</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.columns.description.label">
+        <source>Description</source>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vbase_domain_model_property.ctrl.title">
+        <source>Property</source>
+      </trans-unit>
+
       <!-- ‐‐‐ Table `tx_t3vbase_domain_model_region` ‐‐‐ -->
 
       <trans-unit id="tx_t3vbase_domain_model_region.columns.name.label">
         <source>Name</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_region.columns.name.config.default">
-        <source>Region</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vbase_domain_model_region.columns.label.label">
@@ -340,10 +366,6 @@
 
       <trans-unit id="tx_t3vbase_domain_model_style.columns.name.label">
         <source>Name</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_style.columns.name.config.default">
-        <source>Style</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vbase_domain_model_style.columns.label.label">
@@ -426,10 +448,6 @@
 
       <trans-unit id="tx_t3vbase_domain_model_theme.columns.name.label">
         <source>Name</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_theme.columns.name.config.default">
-        <source>Theme</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vbase_domain_model_theme.columns.label.label">

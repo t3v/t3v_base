@@ -23,6 +23,7 @@ defined('TYPO3_MODE') or die();
         'tx_t3vbase_domain_model_email_address',
         'tx_t3vbase_domain_model_format',
         'tx_t3vbase_domain_model_phone_number',
+        'tx_t3vbase_domain_model_property',
         'tx_t3vbase_domain_model_region',
         'tx_t3vbase_domain_model_style',
         'tx_t3vbase_domain_model_theme'

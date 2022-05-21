@@ -1,6 +1,6 @@
 <?php
 /**
- * The `tx_t3vbase_domain_model_department` TCA configuration.
+ * The `tx_t3vbase_domain_model_property` TCA configuration.
  *
  * @noinspection PhpFullyQualifiedNameUsageInspection
  */
@@ -20,7 +20,7 @@ return [
         // --- Custom columns ---
 
         'name' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_department.columns.name.label',
+            'label' => $lll . 'tx_t3vbase_domain_model_property.columns.name.label',
             'config' => [
                 'type' => 'input',
                 'max' => 255,
@@ -34,7 +34,7 @@ return [
         ],
 
         'label' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_department.columns.label.label',
+            'label' => $lll . 'tx_t3vbase_domain_model_property.columns.label.label',
             'config' => [
                 'type' => 'input',
                 'max' => 255,
@@ -48,22 +48,24 @@ return [
         ],
 
         'type' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_department.columns.type.label',
+            'label' => $lll . 'tx_t3vbase_domain_model_property.columns.type.label',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    [$lll . 'tx_t3vbase_domain_model_department.columns.type.config.items.default.label', 'default']
+                    [$lll . 'tx_t3vbase_domain_model_property.columns.type.config.items.default.label', 'default'],
+                    [$lll . 'tx_t3vbase_domain_model_property.columns.type.config.items.text.label', 'text'],
+                    [$lll . 'tx_t3vbase_domain_model_property.columns.type.config.items.richText.label', 'rich_text']
                 ],
                 'eval' => 'required, trim',
-                'default' => 'default'
+                'default' => 'text'
             ],
             'l10n_mode' => 'exclude',
             'exclude' => true
         ],
 
         'handle' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_department.columns.handle.label',
+            'label' => $lll . 'tx_t3vbase_domain_model_property.columns.handle.label',
             'config' => [
                 'type' => 'slug',
                 'generatorOptions' => [
@@ -82,8 +84,36 @@ return [
             'exclude' => true
         ],
 
+        'text' => [
+            'label' => $lll . 'tx_t3vbase_domain_model_property.columns.text.label',
+            'config' => [
+                'type' => 'text',
+                'eval' => 'trim',
+                'default' => '',
+                'behaviour' => [
+                    'allowLanguageSynchronization' => true
+                ]
+            ],
+            'exclude' => true
+        ],
+
+        'rich_text' => [
+            'label' => $lll . 'tx_t3vbase_domain_model_property.columns.richText.label',
+            'config' => [
+                'type' => 'text',
+                'enableRichtext' => true,
+                // 'richtextConfiguration' => 'default',
+                'eval' => 'trim',
+                'default' => '',
+                'behaviour' => [
+                    'allowLanguageSynchronization' => true
+                ]
+            ],
+            'exclude' => true
+        ],
+
         'description' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_department.columns.description.label',
+            'label' => $lll . 'tx_t3vbase_domain_model_property.columns.description.label',
             'config' => [
                 'type' => 'text',
                 'enableRichtext' => true,
@@ -141,8 +171,8 @@ return [
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_t3vbase_domain_model_department',
-                'foreign_table_where' => 'AND tx_t3vbase_domain_model_department.pid=###CURRENT_PID### AND tx_t3vbase_domain_model_department.sys_language_uid IN (-1,0)',
+                'foreign_table' => 'tx_t3vbase_domain_model_property',
+                'foreign_table_where' => 'AND tx_t3vbase_domain_model_property.pid=###CURRENT_PID### AND tx_t3vbase_domain_model_property.sys_language_uid IN (-1,0)',
                 'items' => [
                     ['', 0],
                 ],
@@ -271,7 +301,7 @@ return [
     // === Ctrl ===
 
     'ctrl' => [
-        'title' => $lll . 'tx_t3vbase_domain_model_department.ctrl.title',
+        'title' => $lll . 'tx_t3vbase_domain_model_property.ctrl.title',
         'label' => 'name',
         'label_alt' => 'label',
         // 'label_alt_force' => 1,
@@ -282,7 +312,7 @@ return [
         //     'default' => 'mimetypes-x-content-text'
         // ],
         // 'thumbnail' => 'thumbnail',
-        'iconfile' => "$iconsFolder/TCA/Department.svg",
+        'iconfile' => "${iconsFolder}/TCA/Property.svg",
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
         'transOrigDiffSourceField' => 'l10n_diffsource',
@@ -300,7 +330,7 @@ return [
             'endtime' => 'endtime',
             'fe_group' => 'fe_group'
         ],
-        'searchFields' => 'uid, name, label, type, handle, description',
+        'searchFields' => 'uid, name, label, type, handle, text, rich_text, description',
         // 'hideAtCopy' => true,
         // 'prependAtCopy' => 'LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:ctrl.prependAtCopy.label',
         'useColumnsForDefaultValues' => 'type, sys_language_uid',
@@ -320,7 +350,33 @@ return [
     'types' => [
         0 => [
             'showitem' => '
-                --palette--;;general,
+                --palette--;;text,
+                --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.appearance.label,
+                --palette--;;appearance,
+                --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.language.label,
+                --palette--;;language,
+                --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.access.label,
+                --palette--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:palettes.visibility.label;visibility,
+                --palette--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:palettes.access.label;access
+            '
+        ],
+
+        'text' => [
+            'showitem' => '
+                --palette--;;text,
+                --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.appearance.label,
+                --palette--;;appearance,
+                --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.language.label,
+                --palette--;;language,
+                --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.access.label,
+                --palette--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:palettes.visibility.label;visibility,
+                --palette--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:palettes.access.label;access
+            '
+        ],
+
+        'rich_text' => [
+            'showitem' => '
+                --palette--;;rich_text,
                 --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.appearance.label,
                 --palette--;;appearance,
                 --div--;LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:tabs.language.label,
@@ -335,12 +391,25 @@ return [
     // === Palettes ===
 
     'palettes' => [
-        'general' => [
+        'text' => [
             'showitem' => '
                 name, --linebreak--,
                 label, --linebreak--,
                 type, --linebreak--,
                 handle, --linebreak--,
+                text, --linebreak--,
+                description
+            ',
+            'canNotCollapse' => true
+        ],
+
+        'rich_text' => [
+            'showitem' => '
+                name, --linebreak--,
+                label, --linebreak--,
+                type, --linebreak--,
+                handle, --linebreak--,
+                rich_text, --linebreak--,
                 description
             ',
             'canNotCollapse' => true

@@ -50,6 +50,12 @@ config {
           }
         }
 
+        T3v\T3vBase\Domain\Model\Property {
+          mapping {
+            tableName = tx_t3vbase_domain_model_property
+          }
+        }
+
         T3v\T3vBase\Domain\Model\Region {
           mapping {
             tableName = tx_t3vbase_domain_model_region

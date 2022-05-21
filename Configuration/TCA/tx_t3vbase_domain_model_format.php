@@ -53,7 +53,7 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    [$lll . 'tx_t3vbase_domain_model_format.columns.type.config.items.default', 'default']
+                    [$lll . 'tx_t3vbase_domain_model_format.columns.type.config.items.default.label', 'default']
                 ],
                 'eval' => 'required, trim',
                 'default' => 'default'
