@@ -97,8 +97,8 @@ return [
             'exclude' => true
         ],
 
-        'postal_code' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_address.columns.postalCode.label',
+        'postcode' => [
+            'label' => $lll . 'tx_t3vbase_domain_model_address.columns.postcode.label',
             'config' => [
                 'type' => 'input',
                 'max' => 10,
@@ -368,7 +368,7 @@ return [
         //     'default' => 'mimetypes-x-content-text'
         // ],
         // 'thumbnail' => 'thumbnail',
-        'iconfile' => "$iconsFolder/TCA/PostalAddress.svg",
+        'iconfile' => "$iconsFolder/TCA/Address.svg",
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
         'transOrigDiffSourceField' => 'l10n_diffsource',
@@ -386,7 +386,7 @@ return [
             'endtime' => 'endtime',
             'fe_group' => 'fe_group'
         ],
-        'searchFields' => 'uid, label, type, handle, street, street_number, postal_code, locality, description',
+        'searchFields' => 'uid, label, type, handle, street, street_number, postcode, locality, description',
         // 'hideAtCopy' => true,
         // 'prependAtCopy' => 'LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:ctrl.prependAtCopy.label',
         'useColumnsForDefaultValues' => 'type, sys_language_uid',
@@ -427,7 +427,7 @@ return [
                 type, --linebreak--,
                 handle, --linebreak--,
                 street, street_number, --linebreak--,
-                postal_code, locality, --linebreak--,
+                postcode, locality, --linebreak--,
                 region, --linebreak--,
                 country, --linebreak--,
                 description

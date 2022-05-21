@@ -31,8 +31,8 @@
         <target>Die Straßennummer der Adresse.</target>
       </trans-unit>
 
-      <trans-unit id="postal_code.description">
-        <source>The postal Code of the address.</source>
+      <trans-unit id="postcode.description">
+        <source>The postcode of the address.</source>
         <target>Die Postleitzahl der Adresse.</target>
       </trans-unit>
 

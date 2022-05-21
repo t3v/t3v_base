@@ -37,11 +37,11 @@ class Address extends BaseModel
     protected $streetNumber;
 
     /**
-     * The address's postal code.
+     * The address's postcode.
      *
      * @var string
      */
-    protected $postalCode;
+    protected $postcode;
 
     /**
      * The address's locality.
@@ -164,47 +164,23 @@ class Address extends BaseModel
     }
 
     /**
-     * Gets the address's postal code.
+     * Gets the address's postcode.
      *
-     * @return string|null The address's postal code
+     * @return string|null The address's postcode
      */
-    public function getPostalCode(): ?string
+    public function getPostcode(): ?string
     {
-        return $this->postalCode;
+        return $this->postcode;
     }
 
     /**
-     * Gets the address's post code.
+     * Sets the address's postcode.
      *
-     * Alias for the `getPostalCode` function.
-     *
-     * @return string|null The address's post code
+     * @param string $postcode The address's postcode
      */
-    public function getPostCode(): ?string
+    public function setPostcode(string $postcode): void
     {
-        return $this->getPostalCode();
-    }
-
-    /**
-     * Sets the address's postal code.
-     *
-     * @param string $postalCode The address's postal code
-     */
-    public function setPostalCode(string $postalCode): void
-    {
-        $this->postalCode = $postalCode;
-    }
-
-    /**
-     * Sets the address's post code.
-     *
-     * Alias for the `setPostalCode` function.
-     *
-     * @param string $postCode The address's post code
-     */
-    public function setPostCode(string $postCode): void
-    {
-        $this->setPostalCode($postCode);
+        $this->postcode = $postcode;
     }
 
     /**
@@ -218,15 +194,13 @@ class Address extends BaseModel
     }
 
     /**
-     * Gets the address's city.
+     * Sets the address's locality.
      *
-     * Alias for the `getLocality` function.
-     *
-     * @return string|null The address's city
+     * @param string $locality The address's locality
      */
-    public function getCity(): ?string
+    public function setLocality(string $locality): void
     {
-        return $this->getLocality();
+        $this->locality = $locality;
     }
 
     /**
@@ -242,13 +216,27 @@ class Address extends BaseModel
     }
 
     /**
-     * Sets the address's locality.
+     * Sets the address's address locality.
      *
-     * @param string $locality The address's locality
+     * Alias for the `setLocality` function.
+     *
+     * @param string $addressLocality The address's address locality
      */
-    public function setLocality(string $locality): void
+    public function setAddressLocality(string $addressLocality): void
     {
-        $this->locality = $locality;
+        $this->setLocality($addressLocality);
+    }
+
+    /**
+     * Gets the address's city.
+     *
+     * Alias for the `getLocality` function.
+     *
+     * @return string|null The address's city
+     */
+    public function getCity(): ?string
+    {
+        return $this->getLocality();
     }
 
     /**
@@ -261,18 +249,6 @@ class Address extends BaseModel
     public function setCity(string $city): void
     {
         $this->setLocality($city);
-    }
-
-    /**
-     * Sets the address's address locality.
-     *
-     * Alias for the `setLocality` function.
-     *
-     * @param string $addressLocality The address's address locality
-     */
-    public function setAddressLocality(string $addressLocality): void
-    {
-        $this->setLocality($addressLocality);
     }
 
     /**

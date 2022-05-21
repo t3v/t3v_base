@@ -60,8 +60,8 @@
         <target>Hausnummer</target>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_address.columns.postalCode.label">
-        <source>Postal code</source>
+      <trans-unit id="tx_t3vbase_domain_model_address.columns.postcode.label">
+        <source>Postcode</source>
         <target>Postleitzahl</target>
       </trans-unit>
 

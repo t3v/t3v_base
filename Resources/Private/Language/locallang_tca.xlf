@@ -50,8 +50,8 @@
         <source>Street number</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vbase_domain_model_address.columns.postalCode.label">
-        <source>Postal code</source>
+      <trans-unit id="tx_t3vbase_domain_model_address.columns.postcode.label">
+        <source>Postcode</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vbase_domain_model_address.columns.locality.label">
