@@ -15,45 +15,52 @@ Overview
 * Label
 * Link
 * Logo
-* Search Bar
+* Search bar
 * Spacer
 
 ### Grid Elements
 
 #### Body
 
-* Header Grid Element
-* Section Grid Element
-* Footer Grid Element
+* Header grid element
+* Section grid element
+* Footer grid element
 
 #### Layout
 
-* Column Layout Grid Element
-* Flexbox Grid Element
-* Cascading Layout Grid Element
-* Container Grid Element
-* Block Grid Element
+* Column layout grid element
+* Flexbox grid element
+* Cascading layout grid element
+* Container grid element
+* Block grid element
 
 #### Formatting
 
-* Formatting Grid Element
+* Formatting grid element
 
 #### Composition
 
-* Bar Grid Element
-* Flyout Grid Element
-* Modal Grid Element
+* Bar grid element
+* Flyout grid element
+* Modal grid element
 
 #### Misc
 
-* Conditionally Grid Element
-* Viewport Grid Element
+* Conditionally grid element
+* Viewport grid element
 
 ### Models
 
-* Format Model
-* Style Model
-* Theme Model
+* Address model
+* Country model
+* Country group model
+* Email address model
+* Format model
+* Phone number model
+* Property model
+* Region model
+* Style model
+* Theme model
 
 Dependencies
 ------------
