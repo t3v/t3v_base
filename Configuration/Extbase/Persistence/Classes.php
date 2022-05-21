@@ -17,9 +17,6 @@ return [
     \T3v\T3vBase\Domain\Model\CountryGroup::class => [
         'tableName' => 'tx_t3vbase_domain_model_country_group'
     ],
-    \T3v\T3vBase\Domain\Model\Department::class => [
-        'tableName' => 'tx_t3vbase_domain_model_department'
-    ],
     \T3v\T3vBase\Domain\Model\EmailAddress::class => [
         'tableName' => 'tx_t3vbase_domain_model_email_address'
     ],

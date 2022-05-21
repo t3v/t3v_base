@@ -41,16 +41,6 @@ CREATE TABLE tx_t3vbase_domain_model_country_group (
   sorting int(11) DEFAULT '0' NOT NULL
 );
 
--- Table structure for table `tx_t3vbase_domain_model_department`:
-CREATE TABLE tx_t3vbase_domain_model_department (
-  name varchar(255) DEFAULT '' NOT NULL,
-  label varchar(255) DEFAULT '' NOT NULL,
-  type varchar(255) DEFAULT 'default' NOT NULL,
-  handle varchar(255) DEFAULT '' NOT NULL,
-  description text NOT NULL,
-  sorting int(11) DEFAULT '0' NOT NULL
-);
-
 -- Table structure for table `tx_t3vbase_domain_model_email_address`:
 CREATE TABLE tx_t3vbase_domain_model_email_address (
   label varchar(255) DEFAULT '' NOT NULL,

@@ -146,36 +146,6 @@
         <source>Country group</source>
       </trans-unit>
 
-      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_department` ‐‐‐ -->
-
-      <trans-unit id="tx_t3vbase_domain_model_department.columns.name.label">
-        <source>Name</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.columns.label.label">
-        <source>Label</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.columns.type.label">
-        <source>Type</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.columns.type.config.items.default.label">
-        <source>Default</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.columns.handle.label">
-        <source>Handle</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.columns.description.label">
-        <source>Description</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.ctrl.title">
-        <source>Department</source>
-      </trans-unit>
-
       <!-- ‐‐‐ Table `tx_t3vbase_domain_model_email_address` ‐‐‐ -->
 
       <trans-unit id="tx_t3vbase_domain_model_email_address.columns.label.label">

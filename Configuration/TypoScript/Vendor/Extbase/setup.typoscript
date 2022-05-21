@@ -26,12 +26,6 @@ config {
           }
         }
 
-        T3v\T3vBase\Domain\Model\Department {
-          mapping {
-            tableName = tx_t3vbase_domain_model_department
-          }
-        }
-
         T3v\T3vBase\Domain\Model\EmailAddress {
           mapping {
             tableName = tx_t3vbase_domain_model_email_address

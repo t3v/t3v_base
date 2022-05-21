@@ -179,43 +179,6 @@
         <target>Ländergruppe</target>
       </trans-unit>
 
-      <!-- ‐‐‐ Table `tx_t3vbase_domain_model_department` ‐‐‐ -->
-
-      <trans-unit id="tx_t3vbase_domain_model_department.columns.name.label">
-        <source>Name</source>
-        <target>Name</target>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.columns.label.label">
-        <source>Label</source>
-        <target>Beschriftung</target>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.columns.type.label">
-        <source>Type</source>
-        <target>Typ</target>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.columns.type.config.items.default.label">
-        <source>Default</source>
-        <target>Standard</target>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.columns.handle.label">
-        <source>Handle</source>
-        <target>Kurzname</target>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.columns.description.label">
-        <source>Description</source>
-        <target>Beschreibung</target>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vbase_domain_model_department.ctrl.title">
-        <source>Department</source>
-        <target>Abteilung</target>
-      </trans-unit>
-
       <!-- ‐‐‐ Table `tx_t3vbase_domain_model_email_address` ‐‐‐ -->
 
       <trans-unit id="tx_t3vbase_domain_model_email_address.columns.label.label">

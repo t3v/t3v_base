@@ -19,7 +19,6 @@ defined('TYPO3_MODE') or die();
         'tx_t3vbase_domain_model_address',
         'tx_t3vbase_domain_model_country',
         'tx_t3vbase_domain_model_country_group',
-        'tx_t3vbase_domain_model_department',
         'tx_t3vbase_domain_model_email_address',
         'tx_t3vbase_domain_model_format',
         'tx_t3vbase_domain_model_phone_number',
