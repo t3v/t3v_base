@@ -7,7 +7,7 @@ use T3v\T3vCore\ViewHelpers\Helpers\ArgumentTypeHelper;
 /**
  * The BEM tag view helper class.
  *
- * @package T3v\T3vBase\ViewHelper\Renders
+ * @package T3v\T3vBase\ViewHelper\Render
  */
 class BemTagViewHelper extends TagViewHelper
 {
