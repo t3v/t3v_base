@@ -174,7 +174,7 @@ return [
                 'foreign_table' => 'tx_t3vbase_domain_model_property',
                 'foreign_table_where' => 'AND tx_t3vbase_domain_model_property.pid=###CURRENT_PID### AND tx_t3vbase_domain_model_property.sys_language_uid IN (-1,0)',
                 'items' => [
-                    ['', 0],
+                    ['', 0]
                 ],
                 'default' => 0
             ],

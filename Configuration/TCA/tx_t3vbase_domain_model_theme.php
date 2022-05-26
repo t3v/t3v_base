@@ -142,7 +142,7 @@ return [
                 'foreign_table' => 'tx_t3vbase_domain_model_theme',
                 'foreign_table_where' => 'AND tx_t3vbase_domain_model_theme.pid=###CURRENT_PID### AND tx_t3vbase_domain_model_theme.sys_language_uid IN (-1,0)',
                 'items' => [
-                    ['', 0],
+                    ['', 0]
                 ],
                 'default' => 0
             ],

@@ -127,36 +127,34 @@ return [
         'background_images' => [
             'label' => $lll . 'tx_t3vbase_domain_model_style.columns.backgroundImages.label',
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
-                'background_images',
+                'image',
                 [
                     'foreign_match_fields' => [
                         'fieldname' => 'background_images',
                         'tablenames' => 'tx_t3vbase_domain_model_style',
                         'table_local' => 'sys_file'
                     ],
-                    'minitems' => 0,
-                    'maxitems' => 10,
-                    'appearance' => [
-                        'collapseAll' => true,
-                        'expandSingle' => false,
-                        'createNewRelationLinkTitle' => $lll . 'tx_t3vbase_domain_model_style.columns.backgroundImages.config.appearance.createNewRelationLinkTitle',
-                        'showAllLocalizationLink' => true,
-                        'showPossibleLocalizationRecords' => true,
-                        'showRemovedLocalizationRecords' => true,
-                        'showSynchronizationLink' => true
-                    ],
-                    'behaviour' => [
-                        'allowLanguageSynchronization' => true,
-                        'disableMovingChildrenWithParent' => false,
-                        'enableCascadingDelete' => true
-                    ],
                     'overrideChildTca' => [
                         'types' => [
-                            \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-                                'showitem' => '--palette--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
-                             --palette--;;filePalette'
+                            \TYPO3\CMS\Core\Resource\AbstractFile::FILETYPE_UNKNOWN => [
+                                'showitem' => '
+                                    --palette--;;imageoverlayPalette,
+                                    --palette--;;filePalette
+                                '
+                            ],
+                            \TYPO3\CMS\Core\Resource\AbstractFile::FILETYPE_IMAGE => [
+                                'showitem' => '
+                                     --palette--;;imageoverlayPalette,
+                                     --palette--;;filePalette
+                                '
                             ]
                         ]
+                    ],
+                    // 'appearance' => [
+                    //     'createNewRelationLinkTitle' => $lll . 'tx_t3vbase_domain_model_style.columns.backgroundImages.config.appearance.createNewRelationLinkTitle'
+                    // ],
+                    'behaviour' => [
+                        'allowLanguageSynchronization' => true
                     ]
                 ],
                 $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
@@ -239,7 +237,7 @@ return [
                 'foreign_table' => 'tx_t3vbase_domain_model_style',
                 'foreign_table_where' => 'AND tx_t3vbase_domain_model_style.pid=###CURRENT_PID### AND tx_t3vbase_domain_model_style.sys_language_uid IN (-1,0)',
                 'items' => [
-                    ['', 0],
+                    ['', 0]
                 ],
                 'default' => 0
             ],
