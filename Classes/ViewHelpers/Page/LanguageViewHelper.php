@@ -5,6 +5,7 @@ namespace T3v\T3vBase\ViewHelpers\Page;
 
 use T3v\T3vCore\ViewHelpers\AbstractViewHelper;
 use T3v\T3vCore\ViewHelpers\Traits\LocalizationTrait;
+use TYPO3\CMS\Core\Context\Exception\AspectNotFoundException;
 
 /**
  * The language view helper class.
@@ -32,6 +33,7 @@ class LanguageViewHelper extends AbstractViewHelper
      * The view helper render function.
      *
      * @return string The language of the current page if available, otherwise the default one
+     * @throws AspectNotFoundException
      */
     public function render(): string
     {

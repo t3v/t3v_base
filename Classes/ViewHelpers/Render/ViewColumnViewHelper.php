@@ -4,7 +4,7 @@ namespace T3v\T3vBase\ViewHelpers\Render;
 use T3v\T3vCore\ViewHelpers\AbstractViewHelper;
 use T3v\T3vCore\ViewHelpers\Traits\LocalizationTrait;
 use T3v\T3vCore\ViewHelpers\Traits\SettingsTrait;
-use TYPO3\CMS\Extbase\Object\Exception;
+use TYPO3\CMS\Core\Context\Exception\AspectNotFoundException;
 
 /**
  * The view column view helper class.
@@ -39,7 +39,7 @@ class ViewColumnViewHelper extends AbstractViewHelper
      * The view helper render function.
      *
      * @return string The rendered grid element view children
-     * @throws Exception A generic object exception
+     * @throws AspectNotFoundException
      */
     public function render(): string
     {
@@ -94,7 +94,7 @@ class ViewColumnViewHelper extends AbstractViewHelper
      *
      * @param array $viewChildren The view children
      * @return array The filtered view children
-     * @throws Exception
+     * @throws AspectNotFoundException
      */
     protected function filterViewChildrenBySysLanguage(array $viewChildren): array
     {

@@ -5,6 +5,7 @@ namespace T3v\T3vBase\ViewHelpers\Format;
 
 use T3v\T3vCore\ViewHelpers\AbstractViewHelper;
 use T3v\T3vCore\ViewHelpers\Traits\LocalizationTrait;
+use TYPO3\CMS\Core\Context\Exception\AspectNotFoundException;
 
 /**
  * The file size view helper class.
@@ -66,6 +67,7 @@ class FileSizeViewHelper extends AbstractViewHelper
      * The view helper render function.
      *
      * @return string The formatted or human-readable file size
+     * @throws AspectNotFoundException
      */
     public function render(): string
     {
@@ -93,6 +95,7 @@ class FileSizeViewHelper extends AbstractViewHelper
      * Gets the decimal separator based on the current language.
      *
      * @return string The decimal separator
+     * @throws AspectNotFoundException
      */
     protected function getDecimalSeparator(): string
     {
@@ -109,6 +112,7 @@ class FileSizeViewHelper extends AbstractViewHelper
      * Gets the thousands separator based on the current language.
      *
      * @return string The thousands separator
+     * @throws AspectNotFoundException
      */
     protected function getThousandsSeparator(): string
     {
