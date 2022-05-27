@@ -311,7 +311,7 @@ return [
                     ['LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:shared.userGroups.label', '--div--']
                 ],
                 'exclusiveKeys' => '-1, -2',
-                'size' => 5,
+                'size' => 10,
                 'maxitems' => 20
             ],
             'exclude' => true
