@@ -2,14 +2,14 @@
       xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
   <f:if condition="{link}">
     <f:then>
-      <f:link.typolink parameter="{link}" class="{contentObject} content-object" title="{title}"
+      <f:link.typolink parameter="{link}" class="{signature} content-object" title="{title}"
                        additionalAttributes="{id: 'c{uid}', data-type: type, data-handle: handle, data-layout: layout}">
         {name}
       </f:link.typolink>
     </f:then>
 
     <f:else>
-      <v:tag name="{contentObject}" id="c{uid}" class="{contentObject} content-object"
+      <v:tag name="{signature}" id="c{uid}" class="{signature} content-object"
              additionalAttributes="{type: type, handle: handle, layout: layout}" hideIfEmpty="false" forceClosingTag="true" />
     </f:else>
   </f:if>

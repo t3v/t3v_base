@@ -1,9 +1,9 @@
 <html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
       xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
-  <v:tag id="c{uid}" name="{contentObject}" class="{contentObject} content-object"
+  <v:tag id="c{uid}" name="{signature}" class="{signature} content-object"
          additionalAttributes="{type: type, handle: handle, layout: layout}" hideIfEmpty="false" forceClosingTag="true">
     <f:if condition="{icon.src}">
-      <f:image src="{icon.src}" treatIdAsReference="true" class="{contentObject}__source" title="{title}" alt="{alt}"
+      <f:image src="{icon.src}" treatIdAsReference="true" class="{signature}__source" title="{title}" alt="{alt}"
                data="{inline: icon.inline, colorize: icon.colorize}" />
     </f:if>
   </v:tag>

@@ -1,17 +1,17 @@
-<html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-      xmlns:t3v="http://typo3.org/ns/T3v/T3vCore/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
-  <v:variable.set name="contentObject" value="t3v-base-logo" />
-  <v:variable.set name="uid" value="{v:variable.convert(value: data.uid, type: 'integer', default: 0)}" />
-  <v:variable.set name="type" value="{v:variable.convert(value: settings.type, type: 'string', default: 'default')}" />
-  <v:variable.set name="handle" value="{v:variable.convert(value: settings.handle, type: 'string', default: 'none')}" />
-  <v:variable.set name="layout" value="{v:variable.convert(value: settings.layout, type: 'string', default: 'default')}" />
-  <v:variable.set name="layout" value="{v:format.replace(content: layout, substring: ',', replacement: ' ')}" />
-  <v:variable.set name="name" value="{v:variable.convert(value: settings.name, type: 'string')}" />
-  <v:variable.set name="title" value="{v:variable.convert(value: settings.title, type: 'string')}" />
-  <v:variable.set name="link" value="{v:variable.convert(value: settings.link, type: 'string')}" />
+<html data-namespace-typo3-fluid="true" lang="en" xmlns:b="http://typo3.org/ns/T3v/T3vBase/ViewHelpers"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+  <b:variable name="signature" value="t3v-base-logo" />
+  <b:variable name="uid" value="{b:variable.convert(value: data.uid, type: 'integer', default: 0)}" />
+  <b:variable name="type" value="{b:variable.convert(value: settings.type, type: 'string', default: 'default')}" />
+  <b:variable name="handle" value="{b:variable.convert(value: settings.handle, type: 'string', default: 'none')}" />
+  <b:variable name="layout" value="{b:variable.convert(value: settings.layout, type: 'string', default: 'default')}" />
+  <b:variable name="layout" value="{b:format.replace(content: layout, substring: ',', replacement: ' ')}" />
+  <b:variable name="name" value="{b:variable.convert(value: settings.name, type: 'string')}" />
+  <b:variable name="title" value="{b:variable.convert(value: settings.title, type: 'string')}" />
+  <b:variable name="link" value="{b:variable.convert(value: settings.link, type: 'string')}" />
 
   <f:if condition="{handle}">
-    <v:variable.set name="handle" value="{t3v:handle(input: handle)}" />
+    <b:variable name="handle" value="{b:handle(input: handle)}" />
   </f:if>
 
   <f:switch expression="{type}">

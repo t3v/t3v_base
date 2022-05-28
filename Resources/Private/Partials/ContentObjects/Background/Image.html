@@ -3,7 +3,7 @@
   <f:if condition="{backgroundImage}">
     <f:if condition="{link}">
       <f:then>
-        <f:link.typolink parameter="{link}" class="{contentObject} content-object" title="{title}"
+        <f:link.typolink parameter="{link}" class="{signature} content-object" title="{title}"
                          additionalAttributes="{id: 'c{uid}', data-type: type, data-handle: handle, data-layout: layout}">
           <f:render section="Image" arguments="{_all}" />
         </f:link.typolink>

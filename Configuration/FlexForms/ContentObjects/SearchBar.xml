@@ -176,14 +176,10 @@
                 <items type="array">
                   <numIndex index="0" type="array">
                     <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.theme.default.label</numIndex>
-                    <numIndex index="1"></numIndex>
+                    <numIndex index="1">0</numIndex>
                   </numIndex>
                 </items>
-                <fieldWizard type="array">
-                  <selectIcons type="array">
-                    <disabled>false</disabled>
-                  </selectIcons>
-                </fieldWizard>
+                <default>0</default>
               </config>
             </TCEforms>
           </settings.theme>

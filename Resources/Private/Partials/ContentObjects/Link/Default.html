@@ -11,7 +11,7 @@
   </f:if>
 
   <f:section name="PageLink">
-    <f:link.page pageUid="{page}" id="c{uid}" class="{contentObject} content-object" title="{title}"
+    <f:link.page pageUid="{page}" id="c{uid}" class="{signature} content-object" title="{title}"
                  data="{type: type, handle: handle, layout: layout}">
       {name}
     </f:link.page>
@@ -22,14 +22,14 @@
 
     <f:if condition="{firstCharacter} == '#'">
       <f:then>
-        <v:tag name="a" id="c{uid}" class="{contentObject} content-object" title="{title}" additionalAttributes="{href: '#'}"
+        <v:tag name="a" id="c{uid}" class="{signature} content-object" title="{title}" additionalAttributes="{href: '#'}"
                data="{type: type, handle: handle, layout: layout}" hideIfEmpty="true">
           {name}
         </v:tag>
       </f:then>
 
       <f:else>
-        <f:link.typolink parameter="{link}" class="{contentObject} content-object" title="{title}"
+        <f:link.typolink parameter="{link}" class="{signature} content-object" title="{title}"
                          additionalAttributes="{id: 'c{uid}' , data-type: type, data-handle: handle, data-layout: layout}">
           {name}
         </f:link.typolink>

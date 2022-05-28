@@ -184,11 +184,6 @@
                 <numIndex index="1"></numIndex>
               </numIndex>
             </items>
-            <fieldWizard type="array">
-              <selectIcons type="array">
-                <disabled>false</disabled>
-              </selectIcons>
-            </fieldWizard>
           </config>
         </TCEforms>
       </theme>

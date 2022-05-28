@@ -30,6 +30,7 @@
                     <numIndex index="1">image</numIndex>
                   </numIndex>
                 </items>
+                <eval>required, trim</eval>
                 <default>default</default>
               </config>
             </TCEforms>
@@ -71,9 +72,10 @@
               <config type="array">
                 <type>input</type>
                 <renderType>colorpicker</renderType>
-                <size>10</size>
                 <max>7</max>
+                <size>10</size>
                 <eval>trim</eval>
+                <default></default>
               </config>
             </TCEforms>
           </settings.backgroundColor>
@@ -146,8 +148,8 @@
               <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundSourceSet.label</label>
               <config type="array">
                 <type>input</type>
-                <size>10</size>
                 <max>255</max>
+                <size>10</size>
                 <eval>trim</eval>
                 <default>1x, 2x</default>
               </config>
@@ -211,6 +213,7 @@
                     <numIndex index="1">center bottom</numIndex>
                   </numIndex>
                 </items>
+                <eval>trim</eval>
                 <default></default>
               </config>
             </TCEforms>
@@ -258,6 +261,7 @@
                     <numIndex index="1">round</numIndex>
                   </numIndex>
                 </items>
+                <eval>trim</eval>
                 <default></default>
               </config>
             </TCEforms>
@@ -290,6 +294,7 @@
                     <numIndex index="1">contain</numIndex>
                   </numIndex>
                 </items>
+                <eval>trim</eval>
                 <default></default>
               </config>
             </TCEforms>
@@ -300,8 +305,8 @@
               <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundHeight.label</label>
               <config type="array">
                 <type>input</type>
-                <size>10</size>
                 <max>4</max>
+                <size>10</size>
                 <eval>num, trim</eval>
                 <default></default>
               </config>
@@ -313,8 +318,8 @@
               <label>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundWidth.label</label>
               <config type="array">
                 <type>input</type>
-                <size>10</size>
                 <max>4</max>
+                <size>10</size>
                 <eval>num, trim</eval>
                 <default></default>
               </config>
@@ -335,6 +340,9 @@
                   </numIndex>
                   -->
                 </items>
+                <minitems>1</minitems>
+                <maxitems>4</maxitems>
+                <eval>lower, required, trim</eval>
                 <default>default</default>
               </config>
             </TCEforms>
@@ -351,14 +359,10 @@
                 <items type="array">
                   <numIndex index="0" type="array">
                     <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.theme.default.label</numIndex>
-                    <numIndex index="1"></numIndex>
+                    <numIndex index="1">0</numIndex>
                   </numIndex>
                 </items>
-                <fieldWizard type="array">
-                  <selectIcons type="array">
-                    <disabled>false</disabled>
-                  </selectIcons>
-                </fieldWizard>
+                <default>0</default>
               </config>
             </TCEforms>
           </settings.theme>

@@ -1,30 +1,30 @@
-<html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-      xmlns:t3v="http://typo3.org/ns/T3v/T3vCore/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
-  <v:variable.set name="contentObject" value="t3v-base-background" />
-  <v:variable.set name="uid" value="{v:variable.convert(value: data.uid, type: 'integer', default: 0)}" />
-  <v:variable.set name="name" value="{v:variable.convert(value: settings.name, type: 'string')}" />
-  <v:variable.set name="title" value="{v:variable.convert(value: settings.title, type: 'string')}" />
-  <v:variable.set name="alt" value="{v:variable.convert(value: settings.alt, type: 'string')}" />
-  <v:variable.set name="link" value="{v:variable.convert(value: settings.link, type: 'string')}" />
-  <v:variable.set name="type" value="{v:variable.convert(value: settings.type, type: 'string', default: 'default')}" />
-  <v:variable.set name="handle" value="{v:variable.convert(value: settings.handle, type: 'string', default: 'none')}" />
-  <v:variable.set name="layout" value="{v:variable.convert(value: settings.layout, type: 'string', default: 'default')}" />
-  <v:variable.set name="layout" value="{v:format.replace(content: layout, substring: ',', replacement: ' ')}" />
-  <v:variable.set name="backgroundColor" value="{v:variable.convert(value: settings.backgroundColor, type: 'string')}" />
-  <v:variable.set name="backgroundImages" value="{v:variable.convert(value: settings.backgroundImages, type: 'array')}" />
-  <v:variable.set name="backgroundSourceSet" value="{v:variable.convert(value: settings.backgroundSourceSet, type: 'string', default: '1x, 2x')}" />
-  <v:variable.set name="backgroundPosition" value="{v:variable.convert(value: settings.backgroundPosition, type: 'string')}" />
-  <v:variable.set name="backgroundRepeat" value="{v:variable.convert(value: settings.backgroundRepeat, type: 'string')}" />
-  <v:variable.set name="backgroundSize" value="{v:variable.convert(value: settings.backgroundSize, type: 'string')}" />
-  <v:variable.set name="backgroundHeight" value="{v:variable.convert(value: settings.backgroundHeight, type: 'integer', default: 0)}" />
-  <v:variable.set name="backgroundWidth" value="{v:variable.convert(value: settings.backgroundWidth, type: 'integer', default: 0)}" />
+<html data-namespace-typo3-fluid="true" lang="en" xmlns:b="http://typo3.org/ns/T3v/T3vBase/ViewHelpers"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+  <b:variable name="signature" value="t3v-base-background" />
+  <b:variable name="uid" value="{b:variable.convert(value: data.uid, type: 'integer', default: 0)}" />
+  <b:variable name="name" value="{b:variable.convert(value: settings.name, type: 'string')}" />
+  <b:variable name="title" value="{b:variable.convert(value: settings.title, type: 'string')}" />
+  <b:variable name="alt" value="{b:variable.convert(value: settings.alt, type: 'string')}" />
+  <b:variable name="link" value="{b:variable.convert(value: settings.link, type: 'string')}" />
+  <b:variable name="type" value="{b:variable.convert(value: settings.type, type: 'string', default: 'default')}" />
+  <b:variable name="handle" value="{b:variable.convert(value: settings.handle, type: 'string', default: 'none')}" />
+  <b:variable name="layout" value="{b:variable.convert(value: settings.layout, type: 'string', default: 'default')}" />
+  <b:variable name="layout" value="{b:format.replace(content: layout, substring: ',', replacement: ' ')}" />
+  <b:variable name="backgroundColor" value="{b:variable.convert(value: settings.backgroundColor, type: 'string')}" />
+  <b:variable name="backgroundImages" value="{b:variable.convert(value: settings.backgroundImages, type: 'array')}" />
+  <b:variable name="backgroundSourceSet" value="{b:variable.convert(value: settings.backgroundSourceSet, type: 'string', default: '1x, 2x')}" />
+  <b:variable name="backgroundPosition" value="{b:variable.convert(value: settings.backgroundPosition, type: 'string')}" />
+  <b:variable name="backgroundRepeat" value="{b:variable.convert(value: settings.backgroundRepeat, type: 'string')}" />
+  <b:variable name="backgroundSize" value="{b:variable.convert(value: settings.backgroundSize, type: 'string')}" />
+  <b:variable name="backgroundHeight" value="{b:variable.convert(value: settings.backgroundHeight, type: 'integer', default: 0)}" />
+  <b:variable name="backgroundWidth" value="{b:variable.convert(value: settings.backgroundWidth, type: 'integer', default: 0)}" />
 
   <f:if condition="{handle}">
-    <v:variable.set name="handle" value="{t3v:handle(input: handle)}" />
+    <b:variable name="handle" value="{b:handle(input: handle)}" />
   </f:if>
 
   <f:if condition="{backgroundImages}">
-    <v:variable.set name="backgroundImage" value="{backgroundImages -> v:iterator.first()}" />
+    <b:variable name="backgroundImage" value="{backgroundImages -> v:iterator.first()}" />
   </f:if>
 
   <f:switch expression="{type}">

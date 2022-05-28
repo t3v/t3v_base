@@ -1,7 +1,7 @@
 <html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
       xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
   <f:if condition="{backgroundColor} || {backgroundImage} || {backgroundPosition} || {backgroundRepeat} || {backgroundSize} || {backgroundHeight} || {backgroundWidth}">
-    <v:asset.style name="{contentObject}-{uid}-css" fluid="true" movable="false" standalone="true">
+    <v:asset.style name="{signature}-{uid}-css" fluid="true" movable="false" standalone="true">
       #c<v:variable.get name="uid" /> {
         <f:if condition="{backgroundColor}">
           background-color: {backgroundColor};
