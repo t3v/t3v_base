@@ -87,12 +87,12 @@ return [
             'config' => [
                 'type' => 'input',
                 'max' => 10,
+                'size' => 10,
                 'eval' => 'trim',
                 'default' => '',
                 'behaviour' => [
                     'allowLanguageSynchronization' => true
-                ],
-                'size' => 10
+                ]
             ],
             'exclude' => true
         ],
@@ -102,12 +102,12 @@ return [
             'config' => [
                 'type' => 'input',
                 'max' => 10,
+                'size' => 10,
                 'eval' => 'trim',
                 'default' => '',
                 'behaviour' => [
                     'allowLanguageSynchronization' => true
-                ],
-                'size' => 10
+                ]
             ],
             'exclude' => true
         ],
@@ -304,8 +304,8 @@ return [
                     ['LLL:EXT:t3v_translations/Resources/Private/Language/locallang_tca.xlf:shared.userGroups.label', '--div--']
                 ],
                 'exclusiveKeys' => '-1, -2',
-                'size' => 10,
-                'maxitems' => 20
+                'maxitems' => 20,
+                'size' => 10
             ],
             'exclude' => true
         ],

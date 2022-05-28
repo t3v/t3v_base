@@ -138,8 +138,8 @@
       </trans-unit>
 
       <trans-unit id="contentObjects.spacer.description">
-        <source>Displays a spacer.</source>
-        <target>Zeigt einen Abstandhalter an.</target>
+        <source>Displays a spacer to separate elements from each other.</source>
+        <target>Zeigt einen Abstandhalter an, um Elemente voneinander zu trennen.</target>
       </trans-unit>
 
       <!-- === Grid Elements === -->
@@ -188,8 +188,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.1Column.description">
-        <source>Displays a column layout with one column.</source>
-        <target>Zeigt ein Spaltenlayout mit einer Spalte an.</target>
+        <source>Displays elements in a one column layout.</source>
+        <target>Zeigt Elemente in einem einspaltigen Layout an.</target>
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.1Column.rows.1.columns.1.name">
@@ -205,8 +205,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.2Column.description">
-        <source>Displays a column layout with two columns.</source>
-        <target>Zeigt ein Spaltenlayout mit zwei Spalten an.</target>
+        <source>Displays elements side by side in a two column layout.</source>
+        <target>Zeigt Elemente nebeneinander in einem zweispaltigen Layout an.</target>
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.2Column.rows.1.columns.1.name">
@@ -227,8 +227,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.3Column.description">
-        <source>Displays a column layout with three columns.</source>
-        <target>Zeigt ein Spaltenlayout mit drei Spalten an.</target>
+        <source>Displays elements side by side in a three column layout.</source>
+        <target>Zeigt Elemente nebeneinander in einem dreispaltigen Layout an.</target>
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.3Column.rows.1.columns.1.name">
@@ -254,8 +254,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.4Column.description">
-        <source>Displays a column layout with four columns.</source>
-        <target>Zeigt ein Spaltenlayout mit vier Spalten an.</target>
+        <source>Displays elements side by side in a four column layout.</source>
+        <target>Zeigt Elemente nebeneinander in einem vierspaltigen Layout an.</target>
       </trans-unit>
 
       <trans-unit id="gridElements.columnLayoutGridElement.4Column.rows.1.columns.1.name">
@@ -286,8 +286,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.conditionallyGridElement.description">
-        <source>Displays child elements conditionally.</source>
-        <target>Zeigt untergeordnete Elemente unter bestimmten Bedingungen an.</target>
+        <source>Displays elements conditionally.</source>
+        <target>Zeigt Elemente unter bestimmten Bedingungen an.</target>
       </trans-unit>
 
       <trans-unit id="gridElements.conditionallyGridElement.rows.1.columns.1.name">
@@ -308,8 +308,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.containerGridElement.description">
-        <source>Wraps child elements in a container.</source>
-        <target>Umschließt untergeordnete Elemente in einem Container.</target>
+        <source>Wraps elements in a container.</source>
+        <target>Umschließt Elemente in einem Container.</target>
       </trans-unit>
 
       <!-- Flexbox Grid Element -->
@@ -320,8 +320,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.flexboxGridElement.description">
-        <source>Displays child elements in a flexible manner.</source>
-        <target>Zeigt untergeordnete Elemente auf flexible Art und Weise an.</target>
+        <source>Displays elements in a flexible manner.</source>
+        <target>Zeigt Elemente auf flexible Art und Weise an.</target>
       </trans-unit>
 
       <!-- ‐‐‐ Flyout Grid Element ‐‐‐ -->
@@ -332,8 +332,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.flyoutGridElement.description">
-        <source>Displays child elements in a flyout.</source>
-        <target>Zeigt untergeordnete Elemente in einem Flyout an.</target>
+        <source>Displays elements in a flyout.</source>
+        <target>Zeigt Elemente in einem Flyout an.</target>
       </trans-unit>
 
       <!-- ‐‐‐ Footer Grid Element ‐‐‐ -->
@@ -344,8 +344,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.footerGridElement.description">
-        <source>Displays child elements in a footer.</source>
-        <target>Zeigt untergeordnete Elemente in einer Fußzeile an.</target>
+        <source>Displays elements in a footer.</source>
+        <target>Zeigt Elemente in einer Fußzeile an.</target>
       </trans-unit>
 
       <!-- ‐‐‐ Formatting Grid Element ‐‐‐ -->
@@ -356,8 +356,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.formattingGridElement.description">
-        <source>Formats child elements.</source>
-        <target>Formatiert untergeordnete Elemente.</target>
+        <source>Formats elements.</source>
+        <target>Formatiert Elemente.</target>
       </trans-unit>
 
       <!-- ‐‐‐ Header Grid Element ‐‐‐ -->
@@ -368,8 +368,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.headerGridElement.description">
-        <source>Displays child elements in a header.</source>
-        <target>Zeigt untergeordnete Elemente in einer Kopfzeile an.</target>
+        <source>Displays elements in a header.</source>
+        <target>Zeigt Elemente in einer Kopfzeile an.</target>
       </trans-unit>
 
       <!-- ‐‐‐ Modal Grid Element ‐‐‐ -->
@@ -380,8 +380,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.modalGridElement.description">
-        <source>Displays child elements in a modal.</source>
-        <target>Zeigt untergeordnete Elemente in einem Modal an.</target>
+        <source>Displays elements in a modal.</source>
+        <target>Zeigt Elemente in einem Modal an.</target>
       </trans-unit>
 
       <!--  ‐‐‐Section Grid Element ‐‐‐ -->
@@ -392,8 +392,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.sectionGridElement.description">
-        <source>Displays child elements in a section.</source>
-        <target>Zeigt untergeordnete Elemente in einer Sektion an.</target>
+        <source>Displays elements in a section.</source>
+        <target>Zeigt Elemente in einer Sektion an.</target>
       </trans-unit>
 
       <!--  ‐‐‐Viewport Grid Element ‐‐‐ -->
@@ -404,8 +404,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.viewportGridElement.description">
-        <source>Displays child elements in a viewport.</source>
-        <target>Zeigt untergeordnete Elemente in einem Darstellungsbereich an.</target>
+        <source>Display elements under certain conditions in a viewport.</source>
+        <source>Zeigt Elemente unter bestimmten Bedingungen in einem Darstellungsbereich an.</source>
       </trans-unit>
 
       <!-- ‐‐‐ Shared ‐‐‐ -->
