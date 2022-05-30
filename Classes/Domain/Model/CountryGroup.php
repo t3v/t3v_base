@@ -38,9 +38,8 @@ class CountryGroup extends BaseModel
     /**
      * The country group's countries.
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\T3v\T3vBase\Domain\Model\Country>
+     * @var ObjectStorage<Country>
      * @Extbase\ORM\Lazy
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     protected $countries;
 
@@ -93,7 +92,7 @@ class CountryGroup extends BaseModel
      */
     public function getLabel(): ?string
     {
-        return $this->label ?? $this->name;
+        return empty($this->label) ? $this->name : $this->label;
     }
 
     /**

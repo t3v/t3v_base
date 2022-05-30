@@ -53,16 +53,14 @@ class Address extends BaseModel
     /**
      * The address's region.
      *
-     * @var \T3v\T3vBase\Domain\Model\Region
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @var Region
      */
     protected $region;
 
     /**
      * The address's country.
      *
-     * @var \T3v\T3vBase\Domain\Model\Country
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
+     * @var Country
      */
     protected $country;
 

@@ -46,10 +46,9 @@ class Style extends BaseModel
     /**
      * The style's background images.
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+     * @var ObjectStorage<FileReference>
      * @Extbase\Annotation\ORM\Lazy
      * @Extbase\Annotation\ORM\Cascade("remove")
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     protected $backgroundImages;
 
@@ -102,7 +101,7 @@ class Style extends BaseModel
      */
     public function getLabel(): ?string
     {
-        return $this->label ?? $this->name;
+        return empty($this->label) ? $this->name : $this->label;
     }
 
     /**

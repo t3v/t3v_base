@@ -33,9 +33,8 @@ class Region extends BaseModel
     /**
      * The region's countries.
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\T3v\T3vBase\Domain\Model\Country>
+     * @var ObjectStorage<Country>
      * @Extbase\ORM\Lazy
-     * @noinspection PhpUnnecessaryFullyQualifiedNameInspection
      */
     protected $countries;
 
@@ -88,7 +87,7 @@ class Region extends BaseModel
      */
     public function getLabel(): ?string
     {
-        return $this->label ?? $this->name;
+        return empty($this->label) ? $this->name : $this->label;
     }
 
     /**

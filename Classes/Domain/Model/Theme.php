@@ -58,7 +58,7 @@ class Theme extends BaseModel
      */
     public function getLabel(): ?string
     {
-        return $this->label ?? $this->name;
+        return empty($this->label) ? $this->name : $this->label;
     }
 
     /**
