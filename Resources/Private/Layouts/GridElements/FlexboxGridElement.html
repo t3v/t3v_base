@@ -9,11 +9,9 @@
   <v:variable.set name="layout" value="{v:variable.convert(value: data.flexform_layout, type: 'string', default: 'default')}" />
   <v:variable.set name="layout" value="{v:format.replace(content: layout, substring: ',', replacement: ' ')}" />
   <v:variable.set name="container" value="{v:variable.convert(value: data.flexform_container, type: 'string', default: 'none')}" />
-  <v:variable.set name="alignItems" value="{v:variable.convert(value: data.flexform_alignItems, type: 'string', default: 'default')}" />
-  <v:variable.set name="textAlign" value="{v:variable.convert(value: data.flexform_textAlign, type: 'string', default: 'default')}" />
   <v:variable.set name="theme" value="{v:variable.convert(value: data.theme.handle, type: 'string', default: 'default')}" />
   <v:variable.set name="styles" value="{v:variable.convert(value: data.styles, type: 'ObjectStorage')}" />
-  <v:variable.set name="additionalAttributes" value="{type: type, handle: handle, breakpoint: breakpoint, layout: layout, align-items: alignItems, text-align: textAlign, theme: theme}" />
+  <v:variable.set name="additionalAttributes" value="{type: type, handle: handle, breakpoint: breakpoint, layout: layout, theme: theme}" />
 
   <v:tag name="{gridElement}" id="c{uid}" class="{gridElement} grid-element" additionalAttributes="{additionalAttributes}"
          hideIfEmpty="false" forceClosingTag="true">

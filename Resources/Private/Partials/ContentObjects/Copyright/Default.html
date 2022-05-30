@@ -3,13 +3,13 @@
   <f:if condition="{link}">
     <f:then>
       <f:link.typolink parameter="{link}" class="{signature} content-object" title="{title}"
-                       additionalAttributes="{id: 'c{uid}', data-type: type, data-handle: handle, data-layout: layout}">
+                       additionalAttributes="{id: id, data-type: type, data-handle: handle, data-layout: layout}">
         {text}
       </f:link.typolink>
     </f:then>
 
     <f:else>
-      <v:tag name="{signature}" id="c{uid}" class="{signature} content-object"
+      <v:tag name="{signature}" id="{id}" class="{signature} content-object"
              additionalAttributes="{type: type, handle: handle, layout: layout}" hideIfEmpty="false" forceClosingTag="true">
         {text}
       </v:tag>

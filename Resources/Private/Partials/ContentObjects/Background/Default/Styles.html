@@ -1,16 +1,16 @@
-<html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+<html data-namespace-typo3-fluid="true" lang="en" xmlns:b="http://typo3.org/ns/T3v/T3vBase/ViewHelpers"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
   <f:if condition="{backgroundColor} || {backgroundImage} || {backgroundPosition} || {backgroundRepeat} || {backgroundSize} || {backgroundHeight} || {backgroundWidth}">
-    <v:asset.style name="{signature}-{uid}-css" fluid="true" movable="false" standalone="true">
-      #c<v:variable.get name="uid" /> {
+    <b:asset.style name="{signature}-{uid}-css" fluid="true" movable="false" standalone="true">
+      #<b:variable.get name="id" /> {
         <f:if condition="{backgroundColor}">
           background-color: {backgroundColor};
         </f:if>
 
         <f:if condition="{backgroundImage}">
-          <v:variable.set name="height" value="{v:variable.convert(value: backgroundHeight, type: 'integer', default: 256)}" />
+          <b:variable name="height" value="{b:variable.convert(value: backgroundHeight, type: 'integer', default: 256)}" />
 
-          background-image: url('<v:uri.image src="{backgroundImage}" height="{height}c" treatIdAsReference="1" />');
+          background-image: url('<f:uri.image image="{backgroundImage}" height="{height}c" />');
         </f:if>
 
         <f:if condition="{backgroundPosition}">
@@ -35,14 +35,14 @@
       }
 
       <f:if condition="{backgroundImage}">
-        <v:variable.set name="height" value="{v:variable.convert(value: backgroundHeight, type: 'integer', default: 256)}" />
+        <v:variable.set name="height" value="{b:variable.convert(value: backgroundHeight, type: 'integer', default: 256)}" />
 
         @media only screen and (-webkit-min-device-pixel-ratio: 1.5625), only screen and (min-resolution: 150dpi) {
-          #c<v:variable.get name="uid" /> {
-            background-image: url('<v:uri.image src="{backgroundImage}" height="{height * 2}c" treatIdAsReference="1" />');
+          #<b:variable.get name="id" /> {
+            background-image: url('<f:uri.image image="{backgroundImage}" height="{height * 2}c" />');
           }
         }
       </f:if>
-    </v:asset.style>
+    </b:asset.style>
   </f:if>
 </html>

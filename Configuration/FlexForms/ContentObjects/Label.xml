@@ -21,10 +21,11 @@
                 <renderType>selectSingle</renderType>
                 <items type="array">
                   <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.default.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.config.items.default.label</numIndex>
                     <numIndex index="1">default</numIndex>
                   </numIndex>
                 </items>
+                <eval>lower, required, trim</eval>
                 <default>default</default>
               </config>
             </TCEforms>
@@ -56,59 +57,70 @@
               <config type="array">
                 <type>inline</type>
                 <foreign_table>sys_file_reference</foreign_table>
-                <!--- <foreign_table_where>AND sys_file_reference.deleted=0 AND sys_file_reference.hidden=0 ORDER BY sys_file_reference.position</foreign_table_where> -->
                 <foreign_table_field>tablenames</foreign_table_field>
-                <!-- <foreign_field>uid_foreign</foreign_field> -->
+                <!-- <foreign_table_where>AND sys_file_reference.deleted=0 AND sys_file_reference.hidden=0 ORDER BY sys_file_reference.position</foreign_table_where> -->
+                <foreign_label>uid_local</foreign_label>
+                <foreign_field>uid_foreign</foreign_field>
                 <foreign_match_fields type="array">
                   <fieldname>icon</fieldname>
                 </foreign_match_fields>
-                <foreign_label>uid_local</foreign_label>
                 <foreign_selector>uid_local</foreign_selector>
-                <foreign_selector_fieldTcaOverride type="array">
-                  <config type="array">
-                    <appearance type="array">
-                      <elementBrowserType>file</elementBrowserType>
-                      <elementBrowserAllowed>svg</elementBrowserAllowed>
-                    </appearance>
-                  </config>
-                </foreign_selector_fieldTcaOverride>
-                <foreign_types type="array">
-                  <numIndex index="2">
-                    <showitem>--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,--palette--;;filePalette</showitem>
-                    <!-- <showitem>title,description,alternative,link</showitem> -->
-                  </numIndex>
-                </foreign_types>
                 <foreign_sortby>sorting_foreign</foreign_sortby>
+                <overrideChildTca type="array">
+                  <columns type="array">
+                    <uid_local type="array">
+                      <config type="array">
+                        <appearance type="array">
+                          <elementBrowserType>file</elementBrowserType>
+                          <elementBrowserAllowed>ai, bmp, gif, jpeg, jpg, pcx, pdf, png, tga, tif, tiff, svg</elementBrowserAllowed>
+                        </appearance>
+                      </config>
+                    </uid_local>
+                  </columns>
+                  <types type="array">
+                    <numIndex index="0">
+                      <showitem>--palette--;;imageoverlayPalette,--palette--;;filePalette</showitem>
+                    </numIndex>
+                    <numIndex index="2">
+                      <showitem>--palette--;;imageoverlayPalette,--palette--;;filePalette</showitem>
+                    </numIndex>
+                  </types>
+                </overrideChildTca>
                 <minitems>0</minitems>
                 <maxitems>1</maxitems>
-                <appearance type="array">
-                  <headerThumbnail type="array">
-                    <field>uid_local</field>
-                    <height>64c</height>
-                    <width>64c</width>
-                  </headerThumbnail>
-                  <enabledControls type="array">
-                    <info>1</info>
-                    <dragdrop>1</dragdrop>
-                    <sort>1</sort>
-                    <hide>0</hide>
-                    <delete>1</delete>
-                    <localize>1</localize>
-                  </enabledControls>
-                  <showAllLocalizationLink>0</showAllLocalizationLink>
-                  <showPossibleLocalizationRecords>0</showPossibleLocalizationRecords>
-                  <showRemovedLocalizationRecords>0</showRemovedLocalizationRecords>
-                  <showSynchronizationLink>0</showSynchronizationLink>
-                  <newRecordLinkAddTitle>1</newRecordLinkAddTitle>
-                  <createNewRelationLinkTitle>LLL:EXT:cms/locallang_ttc.xlf:media.addFileReference</createNewRelationLinkTitle>
-                  <useSortable>1</useSortable>
-                </appearance>
-                <behaviour type="array">
-                  <localizationMode>select</localizationMode>
-                  <localizeChildrenAtParentLocalization>0</localizeChildrenAtParentLocalization>
+                <behaviour>
+                  <allowLanguageSynchronization>0</allowLanguageSynchronization>
                   <disableMovingChildrenWithParent>0</disableMovingChildrenWithParent>
                   <enableCascadingDelete>1</enableCascadingDelete>
                 </behaviour>
+                <appearance type="array">
+                  <collapseAll>1</collapseAll>
+                  <!-- <createNewRelationLinkTitle>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.icon.src.config.appearance.createNewRelationLinkTitle</createNewRelationLinkTitle> -->
+                  <enabledControls>
+                    <info>1</info>
+                    <new>0</new>
+                    <dragdrop>0</dragdrop>
+                    <sort>0</sort>
+                    <hide>1</hide>
+                    <delete>1</delete>
+                    <localize>0</localize>
+                  </enabledControls>
+                  <expandSingle>1</expandSingle>
+                  <fileUploadAllowed>0</fileUploadAllowed>
+                  <fileByUrlAllowed>0</fileByUrlAllowed>
+                  <headerThumbnail>
+                    <field>uid_local</field>
+                    <height>64</height>
+                    <width>64</width>
+                  </headerThumbnail>
+                  <!-- <newRecordLinkAddTitle>0</newRecordLinkAddTitle> -->
+                  <!-- <newRecordLinkTitle>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.icon.src.config.appearance.newRecordLinkTitle</newRecordLinkTitle> -->
+                  <!-- <showAllLocalizationLink>0</showAllLocalizationLink> -->
+                  <!-- <showPossibleLocalizationRecords>0</showPossibleLocalizationRecords> -->
+                  <!-- <showRemovedLocalizationRecords>0</showRemovedLocalizationRecords> -->
+                  <!-- <showSynchronizationLink>0</showSynchronizationLink> -->
+                  <useSortable>0</useSortable>
+                </appearance>
               </config>
             </TCEforms>
           </settings.icon.src>
@@ -152,11 +164,36 @@
                 <type>select</type>
                 <renderType>selectCheckBox</renderType>
                 <items type="array">
+                  <!--
                   <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.iconRight.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.config.items.default.label</numIndex>
+                    <numIndex index="1">default</numIndex>
+                  </numIndex>
+                  -->
+
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.config.items.iconRight.label</numIndex>
                     <numIndex index="1">icon-right</numIndex>
                   </numIndex>
+
+                  <numIndex index="2" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.textAlignLeft.label</numIndex>
+                    <numIndex index="1">text-align-left</numIndex>
+                  </numIndex>
+
+                  <numIndex index="3" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.textAlignCenter.label</numIndex>
+                    <numIndex index="1">text-align-center</numIndex>
+                  </numIndex>
+
+                  <numIndex index="4" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.textAlignRight.label</numIndex>
+                    <numIndex index="1">text-align-right</numIndex>
+                  </numIndex>
                 </items>
+                <minitems>0</minitems>
+                <maxitems>10</maxitems>
+                <eval>lower, trim</eval>
                 <default>default</default>
               </config>
             </TCEforms>
@@ -176,6 +213,7 @@
                     <numIndex index="1">0</numIndex>
                   </numIndex>
                 </items>
+                <eval>int</eval>
                 <default>0</default>
               </config>
             </TCEforms>

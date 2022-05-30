@@ -18,7 +18,7 @@
             <foreign_table_where>ORDER BY sys_language.title</foreign_table_where>
             <items type="array">
               <numIndex index="0" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.languageUid.default.label</numIndex>
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.languageUid.config.items.default.label</numIndex>
                 <numIndex index="1">0</numIndex>
               </numIndex>
             </items>

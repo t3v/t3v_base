@@ -1,15 +1,15 @@
-<html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+<html data-namespace-typo3-fluid="true" lang="en" xmlns:b="http://typo3.org/ns/T3v/T3vBase/ViewHelpers"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
   <f:if condition="{link}">
     <f:then>
       <f:link.typolink parameter="{link}" class="{signature} content-object" title="{title}"
-                       additionalAttributes="{id: 'c{uid}', data-type: type, data-handle: handle, data-layout: layout}">
+                       additionalAttributes="{id: id, data-type: type, data-handle: handle, data-layout: layout}">
         {name}
       </f:link.typolink>
     </f:then>
 
     <f:else>
-      <v:tag name="{signature}" id="c{uid}" class="{signature} content-object"
+      <b:tag name="{signature}" id="{id}" class="{signature} content-object"
              additionalAttributes="{type: type, handle: handle, layout: layout}" hideIfEmpty="false" forceClosingTag="true" />
     </f:else>
   </f:if>

@@ -21,10 +21,11 @@
                 <renderType>selectSingle</renderType>
                 <items type="array">
                   <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.default.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.config.items.default.label</numIndex>
                     <numIndex index="1">default</numIndex>
                   </numIndex>
                 </items>
+                <eval>lower, required, trim</eval>
                 <default>default</default>
               </config>
             </TCEforms>
@@ -83,7 +84,7 @@
                     <options type="array">
                       <!-- <allowedExtensions>html, json, txt</allowedExtensions> -->
                       <!-- <blindLinkFields>class, params, target, title</blindLinkFields> -->
-                      <!-- <blindLinkOptions>file, mail, page, spec, url</blindLinkOptions> -->
+                      <!-- <blindLinkOptions>file, mail, page, spec, telephone, url</blindLinkOptions> -->
                       <blindLinkFields>params</blindLinkFields>
                       <blindLinkOptions>spec</blindLinkOptions>
                     </options>
@@ -113,11 +114,29 @@
                 <items type="array">
                   <!--
                   <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.default.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.config.items.default.label</numIndex>
                     <numIndex index="1">default</numIndex>
                   </numIndex>
                   -->
+
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.textAlignLeft.label</numIndex>
+                    <numIndex index="1">text-align-left</numIndex>
+                  </numIndex>
+
+                  <numIndex index="2" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.textAlignCenter.label</numIndex>
+                    <numIndex index="1">text-align-center</numIndex>
+                  </numIndex>
+
+                  <numIndex index="3" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.textAlignRight.label</numIndex>
+                    <numIndex index="1">text-align-right</numIndex>
+                  </numIndex>
                 </items>
+                <minitems>0</minitems>
+                <maxitems>10</maxitems>
+                <eval>lower, trim</eval>
                 <default>default</default>
               </config>
             </TCEforms>
@@ -137,6 +156,7 @@
                     <numIndex index="1">0</numIndex>
                   </numIndex>
                 </items>
+                <eval>int</eval>
                 <default>0</default>
               </config>
             </TCEforms>

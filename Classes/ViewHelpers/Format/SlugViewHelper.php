@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace T3v\T3vBase\ViewHelpers;
+namespace T3v\T3vBase\ViewHelpers\Format;
 
 use Closure;
 use Cocur\Slugify\Slugify;
@@ -11,7 +11,7 @@ use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 /**
  * The slug view helper class.
  *
- * @package T3v\T3vBase\ViewHelpers
+ * @package T3v\T3vBase\ViewHelpers\Format
  */
 class SlugViewHelper extends AbstractViewHelper
 {

@@ -410,6 +410,10 @@
         <source>Color</source>
       </trans-unit>
 
+      <trans-unit id="tx_t3vbase_domain_model_style.columns.description.label">
+        <source>Description</source>
+      </trans-unit>
+
       <trans-unit id="tx_t3vbase_domain_model_style.ctrl.title">
         <source>Style</source>
       </trans-unit>

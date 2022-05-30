@@ -10,6 +10,7 @@
 
 @import './Base/constants.typoscript'
 @import './Vendor/constants.typoscript'
+@import './ContentObjects/constants.typoscript'
 @import './GridElements/constants.typoscript'
 
 /*

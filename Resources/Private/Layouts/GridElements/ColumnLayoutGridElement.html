@@ -9,10 +9,9 @@
   <f:variable name="layout" value="{v:variable.convert(value: data.flexform_layout, type: 'string', default: 'default')}" />
   <f:variable name="layout" value="{v:format.replace(content: layout, substring: ',', replacement: ' ')}" />
   <f:variable name="container" value="{v:variable.convert(value: data.flexform_container, type: 'string', default: 'none')}" />
-  <f:variable name="textAlign" value="{v:variable.convert(value: data.flexform_textAlign, type: 'string', default: 'default')}" />
   <f:variable name="theme" value="{v:variable.convert(value: data.theme.handle, type: 'string', default: 'default')}" />
   <f:variable name="styles" value="{v:variable.convert(value: data.styles, type: 'ObjectStorage')}" />
-  <f:variable name="additionalAttributes" value="{type: type, handle: handle, breakpoint: breakpoint, layout: layout, text-align: textAlign, theme: theme}" />
+  <f:variable name="additionalAttributes" value="{type: type, handle: handle, breakpoint: breakpoint, layout: layout, theme: theme}" />
 
   <v:tag name="{gridElement}" id="c{uid}" class="{gridElement} grid-element" additionalAttributes="{additionalAttributes}"
          hideIfEmpty="false" forceClosingTag="true">

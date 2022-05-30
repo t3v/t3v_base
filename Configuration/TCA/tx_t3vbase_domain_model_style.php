@@ -173,7 +173,7 @@ return [
         ],
 
         'description' => [
-            'label' => $lll . 'tx_t3vbase_domain_model_style.description',
+            'label' => $lll . 'tx_t3vbase_domain_model_style.columns.description.label',
             'config' => [
                 'type' => 'text',
                 'enableRichtext' => true,

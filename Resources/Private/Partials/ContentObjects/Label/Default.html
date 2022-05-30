@@ -1,7 +1,7 @@
 <html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
       xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
-  <v:tag id="c{uid}" name="{signature}" class="{signature} content-object"
-         additionalAttributes="{type: type, handle: handle, layout: layout}" hideIfEmpty="false">
+  <v:tag id="{id}" name="{signature}" class="{signature} content-object" additionalAttributes="{type: type, handle: handle, layout: layout}"
+         hideIfEmpty="false" forceClosingTag="true">
     <v:tag name="div" class="{signature}__main" hideIfEmpty="true">
       <f:switch expression="{layout}">
         <f:case value="icon-right">
@@ -22,7 +22,7 @@
   <f:section name="Icon">
     <f:if condition="{icon}">
       <f:if condition="{icon.src}">
-        <f:image src="{icon.src}" treatIdAsReference="true" class="{signature}__icon" title="{title}" alt="{alt}"
+        <f:image image="{icon.src}" class="{signature}__icon" title="{title}" alt="{alt}"
                  data="{inline: icon.inline, colorize: icon.colorize}" />
       </f:if>
     </f:if>

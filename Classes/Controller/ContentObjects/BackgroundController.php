@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace T3v\T3vBase\Controller\ContentObjects;
 
 use T3v\T3vCore\Controller\ContentObjectController;
+use TYPO3\CMS\Core\Resource\FileRepository;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
@@ -26,7 +27,8 @@ class BackgroundController extends ContentObjectController
      *
      * @return array The settings
      */
-    private function getSettingsForIndexAction(): array {
+    private function getSettingsForIndexAction(): array
+    {
         $settings = $this->settings;
         $data = $this->data;
 
@@ -35,9 +37,9 @@ class BackgroundController extends ContentObjectController
         $settings['alt'] = $data['subheader'] ?: $data['header'];
         $settings['link'] = $data['header_link'];
 
-        if (!empty($settings['backgroundImages'])) {
-            $settings['backgroundImages'] = GeneralUtility::intExplode(',', $settings['backgroundImages'], true);
-        }
+        $fileRepository = GeneralUtility::makeInstance(FileRepository::class);
+        $backgroundImages = $fileRepository->findByRelation('tt_content', 'background_images', $this->data['uid']);
+        $settings['backgroundImages'] = $backgroundImages;
 
         return $settings;
     }

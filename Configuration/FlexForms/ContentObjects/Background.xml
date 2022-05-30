@@ -21,16 +21,16 @@
                 <renderType>selectSingle</renderType>
                 <items type="array">
                   <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.default.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.config.item.default.label</numIndex>
                     <numIndex index="1">default</numIndex>
                   </numIndex>
 
                   <numIndex index="1" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.image.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.type.config.item.image.label</numIndex>
                     <numIndex index="1">image</numIndex>
                   </numIndex>
                 </items>
-                <eval>required, trim</eval>
+                <eval>lower, required, trim</eval>
                 <default>default</default>
               </config>
             </TCEforms>
@@ -74,7 +74,7 @@
                 <renderType>colorpicker</renderType>
                 <max>7</max>
                 <size>10</size>
-                <eval>trim</eval>
+                <eval>lower, trim</eval>
                 <default></default>
               </config>
             </TCEforms>
@@ -86,59 +86,70 @@
               <config type="array">
                 <type>inline</type>
                 <foreign_table>sys_file_reference</foreign_table>
-                <!--- <foreign_table_where>AND sys_file_reference.deleted=0 AND sys_file_reference.hidden=0 ORDER BY sys_file_reference.position</foreign_table_where> -->
                 <foreign_table_field>tablenames</foreign_table_field>
-                <!-- <foreign_field>uid_foreign</foreign_field> -->
-                <foreign_match_fields type="array">
-                  <fieldname>background_image</fieldname>
-                </foreign_match_fields>
+                <!-- <foreign_table_where>AND sys_file_reference.deleted=0 AND sys_file_reference.hidden=0 ORDER BY sys_file_reference.position</foreign_table_where> -->
                 <foreign_label>uid_local</foreign_label>
+                <foreign_field>uid_foreign</foreign_field>
+                <foreign_match_fields type="array">
+                  <fieldname>background_images</fieldname>
+                </foreign_match_fields>
                 <foreign_selector>uid_local</foreign_selector>
-                <foreign_selector_fieldTcaOverride type="array">
-                  <config type="array">
-                    <appearance type="array">
-                      <elementBrowserType>file</elementBrowserType>
-                      <elementBrowserAllowed>jpg,jpeg,png,svg</elementBrowserAllowed>
-                    </appearance>
-                  </config>
-                </foreign_selector_fieldTcaOverride>
-                <foreign_types type="array">
-                  <numIndex index="2">
-                    <showitem>--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,--palette--;;filePalette</showitem>
-                    <!-- <showitem>title,description,alternative,link</showitem> -->
-                  </numIndex>
-                </foreign_types>
                 <foreign_sortby>sorting_foreign</foreign_sortby>
+                <overrideChildTca type="array">
+                  <columns type="array">
+                    <uid_local type="array">
+                      <config type="array">
+                        <appearance type="array">
+                          <elementBrowserType>file</elementBrowserType>
+                          <elementBrowserAllowed>ai, bmp, gif, jpeg, jpg, pcx, pdf, png, tga, tif, tiff, svg</elementBrowserAllowed>
+                        </appearance>
+                      </config>
+                    </uid_local>
+                  </columns>
+                  <types type="array">
+                    <numIndex index="0">
+                      <showitem>--palette--;;imageoverlayPalette,--palette--;;filePalette</showitem>
+                    </numIndex>
+                    <numIndex index="2">
+                      <showitem>--palette--;;imageoverlayPalette,--palette--;;filePalette</showitem>
+                    </numIndex>
+                  </types>
+                </overrideChildTca>
                 <minitems>0</minitems>
                 <maxitems>10</maxitems>
-                <appearance type="array">
-                  <headerThumbnail type="array">
-                    <field>uid_local</field>
-                    <height>64c</height>
-                    <width>64c</width>
-                  </headerThumbnail>
-                  <enabledControls type="array">
-                    <info>1</info>
-                    <dragdrop>1</dragdrop>
-                    <sort>1</sort>
-                    <hide>0</hide>
-                    <delete>1</delete>
-                    <localize>1</localize>
-                  </enabledControls>
-                  <showAllLocalizationLink>0</showAllLocalizationLink>
-                  <showPossibleLocalizationRecords>0</showPossibleLocalizationRecords>
-                  <showRemovedLocalizationRecords>0</showRemovedLocalizationRecords>
-                  <showSynchronizationLink>0</showSynchronizationLink>
-                  <newRecordLinkAddTitle>1</newRecordLinkAddTitle>
-                  <createNewRelationLinkTitle>LLL:EXT:cms/locallang_ttc.xlf:media.addFileReference</createNewRelationLinkTitle>
-                  <useSortable>1</useSortable>
-                </appearance>
-                <behaviour type="array">
-                  <localizationMode>select</localizationMode>
-                  <localizeChildrenAtParentLocalization>0</localizeChildrenAtParentLocalization>
+                <behaviour>
+                  <allowLanguageSynchronization>0</allowLanguageSynchronization>
                   <disableMovingChildrenWithParent>0</disableMovingChildrenWithParent>
                   <enableCascadingDelete>1</enableCascadingDelete>
                 </behaviour>
+                <appearance type="array">
+                  <collapseAll>1</collapseAll>
+                  <!-- <createNewRelationLinkTitle>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundImages.config.appearance.createNewRelationLinkTitle</createNewRelationLinkTitle> -->
+                  <enabledControls>
+                    <info>1</info>
+                    <new>1</new>
+                    <dragdrop>1</dragdrop>
+                    <sort>1</sort>
+                    <hide>1</hide>
+                    <delete>1</delete>
+                    <localize>0</localize>
+                  </enabledControls>
+                  <expandSingle>1</expandSingle>
+                  <fileUploadAllowed>0</fileUploadAllowed>
+                  <fileByUrlAllowed>0</fileByUrlAllowed>
+                  <headerThumbnail>
+                    <field>uid_local</field>
+                    <height>64</height>
+                    <width>64</width>
+                  </headerThumbnail>
+                  <!-- <newRecordLinkAddTitle>0</newRecordLinkAddTitle> -->
+                  <!-- <newRecordLinkTitle>LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundImages.config.appearance.newRecordLinkTitle</newRecordLinkTitle> -->
+                  <!-- <showAllLocalizationLink>0</showAllLocalizationLink> -->
+                  <!-- <showPossibleLocalizationRecords>0</showPossibleLocalizationRecords> -->
+                  <!-- <showRemovedLocalizationRecords>0</showRemovedLocalizationRecords> -->
+                  <!-- <showSynchronizationLink>0</showSynchronizationLink> -->
+                  <useSortable>1</useSortable>
+                </appearance>
               </config>
             </TCEforms>
           </settings.backgroundImages>
@@ -150,7 +161,7 @@
                 <type>input</type>
                 <max>255</max>
                 <size>10</size>
-                <eval>trim</eval>
+                <eval>lower, trim</eval>
                 <default>1x, 2x</default>
               </config>
             </TCEforms>
@@ -164,56 +175,56 @@
                 <renderType>selectSingle</renderType>
                 <items type="array">
                   <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.default.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.config.items.default.label</numIndex>
                     <numIndex index="1"></numIndex>
                   </numIndex>
 
                   <numIndex index="1" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.leftTop.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.config.items.leftTop.label</numIndex>
                     <numIndex index="1">left top</numIndex>
                   </numIndex>
 
                   <numIndex index="2" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.leftCenter.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.config.items.leftCenter.label</numIndex>
                     <numIndex index="1">left center</numIndex>
                   </numIndex>
 
                   <numIndex index="3" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.leftBottom.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.config.items.leftBottom.label</numIndex>
                     <numIndex index="1">left bottom</numIndex>
                   </numIndex>
 
                   <numIndex index="4" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.rightTop.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.config.items.rightTop.label</numIndex>
                     <numIndex index="1">right top</numIndex>
                   </numIndex>
 
                   <numIndex index="5" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.rightCenter.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.config.items.rightCenter.label</numIndex>
                     <numIndex index="1">right center</numIndex>
                   </numIndex>
 
                   <numIndex index="6" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.rightBottom.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.config.items.rightBottom.label</numIndex>
                     <numIndex index="1">right bottom</numIndex>
                   </numIndex>
 
                   <numIndex index="7" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.centerTop.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.config.items.centerTop.label</numIndex>
                     <numIndex index="1">center top</numIndex>
                   </numIndex>
 
                   <numIndex index="8" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.centerCenter.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.config.items.centerCenter.label</numIndex>
                     <numIndex index="1">center center</numIndex>
                   </numIndex>
 
                   <numIndex index="9" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.centerBottom.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundPosition.config.items.centerBottom.label</numIndex>
                     <numIndex index="1">center bottom</numIndex>
                   </numIndex>
                 </items>
-                <eval>trim</eval>
+                <eval>lower, trim</eval>
                 <default></default>
               </config>
             </TCEforms>
@@ -227,41 +238,41 @@
                 <renderType>selectSingle</renderType>
                 <items type="array">
                   <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.default.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.config.items.default.label</numIndex>
                     <numIndex index="1"></numIndex>
                   </numIndex>
 
                   <numIndex index="1" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.repeat.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.config.items.repeat.label</numIndex>
                     <numIndex index="1">repeat</numIndex>
                   </numIndex>
 
                   <numIndex index="2" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.repeatX.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.config.items.repeatX.label</numIndex>
                     <numIndex index="1">repeat-x</numIndex>
                   </numIndex>
 
                   <numIndex index="3" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.repeatY.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.config.items.repeatY.label</numIndex>
                     <numIndex index="1">repeat-y</numIndex>
                   </numIndex>
 
                   <numIndex index="4" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.noRepeat.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.config.items.noRepeat.label</numIndex>
                     <numIndex index="1">no-repeat</numIndex>
                   </numIndex>
 
                   <numIndex index="5" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.space.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.config.items.space.label</numIndex>
                     <numIndex index="1">space</numIndex>
                   </numIndex>
 
                   <numIndex index="6" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.round.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundRepeat.config.items.round.label</numIndex>
                     <numIndex index="1">round</numIndex>
                   </numIndex>
                 </items>
-                <eval>trim</eval>
+                <eval>lower, trim</eval>
                 <default></default>
               </config>
             </TCEforms>
@@ -275,26 +286,26 @@
                 <renderType>selectSingle</renderType>
                 <items type="array">
                   <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundSize.default.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundSize.config.items.default.label</numIndex>
                     <numIndex index="1"></numIndex>
                   </numIndex>
 
                   <numIndex index="1" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundSize.auto.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundSize.config.items.auto.label</numIndex>
                     <numIndex index="1">auto</numIndex>
                   </numIndex>
 
                   <numIndex index="2" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundSize.cover.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundSize.config.items.cover.label</numIndex>
                     <numIndex index="1">cover</numIndex>
                   </numIndex>
 
                   <numIndex index="3" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundSize.contain.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.backgroundSize.config.items.contain.label</numIndex>
                     <numIndex index="1">contain</numIndex>
                   </numIndex>
                 </items>
-                <eval>trim</eval>
+                <eval>lower, trim</eval>
                 <default></default>
               </config>
             </TCEforms>
@@ -308,7 +319,7 @@
                 <max>4</max>
                 <size>10</size>
                 <eval>num, trim</eval>
-                <default></default>
+                <default>0</default>
               </config>
             </TCEforms>
           </settings.backgroundHeight>
@@ -321,7 +332,7 @@
                 <max>4</max>
                 <size>10</size>
                 <eval>num, trim</eval>
-                <default></default>
+                <default>0</default>
               </config>
             </TCEforms>
           </settings.backgroundWidth>
@@ -339,10 +350,25 @@
                     <numIndex index="1">default</numIndex>
                   </numIndex>
                   -->
+
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.textAlignLeft.label</numIndex>
+                    <numIndex index="1">text-align-left</numIndex>
+                  </numIndex>
+
+                  <numIndex index="2" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.textAlignCenter.label</numIndex>
+                    <numIndex index="1">text-align-center</numIndex>
+                  </numIndex>
+
+                  <numIndex index="3" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.textAlignRight.label</numIndex>
+                    <numIndex index="1">text-align-right</numIndex>
+                  </numIndex>
                 </items>
-                <minitems>1</minitems>
-                <maxitems>4</maxitems>
-                <eval>lower, required, trim</eval>
+                <minitems>0</minitems>
+                <maxitems>10</maxitems>
+                <eval>lower, trim</eval>
                 <default>default</default>
               </config>
             </TCEforms>
@@ -358,10 +384,11 @@
                 <foreign_table_where>AND tx_t3vbase_domain_model_theme.sys_language_uid IN (-1,0) AND tx_t3vbase_domain_model_theme.hidden = 0 AND tx_t3vbase_domain_model_theme.deleted = 0</foreign_table_where>
                 <items type="array">
                   <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.theme.default.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.theme.config.items.default.label</numIndex>
                     <numIndex index="1">0</numIndex>
                   </numIndex>
                 </items>
+                <eval>int</eval>
                 <default>0</default>
               </config>
             </TCEforms>
