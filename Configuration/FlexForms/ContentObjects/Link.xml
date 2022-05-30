@@ -156,17 +156,17 @@
                   </numIndex>
 
                   <numIndex index="2" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.textAlignLeft.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.config.items.textAlignLeft.label</numIndex>
                     <numIndex index="1">text-align-left</numIndex>
                   </numIndex>
 
                   <numIndex index="3" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.textAlignCenter.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.config.items.textAlignCenter.label</numIndex>
                     <numIndex index="1">text-align-center</numIndex>
                   </numIndex>
 
                   <numIndex index="4" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.textAlignRight.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.config.items.textAlignRight.label</numIndex>
                     <numIndex index="1">text-align-right</numIndex>
                   </numIndex>
                 </items>
@@ -188,7 +188,7 @@
                 <foreign_table_where>AND tx_t3vbase_domain_model_theme.sys_language_uid IN (-1,0) AND tx_t3vbase_domain_model_theme.hidden = 0 AND tx_t3vbase_domain_model_theme.deleted = 0</foreign_table_where>
                 <items type="array">
                   <numIndex index="0" type="array">
-                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.theme.default.label</numIndex>
+                    <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.theme.config.items.default.label</numIndex>
                     <numIndex index="1">0</numIndex>
                   </numIndex>
                 </items>

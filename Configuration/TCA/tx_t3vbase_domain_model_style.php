@@ -90,7 +90,7 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    [$lll . 'tx_t3vbase_domain_model_style.columns.selector.config.items.gridElement.label', 'element'],
+                    [$lll . 'tx_t3vbase_domain_model_style.columns.selector.config.items.element.label', 'element'],
                     [$lll . 'tx_t3vbase_domain_model_style.columns.selector.config.items.header.label', 'header'],
                     [$lll . 'tx_t3vbase_domain_model_style.columns.selector.config.items.main.label', 'main'],
                     [$lll . 'tx_t3vbase_domain_model_style.columns.selector.config.items.content.label', 'content'],

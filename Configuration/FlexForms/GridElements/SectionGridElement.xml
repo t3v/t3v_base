@@ -159,17 +159,17 @@
               </numIndex>
 
               <numIndex index="5" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.textAlignLeft.label</numIndex>
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.config.items.textAlignLeft.label</numIndex>
                 <numIndex index="1">text-align-left</numIndex>
               </numIndex>
 
               <numIndex index="6" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.textAlignCenter.label</numIndex>
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.config.items.textAlignCenter.label</numIndex>
                 <numIndex index="1">text-align-center</numIndex>
               </numIndex>
 
               <numIndex index="7" type="array">
-                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.textAlignRight.label</numIndex>
+                <numIndex index="0">LLL:EXT:t3v_base/Resources/Private/Language/locallang_ff.xlf:settings.layout.config.items.textAlignRight.label</numIndex>
                 <numIndex index="1">text-align-right</numIndex>
               </numIndex>
             </items>
