@@ -152,8 +152,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.barGridElement.description">
-        <source>Displays a bar.</source>
-        <target>Zeigt eine Leiste an.</target>
+        <source>Displays elements in a bar.</source>
+        <target>Zeigt Elemente in einer Leiste an.</target>
       </trans-unit>
 
       <!-- ‐‐‐ Block Grid Element ‐‐‐ -->
@@ -164,8 +164,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.blockGridElement.description">
-        <source>Displays a block.</source>
-        <target>Zeigt einen Block an.</target>
+        <source>Displays elements in a block.</source>
+        <target>Zeigt Elemente in einem Block an.</target>
       </trans-unit>
 
       <!-- ‐‐‐ Cascading Layout Grid Element ‐‐‐ -->
@@ -176,8 +176,8 @@
       </trans-unit>
 
       <trans-unit id="gridElements.cascadingLayoutGridElement.description">
-        <source>Displays a cascading layout.</source>
-        <target>Zeigt ein kaskadierendes Layout an.</target>
+        <source>Displays elements in a cascading layout.</source>
+        <target>Zeigt Elemente in einem kaskadierenden Layout an.</target>
       </trans-unit>
 
       <!-- ‐‐‐ 1 Column Layout Grid Element ‐‐‐ -->

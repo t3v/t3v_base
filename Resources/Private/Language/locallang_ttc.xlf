@@ -127,7 +127,7 @@
       </trans-unit>
 
       <trans-unit id="gridElements.barGridElement.description">
-        <source>Displays a bar.</source>
+        <source>Displays elements in a bar.</source>
       </trans-unit>
 
       <!-- ‐‐‐ Block Grid Element ‐‐‐ -->
@@ -137,7 +137,7 @@
       </trans-unit>
 
       <trans-unit id="gridElements.blockGridElement.description">
-        <source>Displays a block.</source>
+        <source>Displays elements in a block.</source>
       </trans-unit>
 
       <!-- ‐‐‐ Cascading Layout Grid Element ‐‐‐ -->
@@ -147,7 +147,7 @@
       </trans-unit>
 
       <trans-unit id="gridElements.cascadingLayoutGridElement.description">
-        <source>Displays a cascading layout.</source>
+        <source>Displays elements in a cascading layout.</source>
       </trans-unit>
 
       <!-- ‐‐‐ 1 Column Layout Grid Element ‐‐‐ -->
