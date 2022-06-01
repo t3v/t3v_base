@@ -1,41 +1,50 @@
 <?php
 declare(strict_types=1);
 
+use T3v\T3vBase\Domain\Model\Address;
+use T3v\T3vBase\Domain\Model\Country;
+use T3v\T3vBase\Domain\Model\CountryGroup;
+use T3v\T3vBase\Domain\Model\EmailAddress;
+use T3v\T3vBase\Domain\Model\Format;
+use T3v\T3vBase\Domain\Model\PhoneNumber;
+use T3v\T3vBase\Domain\Model\Property;
+use T3v\T3vBase\Domain\Model\Region;
+use T3v\T3vBase\Domain\Model\Style;
+use T3v\T3vBase\Domain\Model\Theme;
+
 /**
  * The Extbase persistence classes configuration.
- *
- * @noinspection PhpFullyQualifiedNameUsageInspection
  */
 
 return [
-    \T3v\T3vBase\Domain\Model\Address::class => [
+    Address::class => [
         'tableName' => 'tx_t3vbase_domain_model_address'
     ],
-    \T3v\T3vBase\Domain\Model\Country::class => [
+    Country::class => [
         'tableName' => 'tx_t3vbase_domain_model_country'
     ],
-    \T3v\T3vBase\Domain\Model\CountryGroup::class => [
+    CountryGroup::class => [
         'tableName' => 'tx_t3vbase_domain_model_country_group'
     ],
-    \T3v\T3vBase\Domain\Model\EmailAddress::class => [
+    EmailAddress::class => [
         'tableName' => 'tx_t3vbase_domain_model_email_address'
     ],
-    \T3v\T3vBase\Domain\Model\Format::class => [
+    Format::class => [
         'tableName' => 'tx_t3vbase_domain_model_format'
     ],
-    \T3v\T3vBase\Domain\Model\PhoneNumber::class => [
+    PhoneNumber::class => [
         'tableName' => 'tx_t3vbase_domain_model_phone_number'
     ],
-    \T3v\T3vBase\Domain\Model\Property::class => [
+    Property::class => [
         'tableName' => 'tx_t3vbase_domain_model_property'
     ],
-    \T3v\T3vBase\Domain\Model\Region::class => [
+    Region::class => [
         'tableName' => 'tx_t3vbase_domain_model_region'
     ],
-    \T3v\T3vBase\Domain\Model\Style::class => [
+    Style::class => [
         'tableName' => 'tx_t3vbase_domain_model_style'
     ],
-    \T3v\T3vBase\Domain\Model\Theme::class => [
+    Theme::class => [
         'tableName' => 'tx_t3vbase_domain_model_theme'
     ]
 ];
