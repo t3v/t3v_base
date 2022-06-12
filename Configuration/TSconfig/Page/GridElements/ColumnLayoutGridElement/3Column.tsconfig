@@ -4,10 +4,6 @@
   ------------------------------------------------------
 */
 
-/*
-  === Grid Element Configuration ===
-*/
-
 tx_gridelements {
   setup {
     t3vBase3ColumnLayout {
@@ -69,7 +65,3 @@ tx_gridelements {
     }
   }
 }
-
-/*
-  === T3v Generator ===
-*/

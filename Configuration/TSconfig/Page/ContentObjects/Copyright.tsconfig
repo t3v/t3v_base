@@ -4,10 +4,6 @@
   ----------------------------------------------
 */
 
-/*
-  === New Content Element Wizard Configuration ===
-*/
-
 mod {
   wizards {
     newContentElement {
@@ -32,7 +28,3 @@ mod {
     }
   }
 }
-
-/*
-  === T3v Generator ===
-*/
