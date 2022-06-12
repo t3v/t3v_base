@@ -24,6 +24,13 @@ tt_content {
                     as = styles
                   }
                 }
+
+                20 = T3v\T3vBase\DataProcessing\GridElement\ThemeProcessor
+                20 {
+                  default {
+                    as = theme
+                  }
+                }
               }
             }
 
