@@ -1,5 +1,5 @@
-<html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+<html data-namespace-typo3-fluid="true" lang="en" xmlns:b="http://typo3.org/ns/T3v/T3vBase/ViewHelpers"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
   <f:if condition="{page}">
     <f:then>
       <f:render section="PageLink" arguments="{_all}" />
@@ -18,14 +18,14 @@
   </f:section>
 
   <f:section name="Typolink">
-    <v:variable.set name="firstCharacter" value="{v:format.substring(content: link, start: 0, length: 1)}" />
+    <b:variable name="firstCharacter" value="{b:format.substring(content: link, start: 0, length: 1)}" />
 
     <f:if condition="{firstCharacter} == '#'">
       <f:then>
-        <v:tag name="a" id="c{uid}" class="{signature} content-object" title="{title}" additionalAttributes="{href: '#'}"
+        <b:tag name="a" id="c{uid}" class="{signature} content-object" title="{title}" additionalAttributes="{href: '#'}"
                data="{type: type, handle: handle, layout: layout}" hideIfEmpty="true">
           {name}
-        </v:tag>
+        </b:tag>
       </f:then>
 
       <f:else>

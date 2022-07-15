@@ -7,7 +7,7 @@
   <b:variable name="type" value="{b:variable.convert(value: settings.type, type: 'string', default: 'default')}" />
   <b:variable name="handle" value="{b:variable.convert(value: settings.handle, type: 'string', default: 'none')}" />
   <b:variable name="handle" value="{b:format.handle(input: handle)}" />
-  <b:variable name="customHeight" value="{b:variable.convert(value: settings.customHeight, type: 'integer', default: 0)}" />
+  <b:variable name="customHeight" value="{b:variable.convert(value: settings.customHeight, type: 'integer')}" />
   <b:variable name="layout" value="{b:variable.convert(value: settings.layout, type: 'string', default: 'default')}" />
   <b:variable name="layout" value="{b:format.replace(content: layout, substring: ',', replacement: ' ')}" />
 

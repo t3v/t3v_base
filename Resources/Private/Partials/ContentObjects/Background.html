@@ -19,8 +19,8 @@
   <b:variable name="backgroundPosition" value="{b:variable.convert(value: settings.backgroundPosition, type: 'string')}" />
   <b:variable name="backgroundRepeat" value="{b:variable.convert(value: settings.backgroundRepeat, type: 'string')}" />
   <b:variable name="backgroundSize" value="{b:variable.convert(value: settings.backgroundSize, type: 'string')}" />
-  <b:variable name="backgroundHeight" value="{b:variable.convert(value: settings.backgroundHeight, type: 'integer', default: 0)}" />
-  <b:variable name="backgroundWidth" value="{b:variable.convert(value: settings.backgroundWidth, type: 'integer', default: 0)}" />
+  <b:variable name="backgroundHeight" value="{b:variable.convert(value: settings.backgroundHeight, type: 'integer')}" />
+  <b:variable name="backgroundWidth" value="{b:variable.convert(value: settings.backgroundWidth, type: 'integer')}" />
 
   <f:if condition="{backgroundImages}">
     <b:variable name="backgroundImage" value="{backgroundImages -> v:iterator.first()}" />

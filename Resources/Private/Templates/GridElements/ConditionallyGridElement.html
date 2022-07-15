@@ -1,9 +1,9 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:t3v="http://typo3.org/ns/T3v/T3vCore/ViewHelpers"
-      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+<html data-namespace-typo3-fluid="true" lang="en" xmlns:b="http://typo3.org/ns/T3v/T3vBase/ViewHelpers"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
   <f:layout name="GridElements/ConditionallyGridElement" />
 
   <f:section name="GridElement">
-    <v:variable.set name="languageUid" value="{t3v:page.languageUid()}" />
+    <b:variable name="languageUid" value="{b:page.languageUid()}" />
 
     <f:if condition="{languageUid} > 0">
       <f:then>

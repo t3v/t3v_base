@@ -1,30 +1,30 @@
-<html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-      xmlns:t3v="http://typo3.org/ns/T3v/T3vCore/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
-  <v:variable.set name="gridElement" value="t3v-base-modal-grid-element" />
-  <v:variable.set name="uid" value="{v:variable.convert(value: data.uid, type: 'integer', default: 0)}" />
-  <v:variable.set name="type" value="{v:variable.convert(value: data.flexform_type, type: 'string', default: 'default')}" />
-  <v:variable.set name="handle" value="{v:variable.convert(value: data.flexform_handle, type: 'string', default: 'none')}" />
-  <v:variable.set name="handle" value="{t3v:handle(input: handle)}" />
-  <v:variable.set name="ref" value="{v:variable.convert(value: data.flexform_reference, type: 'string', default: 'none')}" />
-  <v:variable.set name="layout" value="{v:variable.convert(value: data.flexform_layout, type: 'string', default: 'default')}" />
-  <v:variable.set name="layout" value="{v:format.replace(content: layout, substring: ',', replacement: ' ')}" />
-  <v:variable.set name="container" value="{v:variable.convert(value: data.flexform_container, type: 'string', default: 'none')}" />
-  <v:variable.set name="theme" value="{v:variable.convert(value: data.theme.handle, type: 'string', default: 'default')}" />
-  <v:variable.set name="styles" value="{v:variable.convert(value: data.styles, type: 'ObjectStorage')}" />
-  <v:variable.set name="additionalAttributes" value="{type: type, handle: handle, ref: ref, layout: layout, theme: theme}" />
+<html data-namespace-typo3-fluid="true" lang="en" xmlns:b="http://typo3.org/ns/T3v/T3vBase/ViewHelpers"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+  <b:variable name="gridElement" value="t3v-base-modal-grid-element" />
+  <b:variable name="uid" value="{b:variable.convert(value: data.uid, type: 'integer')}" />
+  <b:variable name="type" value="{b:variable.convert(value: data.flexform_type, type: 'string', default: 'default')}" />
+  <b:variable name="handle" value="{b:variable.convert(value: data.flexform_handle, type: 'string', default: 'none')}" />
+  <b:variable name="handle" value="{b:format.handle(input: handle)}" />
+  <b:variable name="ref" value="{b:variable.convert(value: data.flexform_reference, type: 'string', default: 'none')}" />
+  <b:variable name="layout" value="{b:variable.convert(value: data.flexform_layout, type: 'string', default: 'default')}" />
+  <b:variable name="layout" value="{b:format.replace(content: layout, substring: ',', replacement: ' ')}" />
+  <b:variable name="container" value="{b:variable.convert(value: data.flexform_container, type: 'string', default: 'none')}" />
+  <b:variable name="theme" value="{b:variable.convert(value: data.theme.handle, type: 'string', default: 'default')}" />
+  <b:variable name="styles" value="{b:variable.convert(value: data.styles, type: 'ObjectStorage')}" />
+  <b:variable name="additionalAttributes" value="{type: type, handle: handle, ref: ref, layout: layout, theme: theme}" />
 
-  <v:tag name="{gridElement}" id="c{uid}" class="{gridElement} grid-element" additionalAttributes="{additionalAttributes}"
+  <b:tag name="{gridElement}" id="c{uid}" class="{gridElement} grid-element" additionalAttributes="{additionalAttributes}"
          hideIfEmpty="false" forceClosingTag="true">
     <f:if condition="{container} != 'none'">
       <f:then>
-        <v:tag name="div" class="{gridElement}__container container" data="{type: container}" hideIfEmpty="true">
+        <b:tag name="div" class="{gridElement}__container container" data="{type: container}" hideIfEmpty="true">
           <f:render section="GridElement" arguments="{_all}" />
-        </v:tag>
+        </b:tag>
       </f:then>
 
       <f:else>
         <f:render section="GridElement" arguments="{_all}" />
       </f:else>
     </f:if>
-  </v:tag>
+  </b:tag>
 </html>

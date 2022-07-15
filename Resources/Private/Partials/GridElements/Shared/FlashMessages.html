@@ -1,10 +1,10 @@
-<html data-namespace-typo3-fluid="true" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
-  <v:tag name="div" class="{gridElement}__flash-messages grid-element__flash-messages" hideIfEmpty="true">
-    <v:tag name="ul" class="flash-messages" hideIfEmpty="true">
+<html data-namespace-typo3-fluid="true" lang="en" xmlns:b="http://typo3.org/ns/T3v/T3vBase/ViewHelpers"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+  <b:tag name="div" class="{gridElement}__flash-messages grid-element__flash-messages" hideIfEmpty="true">
+    <b:tag name="ul" class="flash-messages" hideIfEmpty="true">
       <f:flashMessages as="flashMessages">
         <f:for each="{flashMessages}" as="flashMessage">
-          <v:variable.set name="class" value="{v:format.replace(substring: 'alert-', content: flashMessage.class)}" />
+          <b:variable name="class" value="{b:format.replace(substring: 'alert-', content: flashMessage.class)}" />
 
           <li class="flash-message--{class} flash-message">
             <f:if condition="{flashMessage.title}">
@@ -15,6 +15,6 @@
           </li>
         </f:for>
       </f:flashMessages>
-    </v:tag>
+    </b:tag>
   </v:tag>
 </html>

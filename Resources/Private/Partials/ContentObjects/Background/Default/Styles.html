@@ -35,7 +35,7 @@
       }
 
       <f:if condition="{backgroundImage}">
-        <v:variable.set name="height" value="{b:variable.convert(value: backgroundHeight, type: 'integer', default: 256)}" />
+        <b:variable name="height" value="{b:variable.convert(value: backgroundHeight, type: 'integer', default: 256)}" />
 
         @media only screen and (-webkit-min-device-pixel-ratio: 1.5625), only screen and (min-resolution: 150dpi) {
           #<b:variable.get name="id" /> {
