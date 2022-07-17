@@ -47,7 +47,7 @@
     "typo3/cms-core": "^9.5.31 || ^10.4.31 || ^11.5.13",
     "gridelementsteam/gridelements": "dev-9-0 || dev-10-0 || dev-master",
     "sitegeist/sms-responsive-images": "^2.1",
-    "fluidtypo3/vhs": "^6.1",
+    "fluidtypo3/vhs": "^6.0",
     "t3v/t3v_core": "dev-develop",
     "t3v/t3v_translations": "dev-develop"
   },
