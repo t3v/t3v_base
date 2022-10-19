@@ -10,8 +10,9 @@
 
 @import './Base/constants.typoscript'
 @import './Vendor/constants.typoscript'
-@import './ContentObjects/constants.typoscript'
+@import './ContainerElements/constants.typoscript'
 @import './GridElements/constants.typoscript'
+@import './ContentObjects/constants.typoscript'
 
 /*
   === T3v Generator ===

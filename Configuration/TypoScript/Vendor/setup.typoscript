@@ -9,6 +9,7 @@
 */
 
 @import './Extbase/setup.typoscript'
+@import './Container/setup.typoscript'
 @import './Gridelements/setup.typoscript'
 @import './SMSResponsiveImages/setup.typoscript'
 

@@ -66,7 +66,8 @@ Dependencies
 ------------
 
 * TYPO3 CMS 10.4 or greater
-* Grid Elements extension
+* Container extension *
+* Grid Elements extension *
 * SMS Responsive Images extension
 * VHS extension
 * T3v Core extension
