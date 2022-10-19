@@ -6,7 +6,7 @@
 Overview
 --------
 
-### Content Objects
+### Content objects
 
 * Background
 * Button
@@ -18,7 +18,7 @@ Overview
 * Search bar
 * Spacer
 
-### Grid Elements
+### Grid elements
 
 #### Body
 
@@ -65,7 +65,7 @@ Overview
 Dependencies
 ------------
 
-* TYPO3 CMS 9.5 or greater
+* TYPO3 CMS 10.4 or greater
 * Grid Elements extension
 * SMS Responsive Images extension
 * VHS extension
