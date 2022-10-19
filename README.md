@@ -65,7 +65,7 @@ Overview
 Dependencies
 ------------
 
-* TYPO3 CMS 9.5 or greater
+* TYPO3 CMS 9.5
 * Grid Elements extension
 * SMS Responsive Images extension
 * VHS extension
