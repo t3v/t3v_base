@@ -44,8 +44,8 @@
   ],
   "require": {
     "php": ">= 7.2",
-    "typo3/cms-core": "^9.5.31 || ^10.4.32 || ^11.5.16",
-    "gridelementsteam/gridelements": "dev-9-0 || dev-10-0 || dev-master",
+    "typo3/cms-core": "^9.5.31",
+    "gridelementsteam/gridelements": "dev-9-0",
     "sitegeist/sms-responsive-images": "^2.1",
     "fluidtypo3/vhs": "^6.0",
     "t3v/t3v_core": "dev-develop",
