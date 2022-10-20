@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Removed `gridelements` as dependency, provider extension should decide (breaking change)
 * Migration from Gridelements to Container extension (breaking change)
 * Updated Travis CI configuration
 * Dropped support for TYPO3 9.5 (breaking change)
