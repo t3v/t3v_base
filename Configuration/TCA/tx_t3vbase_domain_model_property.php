@@ -1,17 +1,19 @@
 <?php
+declare(strict_types=1);
+
 /**
  * The `tx_t3vbase_domain_model_property` TCA configuration.
- *
- * @noinspection PhpFullyQualifiedNameUsageInspection
  */
+
+use T3v\T3vCore\Utility\ExtensionUtility;
 
 defined('TYPO3') or die();
 
 // === Variables ===
 
 $extensionKey = 't3v_base';
-$lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'locallang_tca.xlf');
-$iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::getIconsFolder($extensionKey);
+$lll = ExtensionUtility::getLocallang($extensionKey, 'locallang_tca.xlf');
+$iconsFolder = ExtensionUtility::getIconsFolder($extensionKey);
 
 return [
     // === Columns ===
@@ -312,7 +314,7 @@ return [
         //     'default' => 'mimetypes-x-content-text'
         // ],
         // 'thumbnail' => 'thumbnail',
-        'iconfile' => "${iconsFolder}/TCA/Property.svg",
+        'iconfile' => "$iconsFolder/TCA/Property.svg",
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
         'transOrigDiffSourceField' => 'l10n_diffsource',

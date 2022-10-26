@@ -1,9 +1,12 @@
 <?php
+declare(strict_types=1);
+
 /**
  * The extension tables configuration.
- *
- * @noinspection PhpFullyQualifiedNameUsageInspection
  */
+
+use T3v\T3vCore\Utility\ExtensionUtility;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 defined('TYPO3') or die();
 
@@ -11,7 +14,7 @@ defined('TYPO3') or die();
     // === Variables ===
 
     $extensionKey = 't3v_base';
-    $languageFolder = \T3v\T3vCore\Utility\ExtensionUtility::getLanguageFolder($extensionKey);
+    $languageFolder = ExtensionUtility::getLanguageFolder($extensionKey);
 
     // === TCA ===
 
@@ -29,13 +32,12 @@ defined('TYPO3') or die();
     ];
 
     foreach ($tables as $table) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
+        ExtensionManagementUtility::addLLrefForTCAdescr(
             $table,
-            "{$languageFolder}/locallang_csh_{$table}.xlf"
+            "$languageFolder/locallang_csh_$table.xlf"
         );
 
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages($table);
+        ExtensionManagementUtility::allowTableOnStandardPages($table);
     }
-
     // === T3v Generator ===
 })();

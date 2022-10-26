@@ -1,17 +1,21 @@
 <?php
+declare(strict_types=1);
+
 /**
  * The `tx_t3vbase_domain_model_style` TCA configuration.
- *
- * @noinspection PhpFullyQualifiedNameUsageInspection
  */
+
+use T3v\T3vCore\Utility\ExtensionUtility;
+use TYPO3\CMS\Core\Resource\AbstractFile;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 defined('TYPO3') or die();
 
 // === Variables ===
 
 $extensionKey = 't3v_base';
-$lll = \T3v\T3vCore\Utility\ExtensionUtility::getLocallang($extensionKey, 'locallang_tca.xlf');
-$iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::getIconsFolder($extensionKey);
+$lll = ExtensionUtility::getLocallang($extensionKey, 'locallang_tca.xlf');
+$iconsFolder = ExtensionUtility::getIconsFolder($extensionKey);
 
 return [
     // === Columns ===
@@ -121,7 +125,7 @@ return [
 
         'background_images' => [
             'label' => $lll . 'tx_t3vbase_domain_model_style.columns.backgroundImages.label',
-            'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+            'config' => ExtensionManagementUtility::getFileFieldTCAConfig(
                 'image',
                 [
                     'foreign_match_fields' => [
@@ -131,13 +135,13 @@ return [
                     ],
                     'overrideChildTca' => [
                         'types' => [
-                            \TYPO3\CMS\Core\Resource\AbstractFile::FILETYPE_UNKNOWN => [
+                            AbstractFile::FILETYPE_UNKNOWN => [
                                 'showitem' => '
                                     --palette--;;imageoverlayPalette,
                                     --palette--;;filePalette
                                 '
                             ],
-                            \TYPO3\CMS\Core\Resource\AbstractFile::FILETYPE_IMAGE => [
+                            AbstractFile::FILETYPE_IMAGE => [
                                 'showitem' => '
                                      --palette--;;imageoverlayPalette,
                                      --palette--;;filePalette
@@ -370,7 +374,7 @@ return [
         //     'default' => 'mimetypes-x-content-text'
         // ],
         // 'thumbnail' => 'thumbnail',
-        'iconfile' => "${iconsFolder}/TCA/Style.svg",
+        'iconfile' => "$iconsFolder/TCA/Style.svg",
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
         'transOrigDiffSourceField' => 'l10n_diffsource',

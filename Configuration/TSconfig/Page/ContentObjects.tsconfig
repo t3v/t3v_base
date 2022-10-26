@@ -12,8 +12,8 @@ mod {
   wizards {
     newContentElement {
       wizardItems {
-        contentObjects {
-          header = LLL:EXT:t3v_translations/Resources/Private/Language/locallang_ttc.xlf:mod.wizards.newContentElement.wizardItems.contentObjects.header
+        contentObject {
+          header = LLL:EXT:t3v_translations/Resources/Private/Language/locallang_ttc.xlf:mod.wizards.newContentElement.wizardItems.contentObject.header
           show = *
         }
       }

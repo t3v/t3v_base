@@ -1,9 +1,17 @@
 <?php
+declare(strict_types=1);
+
 /**
  * The local extension configuration.
- *
- * @noinspection PhpFullyQualifiedNameUsageInspection
  */
+
+use T3v\T3vCore\Utility\ExtensionUtility;
+use T3v\T3vCore\Utility\IconUtility;
+use TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider;
+use TYPO3\CMS\Core\Imaging\IconRegistry;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility as ExtbaseExtensionUtility;
 
 defined('TYPO3') or die();
 
@@ -12,13 +20,13 @@ defined('TYPO3') or die();
 
     $namespace = 'T3v';
     $extensionKey = 't3v_base';
-    $extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::getSignature($namespace, $extensionKey);
-    $tsConfigFolder = \T3v\T3vCore\Utility\ExtensionUtility::getTSConfigFolder($extensionKey);
-    $iconsFolder = \T3v\T3vCore\Utility\ExtensionUtility::getIconsFolder($extensionKey);
+    $extensionSignature = ExtensionUtility::getSignature($namespace, $extensionKey);
+    $tsConfigFolder = ExtensionUtility::getTSConfigFolder($extensionKey);
+    $iconsFolder = ExtensionUtility::getIconsFolder($extensionKey);
 
     // === TSconfig ===
 
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+    ExtensionManagementUtility::addPageTSConfig(
         "<INCLUDE_TYPOSCRIPT: source=\"$tsConfigFolder/Page.tsconfig\">"
     );
 
@@ -26,7 +34,7 @@ defined('TYPO3') or die();
 
     // --- Background Content Object ---
 
-    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    ExtbaseExtensionUtility::configurePlugin(
         $extensionSignature,
 
         // The unique name of the content object in upper camel case:
@@ -46,7 +54,7 @@ defined('TYPO3') or die();
 
     // --- Copyright Content Object ---
 
-    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    ExtbaseExtensionUtility::configurePlugin(
         $extensionSignature,
 
         // The unique name of the content object in upper camel case:
@@ -66,7 +74,7 @@ defined('TYPO3') or die();
 
     // --- Label Content Object ---
 
-    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    ExtbaseExtensionUtility::configurePlugin(
         $extensionSignature,
 
         // The unique name of the content object in upper camel case:
@@ -86,7 +94,7 @@ defined('TYPO3') or die();
 
     // --- Icon Content Object ---
 
-    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    ExtbaseExtensionUtility::configurePlugin(
         $extensionSignature,
 
         // The unique name of the content object in upper camel case:
@@ -106,7 +114,7 @@ defined('TYPO3') or die();
 
     // --- Link Content Object ---
 
-    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    ExtbaseExtensionUtility::configurePlugin(
         $extensionSignature,
 
         // The unique name of the content object in upper camel case:
@@ -126,7 +134,7 @@ defined('TYPO3') or die();
 
     // --- Logo Content Object ---
 
-    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    ExtbaseExtensionUtility::configurePlugin(
         $extensionSignature,
 
         // The unique name of the content object in upper camel case:
@@ -146,7 +154,7 @@ defined('TYPO3') or die();
 
     // --- Search Bar Content Object ---
 
-    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    ExtbaseExtensionUtility::configurePlugin(
         $extensionSignature,
 
         // The unique name of the content object in upper camel case:
@@ -166,7 +174,7 @@ defined('TYPO3') or die();
 
     // --- Spacer Content Object ---
 
-    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    ExtbaseExtensionUtility::configurePlugin(
         $extensionSignature,
 
         // The unique name of the content object in upper camel case:
@@ -189,7 +197,7 @@ defined('TYPO3') or die();
     if (TYPO3_MODE === 'BE') {
         // --- Icons ---
 
-        $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+        $iconRegistry = GeneralUtility::makeInstance(IconRegistry::class);
         $icons = [
             '1 Column Layout Grid Element' => "$iconsFolder/GridElements/ColumnLayoutGridElement/1Column.svg",
             '2 Column Layout Grid Element' => "$iconsFolder/GridElements/ColumnLayoutGridElement/2Column.svg",
@@ -219,16 +227,15 @@ defined('TYPO3') or die();
         ];
 
         foreach ($icons as $name => $source) {
-            $iconIdentifier = \T3v\T3vCore\Utility\IconUtility::getIdentifier($name);
-            $iconSignature = \T3v\T3vCore\Utility\IconUtility::getSignature($extensionKey, $iconIdentifier);
+            $iconIdentifier = IconUtility::getIdentifier($name);
+            $iconSignature = IconUtility::getSignature($extensionKey, $iconIdentifier);
 
             $iconRegistry->registerIcon(
                 $iconSignature,
-                \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+                SvgIconProvider::class,
                 ['source' => $source]
             );
         }
     }
-
     // === T3v Generator ===
 })();

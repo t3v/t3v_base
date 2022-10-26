@@ -8,7 +8,7 @@ mod {
   wizards {
     newContentElement {
       wizardItems {
-        contentObjects {
+        contentObject {
           elements {
             t3vBaseBackground {
               title = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:contentObjects.background.title
