@@ -10,7 +10,7 @@
 
 @import './Base/constants.typoscript'
 @import './Vendor/constants.typoscript'
-@import './ContainerElements/constants.typoscript'
+@import './Containers/constants.typoscript'
 @import './GridElements/constants.typoscript'
 @import './ContentObjects/constants.typoscript'
 

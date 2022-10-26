@@ -1,0 +1,21 @@
+/*
+  --------------------------------
+  | T3v Base Containers TSconfig |
+  --------------------------------
+*/
+
+/*
+  === New Content Element Wizard Configuration ===
+*/
+
+mod {
+  wizards {
+    newContentElement {
+      wizardItems {
+        container {
+          header = LLL:EXT:t3v_translations/Resources/Private/Language/locallang_ttc.xlf:mod.wizards.newContentElement.wizardItems.container.header
+        }
+      }
+    }
+  }
+}
