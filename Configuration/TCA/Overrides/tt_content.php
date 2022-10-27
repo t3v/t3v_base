@@ -8,6 +8,7 @@ declare(strict_types=1);
 use T3v\T3vCore\Utility\ContentObjectUtility;
 use T3v\T3vCore\Utility\ExtensionUtility;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility as ExtbaseExtensionUtility;
 
 defined('TYPO3') or die();
 
@@ -70,7 +71,7 @@ $contentObjectIdentifier = ContentObjectUtility::getIdentifier($contentObjectKey
 $contentObjectSignature = ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
 // Registers the content object:
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
+ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
@@ -87,7 +88,7 @@ $contentObjectIdentifier = ContentObjectUtility::getIdentifier($contentObjectKey
 $contentObjectSignature = ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
 // Registers the content object:
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
+ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
@@ -104,7 +105,7 @@ $contentObjectIdentifier = ContentObjectUtility::getIdentifier($contentObjectKey
 $contentObjectSignature = ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
 // Registers the content object:
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
+ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
@@ -121,7 +122,7 @@ $contentObjectIdentifier = ContentObjectUtility::getIdentifier($contentObjectKey
 $contentObjectSignature = ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
 // Registers the content object:
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
+ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
@@ -138,7 +139,7 @@ $contentObjectIdentifier = ContentObjectUtility::getIdentifier($contentObjectKey
 $contentObjectSignature = ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
 // Registers the content object:
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
+ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
@@ -155,7 +156,7 @@ $contentObjectIdentifier = ContentObjectUtility::getIdentifier($contentObjectKey
 $contentObjectSignature = ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
 // Registers the content object:
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
+ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
@@ -172,7 +173,7 @@ $contentObjectIdentifier = ContentObjectUtility::getIdentifier($contentObjectKey
 $contentObjectSignature = ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
 // Registers the content object:
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
+ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
@@ -189,7 +190,7 @@ $contentObjectIdentifier = ContentObjectUtility::getIdentifier($contentObjectKey
 $contentObjectSignature = ContentObjectUtility::getSignature($extensionIdentifier, $contentObjectIdentifier);
 
 // Registers the content object:
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
+ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier, $contentObjectLabel);
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
