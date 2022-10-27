@@ -18,9 +18,7 @@ defined('TYPO3') or die();
 (static function () {
     // === Variables ===
 
-    $namespace = 'T3v';
     $extensionKey = 't3v_base';
-    $extensionSignature = ExtensionUtility::getSignature($namespace, $extensionKey);
     $tsConfigFolder = ExtensionUtility::getTSConfigFolder($extensionKey);
     $iconsFolder = ExtensionUtility::getIconsFolder($extensionKey);
 
@@ -35,7 +33,7 @@ defined('TYPO3') or die();
     // --- Background Content Object ---
 
     ExtbaseExtensionUtility::configurePlugin(
-        $extensionSignature,
+        $extensionKey,
 
         // The unique name of the content object in upper camel case:
         'Background',
@@ -55,7 +53,7 @@ defined('TYPO3') or die();
     // --- Copyright Content Object ---
 
     ExtbaseExtensionUtility::configurePlugin(
-        $extensionSignature,
+        $extensionKey,
 
         // The unique name of the content object in upper camel case:
         'Copyright',
@@ -75,7 +73,7 @@ defined('TYPO3') or die();
     // --- Label Content Object ---
 
     ExtbaseExtensionUtility::configurePlugin(
-        $extensionSignature,
+        $extensionKey,
 
         // The unique name of the content object in upper camel case:
         'Label',
@@ -95,7 +93,7 @@ defined('TYPO3') or die();
     // --- Icon Content Object ---
 
     ExtbaseExtensionUtility::configurePlugin(
-        $extensionSignature,
+        $extensionKey,
 
         // The unique name of the content object in upper camel case:
         'Icon',
@@ -115,7 +113,7 @@ defined('TYPO3') or die();
     // --- Link Content Object ---
 
     ExtbaseExtensionUtility::configurePlugin(
-        $extensionSignature,
+        $extensionKey,
 
         // The unique name of the content object in upper camel case:
         'Link',
@@ -135,7 +133,7 @@ defined('TYPO3') or die();
     // --- Logo Content Object ---
 
     ExtbaseExtensionUtility::configurePlugin(
-        $extensionSignature,
+        $extensionKey,
 
         // The unique name of the content object in upper camel case:
         'Logo',
@@ -155,7 +153,7 @@ defined('TYPO3') or die();
     // --- Search Bar Content Object ---
 
     ExtbaseExtensionUtility::configurePlugin(
-        $extensionSignature,
+        $extensionKey,
 
         // The unique name of the content object in upper camel case:
         'SearchBar',
@@ -175,7 +173,7 @@ defined('TYPO3') or die();
     // --- Spacer Content Object ---
 
     ExtbaseExtensionUtility::configurePlugin(
-        $extensionSignature,
+        $extensionKey,
 
         // The unique name of the content object in upper camel case:
         'Spacer',
