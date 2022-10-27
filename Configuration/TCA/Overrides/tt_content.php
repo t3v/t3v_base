@@ -75,7 +75,7 @@ ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier,
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
-ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/$contentObjectKey.xml");
+ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/Background.xml");
 
 // Disables the display of `layout`, `pages`, `select_key` and `recursive` field:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
@@ -92,7 +92,7 @@ ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier,
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
-ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/$contentObjectKey.xml");
+ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/Copyright.xml");
 
 // Disables the display of `layout`, `pages`, `select_key` and `recursive` field:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
@@ -109,7 +109,7 @@ ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier,
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
-ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/$contentObjectKey.xml");
+ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/Icon.xml");
 
 // Disables the display of `layout`, `pages`, `select_key` and `recursive` field:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
@@ -126,7 +126,7 @@ ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier,
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
-ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/$contentObjectKey.xml");
+ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/Label.xml");
 
 // Disables the display of `layout`, `pages`, `select_key` and `recursive` field:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
@@ -143,7 +143,7 @@ ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier,
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
-ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/$contentObjectKey.xml");
+ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/Link.xml");
 
 // Disables the display of `layout`, `pages`, `select_key` and `recursive` field:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
@@ -160,7 +160,7 @@ ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier,
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
-ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/$contentObjectKey.xml");
+ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/Logo.xml");
 
 // Disables the display of `layout`, `pages`, `select_key` and `recursive` field:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
@@ -177,7 +177,7 @@ ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier,
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
-ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/$contentObjectKey.xml");
+ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/SearchBar.xml");
 
 // Disables the display of `layout`, `pages`, `select_key` and `recursive` field:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
@@ -194,7 +194,7 @@ ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectIdentifier,
 
 // Activates the display of the `flexform` field and set the FlexForm definition:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentObjectSignature] = 'pi_flexform';
-ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/$contentObjectKey.xml");
+ExtensionManagementUtility::addPiFlexFormValue($contentObjectSignature, "$flexFormsFolder/ContentObjects/Spacer.xml");
 
 // Disables the display of `layout`, `pages`, `select_key` and `recursive` field:
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentObjectSignature] = 'layout, pages, select_key, recursive';
