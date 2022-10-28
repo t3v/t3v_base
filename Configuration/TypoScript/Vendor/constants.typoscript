@@ -11,6 +11,7 @@
 @import './Extbase/constants.typoscript'
 @import './Container/constants.typoscript'
 @import './Gridelements/constants.typoscript'
+@import './Picture/constants.typoscript'
 @import './SMSResponsiveImages/constants.typoscript'
 
 /*

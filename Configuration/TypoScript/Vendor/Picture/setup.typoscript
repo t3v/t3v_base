@@ -1,0 +1,11 @@
+/*
+  --------------------------
+  | T3v Base Picture Setup |
+  --------------------------
+*/
+
+/*
+  === Imports ===
+*/
+
+@import 'EXT:picture/Configuration/TypoScript/setup.typoscript'
