@@ -16,6 +16,7 @@ $EM_CONF[$_EXTKEY] = [
     'constraints' => [
         'depends' => [
             'typo3' => '10.4.0-11.5.99',
+            'picture' => '',
             'sms_responsive_images' => '',
             'vhs' => '',
             't3v_core' => '',
