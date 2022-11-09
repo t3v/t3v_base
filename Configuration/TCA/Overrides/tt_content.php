@@ -66,49 +66,49 @@ ExtensionManagementUtility::addFieldsToPalette(
 $lll = ExtensionUtility::getLocallang($extensionKey, 'locallang_ttc.xlf');
 
 $contentObjects = [
-    'background' => [
+    'Background' => [
         'label' => $lll . 'contentObjects.background.label',
         'flexForm' => $flexFormsFolder . '/ContentObjects/Background.xml',
         'iconIdentifier' => IconUtility::getIdentifier($extensionKey, 'background')
     ],
 
-    'copyright' => [
+    'Copyright' => [
         'label' => $lll . 'contentObjects.copyright.label',
         'flexForm' => $flexFormsFolder . '/ContentObjects/Copyright.xml',
         'iconIdentifier' => IconUtility::getIdentifier($extensionKey, 'copyright')
     ],
 
-    'icon' => [
+    'Icon' => [
         'label' => $lll . 'contentObjects.icon.label',
         'flexForm' => $flexFormsFolder . '/ContentObjects/Icon.xml',
         'iconIdentifier' => IconUtility::getIdentifier($extensionKey, 'icon')
     ],
 
-    'label' => [
+    'Label' => [
         'label' => $lll . 'contentObjects.label.label',
         'flexForm' => $flexFormsFolder . '/ContentObjects/Label.xml',
         'iconIdentifier' => IconUtility::getIdentifier($extensionKey, 'label')
     ],
 
-    'link' => [
+    'Link' => [
         'label' => $lll . 'contentObjects.link.label',
         'flexForm' => $flexFormsFolder . '/ContentObjects/Link.xml',
         'iconIdentifier' => IconUtility::getIdentifier($extensionKey, 'link')
     ],
 
-    'logo' => [
+    'Logo' => [
         'label' => $lll . 'contentObjects.logo.label',
         'flexForm' => $flexFormsFolder . '/ContentObjects/Logo.xml',
         'iconIdentifier' => IconUtility::getIdentifier($extensionKey, 'logo')
     ],
 
-    'searchBar' => [
+    'Search bar' => [
         'label' => $lll . 'contentObjects.searchBar.label',
         'flexForm' => $flexFormsFolder . '/ContentObjects/SearchBar.xml',
         'iconIdentifier' => IconUtility::getIdentifier($extensionKey, 'search_bar')
     ],
 
-    'spacer' => [
+    'Spacer' => [
         'label' => $lll . 'contentObjects.spacer.label',
         'flexForm' => $flexFormsFolder . '/ContentObjects/Spacer.xml',
         'iconIdentifier' => IconUtility::getIdentifier($extensionKey, 'spacer')
@@ -120,7 +120,12 @@ foreach ($contentObjects as $name => $contentObject) {
     $contentObjectIdentifier = ContentObjectUtility::getIdentifier($extensionSignature, $contentObjectSignature);
 
     // Registers the content object:
-    ExtbaseExtensionUtility::registerPlugin($extensionKey, $contentObjectSignature, $contentObject['label']);
+    ExtbaseExtensionUtility::registerPlugin(
+        $extensionKey,
+        $contentObjectSignature,
+        $contentObject['label'],
+        $contentObject['iconIdentifier']
+    );
 
     if (!empty($contentObject['flexForm'])) {
         // Activates the display of the `flexform` field and sets the FlexForm definition:
