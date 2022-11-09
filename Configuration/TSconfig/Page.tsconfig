@@ -9,7 +9,7 @@
 */
 
 @import './Page/Containers.tsconfig'
-@import './Page/GridElements.tsconfig'
+# @import './Page/GridElements.tsconfig'
 @import './Page/ContentElements.tsconfig'
 @import './Page/ContentObjects.tsconfig'
 @import './Page/TCE.tsconfig'

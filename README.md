@@ -18,7 +18,7 @@ Overview
 * Search bar
 * Spacer
 
-### Grid elements
+### Grid elements *
 
 #### Body
 
