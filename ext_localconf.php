@@ -24,13 +24,11 @@ defined('TYPO3') or die();
 
     // === TSconfig ===
 
-    ExtensionManagementUtility::addPageTSConfig(
-        "<INCLUDE_TYPOSCRIPT: source=\"$tsConfigFolder/Page.tsconfig\">"
-    );
+    ExtensionManagementUtility::addPageTSConfig("<INCLUDE_TYPOSCRIPT: source=\"$tsConfigFolder/Page.tsconfig\">");
 
-    // === Content Objects ===
+    // === Content objects ===
 
-    // --- Background Content Object ---
+    // --- Background ---
 
     ExtbaseExtensionUtility::configurePlugin(
         $extensionKey,
@@ -50,7 +48,7 @@ defined('TYPO3') or die();
         ]
     );
 
-    // --- Copyright Content Object ---
+    // --- Copyright ---
 
     ExtbaseExtensionUtility::configurePlugin(
         $extensionKey,
@@ -70,7 +68,7 @@ defined('TYPO3') or die();
         ]
     );
 
-    // --- Label Content Object ---
+    // --- Label ---
 
     ExtbaseExtensionUtility::configurePlugin(
         $extensionKey,
@@ -90,7 +88,7 @@ defined('TYPO3') or die();
         ]
     );
 
-    // --- Icon Content Object ---
+    // --- Icon ---
 
     ExtbaseExtensionUtility::configurePlugin(
         $extensionKey,
@@ -110,7 +108,7 @@ defined('TYPO3') or die();
         ]
     );
 
-    // --- Link Content Object ---
+    // --- Link ---
 
     ExtbaseExtensionUtility::configurePlugin(
         $extensionKey,
@@ -130,7 +128,7 @@ defined('TYPO3') or die();
         ]
     );
 
-    // --- Logo Content Object ---
+    // --- Logo ---
 
     ExtbaseExtensionUtility::configurePlugin(
         $extensionKey,
@@ -150,7 +148,7 @@ defined('TYPO3') or die();
         ]
     );
 
-    // --- Search Bar Content Object ---
+    // --- Search bar ---
 
     ExtbaseExtensionUtility::configurePlugin(
         $extensionKey,
@@ -170,7 +168,7 @@ defined('TYPO3') or die();
         ]
     );
 
-    // --- Spacer Content Object ---
+    // --- Spacer ---
 
     ExtbaseExtensionUtility::configurePlugin(
         $extensionKey,
@@ -225,15 +223,16 @@ defined('TYPO3') or die();
         ];
 
         foreach ($icons as $name => $source) {
-            $iconIdentifier = IconUtility::getIdentifier($name);
-            $iconSignature = IconUtility::getSignature($extensionKey, $iconIdentifier);
+            $iconSignature = IconUtility::getSignature($name);
+            $iconIdentifier = IconUtility::getIdentifier($extensionKey, $iconSignature);
 
             $iconRegistry->registerIcon(
-                $iconSignature,
+                $iconIdentifier,
                 SvgIconProvider::class,
                 ['source' => $source]
             );
         }
     }
+
     // === T3v Generator ===
 })();

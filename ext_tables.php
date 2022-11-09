@@ -32,12 +32,9 @@ defined('TYPO3') or die();
     ];
 
     foreach ($tables as $table) {
-        ExtensionManagementUtility::addLLrefForTCAdescr(
-            $table,
-            "$languageFolder/locallang_csh_$table.xlf"
-        );
-
+        ExtensionManagementUtility::addLLrefForTCAdescr($table, "$languageFolder/locallang_csh_$table.xlf");
         ExtensionManagementUtility::allowTableOnStandardPages($table);
     }
+
     // === T3v Generator ===
 })();
