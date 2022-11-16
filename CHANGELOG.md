@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Moved `Variable/String/DefaultViewHelper` to `Variable/DefaultViewHelper` (breaking change)
 * Removed `gridelements` as dependency, the provider extension should decide (breaking change)
 * Migration from `gridelements` to `container` extension (breaking change)
 * Updated Travis CI configuration

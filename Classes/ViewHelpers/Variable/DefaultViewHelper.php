@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace T3v\T3vBase\ViewHelpers\Variable\String;
+namespace T3v\T3vBase\ViewHelpers\Variable;
 
 use Closure;
 use T3v\T3vCore\ViewHelpers\AbstractViewHelper;
@@ -10,7 +10,7 @@ use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 /**
  * The default view helper class.
  *
- * @package T3v\T3vBase\ViewHelpers\Variable\String
+ * @package T3v\T3vBase\ViewHelpers\Variable
  */
 class DefaultViewHelper extends AbstractViewHelper
 {
@@ -21,8 +21,8 @@ class DefaultViewHelper extends AbstractViewHelper
     {
         parent::initializeArguments();
 
-        $this->registerArgument('value', 'string', 'The value');
-        $this->registerArgument('default', 'string', 'The default value, defaults to `-`', false, '-');
+        $this->registerArgument('value', 'mixed', 'The value');
+        $this->registerArgument('default', 'mixed', 'The default value, defaults to `-`', false, '-');
     }
 
     /**
