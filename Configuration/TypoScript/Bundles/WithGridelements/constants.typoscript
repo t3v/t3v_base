@@ -1,0 +1,18 @@
+/*
+  ----------------------
+  | T3v Base Constants |
+  ----------------------
+*/
+
+/*
+  === Imports ===
+*/
+
+@import '../../Base/constants.typoscript'
+@import '../../Vendor/constants.typoscript'
+@import '../../GridElements/constants.typoscript'
+@import '../../ContentObjects/constants.typoscript'
+
+/*
+  === T3v Generator ===
+*/
