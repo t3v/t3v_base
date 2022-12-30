@@ -43,7 +43,7 @@
     }
   ],
   "require": {
-    "php": ">= 7.2",
+    "php": ">= 7.2 <= 7.4",
     "typo3/cms-core": "^9.5.31",
     "gridelementsteam/gridelements": "dev-9-0",
     "sitegeist/sms-responsive-images": "^2.1",
