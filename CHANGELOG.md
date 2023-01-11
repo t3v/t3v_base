@@ -3,15 +3,15 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+3.0.0
+-----
 
 * Moved `Variable/String/DefaultViewHelper` to `Variable/DefaultViewHelper` (breaking change)
 * Removed `gridelements` as dependency, the corresponding provider extension should decide (breaking change)
 * Begin migration from `gridelements` to `container` extension (breaking change)
-* Updated Travis CI configuration
 * Dropped support for TYPO3 9.5 (breaking change)
 * Dropped support for PHP < 7.4 (breaking change)
+* Updated Travis CI configuration
 * Dropped support for AppVeyor
 
 2.0.0
