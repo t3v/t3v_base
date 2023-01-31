@@ -8,7 +8,7 @@ use FluidTYPO3\Vhs\ViewHelpers\Page\LanguageMenuViewHelper as VhsLanguageMenuVie
 /**
  * The language menu view helper class.
  *
- * @package T3v\T3vBase\ViewHelpers\Format
+ * @package T3v\T3vBase\ViewHelpers\Page
  */
 class LanguageMenuViewHelper extends VhsLanguageMenuViewHelper
 {

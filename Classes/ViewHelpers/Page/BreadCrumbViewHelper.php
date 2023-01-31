@@ -8,7 +8,7 @@ use FluidTYPO3\Vhs\ViewHelpers\Page\BreadCrumbViewHelper as VhsBreadCrumbViewHel
 /**
  * The bread crumb view helper class.
  *
- * @package T3v\T3vBase\ViewHelpers\Format
+ * @package T3v\T3vBase\ViewHelpers\Page
  */
 class BreadCrumbViewHelper extends VhsBreadCrumbViewHelper
 {

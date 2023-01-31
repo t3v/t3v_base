@@ -3,6 +3,12 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
+Unreleased
+----------
+
+* Added more view helpers
+* Overridden `ConvertViewHelper`
+
 3.0.0
 -----
 
