@@ -74,6 +74,7 @@ class RenderingTest extends FunctionalTestCase
 
     /**
      * Setup before running tests.
+     *
      * @throws DBALException
      * @throws Exception
      */
