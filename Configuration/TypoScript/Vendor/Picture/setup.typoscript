@@ -9,3 +9,38 @@
 */
 
 @import 'EXT:picture/Configuration/TypoScript/setup.typoscript'
+
+/*
+  === Plugin Configuration ===
+*/
+
+plugin {
+  tx_picture {
+    # The default for adding images as WebP:
+    addWebp = 0
+
+    # The default for using lossless compression for WebP images:
+    lossless = 0
+
+    # The default for adding retina images:
+    useRetina = 1
+
+    # The number of retina variants.
+    #
+    # The key must be a multiplier of the image size and the value is the multiplier string added to the `srcset` attribute's value.
+    # Works only in combination with `useRetina = 1`.
+    retina {
+      2 = 2x
+    }
+
+    # The breakpoints for the media query specified in the sources attribute:
+    breakpoints {
+      small = 640
+      medium = 1024
+      large = 1280
+    }
+
+    # Use the same lazy loading setting as the default in styles content:
+    lazyLoading = {$styles.content.image.lazyLoading}
+  }
+}
