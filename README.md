@@ -6,12 +6,22 @@
 Dependencies
 ------------
 
+### Core
+
 * TYPO3 CMS 10.4 or greater
-* Container extension *
-* Gridelements extension *
+
+### Frontend
+
+* Container extension or gridelements extension
+* VHS extension
+
+### Assets
+
 * Picture extension
 * SMS Responsive Images extension
-* VHS extension
+
+### TYPO3voilà
+
 * T3v Core extension
 * T3v Translations extension
 

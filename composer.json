@@ -39,9 +39,9 @@
   "require": {
     "php": ">= 7.4",
     "typo3/cms-core": "^10.4.36 || ^11.5.25",
+    "fluidtypo3/vhs": "^6.1",
     "b13/picture": "^1.3",
     "sitegeist/sms-responsive-images": "^2.1",
-    "fluidtypo3/vhs": "^6.1",
     "t3v/t3v_core": "dev-develop",
     "t3v/t3v_translations": "dev-develop"
   },
