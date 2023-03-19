@@ -1,7 +1,7 @@
 /*
-  -----------------------------------------
-  | T3v Base With Grid Elements Constants |
-  -----------------------------------------
+  ----------------------------------------------
+  | T3v Base With Container Elements Constants |
+  ----------------------------------------------
 */
 
 /*
@@ -10,11 +10,11 @@
 
 @import '../../Base/constants.typoscript'
 @import '../../Vendor/Extbase/constants.typoscript'
-@import '../../Vendor/Gridelements/constants.typoscript'
+@import '../../Vendor/Container/constants.typoscript'
 @import '../../Vendor/Picture/constants.typoscript'
 @import '../../Vendor/SMSResponsiveImages/constants.typoscript'
 @import '../../Vendor/VHS/constants.typoscript'
-@import '../../GridElements/constants.typoscript'
+@import '../../ContainerElements/constants.typoscript'
 @import '../../ContentObjects/constants.typoscript'
 
 /*

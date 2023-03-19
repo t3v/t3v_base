@@ -3,6 +3,25 @@
 
 **The base extension of [TYPO3voilà].**
 
+Dependencies
+------------
+
+* TYPO3 CMS 10.4 or greater
+* Container extension *
+* Gridelements extension *
+* Picture extension
+* SMS Responsive Images extension
+* VHS extension
+* T3v Core extension
+* T3v Translations extension
+
+Installation
+------------
+
+1. Add T3v Base as dependency to the [Composer] configuration
+2. Run `composer install` or `composer update` to install all dependencies with Composer
+3. Include the TypoScript for T3v Base
+
 Overview
 --------
 
@@ -61,25 +80,6 @@ Overview
 * Region model
 * Style model
 * Theme model
-
-Dependencies
-------------
-
-* TYPO3 CMS 10.4 or greater
-* Container extension *
-* Gridelements extension *
-* Picture extension
-* SMS Responsive Images extension
-* VHS extension
-* T3v Core extension
-* T3v Translations extension
-
-Installation
-------------
-
-1. Add T3v Base as dependency to the [Composer] configuration
-2. Run `composer install` or `composer update` to install all dependencies with Composer
-3. Include the TypoScript for T3v Base
 
 Development
 -----------

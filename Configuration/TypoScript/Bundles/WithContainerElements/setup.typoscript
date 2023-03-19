@@ -1,7 +1,7 @@
 /*
-  -------------------------------------
-  | T3v Base With Grid Elements Setup |
-  -------------------------------------
+  ------------------------------------------
+  | T3v Base With Container Elements Setup |
+  ------------------------------------------
 */
 
 /*
@@ -10,11 +10,11 @@
 
 @import '../../Base/setup.typoscript'
 @import '../../Vendor/Extbase/setup.typoscript'
-@import '../../Vendor/Gridelements/setup.typoscript'
+@import '../../Vendor/Container/setup.typoscript'
 @import '../../Vendor/Picture/setup.typoscript'
 @import '../../Vendor/SMSResponsiveImages/setup.typoscript'
 @import '../../Vendor/VHS/setup.typoscript'
-@import '../../GridElements/setup.typoscript'
+@import '../../ContainerElements/setup.typoscript'
 @import '../../ContentObjects/setup.typoscript'
 
 /*

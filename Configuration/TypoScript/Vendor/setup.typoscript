@@ -10,9 +10,9 @@
 
 @import './Extbase/setup.typoscript'
 @import './Container/setup.typoscript'
-# @import './Gridelements/setup.typoscript'
 @import './Picture/setup.typoscript'
 @import './SMSResponsiveImages/setup.typoscript'
+@import './VHS/setup.typoscript'
 
 /*
   === T3v Generator ===

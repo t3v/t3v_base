@@ -6,8 +6,12 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
-* Added more view helpers
-* Overridden `ConvertViewHelper`
+* Renamed folder `Containers` to `ContainerElements`
+* Added more view helpers from VHS
+* Modified and overridden `ConvertViewHelper` to use default values if empty and not only null
+* Added TypoScript bundles for `container` and `gridelements`
+* Updated Composer configuration
+* Updated dependencies
 
 3.0.0
 -----
