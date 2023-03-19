@@ -24,6 +24,18 @@ defined('TYPO3') or die();
 
     ExtensionManagementUtility::addPageTSConfig("<INCLUDE_TYPOSCRIPT: source=\"$tsConfigFolder/Page.tsconfig\">");
 
+    if (ExtensionManagementUtility::isLoaded('container')) {
+        ExtensionManagementUtility::addPageTSConfig(
+            "<INCLUDE_TYPOSCRIPT: source=\"$tsConfigFolder/Page/ContainerElements.tsconfig\">"
+        );
+    }
+
+    if (ExtensionManagementUtility::isLoaded('gridelements')) {
+        ExtensionManagementUtility::addPageTSConfig(
+            "<INCLUDE_TYPOSCRIPT: source=\"$tsConfigFolder/Page/GridElements.tsconfig\">"
+        );
+    }
+
     // === Content objects ===
 
     // --- Background ---
@@ -231,6 +243,5 @@ defined('TYPO3') or die();
             );
         }
     }
-
     // === T3v Generator ===
 })();

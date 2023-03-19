@@ -6,6 +6,7 @@ Notable changes will be documented in this file. The project adheres to [Semanti
 Unreleased
 ----------
 
+* Load page TSconfig for container or grid elements based on extension loaded
 * Renamed folder `Containers` to `ContainerElements`
 * Added more view helpers from VHS
 * Modified and overridden `ConvertViewHelper` to use default values if empty and not only null
