@@ -10,6 +10,11 @@ Dependencies
 
 * TYPO3 CMS 10.4 or greater
 
+### TYPO3voilà
+
+* T3v Core extension
+* T3v Translations extension
+
 ### Frontend
 
 * Container extension or gridelements extension
@@ -19,11 +24,6 @@ Dependencies
 
 * Picture extension
 * SMS Responsive Images extension
-
-### TYPO3voilà
-
-* T3v Core extension
-* T3v Translations extension
 
 Installation
 ------------
