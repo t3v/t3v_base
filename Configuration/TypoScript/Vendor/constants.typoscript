@@ -1,11 +1,11 @@
 /*
-  -----------------------------
-  | T3v Base Vendor Constants |
-  -----------------------------
+-----------------------------
+| T3v Base Vendor Constants |
+-----------------------------
 */
 
 /*
-  === Imports ===
+=== Imports ===
 */
 
 @import './Extbase/constants.typoscript'
@@ -15,5 +15,5 @@
 @import './VHS/constants.typoscript'
 
 /*
-  === T3v Generator ===
+=== T3v Generator ===
 */

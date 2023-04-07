@@ -1,7 +1,7 @@
 /*
-  --------------------------------------
-  | T3v Base Bar Grid Element TSconfig |
-  --------------------------------------
+--------------------------------------
+| T3v Base Bar Grid Element TSconfig |
+--------------------------------------
 */
 
 tx_gridelements {
@@ -9,8 +9,8 @@ tx_gridelements {
     t3vBaseBar {
       title = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:gridElements.barGridElement.title
       description = LLL:EXT:t3v_base/Resources/Private/Language/locallang_ttc.xlf:gridElements.barGridElement.description
-      flexformDS = FILE:EXT:t3v_base/Configuration/FlexForms/GridElements/BarGridElement.xml
       iconIdentifier = t3v_base-bar_grid_element
+      flexformDS = FILE:EXT:t3v_base/Configuration/FlexForms/GridElements/BarGridElement.xml
 
       # Use a colored frame as in the record form:
       # `0` = no color

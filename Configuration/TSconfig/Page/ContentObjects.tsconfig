@@ -1,11 +1,7 @@
 /*
-  -------------------------------------
-  | T3v Base Content Objects TSconfig |
-  -------------------------------------
-*/
-
-/*
-  === New Content Element Wizard Configuration ===
+-------------------------------------
+| T3v Base Content Objects TSconfig |
+-------------------------------------
 */
 
 mod {
@@ -22,7 +18,7 @@ mod {
 }
 
 /*
-  === Imports ===
+=== Imports ===
 */
 
 @import './ContentObjects/Background.tsconfig'
@@ -33,7 +29,3 @@ mod {
 @import './ContentObjects/Logo.tsconfig'
 @import './ContentObjects/SearchBar.tsconfig'
 @import './ContentObjects/Spacer.tsconfig'
-
-/*
-  === T3v Generator ===
-*/

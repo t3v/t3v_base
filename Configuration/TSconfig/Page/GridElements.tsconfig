@@ -1,15 +1,15 @@
 /*
-  -----------------------------------
-  | T3v Base Grid Elements TSconfig |
-  -----------------------------------
+-----------------------------------
+| T3v Base Grid Elements TSconfig |
+-----------------------------------
 */
 
 /*
-  === Imports ===
+=== Imports ===
 */
 
 /*
-  --- Body ---
+--- Body ---
 */
 
 @import './GridElements/HeaderGridElement.tsconfig'
@@ -17,7 +17,7 @@
 @import './GridElements/FooterGridElement.tsconfig'
 
 /*
-  --- Layouts ---
+--- Layouts ---
 */
 
 @import './GridElements/ColumnLayoutGridElement.tsconfig'
@@ -27,13 +27,13 @@
 @import './GridElements/BlockGridElement.tsconfig'
 
 /*
-  --- Formatting ---
+--- Formatting ---
 */
 
 @import './GridElements/FormattingGridElement.tsconfig'
 
 /*
-  --- Composition ---
+--- Composition ---
 */
 
 @import './GridElements/BarGridElement.tsconfig'
@@ -41,12 +41,8 @@
 @import './GridElements/ModalGridElement.tsconfig'
 
 /*
-  --- Misc ---
+--- Misc ---
 */
 
 @import './GridElements/ConditionallyGridElement.tsconfig'
 @import './GridElements/ViewportGridElement.tsconfig'
-
-/*
-  === T3v Generator ===
-*/

@@ -1,11 +1,11 @@
 /*
-  ---------------------------
-  | T3v Base Base Constants |
-  ---------------------------
+---------------------------
+| T3v Base Base Constants |
+---------------------------
 */
 
 /*
-  === Plugin Constants ===
+=== Plugin Constants ===
 */
 
 plugin {
@@ -57,5 +57,5 @@ plugin {
 }
 
 /*
-  === T3v Generator ===
+=== T3v Generator ===
 */

@@ -205,16 +205,16 @@ defined('TYPO3') or die();
 
         $iconRegistry = GeneralUtility::makeInstance(IconRegistry::class);
         $icons = [
-            '1 Column Layout Grid Element' => "$iconsFolder/GridElements/ColumnLayoutGridElement/1Column.svg",
-            '2 Column Layout Grid Element' => "$iconsFolder/GridElements/ColumnLayoutGridElement/2Column.svg",
-            '3 Column Layout Grid Element' => "$iconsFolder/GridElements/ColumnLayoutGridElement/3Column.svg",
-            '4 Column Layout Grid Element' => "$iconsFolder/GridElements/ColumnLayoutGridElement/4Column.svg",
+            '1 column layout grid element' => "$iconsFolder/GridElements/ColumnLayoutGridElement/1Column.svg",
+            '2 column layout grid element' => "$iconsFolder/GridElements/ColumnLayoutGridElement/2Column.svg",
+            '3 column layout grid element' => "$iconsFolder/GridElements/ColumnLayoutGridElement/3Column.svg",
+            '4 column layout grid element' => "$iconsFolder/GridElements/ColumnLayoutGridElement/4Column.svg",
             'Background' => "$iconsFolder/ContentObjects/Background.svg",
-            'Bar Grid Element' => "$iconsFolder/GridElements/BarGridElement.svg",
-            'Block Grid Element' => "$iconsFolder/GridElements/BlockGridElement.svg",
-            'Cascading Layout Grid Element' => "$iconsFolder/GridElements/CascadingLayoutGridElement.svg",
-            'Conditionally Grid Element' => "$iconsFolder/GridElements/ConditionallyGridElement.svg",
-            'Container Grid Element' => "$iconsFolder/GridElements/ContainerGridElement.svg",
+            'Bar grid element' => "$iconsFolder/GridElements/BarGridElement.svg",
+            'Block grid element' => "$iconsFolder/GridElements/BlockGridElement.svg",
+            'Cascading layout grid element' => "$iconsFolder/GridElements/CascadingLayoutGridElement.svg",
+            'Conditionally grid element' => "$iconsFolder/GridElements/ConditionallyGridElement.svg",
+            'Container grid element' => "$iconsFolder/GridElements/ContainerGridElement.svg",
             'Copyright' => "$iconsFolder/ContentObjects/Copyright.svg",
             'Flexbox Grid Element' => "$iconsFolder/GridElements/FlexboxGridElement.svg",
             'Flyout Grid Element' => "$iconsFolder/GridElements/FlyoutGridElement.svg",
@@ -243,5 +243,4 @@ defined('TYPO3') or die();
             );
         }
     }
-    // === T3v Generator ===
 })();

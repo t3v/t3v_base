@@ -1,12 +1,10 @@
 /*
-  ------------------------------
-  | T3v Base TCE Form TSconfig |
-  ------------------------------
+------------------------------
+| T3v Base TCE Form TSconfig |
+------------------------------
 */
 
 TCEFORM {
-  # === Content Records ===
-
   tt_content {
     header_layout {
       label = LLL:EXT:t3v_translations/Resources/Private/Language/locallang_ttc.xlf:tceform.ttContent.header.layout.label

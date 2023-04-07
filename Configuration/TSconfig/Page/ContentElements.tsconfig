@@ -1,11 +1,7 @@
 /*
-  --------------------------------------
-  | T3v Base Content Elements TSconfig |
-  --------------------------------------
-*/
-
-/*
-  === New Content Element Wizard Configuration ===
+--------------------------------------
+| T3v Base Content Elements TSconfig |
+--------------------------------------
 */
 
 mod {
@@ -20,7 +16,3 @@ mod {
     }
   }
 }
-
-/*
-  === T3v Generator ===
-*/

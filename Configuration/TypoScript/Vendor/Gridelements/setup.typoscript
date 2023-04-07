@@ -1,11 +1,11 @@
 /*
-  -------------------------------
-  | T3v Base Gridelements Setup |
-  -------------------------------
+-------------------------------
+| T3v Base Gridelements Setup |
+-------------------------------
 */
 
 /*
-  === Imports ===
+=== Imports ===
 */
 
 @import 'EXT:gridelements/Configuration/TypoScript/setup.typoscript'

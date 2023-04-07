@@ -1,17 +1,17 @@
 /*
-  --------------------------
-  | T3v Base Picture Setup |
-  --------------------------
+--------------------------
+| T3v Base Picture Setup |
+--------------------------
 */
 
 /*
-  === Imports ===
+=== Imports ===
 */
 
 @import 'EXT:picture/Configuration/TypoScript/setup.typoscript'
 
 /*
-  === Plugin Configuration ===
+=== Plugin Configuration ===
 */
 
 plugin {

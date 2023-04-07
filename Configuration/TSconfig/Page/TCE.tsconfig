@@ -1,15 +1,11 @@
 /*
-  -------------------------
-  | T3v Base TCE TSconfig |
-  -------------------------
+-------------------------
+| T3v Base TCE TSconfig |
+-------------------------
 */
 
 /*
-  === Imports ===
+=== Imports ===
 */
 
 @import './TCE/Form.tsconfig'
-
-/*
-  === T3v Generator ===
-*/

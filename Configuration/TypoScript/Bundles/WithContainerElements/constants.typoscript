@@ -1,11 +1,11 @@
 /*
-  ----------------------------------------------
-  | T3v Base With Container Elements Constants |
-  ----------------------------------------------
+----------------------------------------------
+| T3v Base With Container Elements Constants |
+----------------------------------------------
 */
 
 /*
-  === Imports ===
+=== Imports ===
 */
 
 @import '../../Base/constants.typoscript'
@@ -18,5 +18,5 @@
 @import '../../ContentObjects/constants.typoscript'
 
 /*
-  === T3v Generator ===
+=== T3v Generator ===
 */

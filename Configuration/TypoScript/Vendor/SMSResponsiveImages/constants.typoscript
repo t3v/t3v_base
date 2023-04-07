@@ -1,17 +1,17 @@
 /*
-  --------------------------------------------
-  | T3v Base SMS Responsive Images Constants |
-  --------------------------------------------
+--------------------------------------------
+| T3v Base SMS Responsive Images Constants |
+--------------------------------------------
 */
 
 /*
-  === Imports ===
+=== Imports ===
 */
 
 @import 'EXT:sms_responsive_images/Configuration/TypoScript/Base/constants.ts'
 
 /*
-  === Overrides ===
+=== Overrides ===
 */
 
 # tx_smsresponsiveimages {
