@@ -16,6 +16,11 @@ tt_content {
               file = {$plugin.tx_t3vbase.settings.gridElements.columnLayoutGridElement.3Column.cObject.file}
               layoutRootPath = {$plugin.tx_t3vbase.settings.gridElements.columnLayoutGridElement.3Column.cObject.layoutRootPath}
               partialRootPath = {$plugin.tx_t3vbase.settings.gridElements.columnLayoutGridElement.3Column.cObject.partialRootPath}
+              partialRootPaths {
+                10 = {$plugin.tx_t3vbase.view.partialRootPath}
+                20 = {$plugin.tx_t3vbase.settings.gridElements.columnLayoutGridElement.3Column.cObject.partialRootPath}
+                30 = {$plugin.tx_t3vbase.view.partialRootPathOverride}
+              }
 
 
               dataProcessing {
