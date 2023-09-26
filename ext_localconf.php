@@ -216,20 +216,20 @@ defined('TYPO3') or die();
             'Conditionally grid element' => "$iconsFolder/GridElements/ConditionallyGridElement.svg",
             'Container grid element' => "$iconsFolder/GridElements/ContainerGridElement.svg",
             'Copyright' => "$iconsFolder/ContentObjects/Copyright.svg",
-            'Flexbox Grid Element' => "$iconsFolder/GridElements/FlexboxGridElement.svg",
-            'Flyout Grid Element' => "$iconsFolder/GridElements/FlyoutGridElement.svg",
-            'Footer Grid Element' => "$iconsFolder/GridElements/FooterGridElement.svg",
-            'Formatting Grid Element' => "$iconsFolder/GridElements/FormattingGridElement.svg",
-            'Header Grid Element' => "$iconsFolder/GridElements/HeaderGridElement.svg",
+            'Flexbox grid element' => "$iconsFolder/GridElements/FlexboxGridElement.svg",
+            'Flyout grid element' => "$iconsFolder/GridElements/FlyoutGridElement.svg",
+            'Footer grid element' => "$iconsFolder/GridElements/FooterGridElement.svg",
+            'Formatting grid element' => "$iconsFolder/GridElements/FormattingGridElement.svg",
+            'Header grid element' => "$iconsFolder/GridElements/HeaderGridElement.svg",
             'Icon' => "$iconsFolder/ContentObjects/Icon.svg",
             'Label' => "$iconsFolder/ContentObjects/Label.svg",
             'Link' => "$iconsFolder/ContentObjects/Link.svg",
             'Logo' => "$iconsFolder/ContentObjects/Logo.svg",
-            'Modal Grid Element' => "$iconsFolder/GridElements/ModalGridElement.svg",
-            'Section Grid Element' => "$iconsFolder/GridElements/SectionGridElement.svg",
+            'Modal grid element' => "$iconsFolder/GridElements/ModalGridElement.svg",
+            'Section grid element' => "$iconsFolder/GridElements/SectionGridElement.svg",
             'Search Bar' => "$iconsFolder/ContentObjects/SearchBar.svg",
             'Spacer' => "$iconsFolder/ContentObjects/Spacer.svg",
-            'Viewport Grid Element' => "$iconsFolder/GridElements/ViewportGridElement.svg"
+            'Viewport grid element' => "$iconsFolder/GridElements/ViewportGridElement.svg"
         ];
 
         foreach ($icons as $name => $source) {
